@@ -1,24 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>World Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
     <style>
         body { margin: 0; }
         #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+        .leaflet-control-geocoder { width: 280px; }
+        .border-toggle {
+            background: #fff;
+            border: 2px solid rgba(0,0,0,0.2);
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .border-toggle:hover { background: #f4f4f4; }
+        .text-marker {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+            white-space: nowrap;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
-    <!-- Leaflet Map including world map tiles -->
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
     <script>
-        var map = L.map('map').setView([0, 0], 2);
-        // Add a layer with satellite imagery tiles
+        var map = L.map('map').setView([35, 105], 4);
+
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             attribution: '© Esri'
         }).addTo(map);
+
+        var bordersLayer;
+        var markersGroup = L.layerGroup().addTo(map);
+        var localMarkers = [];
+
+        // Load local JSON markers
+        fetch('markers.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                data.forEach(function(item) {
+                    var icon = L.divIcon({
+                        className: 'text-marker',
+                        html: item.name,
+                        iconSize: null,
+                        iconAnchor: [0, 0]
+                    });
+                    var marker = L.marker([item.lat, item.lng], { icon: icon })
+                        .addTo(markersGroup)
+                        .bindPopup('<b>' + item.name + '</b><br>' + (item.desc || ''));
+                    localMarkers.push({
+                        name: item.name,
+                        center: L.latLng(item.lat, item.lng),
+                        marker: marker,
+                        desc: item.desc
+                    });
+                });
+            })
+            .catch(function() {});
+
+        // Custom geocoder: search local markers first, fall back to Nominatim
+        var markerGeocoder = {
+            geocode: function(query, callback) {
+                var results = [];
+                var q = query.toLowerCase();
+                for (var i = 0; i < localMarkers.length; i++) {
+                    var m = localMarkers[i];
+                    if (m.name.toLowerCase().indexOf(q) !== -1) {
+                        results.push({
+                            name: m.name,
+                            center: m.center,
+                            bbox: null
+                        });
+                    }
+                }
+                if (results.length > 0) {
+                    callback(results);
+                } else {
+                    L.Control.Geocoder.nominatim().geocode(query, callback);
+                }
+            }
+        };
+
+        L.Control.geocoder({
+            geocoder: markerGeocoder,
+            placeholder: 'Search',
+            errorMessage: 'Not found',
+            showResultIcons: true,
+            collapsed: false,
+            defaultMarkGeocode: false
+        })
+        .on('markgeocode', function(e) {
+            var center = e.geocode.center;
+            map.setView(center, 12);
+            // Open popup if it's a local marker
+            for (var i = 0; i < localMarkers.length; i++) {
+                if (localMarkers[i].center.equals(center)) {
+                    localMarkers[i].marker.openPopup();
+                    return;
+                }
+            }
+            L.popup()
+                .setLatLng(center)
+                .setContent(e.geocode.name)
+                .openOn(map);
+        })
+        .addTo(map);
+
+        // Country borders
+        fetch('https://unpkg.com/world-atlas@2.0.2/countries-110m.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                var borders = topojson.mesh(data, data.objects.countries, function(a, b) { return a !== b; });
+                bordersLayer = L.geoJSON(borders, {
+                    style: {
+                        color: '#fff',
+                        weight: 1.5,
+                        opacity: 0.8,
+                        fill: false
+                    }
+                }).addTo(map);
+            });
+
+        // Toggle borders button
+        var bordersVisible = true;
+        var ToggleBorders = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var btn = L.DomUtil.create('button', 'border-toggle');
+                btn.innerHTML = 'Hide Borders';
+                L.DomEvent.on(btn, 'click', function() {
+                    bordersVisible = !bordersVisible;
+                    if (bordersLayer) {
+                        if (bordersVisible) {
+                            bordersLayer.addTo(map);
+                            btn.innerHTML = 'Hide Borders';
+                        } else {
+                            map.removeLayer(bordersLayer);
+                            btn.innerHTML = 'Show Borders';
+                        }
+                    }
+                });
+                return btn;
+            }
+        });
+        map.addControl(new ToggleBorders());
     </script>
 </body>
 </html>

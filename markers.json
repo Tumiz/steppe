@@ -1,0 +1,7 @@
+[
+    {"name": "Yamnaya Culture", "lat": 47.5, "lng": 42, "desc": "Pastoral culture of the Pontic-Caspian steppe (3300–2600 BCE), known for kurgan burials and linked to Indo-European migrations."},
+    {"name": "Afonasiev Culture", "lat": 51.5, "lng": 89, "desc": "Early Bronze Age culture in southern Siberia (3300–2500 BCE), considered the easternmost branch of the Yamnaya horizon."},
+    {"name": "Sintashta Culture", "lat": 52.5, "lng": 60.5, "desc": "Bronze Age culture of the southern Urals (2200–1800 BCE), known for chariot burials and fortified settlements."},
+    {"name": "Seima-Turbino Phenomenon", "lat": 56.5, "lng": 52, "desc": "Transcultural bronze-working network across northern Eurasia (2000–1500 BCE), famous for advanced metalwork and wide geographic spread."},
+    {"name": "Andronovo Culture", "lat": 52, "lng": 70, "desc": "Bronze Age culture of Central Asia (2000–1450 BCE), associated with early Indo-Iranian peoples and metal production."}
+]
