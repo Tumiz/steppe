@@ -12,18 +12,19 @@
         .border-toggle {
             background: #fff;
             border: 2px solid rgba(0,0,0,0.2);
-            padding: 6px 12px;
+            padding: 4px 8px;
             cursor: pointer;
-            font-size: 14px;
-            border-radius: 4px;
+            font-size: 12px;
+            border-radius: 3px;
             white-space: nowrap;
         }
         .border-toggle:hover { background: #f4f4f4; }
+        .border-toggle.active { background: #333; color: #fff; }
+        .border-toggle.active:hover { background: #444; }
         .text-marker {
             background: none !important;
             border: none !important;
             box-shadow: none !important;
-            color: #fff;
             font-weight: bold;
             font-size: 13px;
             text-shadow: 0 1px 4px rgba(0,0,0,0.9);
@@ -46,6 +47,7 @@
         }).addTo(map);
 
         var bordersLayer;
+        var cultureBordersLayer = L.layerGroup().addTo(map);
         var markersGroup = L.layerGroup().addTo(map);
         var localMarkers = [];
 
@@ -53,22 +55,59 @@
         fetch('markers.json')
             .then(function(res) { return res.json(); })
             .then(function(data) {
-                data.forEach(function(item) {
+                function buildPopupContent(item) {
+                    var html = '<b>' + item.name + '</b><br>' + (item.desc || '');
+                    if (item.papers && item.papers.length > 0) {
+                        html += '<br><hr style="margin:4px 0"><b>Related papers:</b><br>';
+                        item.papers.forEach(function(p) {
+                            html += '• <a href="' + p.url + '" target="_blank" rel="noopener">' + p.title + '</a><br>';
+                        });
+                    }
+                    return html;
+                }
+
+                data.forEach(function(item, idx) {
+                    var color = item.color;
+
                     var icon = L.divIcon({
                         className: 'text-marker',
-                        html: item.name,
+                        html: '<span style="color:' + color + '">' + item.name + '</span>',
                         iconSize: null,
                         iconAnchor: [0, 0]
                     });
                     var marker = L.marker([item.lat, item.lng], { icon: icon })
                         .addTo(markersGroup)
-                        .bindPopup('<b>' + item.name + '</b><br>' + (item.desc || ''));
+                        .bindPopup(buildPopupContent(item));
                     localMarkers.push({
                         name: item.name,
                         center: L.latLng(item.lat, item.lng),
                         marker: marker,
                         desc: item.desc
                     });
+
+                    if (item.borders && item.borders.length > 0) {
+                        var poly = L.polygon(item.borders, {
+                            color: color,
+                            weight: 2,
+                            opacity: 0.8,
+                            fillColor: color,
+                            fillOpacity: 0.12,
+                            interactive: false
+                        }).addTo(cultureBordersLayer);
+                    }
+
+                    if (item.sites && item.sites.length > 0) {
+                        item.sites.forEach(function(site) {
+                            var siteMarker = L.circleMarker([site.lat, site.lng], {
+                                radius: 6,
+                                color: '#fff',
+                                weight: 1.5,
+                                fillColor: color,
+                                fillOpacity: 0.85
+                            }).addTo(cultureBordersLayer);
+                            siteMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
+                        });
+                    }
                 });
             })
             .catch(function() {});
@@ -136,22 +175,22 @@
                 }).addTo(map);
             });
 
-        // Toggle borders button
+        // Toggle country borders button
         var bordersVisible = true;
         var ToggleBorders = L.Control.extend({
             options: { position: 'topright' },
             onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Hide Borders';
+                var btn = L.DomUtil.create('button', 'border-toggle active');
+                btn.innerHTML = 'Country border';
                 L.DomEvent.on(btn, 'click', function() {
                     bordersVisible = !bordersVisible;
                     if (bordersLayer) {
                         if (bordersVisible) {
                             bordersLayer.addTo(map);
-                            btn.innerHTML = 'Hide Borders';
+                            btn.classList.add('active');
                         } else {
                             map.removeLayer(bordersLayer);
-                            btn.innerHTML = 'Show Borders';
+                            btn.classList.remove('active');
                         }
                     }
                 });
@@ -159,6 +198,28 @@
             }
         });
         map.addControl(new ToggleBorders());
+
+        // Toggle culture borders button
+        var cultureBordersVisible = true;
+        var ToggleCultureBorders = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var btn = L.DomUtil.create('button', 'border-toggle active');
+                btn.innerHTML = 'Culture border';
+                L.DomEvent.on(btn, 'click', function() {
+                    cultureBordersVisible = !cultureBordersVisible;
+                    if (cultureBordersVisible) {
+                        cultureBordersLayer.addTo(map);
+                        btn.classList.add('active');
+                    } else {
+                        map.removeLayer(cultureBordersLayer);
+                        btn.classList.remove('active');
+                    }
+                });
+                return btn;
+            }
+        });
+        map.addControl(new ToggleCultureBorders());
     </script>
 </body>
 </html>

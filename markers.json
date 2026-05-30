@@ -1,7 +1,728 @@
 [
-    {"name": "Yamnaya Culture", "lat": 47.5, "lng": 42, "desc": "Pastoral culture of the Pontic-Caspian steppe (3300–2600 BCE), known for kurgan burials and linked to Indo-European migrations."},
-    {"name": "Afonasiev Culture", "lat": 51.5, "lng": 89, "desc": "Early Bronze Age culture in southern Siberia (3300–2500 BCE), considered the easternmost branch of the Yamnaya horizon."},
-    {"name": "Sintashta Culture", "lat": 52.5, "lng": 60.5, "desc": "Bronze Age culture of the southern Urals (2200–1800 BCE), known for chariot burials and fortified settlements."},
-    {"name": "Seima-Turbino Phenomenon", "lat": 56.5, "lng": 52, "desc": "Transcultural bronze-working network across northern Eurasia (2000–1500 BCE), famous for advanced metalwork and wide geographic spread."},
-    {"name": "Andronovo Culture", "lat": 52, "lng": 70, "desc": "Bronze Age culture of Central Asia (2000–1450 BCE), associated with early Indo-Iranian peoples and metal production."}
+    {
+        "name": "Yamnaya Culture",
+        "color": "#e74c3c",
+        "lat": 48.2,
+        "lng": 40.5,
+        "desc": "Late Eneolithic to Early Bronze Age pastoral culture of the Pontic-Caspian Steppe (3300–2600 BCE). Famous for kurgan burials, mobile pastoralism, and being a major genetic source for Indo-European expansions across Europe and Asia.",
+        "borders": [
+            [45.2, 27.8],
+            [44.8, 34.5],
+            [44.5, 41.2],
+            [45.1, 47.6],
+            [46.8, 51.5],
+            [53.5, 51.0],
+            [53.2, 45.0],
+            [52.8, 42.5],
+            [49.2, 34.2],
+            [46.5, 27.8],
+            [45.2, 27.8]
+        ],
+        "sites": [
+            {
+                "name": "Mykhailivka",
+                "lat": 47.3,
+                "lng": 33.5,
+                "desc": "Type settlement on the lower Dnieper River; yields the earliest confirmed Yamnaya occupation layers (3600–3000 BCE)"
+            },
+            {
+                "name": "Repin",
+                "lat": 49.7,
+                "lng": 41.1,
+                "desc": "Key early Yamnaya site on the Don River, critical for establishing regional Bronze Age chronology"
+            },
+            {
+                "name": "Khvalynsk",
+                "lat": 52.5,
+                "lng": 48.1,
+                "desc": "Large Eneolithic cemetery on the Volga River, ancestral cultural complex predating classic Yamnaya"
+            },
+            {
+                "name": "Pit Grave",
+                "lat": 46.6,
+                "lng": 31.8,
+                "desc": "Classic Yamnaya kurgan necropolis in southern Ukraine, representative of typical pit burial traditions"
+            },
+            {
+                "name": "Novosvobodnaya",
+                "lat": 44.9,
+                "lng": 40.3,
+                "desc": "Transitional site in North Caucasus, showing cultural interaction between Yamnaya and local Caucasian groups"
+            },
+            {
+                "name": "Samara",
+                "lat": 53.1,
+                "lng": 50.2,
+                "desc": "Volga-Ural steppe cemetery, widely sampled for ancient DNA research on steppe ancestry"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Haak et al. (2015) Massive migration from the steppe was a source for Indo-European languages in Europe",
+                "url": "https://www.nature.com/articles/nature14317"
+            },
+            {
+                "title": "Anthony (2007) The Horse, the Wheel, and Language",
+                "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language"
+            },
+            {
+                "title": "Damgaard et al. (2018) The first horse herders and the impact of early Bronze Age steppe expansions into Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aar7711"
+            }
+        ]
+    },
+    {
+        "name": "Afonasiev Culture",
+        "color": "red",
+        "lat": 51.0,
+        "lng": 89.0,
+        "desc": "Early Bronze Age pastoral and metallurgical culture in southern Siberia, Altai, western Mongolia and northern Xinjiang (3300–2500 BCE); regarded as the easternmost extension of the Yamnaya horizon, with strong genetic links to early Indo-European speakers.",
+        "borders": [
+            [54.2, 84.0],
+            [54.5, 89.0],
+            [54.0, 93.0],
+            [52.5, 97.5],
+            [50.0, 99.0],
+            [47.5, 98.0],
+            [47.0, 92.0],
+            [47.2, 86.0],
+            [48.0, 82.5],
+            [50.0, 81.0],
+            [52.5, 82.0],
+            [54.2, 84.0]
+        ],
+        "sites": [
+            {
+                "name": "Afonasiev Gora",
+                "lat": 53.5,
+                "lng": 91.5,
+                "desc": "Type site near Bateni-Yarki village, Minusinsk Basin; eponymous cemetery excavated 1920s, now submerged by Krasnoyarsk Reservoir"
+            },
+            {
+                "name": "Kara-Koba",
+                "lat": 50.5,
+                "lng": 86.5,
+                "desc": "Key ritual site in central Gorny Altai; circular stone enclosure with stelae, typical Afonasiev ceremonial complex"
+            },
+            {
+                "name": "Kucherla 1",
+                "lat": 51.2,
+                "lng": 87.8,
+                "desc": "Sacred stone-circle site in Altai Mountains; central pit with pottery fragments, used for communal rituals"
+            },
+            {
+                "name": "Ust-Kuyum",
+                "lat": 51.8,
+                "lng": 85.3,
+                "desc": "Well-preserved burial site in Altai; early Afonasiev horizon (3300–3000 BCE) with classic kurgan burials"
+            },
+            {
+                "name": "Aitokhan 1",
+                "lat": 48.2,
+                "lng": 85.5,
+                "desc": "Northern Xinjiang (China) cemetery; two Afonasiev-style stone-cist kurgans (M21, M22), easternmost confirmed site"
+            },
+            {
+                "name": "Altan Sandal",
+                "lat": 49.5,
+                "lng": 95.2,
+                "desc": "Central Mongolia burial site; eastern expansion marker, Afonasiev radiocarbon dates 3000–2800 BCE"
+            },
+            {
+                "name": "Shatar Chuluu",
+                "lat": 48.8,
+                "lng": 97.0,
+                "desc": "Mongolian steppe cemetery; easternmost Afonasiev complex, demonstrates 1,500 km eastward spread from Altai"
+            },
+            {
+                "name": "Ukok Plateau Burials",
+                "lat": 49.3,
+                "lng": 87.5,
+                "desc": "High-altitude Altai burial ground; frozen tombs with well-preserved organic remains, key for DNA studies"
+            },
+            {
+                "name": "Vladimirovka",
+                "lat": 52.1,
+                "lng": 88.9,
+                "desc": "Copper-mining settlement in Minusinsk Basin; evidence of early metallurgy, rare Afonasiev industrial site"
+            },
+            {
+                "name": "Askat 2",
+                "lat": 50.7,
+                "lng": 86.2,
+                "desc": "Altai settlement with bronze-casting mould fragments; confirms early metal production in Afonasiev communities"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Allentoft et al. (2015) Population genomics of Bronze Age Eurasia",
+                "url": "https://www.nature.com/articles/nature14507"
+            },
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487"
+            },
+            {
+                "title": "Damgaard et al. (2018) The first horse herders and the impact of early Bronze Age steppe expansions into Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aar7711"
+            }
+        ]
+    },
+    {
+        "name": "Sintashta Culture",
+        "color": "#2ecc71",
+        "lat": 52.8,
+        "lng": 59.8,
+        "desc": "Middle Bronze Age culture of the Southern Urals and northern Kazakhstan (2200–1900 BCE). Famous for fortified circular settlements, the earliest known spoked-wheel chariots, large-scale metallurgy and elite kurgan burials; closely linked to early Indo-Iranian peoples.",
+        "borders": [
+            [54.8, 55.2],
+            [53.0, 53.8],
+            [50.5, 54.5],
+            [49.8, 58.2],
+            [50.2, 63.5],
+            [52.6, 65.0],
+            [54.2, 64.2],
+            [54.8, 60.5],
+            [54.8, 55.2]
+        ],
+        "sites": [
+            {
+                "name": "Sintashta",
+                "lat": 52.49,
+                "lng": 60.19,
+                "desc": "Type site, fortified settlement and necropolis; yielded the world's earliest spoked-wheel chariot burials"
+            },
+            {
+                "name": "Arkaim",
+                "lat": 52.65,
+                "lng": 59.57,
+                "desc": "Iconic double-ring circular fortified settlement, major ceremonial and residential centre"
+            },
+            {
+                "name": "Kamenny Ambar",
+                "lat": 52.60,
+                "lng": 60.60,
+                "desc": "Large fortified site with intensive bronze metallurgy and multiple elite burials"
+            },
+            {
+                "name": "Petrovka",
+                "lat": 52.80,
+                "lng": 62.40,
+                "desc": "Key site of the Sintashta-Petrovka complex, important for regional chronology"
+            },
+            {
+                "name": "Ustye",
+                "lat": 51.80,
+                "lng": 55.90,
+                "desc": "Multi-layer settlement with Sintashta occupation over earlier Poltavka cultural remains"
+            },
+            {
+                "name": "Tobolskoye",
+                "lat": 53.90,
+                "lng": 64.10,
+                "desc": "Easternmost major Sintashta settlement on the upper Tobol River"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Allentoft et al. (2015) Population genomics of Bronze Age Eurasia",
+                "url": "https://www.nature.com/articles/nature14507"
+            },
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487"
+            }
+        ]
+    },
+    {
+        "name": "Seima-Turbino Phenomenon",
+        "color": "#f39c12",
+        "lat": 56.5,
+        "lng": 52,
+        "desc": "Transcultural bronze-working network across northern Eurasia (2200–1900 BCE), famous for advanced metalwork and wide geographic spread.",
+        "borders": [
+            [
+            [59.50, 21.00],
+            [61.30, 24.80],
+            [63.00, 29.50],
+            [64.00, 35.00],
+            [64.60, 41.00],
+            [64.90, 48.00],
+            [64.90, 55.50],
+            [64.60, 63.00],
+            [63.90, 70.00],
+            [62.90, 77.00],
+            [61.50, 83.00],
+            [59.80, 88.50],
+            [57.90, 93.00],
+            [55.80, 95.80],
+            [53.20, 96.30],
+            [51.50, 95.20],
+            [50.00, 92.50],
+            [49.20, 88.00],
+            [49.00, 82.00],
+            [49.50, 75.00],
+            [50.80, 67.00],
+            [52.20, 59.00],
+            [53.50, 51.00],
+            [54.80, 43.00],
+            [56.20, 35.50],
+            [57.80, 29.00],
+            [59.00, 23.20],
+            [59.50, 21.00]
+          ]
+        ],
+        "sites": [
+            {
+                "name": "Seima",
+                "lat": 56.32,
+                "lng": 44.01,
+                "desc": "Type cemetery near Nizhny Novgorod, Volga‑Oka confluence; rich bronze weapon hoard, type site of the phenomenon"
+            },
+            {
+                "name": "Turbino",
+                "lat": 58.05,
+                "lng": 56.25,
+                "desc": "Type cemetery near Perm, Urals; bronze spearheads, combat knives, and early ST burial rites"
+            },
+            {
+                "name": "Kaninskaya Cave",
+                "lat": 64.20,
+                "lng": 57.80,
+                "desc": "Northernmost ST site in Pechora Urals; ritual cave with bronze offerings, northern boundary marker"
+            },
+            {
+                "name": "Rostovka",
+                "lat": 55.83,
+                "lng": 77.92,
+                "desc": "Key burial site near Omsk; high‑quality ancient DNA, bronze weapons, and Siberian ancestry evidence"
+            },
+            {
+                "name": "Satyga 16",
+                "lat": 52.70,
+                "lng": 84.50,
+                "desc": "Trans‑Urals cemetery; bronze implements, human remains, and early ST metallurgical traces"
+            },
+            {
+                "name": "Samus‑4",
+                "lat": 57.00,
+                "lng": 83.20,
+                "desc": "Settlement & workshop in Tomsk‑Narym; bronze‑casting site, core ST metallurgical production center"
+            },
+            {
+                "name": "Tatarka",
+                "lat": 56.05,
+                "lng": 93.10,
+                "desc": "Easternmost major ST site on Yenisei; eastern boundary marker, Siberian genetic affinities"
+            },
+            {
+                "name": "Reshnoe",
+                "lat": 54.50,
+                "lng": 75.30,
+                "desc": "Important ST cemetery in Western Siberia; bronze daggers, axes, and typical burial assemblages"
+            },
+            {
+                "name": "Ust’‑Vetluga",
+                "lat": 57.50,
+                "lng": 46.80,
+                "desc": "Volga‑Oka region cemetery; early ST bronze tools, transitional cultural layers"
+            },
+            {
+                "name": "Elunino 1",
+                "lat": 53.20,
+                "lng": 83.80,
+                "desc": "Ob‑Irtysh steppe cemetery; Elunin culture overlap, ST bronze ornaments and weapons"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Childebayeva et al. (2024) Bronze age Northern Eurasian genetics in the context of development of metallurgy and Siberian ancestry",
+                "url": "https://www.nature.com/articles/s42003-024-06343-x"
+            }
+        ]
+    },
+    {
+        "name": "Andronovo Culture",
+        "color": "darkred",
+        "lat": 51.6,
+        "lng": 68.2,
+        "desc": "Bronze Age pastoral and metallurgical culture (2000–1450 BCE) distributed across Southern Urals, Western Siberia and Central Asia. Closely associated with early Indo-Iranian groups, featuring kurgan burials, mobile herding and advanced bronze production.",
+        "borders": [
+            [56.2, 54.8],
+            [54.0, 52.2],
+            [49.8, 53.6],
+            [46.2, 60.5],
+            [44.1, 69.2],
+            [44.5, 79.0],
+            [44.0, 82.0],
+            [47.9, 85.0],
+            [52.3, 84.1],
+            [56.7, 79.5],
+            [57.4, 70.3],
+            [56.2, 54.8]
+        ],
+        "sites": [
+            {
+                "name": "Andronovo",
+                "lat": 55.88,
+                "lng": 55.70,
+                "desc": "Type cemetery near Andronovo village, Bashkortostan; the eponymous site defining the culture"
+            },
+            {
+                "name": "Petrovka",
+                "lat": 54.83,
+                "lng": 55.99,
+                "desc": "Key site of the early Petrovka phase, core area of Northern Kazakhstan"
+            },
+            {
+                "name": "Alakul",
+                "lat": 50.80,
+                "lng": 65.20,
+                "desc": "Representative site of the Alakul regional variant, widely spread across northern Kazakhstan"
+            },
+            {
+                "name": "Fedorovo",
+                "lat": 55.93,
+                "lng": 60.12,
+                "desc": "Classic site of the Fedorovo phase, dominant in Southern Siberia and Southern Urals"
+            },
+            {
+                "name": "Alekseyevka",
+                "lat": 48.74,
+                "lng": 77.00,
+                "desc": "Large kurgan burial complex in eastern Kazakhstan with typical Andronovo burial assemblages"
+            },
+            {
+                "name": "Sabinka 2",
+                "lat": 52.50,
+                "lng": 82.50,
+                "desc": "Well-preserved burial ground in Altai Krai, widely used for ancient genome research"
+            },
+            {
+                "name": "Arban 1",
+                "lat": 52.00,
+                "lng": 83.50,
+                "desc": "Cemetery in Upper Ob region, reflects Andronovo influence in Western Siberia"
+            },
+            {
+                "name": "Adunqiaolu",
+                "lat": 45.02,
+                "lng": 80.54,
+                "desc": "Easternmost major Andronovo site in northern Xinjiang, marks the eastern expansion boundary"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487"
+            },
+            {
+                "title": "Allentoft et al. (2015) Population genomics of Bronze Age Eurasia",
+                "url": "https://www.nature.com/articles/nature14507"
+            }
+        ]
+    },
+    {
+        "name": "Chemurchek Culture",
+        "color": "lightgreen",
+        "lat": 48.0,
+        "lng": 90.0,
+        "desc": "Early Bronze Age culture of Western Mongolia and Altai (2750–1900 BCE), known for rectangular stone enclosures, stelae, and mixed pastoral farming; post-Afanasievo cultural complex.",
+        "borders": [
+            [49.5, 87.0],
+            [49.0, 93.0],
+            [46.5, 93.5],
+            [45.5, 88.5],
+            [47.0, 86.5],
+            [49.5, 87.0]
+        ],
+        "sites": [
+            {
+                "name": "Chemurchek",
+                "lat": 47.82,
+                "lng": 87.86,
+                "desc": "Type site in Altai China; rectangular stone burial enclosures and ceremonial stelae"
+            },
+            {
+                "name": "Yagshiin Khödöö",
+                "lat": 48.20,
+                "lng": 91.50,
+                "desc": "Key Chemurchek burial complex in Khovd, Western Mongolia"
+            },
+            {
+                "name": "Kulala-Ula",
+                "lat": 48.60,
+                "lng": 89.80,
+                "desc": "Well-preserved stone enclosure site in Bayan-Ölgii, Mongolia"
+            },
+            {
+                "name": "Kurgak-Govi",
+                "lat": 48.50,
+                "lng": 90.20,
+                "desc": "Mongolian Altai burial site with Chemurchek and Afanasievo overlap"
+            },
+            {
+                "name": "Dunde Bulaq",
+                "lat": 47.50,
+                "lng": 88.30,
+                "desc": "Ritual and habitation site in northern Xinjiang with Chemurchek remains"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Damgaard et al. (2018) The first horse herders and impact of early Bronze Age steppe expansions into Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aar7711"
+            },
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487"
+            }
+        ]
+    },
+    {
+        "name": "Okunev Culture",
+        "color": "blue",
+        "lat": 53.0,
+        "lng": 91.0,
+        "desc": "Middle Bronze Age culture of Minusinsk Basin, Tuva and Northern Mongolia (2600–1750 BCE), famous for stone stelae, kurgan burials and local Siberian pastoral traditions.",
+        "borders": [
+            [55.0, 88.0],
+            [55.0, 94.0],
+            [51.0, 96.0],
+            [48.5, 100.0],
+            [48.0, 96.0],
+            [50.0, 89.0],
+            [55.0, 88.0]
+        ],
+        "sites": [
+            {
+                "name": "Okunev Ulus",
+                "lat": 53.80,
+                "lng": 91.40,
+                "desc": "Type site of Okunev culture; classic stone burial cairns and anthropomorphic stelae"
+            },
+            {
+                "name": "Uibat V",
+                "lat": 54.20,
+                "lng": 90.80,
+                "desc": "Major Okunev necropolis in Minusinsk Basin, Russia"
+            },
+            {
+                "name": "Chebaki Sve",
+                "lat": 54.50,
+                "lng": 90.50,
+                "desc": "Mountain sanctuary and fortified ceremonial center of Okunev culture"
+            },
+            {
+                "name": "Zhelvak 5",
+                "lat": 51.50,
+                "lng": 94.00,
+                "desc": "Okunev habitation and burial site in Tuva Republic"
+            },
+            {
+                "name": "Lake Khövsgöl",
+                "lat": 51.00,
+                "lng": 99.00,
+                "desc": "Northern Mongolia outpost of Okunev burial and pastoral activity"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Allentoft et al. (2015) Population genomics of Bronze Age Eurasia",
+                "url": "https://www.nature.com/articles/nature14507"
+            },
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487"
+            }
+        ]
+    },
+    {
+        "name": "Ulaanzuukh‑Tevsh Culture",
+        "color": "#2EC5EF",
+        "lat": 47.5,
+        "lng": 112.0,
+        "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE, overlapping 3300–1500 BCE end phase). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
+        "borders": [
+        [50.5, 108.0],
+        [50.0, 118.0],
+        [45.0, 118.5],
+        [43.0, 112.0],
+        [45.0, 106.0],
+        [50.5, 108.0]
+        ],
+        "sites": [
+        {
+            "name": "Ulaanzuukh",
+            "lat": 47.4,
+            "lng": 111.8,
+            "desc": "Type site; large rectangular slab enclosures, ritual monuments"
+        },
+        {
+            "name": "Tevsh",
+            "lat": 46.8,
+            "lng": 114.2,
+            "desc": "Key eastern variant site; circular and rectangular burial complexes"
+        },
+        {
+            "name": "Dornod Survey Cluster",
+            "lat": 48.2,
+            "lng": 115.5,
+            "desc": "Dense Ulaanzuukh monumental cemetery area"
+        },
+        {
+            "name": "Delgerkhan Uul",
+            "lat": 49.1,
+            "lng": 113.0,
+            "desc": "Ridge with concentrations of Ulaanzuukh stone monuments"
+        },
+        {
+            "name": "Sümber Mountain",
+            "lat": 45.5,
+            "lng": 110.5,
+            "desc": "Southern Gobi Ulaanzuukh ritual and burial site"
+        }
+        ],
+        "papers": [
+        {
+            "title": "Wright et al. (2019) The earliest Bronze Age culture of the south‑eastern Gobi Desert",
+            "url": "https://doi.org/10.15184/aqy.2018.174"
+        },
+        {
+            "title": "Jeong et al. (2020) A dynamic 6,000‑year genetic history of Eurasia’s eastern steppe",
+            "url": "https://doi.org/10.1016/j.cell.2020.10.015"
+        }
+        ]
+    },
+    {
+        "name": "Glazkovo Culture",
+        "color": "brown",
+        "lat": 53.5,
+        "lng": 107.0,
+        "desc": "Bronze Age hunter‑gatherer/fisher culture around Lake Baikal (c.2200–1300 BCE). Known for pottery, copper artifacts, and burials with stone cairns; likely proto‑Tungusic.",
+        "borders": [
+        [56.0, 104.0],
+        [56.0, 112.0],
+        [51.0, 112.0],
+        [50.0, 106.0],
+        [53.0, 102.0],
+        [56.0, 104.0]
+        ],
+        "sites": [
+        {
+            "name": "Glazkov (Type site)",
+            "lat": 52.3,
+            "lng": 104.2,
+            "desc": "Suburb of Irkutsk; first discovered Glazkovo burial ground"
+        },
+        {
+            "name": "Olkhon Island",
+            "lat": 53.2,
+            "lng": 107.5,
+            "desc": "Sacred island with multiple Glazkovo cemeteries"
+        },
+        {
+            "name": "Kurma XI",
+            "lat": 53.7,
+            "lng": 108.6,
+            "desc": "Early Bronze Age cemetery with Glazkovo burials"
+        },
+        {
+            "name": "Selenga Delta",
+            "lat": 51.5,
+            "lng": 106.0,
+            "desc": "Southern Baikal large settlement & burial cluster"
+        }
+        ],
+        "papers": [
+        {
+            "title": "Weber et al. (2002) Prehistoric Foragers of the Cis‑Baikal",
+            "url": "https://baikalproject.artsrn.ualberta.ca/2003/03/19/prehistoric-foragers-proceedings/"
+        },
+        {
+            "title": "Damgaard et al. (2018) 137 ancient genomes across Eurasia",
+            "url": "https://www.nature.com/articles/nature25738"
+        }
+        ]
+    },
+    {
+        "name": "Serovo Culture",
+        "color": "pink",
+        "lat": 54.0,
+        "lng": 106.0,
+        "desc": "Late Neolithic hunter‑gatherer culture (c.3300–2200 BCE) preceding Glazkovo; distinctive pottery, bone tools, and extended burials.",
+        "borders": [
+        [57.0, 103.0],
+        [57.0, 111.0],
+        [52.0, 111.0],
+        [51.0, 105.0],
+        [54.0, 102.0],
+        [57.0, 103.0]
+        ],
+        "sites": [
+        {
+            "name": "Serovo (Type site)",
+            "lat": 53.8,
+            "lng": 105.8,
+            "desc": "Former village; classic Serovo cemetery under Bratsk reservoir"
+        },
+        {
+            "name": "Little Sea Microregion",
+            "lat": 53.6,
+            "lng": 107.2,
+            "desc": "Intensively studied Serovo burial cluster on Lake Baikal"
+        }
+        ],
+        "papers": [
+        {
+            "title": "Goriunova et al. (2020) Middle Holocene hunter‑gatherer mortuary practices",
+            "url": "https://baikalproject.artsrn.ualberta.ca/2020/12/01/middle-holocene-hunter-gatherer-mortuary-practices-in-the-little-sea-microregion-on-lake-baikal-part-ii-late-neolithic/"
+        }
+        ]
+    },
+    {
+        "name": "Khövsgöl Late Bronze Age",
+        "color": "yellow",
+        "lat": 50.5,
+        "lng": 100.0,
+        "desc": "Northern Mongolian LBA pastoralists (c.1400–900 BCE) in Khövsgöl region; Deer Stone‑Khirigsuur complex, mixed Baikal/Steppe ancestry.",
+        "borders": [
+        [52.5, 98.0],
+        [52.0, 102.0],
+        [49.0, 103.0],
+        [48.0, 99.0],
+        [50.0, 97.0],
+        [52.5, 98.0]
+        ],
+        "sites": [
+        {
+            "name": "Uushig Deer Stones",
+            "lat": 50.2,
+            "lng": 99.4,
+            "desc": "Iconic deer stone site near Murun; 14 standing stones"
+        },
+        {
+            "name": "Ushkin Uver",
+            "lat": 50.5,
+            "lng": 100.1,
+            "desc": "Khovsgol deer stone alignment with 15 monuments"
+        },
+        {
+            "name": "Khirigsuur Cemetery",
+            "lat": 50.8,
+            "lng": 99.7,
+            "desc": "Large rectangular stone‑fenced burial mound"
+        }
+        ],
+        "papers": [
+        {
+            "title": "Jeong et al. (2020) A dynamic 6,000‑year genetic history",
+            "url": "https://doi.org/10.1016/j.cell.2020.10.015"
+        },
+        {
+            "title": "Frohlich et al. (2008) Bronze Age burial mounds in Hovsgol",
+            "url": "https://www.researchgate.net/publication/288953699_Bronze_Age_burial_mounds_Khirigsuurs_in_the_Hovsgol_aimag_Mongolia_a_reconstruction_of_biological_and_social_histories"
+        }
+        ]
+    }
 ]
