@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>World Map</title>
+    <title>Steppe history on map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
     <style>
@@ -220,6 +220,26 @@
             }
         });
         map.addControl(new ToggleCultureBorders());
+
+        // Visitor counter
+        var VisitorControl = L.Control.extend({
+            options: { position: 'bottomleft' },
+            onAdd: function() {
+                var div = L.DomUtil.create('div', 'visitor-counter');
+                div.innerHTML = '<span id="fc-46272"></span>';
+                return div;
+            }
+        });
+        map.addControl(new VisitorControl());
+
+        var fcr = Math.floor(Math.random()*99999999999);
+        var _fcc = _fcc || []; _fcc.push(["46272"]); _fcc.push(["mint"]);
+        (function(){
+            var fc = document.createElement("script"); fc.async = true;
+            fc.src = "https://www.imcounter.com/fcount.php?rnd=" + fcr;
+            var sc = document.getElementById("fc-46272");
+            sc.appendChild(fc);
+        })();
     </script>
 </body>
 </html>

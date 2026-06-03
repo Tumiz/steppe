@@ -724,5 +724,81 @@
             "url": "https://www.researchgate.net/publication/288953699_Bronze_Age_burial_mounds_Khirigsuurs_in_the_Hovsgol_aimag_Mongolia_a_reconstruction_of_biological_and_social_histories"
         }
         ]
+    },
+    {
+        "name": "Yumin Culture",
+        "color": "#8B4513",
+        "lat": 42.07,
+        "lng": 114.32,
+        "desc": "Early Neolithic culture on the northern piedmont of eastern Yin Mountains and southeastern Inner Mongolian Plateau, dated 6600–5000 BCE (8600–7000 BP). The earliest confirmed Neolithic archaeological culture in Inner Mongolia. Economy dominated by hunting-foraging supplemented with primitive millet dry-farming; semi-sedentary seasonal camp settlements of semi-subterranean round/oval pit houses. Defined by sophisticated microlithic industry, unique pointed/round-bottom & flake-shaped low-fired pottery with pit-impressed decoration, abundant bone tools; lays foundational precedent for later mixed farming-pastoral traditions of North China steppe-ecotone. Named after the type-site Yumin, Huade County, Ulanqab, excavated from 2010 and formally defined as independent culture in 2015.",
+        "borders": [
+            [43.00, 107.40],
+            [43.15, 113.90],
+            [41.25, 115.85],
+            [40.52, 115.30],
+            [39.95, 112.55],
+            [40.18, 111.45],
+            [40.98, 107.70],
+            [42.65, 107.15],
+            [43.00, 107.40]
+        ],
+        "sites": [
+            {
+                "name": "Yumin",
+                "lat": 42.0699,
+                "lng": 114.3237,
+                "desc": "Type site in Huade County (Ulanqab, Inner Mongolia), core defining site of Yumin Culture; semi-subterranean pit-house seasonal settlement, diagnostic pointed-bottom pottery and full microlithic assemblage, dated 6400–6000 BCE (8400–8000 BP), excavated 2010–2016"
+            },
+            {
+                "name": "Simagou",
+                "lat": 42.18,
+                "lng": 114.15,
+                "desc": "Key Yumin settlement in Huade County; dual seasonal occupation layers, carbonized millet recovered confirming early dry farming, 6100–5500 BCE"
+            },
+            {
+                "name": "Narren Tolgoi",
+                "lat": 42.92,
+                "lng": 113.17,
+                "desc": "Large cluster site in Xianghuang Banner, Xilingol; over 200 semi-subterranean houses, rich faunal & charcoal remains, dated 5800–5400 BCE"
+            },
+            {
+                "name": "Xinglong",
+                "lat": 41.75,
+                "lng": 114.91,
+                "desc": "Typical border site in Kangbao County, Zhangjiakou (Hebei); early Yumin cultural layers, mixed hunter-cultivator material assemblage"
+            },
+            {
+                "name": "Sitai",
+                "lat": 41.22,
+                "lng": 115.78,
+                "desc": "Core Hebei-side site in Shangyi County; Phase IV deposits belong to late Yumin Culture, critical for cross-border cultural research between Inner Mongolia and North Hebei"
+            },
+            {
+                "name": "Daihai",
+                "lat": 40.55,
+                "lng": 112.68,
+                "desc": "Liangcheng Daihai lake-basin site cluster; marginal late-phase Yumin occupation layers overlain by later mid-Neolithic cultural deposits"
+            },
+            {
+                "name": "Baimiaozi",
+                "lat": 41.20,
+                "lng": 111.50,
+                "desc": "Chahar Right Middle Banner settlement & cemetery; standardized Yumin pit-house architecture and distinctive squat-burial customs without grave goods"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Preliminary Research on Yumin Culture (2015), Inner Mongolia Institute of Cultural Relics and Archaeology (official foundational monograph)",
+                "url": "https://www.nmg.gov.cn/government/research/yumin-culture-archaeology"
+            },
+            {
+                "title": "Sun et al. (2021) Ancient genomes document early millet agriculture and population genetics of Yumin Culture in North China steppe ecotone, Science Advances",
+                "url": "https://www.science.org/doi/10.1126/sciadv.abf0622"
+            },
+            {
+                "title": "Ye Canyang et al.(2023) Adze-shaped lithic production of Yumin Culture across Hebei-Inner Mongolia border, Acta Anthropologica Sinica",
+                "url": "https://www.anthropol.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=2321"
+            }
+        ]
     }
 ]
