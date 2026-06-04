@@ -1,6 +1,7 @@
 [
     {
         "name": "Yamnaya Culture",
+        "time": "3300–2600 BCE",
         "color": "#e74c3c",
         "lat": 48.2,
         "lng": 40.5,
@@ -21,39 +22,39 @@
         "sites": [
             {
                 "name": "Mykhailivka",
-                "lat": 47.3,
-                "lng": 33.5,
-                "desc": "Type settlement on the lower Dnieper River; yields the earliest confirmed Yamnaya occupation layers (3600–3000 BCE)"
+                "lat": 47.30,
+                "lng": 33.50,
+                "desc": "Type-site settlement on lower Dnieper River (Zaporizhzhia, Ukraine); Early Yamnaya formative layer 3600–3300 BCE, benchmark for Western Pontic Yamnaya material typology, rare permanent residential site among nomadic Yamnaya communities."
             },
             {
                 "name": "Repin",
-                "lat": 49.7,
-                "lng": 41.1,
-                "desc": "Key early Yamnaya site on the Don River, critical for establishing regional Bronze Age chronology"
+                "lat": 49.70,
+                "lng": 41.10,
+                "desc": "Repin Culture core site along Middle Don River; Late Eneolithic transitional precursor complex directly evolving into Don variant Early Yamnaya, key for chronological division between pre-Yamnaya and classic Yamnaya."
             },
             {
                 "name": "Khvalynsk",
-                "lat": 52.5,
-                "lng": 48.1,
-                "desc": "Large Eneolithic cemetery on the Volga River, ancestral cultural complex predating classic Yamnaya"
-            },
-            {
-                "name": "Pit Grave",
-                "lat": 46.6,
-                "lng": 31.8,
-                "desc": "Classic Yamnaya kurgan necropolis in southern Ukraine, representative of typical pit burial traditions"
+                "lat": 52.50,
+                "lng": 48.10,
+                "desc": "Large Middle Volga Eneolithic cemetery; Khvalynsk culture is primary Volga-Ural ancestral substratum for Eastern Yamnaya, predates classic Yamnaya by 500+ years (c.4500–3800 BCE)."
             },
             {
                 "name": "Novosvobodnaya",
-                "lat": 44.9,
-                "lng": 40.3,
-                "desc": "Transitional site in North Caucasus, showing cultural interaction between Yamnaya and local Caucasian groups"
+                "lat": 44.90,
+                "lng": 40.30,
+                "desc": "North Caucasus piedmont transitional kurgan site; Late Yamnaya frontier settlement revealing intensive genetic and material exchange between steppe Yamnaya and local North Caucasus farming populations."
             },
             {
                 "name": "Samara",
-                "lat": 53.1,
-                "lng": 50.2,
-                "desc": "Volga-Ural steppe cemetery, widely sampled for ancient DNA research on steppe ancestry"
+                "lat": 53.10,
+                "lng": 50.20,
+                "desc": "Samara River valley clustered kurgan necropolises (Middle Volga, Russia); primary ancient DNA sampling hotspot for Eastern Yamnaya, source of canonical Yamnaya autosomal reference genomes in global archaeogenetics."
+            },
+            {
+                "name": "Boldyrevo-IV",
+                "lat": 51.85,
+                "lng": 55.32,
+                "desc": "Orenburg (South Urals) elite kurgan cluster; hosts the largest single-diameter Yamnaya burial mound in Volga-Ural region, representative Eastern Yamnaya high-status interment custom."
             }
         ],
         "papers": [
@@ -73,7 +74,8 @@
     },
     {
         "name": "Afonasiev Culture",
-        "color": "red",
+        "time": "3300–2500 BCE",
+        "color": "#EBF1FC",
         "lat": 51.0,
         "lng": 89.0,
         "desc": "Early Bronze Age pastoral and metallurgical culture in southern Siberia, Altai, western Mongolia and northern Xinjiang (3300–2500 BCE); regarded as the easternmost extension of the Yamnaya horizon, with strong genetic links to early Indo-European speakers.",
@@ -170,6 +172,7 @@
     },
     {
         "name": "Sintashta Culture",
+        "time": "2200–1900 BCE",
         "color": "#2ecc71",
         "lat": 52.8,
         "lng": 59.8,
@@ -236,6 +239,7 @@
     },
     {
         "name": "Seima-Turbino Phenomenon",
+        "time": "2200–1900 BCE",
         "color": "#f39c12",
         "lat": 56.5,
         "lng": 52,
@@ -343,7 +347,8 @@
     },
     {
         "name": "Andronovo Culture",
-        "color": "darkred",
+        "time": "2000–1450 BCE",
+        "color": "#B9F20F",
         "lat": 51.6,
         "lng": 68.2,
         "desc": "Bronze Age pastoral and metallurgical culture (2000–1450 BCE) distributed across Southern Urals, Western Siberia and Central Asia. Closely associated with early Indo-Iranian groups, featuring kurgan burials, mobile herding and advanced bronze production.",
@@ -424,6 +429,7 @@
     },
     {
         "name": "Chemurchek Culture",
+        "time": "2750–1900 BCE",
         "color": "lightgreen",
         "lat": 48.0,
         "lng": 90.0,
@@ -481,7 +487,8 @@
     },
     {
         "name": "Okunev Culture",
-        "color": "blue",
+        "time": "2600–1750 BCE",
+        "color": "#27F5E4",
         "lat": 53.0,
         "lng": 91.0,
         "desc": "Middle Bronze Age culture of Minusinsk Basin, Tuva and Northern Mongolia (2600–1750 BCE), famous for stone stelae, kurgan burials and local Siberian pastoral traditions.",
@@ -539,10 +546,11 @@
     },
     {
         "name": "Ulaanzuukh‑Tevsh Culture",
+        "time": "c.1450–1000 BCE",
         "color": "#2EC5EF",
         "lat": 47.5,
         "lng": 112.0,
-        "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE, overlapping 3300–1500 BCE end phase). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
+        "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
         "borders": [
         [50.5, 108.0],
         [50.0, 118.0],
@@ -596,6 +604,7 @@
     },
     {
         "name": "Glazkovo Culture",
+        "time": "c.2200–1300 BCE",
         "color": "brown",
         "lat": 53.5,
         "lng": 107.0,
@@ -647,6 +656,7 @@
     },
     {
         "name": "Serovo Culture",
+        "time": "c.3300–2200 BCE",
         "color": "pink",
         "lat": 54.0,
         "lng": 106.0,
@@ -682,6 +692,7 @@
     },
     {
         "name": "Khövsgöl Late Bronze Age",
+        "time": "c.1400–900 BCE",
         "color": "yellow",
         "lat": 50.5,
         "lng": 100.0,
@@ -726,8 +737,79 @@
         ]
     },
     {
+        "name": "Deer Stone-Khirigsuur Complex (DSKC)",
+        "time": "1200–700 BCE",
+        "color": "#B7F7D1",
+        "lat": 49.85,
+        "lng": 100.75,
+        "desc": "Late Bronze Age pastoralist archaeological complex distributed across northern Mongolia, southern Tuva and western Sayan foothills, evolving from the late Khövsgöl Late Bronze Age formative culture. Fully mobile specialized ruminant pastoral economy centered on cattle, sheep, goat and early horse husbandry with confirmed ancient dairy consumption; defined by two iconic ritual monuments: carved anthropomorphic deer stone stelae and enclosed khirigsuur stone mortuary complexes consisting of central burial cairns plus peripheral sacrificial animal pits. Material culture dominated by arsenic bronze daggers, socketed arrowheads, rare coarse handmade pottery and stone personal ornaments; critical ancestral population source for subsequent Slab Grave Culture and early Xiongnu pastoral groups of the Eastern Eurasian steppe.",
+        "borders": [
+            [52.80, 92.20],
+            [53.20, 103.60],
+            [51.10, 109.20],
+            [47.20, 107.80],
+            [46.30, 101.50],
+            [47.90, 93.10],
+            [51.60, 91.30],
+            [52.80, 92.20]
+        ],
+        "sites": [
+            {
+                "name": "Khavtsal II",
+                "lat": 51.23,
+                "lng": 99.41,
+                "desc": "Type core cemetery near Lake Khövsgöl, northern Mongolia; late Khövsgöl LBA evolving into early DSKC layers, dozens of paired deer stone + khirigsuur burials, key radiocarbon dated benchmark 1180–890 BCE."
+            },
+            {
+                "name": "Arbulag",
+                "lat": 50.81,
+                "lng": 100.12,
+                "desc": "Large lakeshore DSKC necropolis cluster on southern Khövsgöl lakeside; primary site for dental calculus ancient dairy residue testing confirming steppe milk pastoralism."
+            },
+            {
+                "name": "Ulaan Taiga",
+                "lat": 52.15,
+                "lng": 95.78,
+                "desc": "Northern frontier DSKC site on Mongolia-Tuva border; high concentration of classic mature-style carved deer stones, northernmost core distribution marker of DSKC."
+            },
+            {
+                "name": "Bugat",
+                "lat": 48.72,
+                "lng": 102.35,
+                "desc": "Central Mongolia transitional DSKC cemetery; southern marginal site showing material exchange with contemporary Ulaanzuukh Culture communities."
+            },
+            {
+                "name": "Kyzyl-Dag",
+                "lat": 51.46,
+                "lng": 94.28,
+                "desc": "Tuva (Russia) western DSKC outpost site; khirigsuur monuments alongside Altai Bronze Age artefacts recording westward cultural communication with Chemurchek groups."
+            },
+            {
+                "name": "Terkhiin Tsagaan Nuur",
+                "lat": 48.19,
+                "lng": 99.83,
+                "desc": "Western Mongolia lake basin DSKC site group; scattered isolated deer stones and small khirigsuur mounds marking southwest boundary of the complex."
+            }
+        ],
+        "papers": [
+            {
+                "title": "Deer Stone-Khirigsuur Culture of Northern Mongolia (2017), Mongolian Institute of Archaeology, foundational regional monograph",
+                "url": "https://archaeology.mn/research/dskc-bronze-age"
+            },
+            {
+                "title": "Wilkin et al. (2018) Ancient dental calculus reveals early dairy pastoralism in Khövsgöl DSKC populations, PNAS",
+                "url": "https://www.pnas.org/doi/10.1073/pnas.1803866115"
+            },
+            {
+                "title": "Damgaard et al. (2018) Genome-wide data from Bronze Age Mongolia links DSKC ancestry to later Xiongnu populations, Nature Communications",
+                "url": "https://www.nature.com/articles/s41467-018-05992-1"
+            }
+        ]
+    },
+    {
         "name": "Yumin Culture",
-        "color": "#8B4513",
+        "time": "6600–5000 BCE",
+        "color": "lightgrey",
         "lat": 42.07,
         "lng": 114.32,
         "desc": "Early Neolithic culture on the northern piedmont of eastern Yin Mountains and southeastern Inner Mongolian Plateau, dated 6600–5000 BCE (8600–7000 BP). The earliest confirmed Neolithic archaeological culture in Inner Mongolia. Economy dominated by hunting-foraging supplemented with primitive millet dry-farming; semi-sedentary seasonal camp settlements of semi-subterranean round/oval pit houses. Defined by sophisticated microlithic industry, unique pointed/round-bottom & flake-shaped low-fired pottery with pit-impressed decoration, abundant bone tools; lays foundational precedent for later mixed farming-pastoral traditions of North China steppe-ecotone. Named after the type-site Yumin, Huade County, Ulanqab, excavated from 2010 and formally defined as independent culture in 2015.",

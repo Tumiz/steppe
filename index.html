@@ -26,11 +26,28 @@
             border: none !important;
             box-shadow: none !important;
             font-weight: bold;
-            font-size: 13px;
+            font-size: 20px;
             text-shadow: 0 1px 4px rgba(0,0,0,0.9);
             white-space: nowrap;
             text-align: center;
+            line-height: 1.3;
             transform: translate(-50%, -50%);
+        }
+        .text-marker .time {
+            font-size: 18px;
+            font-weight: normal;
+            opacity: 0.85;
+        }
+        .site-marker {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+            font-weight: normal;
+            font-size: 14px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 1px 3px rgba(0,0,0,0.9);
+            white-space: nowrap;
+            text-align: center;
+            transform: translate(-50%, 0);
         }
     </style>
 </head>
@@ -46,9 +63,13 @@
             attribution: '© Esri'
         }).addTo(map);
 
+        var cultureLabelPane = map.createPane('cultureLabelPane');
+        cultureLabelPane.style.zIndex = 650;
+
         var bordersLayer;
         var cultureBordersLayer = L.layerGroup().addTo(map);
         var markersGroup = L.layerGroup().addTo(map);
+        var siteLabelsLayer = L.layerGroup();
         var localMarkers = [];
 
         // Load local JSON markers
@@ -71,11 +92,11 @@
 
                     var icon = L.divIcon({
                         className: 'text-marker',
-                        html: '<span style="color:' + color + '">' + item.name + '</span>',
+                        html: '<span style="color:' + color + '">' + item.name + '</span><br><span class="time" style="color:' + color + '">' + (item.time || '') + '</span>',
                         iconSize: null,
                         iconAnchor: [0, 0]
                     });
-                    var marker = L.marker([item.lat, item.lng], { icon: icon })
+                    var marker = L.marker([item.lat, item.lng], { icon: icon, pane: 'cultureLabelPane' })
                         .addTo(markersGroup)
                         .bindPopup(buildPopupContent(item));
                     localMarkers.push({
@@ -106,11 +127,29 @@
                                 fillOpacity: 0.85
                             }).addTo(cultureBordersLayer);
                             siteMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
+                            var siteIcon = L.divIcon({
+                                className: 'site-marker',
+                                html: '<span style="color:#fff">' + site.name + '</span>',
+                                iconSize: null,
+                                iconAnchor: [-10, 18]
+                            });
+                            L.marker([site.lat, site.lng], { icon: siteIcon, interactive: false }).addTo(siteLabelsLayer);
                         });
                     }
                 });
             })
             .catch(function() {});
+
+        // Show site labels only when zoomed in enough
+        function updateSiteLabels() {
+            if (map.getZoom() >= 6) {
+                if (!map.hasLayer(siteLabelsLayer)) siteLabelsLayer.addTo(map);
+            } else {
+                if (map.hasLayer(siteLabelsLayer)) map.removeLayer(siteLabelsLayer);
+            }
+        }
+        map.on('zoomend', updateSiteLabels);
+        updateSiteLabels();
 
         // Custom geocoder: search local markers first, fall back to Nominatim
         var markerGeocoder = {
