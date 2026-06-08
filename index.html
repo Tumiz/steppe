@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
     <style>
         body { margin: 0; }
-        #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+        #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; cursor: crosshair; }
         .leaflet-control-geocoder { width: 280px; }
         .border-toggle {
             background: #fff;
@@ -44,6 +44,18 @@
             box-shadow: none !important;
             font-weight: normal;
             font-size: 14px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 1px 3px rgba(0,0,0,0.9);
+            white-space: nowrap;
+            text-align: center;
+            transform: translate(-50%, 0);
+        }
+        .city-dot-marker {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+            font-weight: normal;
+            font-size: 11px;
+            color: #fff;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 1px 3px rgba(0,0,0,0.9);
             white-space: nowrap;
             text-align: center;
@@ -199,7 +211,28 @@
         })
         .addTo(map);
 
-        // Country borders
+        // Country borders & features for reverse geocoding
+        var countryFeatures = [];
+        function pointInPolygon(lat, lng) {
+            var pt = [lng, lat];
+            for (var i = 0; i < countryFeatures.length; i++) {
+                var feat = countryFeatures[i];
+                var rings = feat.geometry.type === 'Polygon' ? [feat.geometry.coordinates] : feat.geometry.coordinates;
+                for (var r = 0; r < rings.length; r++) {
+                    var ring = rings[r][0];
+                    var inside = false;
+                    for (var k = 0, j = ring.length - 1; k < ring.length; j = k++) {
+                        var xi = ring[k][0], yi = ring[k][1];
+                        var xj = ring[j][0], yj = ring[j][1];
+                        if ((yi > pt[1]) !== (yj > pt[1]) && pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi) {
+                            inside = !inside;
+                        }
+                    }
+                    if (inside) return feat.properties.name;
+                }
+            }
+            return null;
+        }
         fetch('https://unpkg.com/world-atlas@2.0.2/countries-110m.json')
             .then(function(res) { return res.json(); })
             .then(function(data) {
@@ -212,6 +245,7 @@
                         fill: false
                     }
                 }).addTo(map);
+                countryFeatures = topojson.feature(data, data.objects.countries).features;
             });
 
         // Toggle country borders button
@@ -259,6 +293,108 @@
             }
         });
         map.addControl(new ToggleCultureBorders());
+
+        // Toggle modern cities button
+        var citiesVisible = true;
+        var ToggleCities = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var btn = L.DomUtil.create('button', 'border-toggle active');
+                btn.innerHTML = 'City';
+                L.DomEvent.on(btn, 'click', function() {
+                    citiesVisible = !citiesVisible;
+                    if (citiesVisible) {
+                        citiesLayer.addTo(map);
+                        btn.classList.add('active');
+                    } else {
+                        map.removeLayer(citiesLayer);
+                        btn.classList.remove('active');
+                    }
+                });
+                return btn;
+            }
+        });
+        map.addControl(new ToggleCities());
+
+        // Load city dataset for client-side reverse geocoding
+        var citiesData = [];
+        var citiesLayer = L.layerGroup();
+        var citiesLabelsLayer = L.layerGroup();
+        fetch('cities.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                citiesData = data;
+                data.forEach(function(city) {
+                    var dot = L.circleMarker([city.lat, city.lng], {
+                        radius: 4,
+                        color: '#000',
+                        weight: 1.5,
+                        fillColor: 'white',
+                        fillOpacity: 0.9
+                    }).bindPopup('<b>' + city.name + '</b><br>' + (city.state || '') + (city.state && city.country ? '<br>' : '') + (city.country || ''));
+                    citiesLayer.addLayer(dot);
+                    var label = L.divIcon({
+                        className: 'city-dot-marker',
+                        html: city.name,
+                        iconSize: null,
+                        iconAnchor: [-10, 16]
+                    });
+                    L.marker([city.lat, city.lng], { icon: label, interactive: false }).addTo(citiesLabelsLayer);
+                });
+                citiesLayer.addLayer(citiesLabelsLayer);
+                citiesLayer.addTo(map);
+            })
+            .catch(function() {});
+
+        function haversineKm(lat1, lon1, lat2, lon2) {
+            var R = 6371;
+            var dLat = (lat2 - lat1) * Math.PI / 180;
+            var dLon = (lon2 - lon1) * Math.PI / 180;
+            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        }
+
+        function nearestCity(lat, lng) {
+            var closest = null, minDist = Infinity;
+            for (var i = 0; i < citiesData.length; i++) {
+                var d = haversineKm(lat, lng, citiesData[i].lat, citiesData[i].lng);
+                if (d < minDist) { minDist = d; closest = citiesData[i]; }
+            }
+            return { city: closest, distKm: Math.round(minDist) };
+        }
+
+        // Show city labels only when zoomed in enough
+        function updateCityLabels() {
+            if (map.getZoom() >= 5) {
+                if (!citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.addLayer(citiesLabelsLayer);
+            } else {
+                if (citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.removeLayer(citiesLabelsLayer);
+            }
+        }
+        map.on('zoomend', updateCityLabels);
+        updateCityLabels();
+
+        // Click on map to reverse-geocode
+        var popup = L.popup({ closeButton: true, maxWidth: 300 });
+        map.on('click', function(e) {
+            var lat = e.latlng.lat, lng = e.latlng.lng;
+            var result = nearestCity(lat, lng);
+            var country = countryFeatures.length > 0 ? pointInPolygon(lat, lng) : null;
+            if (!country && result.city) country = result.city.country;
+            var html = '';
+            if (result.city && result.distKm < 200) {
+                html = '<b>' + result.city.name + '</b>';
+                if (result.city.state) html += '<br>' + result.city.state;
+                if (country) html += '<br>' + country;
+                html += '<br><small>' + result.distKm + ' km away</small>';
+            } else {
+                html = country ? '<b>' + country + '</b>' : '<i>Open area</i>';
+            }
+            html += '<hr style="margin:4px 0"><small>' + lat.toFixed(4) + ', ' + lng.toFixed(4) + '</small>';
+            popup.setLatLng(e.latlng).setContent(html).openOn(map);
+        });
 
         // Visitor counter
         var VisitorControl = L.Control.extend({
