@@ -79,7 +79,7 @@
         cultureLabelPane.style.zIndex = 650;
 
         var bordersLayer;
-        var cultureBordersLayer = L.layerGroup().addTo(map);
+        var cultureBordersLayer = L.layerGroup();
         var markersGroup = L.layerGroup().addTo(map);
         var siteLabelsLayer = L.layerGroup();
         var localMarkers = [];
@@ -90,6 +90,9 @@
             .then(function(data) {
                 function buildPopupContent(item) {
                     var html = '<b>' + item.name + '</b><br>' + (item.desc || '');
+                    if (item.haplogroups) {
+                        html += '<br><b>Main Y-DNA haplogroups:</b> ' + item.haplogroups;
+                    }
                     if (item.papers && item.papers.length > 0) {
                         html += '<br><hr style="margin:4px 0"><b>Related papers:</b><br>';
                         item.papers.forEach(function(p) {
@@ -273,11 +276,11 @@
         map.addControl(new ToggleBorders());
 
         // Toggle culture borders button
-        var cultureBordersVisible = true;
+        var cultureBordersVisible = false;
         var ToggleCultureBorders = L.Control.extend({
             options: { position: 'topright' },
             onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle active');
+                var btn = L.DomUtil.create('button', 'border-toggle');
                 btn.innerHTML = 'Culture border';
                 L.DomEvent.on(btn, 'click', function() {
                     cultureBordersVisible = !cultureBordersVisible;
@@ -295,11 +298,11 @@
         map.addControl(new ToggleCultureBorders());
 
         // Toggle modern cities button
-        var citiesVisible = true;
+        var citiesVisible = false;
         var ToggleCities = L.Control.extend({
             options: { position: 'topright' },
             onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle active');
+                var btn = L.DomUtil.create('button', 'border-toggle');
                 btn.innerHTML = 'City';
                 L.DomEvent.on(btn, 'click', function() {
                     citiesVisible = !citiesVisible;
@@ -342,7 +345,8 @@
                     L.marker([city.lat, city.lng], { icon: label, interactive: false }).addTo(citiesLabelsLayer);
                 });
                 citiesLayer.addLayer(citiesLabelsLayer);
-                citiesLayer.addTo(map);
+                if (citiesVisible) citiesLayer.addTo(map);
+                updateCityLabels();
             })
             .catch(function() {});
 
@@ -365,9 +369,19 @@
             return { city: closest, distKm: Math.round(minDist) };
         }
 
-        // Show city labels only when zoomed in enough
+        // Show city dots when zoomed out, city labels when zoomed in
         function updateCityLabels() {
-            if (map.getZoom() >= 5) {
+            var z = map.getZoom();
+            citiesLayer.eachLayer(function(layer) {
+                if (layer instanceof L.CircleMarker) {
+                    if (z > 5) {
+                        layer.setStyle({ opacity: 1, fillOpacity: 0.9 });
+                    } else {
+                        layer.setStyle({ opacity: 0, fillOpacity: 0 });
+                    }
+                }
+            });
+            if (z < 5) {
                 if (!citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.addLayer(citiesLabelsLayer);
             } else {
                 if (citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.removeLayer(citiesLabelsLayer);

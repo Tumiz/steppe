@@ -1,11 +1,75 @@
 [
     {
+        "name": "Botai Culture",
+        "time": "3700–3100 BCE",
+        "color": "#9B59B6",
+        "lat": 53.3,
+        "lng": 69.5,
+        "desc": "Late Neolithic/Eneolithic culture of northern Kazakhstan (3700–3100 BCE), renowned for pioneering the earliest known horse domestication based on dental bit wear, pottery lipid residues and mass horse culling patterns. Specialised horse-focused economy with semi-sedentary large pit-house settlements of up to 150+ houses; incised geometric pottery, microlithic industry. Ancient genomes confirm indigenous north-central steppe ancestry with long-term local continuity, genetically distinct from both Eastern hunter-gatherers and later Yamnaya steppe pastoralists.",
+        "haplogroups": "R1b (R1b-M73), Q1a",
+        "borders": [
+            [54.8, 65.5],
+            [54.8, 73.5],
+            [50.2, 73.5],
+            [49.8, 66.5],
+            [52.0, 65.0],
+            [54.8, 65.5]
+        ],
+        "sites": [
+            {
+                "name": "Botai",
+                "lat": 53.30,
+                "lng": 69.50,
+                "desc": "Type site (Akmola region, N Kazakhstan); the largest Botai settlement with over 150 pit-houses, mass horse bone deposits (up to 99% of faunal remains), earliest bit wear evidence on equid teeth at 3500–3300 BCE"
+            },
+            {
+                "name": "Krasny Yar",
+                "lat": 54.10,
+                "lng": 70.50,
+                "desc": "Major fortified Botai settlement on upper Ishim River; multiple pit-houses, horse corral structures, copper-working evidence"
+            },
+            {
+                "name": "Vasilkovka",
+                "lat": 52.80,
+                "lng": 68.00,
+                "desc": "Key Botai settlement cluster with dense pit-house occupation; abundant pottery and lithic assemblage"
+            },
+            {
+                "name": "Balandino",
+                "lat": 55.00,
+                "lng": 66.20,
+                "desc": "Northern Botai site on Tobol River; transitional local variant with mixed horse-fishing subsistence economy"
+            },
+            {
+                "name": "Roschinskoe",
+                "lat": 53.50,
+                "lng": 72.00,
+                "desc": "Eastern Botai settlement; faunal remains documenting horse herd demography and seasonal slaughter patterns"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Damgaard et al. (2018) The first horse herders and the impact of early Bronze Age steppe expansions into Asia",
+                "url": "https://www.science.org/doi/10.1126/science.aar7711"
+            },
+            {
+                "title": "Outram et al. (2009) The earliest horse harnessing and milking",
+                "url": "https://www.science.org/doi/10.1126/science.1168594"
+            },
+            {
+                "title": "Bendrey (2012) The Botai culture and horse domestication",
+                "url": "https://doi.org/10.1007/978-1-4020-4425-0_971"
+            }
+        ]
+    },
+    {
         "name": "Yamnaya Culture",
         "time": "3300–2600 BCE",
         "color": "#e74c3c",
         "lat": 48.2,
         "lng": 40.5,
         "desc": "Late Eneolithic to Early Bronze Age pastoral culture of the Pontic-Caspian Steppe (3300–2600 BCE). Famous for kurgan burials, mobile pastoralism, and being a major genetic source for Indo-European expansions across Europe and Asia.",
+        "haplogroups": "R1b (R1b-Z2103)",
         "borders": [
             [45.2, 27.8],
             [44.8, 34.5],
@@ -79,6 +143,7 @@
         "lat": 51.0,
         "lng": 89.0,
         "desc": "Early Bronze Age pastoral and metallurgical culture in southern Siberia, Altai, western Mongolia and northern Xinjiang (3300–2500 BCE); regarded as the easternmost extension of the Yamnaya horizon, with strong genetic links to early Indo-European speakers.",
+        "haplogroups": "R1b (R1b-M269, R1b-M73)",
         "borders": [
             [54.2, 84.0],
             [54.5, 89.0],
@@ -177,6 +242,7 @@
         "lat": 52.8,
         "lng": 59.8,
         "desc": "Middle Bronze Age culture of the Southern Urals and northern Kazakhstan (2200–1900 BCE). Famous for fortified circular settlements, the earliest known spoked-wheel chariots, large-scale metallurgy and elite kurgan burials; closely linked to early Indo-Iranian peoples.",
+        "haplogroups": "R1a (R1a-Z93)",
         "borders": [
             [54.8, 55.2],
             [53.0, 53.8],
@@ -244,6 +310,7 @@
         "lat": 56.5,
         "lng": 52,
         "desc": "Transcultural bronze-working network across northern Eurasia (2200–1900 BCE), famous for advanced metalwork and wide geographic spread.",
+        "haplogroups": "N, Q, R1a",
         "borders": [
             [
             [59.50, 21.00],
@@ -352,6 +419,7 @@
         "lat": 51.6,
         "lng": 68.2,
         "desc": "Bronze Age pastoral and metallurgical culture (2000–1450 BCE) distributed across Southern Urals, Western Siberia and Central Asia. Closely associated with early Indo-Iranian groups, featuring kurgan burials, mobile herding and advanced bronze production.",
+        "haplogroups": "R1a (R1a-Z93)",
         "borders": [
             [56.2, 54.8],
             [54.0, 52.2],
@@ -434,6 +502,7 @@
         "lat": 48.0,
         "lng": 90.0,
         "desc": "Early Bronze Age culture of Western Mongolia and Altai (2750–1900 BCE), known for rectangular stone enclosures, stelae, and mixed pastoral farming; post-Afanasievo cultural complex.",
+        "haplogroups": "Q1a, R1b",
         "borders": [
             [49.5, 87.0],
             [49.0, 93.0],
@@ -492,6 +561,7 @@
         "lat": 53.0,
         "lng": 91.0,
         "desc": "Middle Bronze Age culture of Minusinsk Basin, Tuva and Northern Mongolia (2600–1750 BCE), famous for stone stelae, kurgan burials and local Siberian pastoral traditions.",
+        "haplogroups": "Q (Q1a)",
         "borders": [
             [55.0, 88.0],
             [55.0, 94.0],
@@ -551,6 +621,7 @@
         "lat": 47.5,
         "lng": 112.0,
         "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
+        "haplogroups": "Q1a, C2b",
         "borders": [
         [50.5, 108.0],
         [50.0, 118.0],
@@ -609,6 +680,7 @@
         "lat": 53.5,
         "lng": 107.0,
         "desc": "Bronze Age hunter‑gatherer/fisher culture around Lake Baikal (c.2200–1300 BCE). Known for pottery, copper artifacts, and burials with stone cairns; likely proto‑Tungusic.",
+        "haplogroups": "Q (Q1a)",
         "borders": [
         [56.0, 104.0],
         [56.0, 112.0],
@@ -661,6 +733,7 @@
         "lat": 54.0,
         "lng": 106.0,
         "desc": "Late Neolithic hunter‑gatherer culture (c.3300–2200 BCE) preceding Glazkovo; distinctive pottery, bone tools, and extended burials.",
+        "haplogroups": "Q (Q1a)",
         "borders": [
         [57.0, 103.0],
         [57.0, 111.0],
@@ -697,6 +770,7 @@
         "lat": 50.5,
         "lng": 100.0,
         "desc": "Northern Mongolian LBA pastoralists (c.1400–900 BCE) in Khövsgöl region; Deer Stone‑Khirigsuur complex, mixed Baikal/Steppe ancestry.",
+        "haplogroups": "Q1a, C2b, N",
         "borders": [
         [52.5, 98.0],
         [52.0, 102.0],
@@ -731,7 +805,7 @@
             "url": "https://doi.org/10.1016/j.cell.2020.10.015"
         },
         {
-            "title": "[2020] Early Pastoral Economies and Herding Transitions in Eastern Eurasia",
+            "title": "William Timothy Treal Taylor (University of Colorado Boulder, 2020) Early Pastoral Economies and Herding Transitions in Eastern Eurasia",
             "url": "https://www.nature.com/articles/s41598-020-57735-y"
         },
         {
@@ -747,6 +821,7 @@
         "lat": 49.85,
         "lng": 100.75,
         "desc": "Late Bronze Age pastoralist archaeological complex distributed across northern Mongolia, southern Tuva and western Sayan foothills, evolving from the late Khövsgöl Late Bronze Age formative culture. Fully mobile specialized ruminant pastoral economy centered on cattle, sheep, goat and early horse husbandry with confirmed ancient dairy consumption; defined by two iconic ritual monuments: carved anthropomorphic deer stone stelae and enclosed khirigsuur stone mortuary complexes consisting of central burial cairns plus peripheral sacrificial animal pits. Material culture dominated by arsenic bronze daggers, socketed arrowheads, rare coarse handmade pottery and stone personal ornaments; critical ancestral population source for subsequent Slab Grave Culture and early Xiongnu pastoral groups of the Eastern Eurasian steppe.",
+        "haplogroups": "Q1a, C2b, N",
         "borders": [
             [52.80, 92.20],
             [53.20, 103.60],
@@ -817,6 +892,7 @@
         "lat": 42.07,
         "lng": 114.32,
         "desc": "Early Neolithic culture on the northern piedmont of eastern Yin Mountains and southeastern Inner Mongolian Plateau, dated 6600–5000 BCE (8600–7000 BP). The earliest confirmed Neolithic archaeological culture in Inner Mongolia. Economy dominated by hunting-foraging supplemented with primitive millet dry-farming; semi-sedentary seasonal camp settlements of semi-subterranean round/oval pit houses. Defined by sophisticated microlithic industry, unique pointed/round-bottom & flake-shaped low-fired pottery with pit-impressed decoration, abundant bone tools; lays foundational precedent for later mixed farming-pastoral traditions of North China steppe-ecotone. Named after the type-site Yumin, Huade County, Ulanqab, excavated from 2010 and formally defined as independent culture in 2015.",
+        "haplogroups": "N, C, O2",
         "borders": [
             [43.00, 107.40],
             [43.15, 113.90],
