@@ -38,6 +38,11 @@
             font-weight: normal;
             opacity: 0.85;
         }
+        .text-marker .haplo {
+            font-size: 14px;
+            font-weight: normal;
+            opacity: 0.7;
+        }
         .site-marker {
             background: none !important;
             border: none !important;
@@ -61,10 +66,54 @@
             text-align: center;
             transform: translate(-50%, 0);
         }
+        #time-slider-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(0,0,0,0.7);
+            padding: 6px 14px 4px;
+            border-radius: 4px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+            font-size: 13px;
+            color: #fff;
+        }
+        #time-slider-container label {
+            text-align: center;
+            padding-bottom: 2px;
+        }
+        #time-slider-ticks {
+            position: relative;
+            width: 100%;
+            height: 18px;
+        }
+        .tick-label {
+            position: absolute;
+            font-size: 10px;
+            top: 0;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0.85;
+        }
+        #time-slider-container input {
+            width: 100%;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
+    <div id="time-slider-container">
+        <label>Time: <span id="time-display">2000 BCE</span></label>
+        <div id="time-slider-ticks"></div>
+        <input type="range" id="time-slider">
+    </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
@@ -82,7 +131,20 @@
         var cultureBordersLayer = L.layerGroup();
         var markersGroup = L.layerGroup().addTo(map);
         var siteLabelsLayer = L.layerGroup();
+        var sitesDotsLayer = L.layerGroup();
         var localMarkers = [];
+        var cultureItems = [];
+        var oldestYear = -Infinity;
+        var newestYear = Infinity;
+        function parseTimeRange(str) {
+            var s = str.replace(/^c\.?\s*/i, '').trim();
+            var parts = s.split(/[–\-]/);
+            if (parts.length !== 2) return null;
+            var start = parseInt(parts[0].trim());
+            var end = parseInt(parts[1].trim().replace(/\s*BCE\s*$/, ''));
+            if (isNaN(start) || isNaN(end)) return null;
+            return { start: start, end: end };
+        }
 
         // Load local JSON markers
         fetch('markers.json')
@@ -105,9 +167,15 @@
                 data.forEach(function(item, idx) {
                     var color = item.color;
 
+                    var parsed = parseTimeRange(item.time);
+                    if (parsed) {
+                        if (parsed.start > oldestYear) oldestYear = parsed.start;
+                        if (parsed.end < newestYear) newestYear = parsed.end;
+                    }
+
                     var icon = L.divIcon({
                         className: 'text-marker',
-                        html: '<span style="color:' + color + '">' + item.name + '</span><br><span class="time" style="color:' + color + '">' + (item.time || '') + '</span>',
+                        html: '<span style="color:' + color + '">' + item.name + '</span><br><span class="time" style="color:' + color + '">' + (item.time || '') + '</span>' + (item.haplogroups ? '<br><span class="haplo" style="color:' + color + '">' + item.haplogroups + '</span>' : ''),
                         iconSize: null,
                         iconAnchor: [0, 0]
                     });
@@ -121,8 +189,9 @@
                         desc: item.desc
                     });
 
+                    var poly = null;
                     if (item.borders && item.borders.length > 0) {
-                        var poly = L.polygon(item.borders, {
+                        poly = L.polygon(item.borders, {
                             color: color,
                             weight: 2,
                             opacity: 0.8,
@@ -132,6 +201,8 @@
                         }).addTo(cultureBordersLayer);
                     }
 
+                    var siteDotMarkers = [];
+                    var siteLabelMarkers = [];
                     if (item.sites && item.sites.length > 0) {
                         item.sites.forEach(function(site) {
                             var siteMarker = L.circleMarker([site.lat, site.lng], {
@@ -140,31 +211,109 @@
                                 weight: 1.5,
                                 fillColor: color,
                                 fillOpacity: 0.85
-                            }).addTo(cultureBordersLayer);
+                            }).addTo(sitesDotsLayer);
                             siteMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
+                            siteDotMarkers.push(siteMarker);
                             var siteIcon = L.divIcon({
                                 className: 'site-marker',
                                 html: '<span style="color:#fff">' + site.name + '</span>',
                                 iconSize: null,
                                 iconAnchor: [-10, 18]
                             });
-                            L.marker([site.lat, site.lng], { icon: siteIcon, interactive: false }).addTo(siteLabelsLayer);
+                            var labelMarker = L.marker([site.lat, site.lng], { icon: siteIcon, interactive: false }).addTo(siteLabelsLayer);
+                            siteLabelMarkers.push(labelMarker);
                         });
                     }
+
+                    cultureItems.push({
+                        startYear: parsed ? parsed.start : null,
+                        endYear: parsed ? parsed.end : null,
+                        marker: marker,
+                        polygon: poly,
+                        siteDots: siteDotMarkers,
+                        siteLabels: siteLabelMarkers
+                    });
                 });
+
+                // Set up time slider
+                var slider = document.getElementById('time-slider');
+                var display = document.getElementById('time-display');
+                var defaultYear = 2000;
+                if (oldestYear > -Infinity && newestYear < Infinity) {
+                    slider.min = -oldestYear;
+                    slider.max = -newestYear;
+                    slider.value = -Math.min(Math.max(defaultYear, newestYear), oldestYear);
+                    display.textContent = (-slider.value) + ' BCE';
+
+                    // Add period ticks
+                    var tickMin = parseInt(slider.min);
+                    var tickRange = parseInt(slider.max) - tickMin;
+                    var rightEdge = parseInt(-slider.max);
+                    var periods = [
+                        { start: oldestYear, end: 3300, label: 'Neolithic' },
+                        { start: 3300, end: 2600, label: 'Copper Age' },
+                        { start: 2600, end: 800, label: 'Bronze Age' },
+                        { start: 800, end: rightEdge, label: 'Iron Age' }
+                    ];
+                    var ticksEl = document.getElementById('time-slider-ticks');
+                    for (var i = 0; i < periods.length; i++) {
+                        var p = periods[i];
+                        var mid = (p.start + p.end) / 2;
+                        var pos = ((-mid) - tickMin) / tickRange * 100;
+                        var span = document.createElement('span');
+                        span.className = 'tick-label';
+                        span.style.left = pos + '%';
+                        span.textContent = p.label;
+                        ticksEl.appendChild(span);
+                    }
+                }
+
+                function applyTimeFilter(year) {
+                    cultureItems.forEach(function(item) {
+                        var t0 = item.startYear, t1 = item.endYear;
+                        var visible = t0 !== null && t1 !== null && year <= t0 && year >= t1;
+
+                        if (visible) {
+                            if (!markersGroup.hasLayer(item.marker)) markersGroup.addLayer(item.marker);
+                        } else {
+                            if (markersGroup.hasLayer(item.marker)) markersGroup.removeLayer(item.marker);
+                        }
+
+                        if (item.polygon) {
+                            if (visible) {
+                                if (!cultureBordersLayer.hasLayer(item.polygon)) cultureBordersLayer.addLayer(item.polygon);
+                            } else {
+                                if (cultureBordersLayer.hasLayer(item.polygon)) cultureBordersLayer.removeLayer(item.polygon);
+                            }
+                        }
+
+                        item.siteDots.forEach(function(dot) {
+                            if (visible) {
+                                if (!sitesDotsLayer.hasLayer(dot)) sitesDotsLayer.addLayer(dot);
+                            } else {
+                                if (sitesDotsLayer.hasLayer(dot)) sitesDotsLayer.removeLayer(dot);
+                            }
+                        });
+
+                        item.siteLabels.forEach(function(label) {
+                            if (visible) {
+                                if (!siteLabelsLayer.hasLayer(label)) siteLabelsLayer.addLayer(label);
+                            } else {
+                                if (siteLabelsLayer.hasLayer(label)) siteLabelsLayer.removeLayer(label);
+                            }
+                        });
+                    });
+                }
+
+                slider.addEventListener('input', function() {
+                    var year = -parseInt(this.value);
+                    display.textContent = year + ' BCE';
+                    applyTimeFilter(year);
+                });
+
+                applyTimeFilter(-parseInt(slider.value));
             })
             .catch(function() {});
-
-        // Show site labels only when zoomed in enough
-        function updateSiteLabels() {
-            if (map.getZoom() >= 6) {
-                if (!map.hasLayer(siteLabelsLayer)) siteLabelsLayer.addTo(map);
-            } else {
-                if (map.hasLayer(siteLabelsLayer)) map.removeLayer(siteLabelsLayer);
-            }
-        }
-        map.on('zoomend', updateSiteLabels);
-        updateSiteLabels();
 
         // Custom geocoder: search local markers first, fall back to Nominatim
         var markerGeocoder = {
@@ -258,6 +407,7 @@
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle active');
                 btn.innerHTML = 'Country border';
+                L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     bordersVisible = !bordersVisible;
                     if (bordersLayer) {
@@ -282,6 +432,7 @@
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle');
                 btn.innerHTML = 'Culture border';
+                L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     cultureBordersVisible = !cultureBordersVisible;
                     if (cultureBordersVisible) {
@@ -297,13 +448,39 @@
         });
         map.addControl(new ToggleCultureBorders());
 
+        // Toggle key sites (dots + names) button
+        var keySitesVisible = false;
+        var ToggleKeySites = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var btn = L.DomUtil.create('button', 'border-toggle');
+                btn.innerHTML = 'Key site';
+                L.DomEvent.disableClickPropagation(btn);
+                L.DomEvent.on(btn, 'click', function() {
+                    keySitesVisible = !keySitesVisible;
+                    if (keySitesVisible) {
+                        sitesDotsLayer.addTo(map);
+                        siteLabelsLayer.addTo(map);
+                        btn.classList.add('active');
+                    } else {
+                        map.removeLayer(sitesDotsLayer);
+                        map.removeLayer(siteLabelsLayer);
+                        btn.classList.remove('active');
+                    }
+                });
+                return btn;
+            }
+        });
+        map.addControl(new ToggleKeySites());
+
         // Toggle modern cities button
         var citiesVisible = false;
         var ToggleCities = L.Control.extend({
             options: { position: 'topright' },
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'City';
+                btn.innerHTML = 'Modern cities';
+                L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     citiesVisible = !citiesVisible;
                     if (citiesVisible) {
@@ -346,7 +523,6 @@
                 });
                 citiesLayer.addLayer(citiesLabelsLayer);
                 if (citiesVisible) citiesLayer.addTo(map);
-                updateCityLabels();
             })
             .catch(function() {});
 
@@ -368,27 +544,6 @@
             }
             return { city: closest, distKm: Math.round(minDist) };
         }
-
-        // Show city dots when zoomed out, city labels when zoomed in
-        function updateCityLabels() {
-            var z = map.getZoom();
-            citiesLayer.eachLayer(function(layer) {
-                if (layer instanceof L.CircleMarker) {
-                    if (z > 5) {
-                        layer.setStyle({ opacity: 1, fillOpacity: 0.9 });
-                    } else {
-                        layer.setStyle({ opacity: 0, fillOpacity: 0 });
-                    }
-                }
-            });
-            if (z < 5) {
-                if (!citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.addLayer(citiesLabelsLayer);
-            } else {
-                if (citiesLayer.hasLayer(citiesLabelsLayer)) citiesLayer.removeLayer(citiesLabelsLayer);
-            }
-        }
-        map.on('zoomend', updateCityLabels);
-        updateCityLabels();
 
         // Click on map to reverse-geocode
         var popup = L.popup({ closeButton: true, maxWidth: 300 });
