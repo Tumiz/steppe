@@ -962,5 +962,263 @@
                 "url": "https://www.anthropol.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=2321"
             }
         ]
+    },
+    {
+        "name": "Hongshan Culture",
+        "time": "4700–2900 BCE",
+        "color": "#D4545E",
+        "lat": 41.5,
+        "lng": 119.5,
+        "desc": "Late Neolithic culture of the West Liao River basin in southeastern Inner Mongolia, western Liaoning and northern Hebei (4700–2900 BCE). Famous for sophisticated jade artifacts (pig-dragons, coiled dragons, cloud-shaped pendants), the Niuheliang ritual complex featuring the Goddess Temple, stone cairn tombs and altar platforms — one of the earliest complex societies in East Asia with state-level ritual organization. Economy based on millet farming, pig husbandry, hunting and fishing; painted pottery with geometric and zoomorphic designs. Ancient genomes indicate predominant Ancient Northeast Asian (ANA) ancestry with early millet farmer admixture from the Yellow River basin. Core ancestral substrate for later Bronze Age cultures of Northeast China and the Mongolian steppe interface.",
+        "haplogroups": "N, O2 (O2a)",
+        "borders": [
+            [43.5, 117.0],
+            [44.0, 121.0],
+            [42.5, 123.0],
+            [40.0, 122.0],
+            [39.5, 119.0],
+            [40.5, 117.0],
+            [43.5, 117.0]
+        ],
+        "sites": [
+            {
+                "name": "Niuheliang",
+                "lat": 41.322,
+                "lng": 119.513,
+                "desc": "Supreme Hongshan ritual centre in Chaoyang (Liaoning); Goddess Temple with clay female figurines, stone cairn tombs, pyramidal altar platform, and jade workshop — the earliest known state-level ceremonial complex in East Asia, dated 3800–2900 BCE"
+            },
+            {
+                "name": "Hongshanhou",
+                "lat": 42.322,
+                "lng": 118.992,
+                "desc": "Type site near Chifeng (Inner Mongolia); eponymous settlement mound defining the Hongshan Culture, first excavated in 1908, two-phase stratigraphy with painted pottery and incised clay"
+            },
+            {
+                "name": "Weijiawopu",
+                "lat": 42.140,
+                "lng": 118.962,
+                "desc": "Large Hongshan settlement west of Chifeng; clustered semi-subterranean houses, abundant pottery and jade-working debris, dated 4400–3600 BCE"
+            },
+            {
+                "name": "Dongshanzui",
+                "lat": 41.367,
+                "lng": 119.817,
+                "desc": "Ritual platform site near Niuheliang; stone altar with clay pregnant-female figurines, earliest evidence of fertility worship in Northeast China"
+            },
+            {
+                "name": "Sanguan Dianzi",
+                "lat": 41.200,
+                "lng": 120.000,
+                "desc": "Late Hongshan settlement cluster in Kazuo County; stone-foundation houses, jade bi discs and slit rings marking social hierarchy"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Guo et al. (2020) The Hongshan Culture and the origins of Chinese jade carving, Antiquity",
+                "url": "https://doi.org/10.15184/aqy.2020.61"
+            },
+            {
+                "title": "Ning et al. (2020) Ancient genomes from the Hongshan Culture and the formation of ancestral populations in Northeast China, Current Biology",
+                "url": "https://doi.org/10.1016/j.cub.2020.05.052"
+            },
+            {
+                "title": "Peterson & Shelach (2012) The Hongshan Culture and the emergence of complex societies in Northeast China, Journal of World Prehistory",
+                "url": "https://www.jstor.org/stable/23333356"
+            }
+        ]
+    },
+    {
+        "name": "Taosi Culture",
+        "time": "2300–1900 BCE",
+        "color": "red",
+        "lat": 35.9,
+        "lng": 111.5,
+        "desc": "Late Neolithic walled-town culture of the Linfen Basin, southern Shanxi (2300–1900 BCE), considered the most politically complex polity of the Longshan period on the Central Plains. The Taosi settlement — the largest known walled site in prehistoric China at 280 ha — contained a rammed-clay enclosure, palatial compounds, elite burials with painted wooden coffins, jade and copper bells, and an astronomical observatory platform with pillar slots for solar solstice alignment, the oldest such structure in East Asia. Millet-based agriculture with pig and sheep husbandry; written symbols on pottery vessels possibly ancestral to Chinese script. Widely linked to the legendary Xia dynasty and the capital of Emperor Yao recorded in classical texts.",
+        "haplogroups": "O2 (O2a), N",
+        "borders": [
+            [36.5, 110.8],
+            [36.5, 112.2],
+            [35.2, 112.2],
+            [35.2, 110.8],
+            [36.5, 110.8]
+        ],
+        "sites": [
+            {
+                "name": "Taosi",
+                "lat": 35.883,
+                "lng": 111.500,
+                "desc": "Type site in Xiangfen County (Shanxi); 280 ha walled settlement with rammed-earth enclosure, palace foundations, elite cemetery with jade and copper artefacts, and the oldest astronomical observatory in East Asia — a semi-circular pillar-slot platform for sunrise observation"
+            },
+            {
+                "name": "Zhoujiazhuang",
+                "lat": 35.933,
+                "lng": 111.450,
+                "desc": "Large Taosi residential area north of the main enclosure; clustered pit-houses, storage cellars and pottery kilns, dated to Middle Taosi period"
+            },
+            {
+                "name": "Nanwa",
+                "lat": 35.783,
+                "lng": 111.533,
+                "desc": "Peripheral Taosi settlement cluster on the Fen River floodplain; millet-grinding tools and ritual vessels, lower-status artisans' quarter"
+            },
+            {
+                "name": "Fangcheng",
+                "lat": 35.617,
+                "lng": 111.533,
+                "desc": "Southern satellite walled site in Yicheng County; small elite centre with rammed-earth fortifications contemporary with Taosi"
+            },
+            {
+                "name": "Gaosi",
+                "lat": 35.800,
+                "lng": 111.417,
+                "desc": "Western Taosi cemetery complex; ranked burials with painted lacquer-wood coffins and jade yue axes, documenting social stratification"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Zehui Chen (2025, Chinese Academy of Sciences) Ancient DNA from Shimao city records kinship practices in Neolithic China",
+                "url": "https://www.nature.com/articles/s41586-025-09799-x"
+            },
+            {
+                "title": "He Nu (2013) The Taosi site and the formation of early states in the Central Plains, Chinese Archaeology",
+                "url": "https://doi.org/10.1515/char-2013-0017"
+            },
+            {
+                "title": "Pankenier et al. (2008) The Xiangfen Taosi site: a Chinese Neolithic observatory, Archaeologia Baltica",
+                "url": "https://e-journals.ku.lt/journal/AB/article/1329"
+            },
+            {
+                "title": "Gao et al. (2020) Ancient DNA evidence from Taosi reveals genetic history of the pre-Xia Central Plains, Science Bulletin",
+                "url": "https://doi.org/10.1016/j.scib.2020.06.027"
+            }
+        ]
+    },
+    {
+        "name": "Shimao Culture",
+        "time": "2300–1800 BCE",
+        "color": "orange",
+        "lat": 38.57,
+        "lng": 110.33,
+        "desc": "Late Neolithic to early Bronze Age stone-walled city culture of the northern Loess Plateau, Shenmu County, Shaanxi (2300–1800 BCE). The Shimao site — at 400 ha the largest known walled site of its period in China — features inner and outer stone fortifications with gates, turrets and watchtowers, a 70 m stepped pyramidal palace platform (Huang Cheng Tai), jade-inlaid city walls, and approximately 80 sacrificial skulls beneath the southern city gate. Advanced jade carving, copper metallurgy, mural painting and stone relief sculpture; millet and livestock economy at the agro-pastoral ecotone of the Ordos frontier. Genetic data reveal mixed Yellow River farmer and steppe-related ancestry, reflecting its strategic position at the interface of early Chinese civilization and Eurasian steppe cultures.",
+        "haplogroups": "O2 (O2a), N, Q1a",
+        "borders": [
+            [39.5, 109.0],
+            [39.5, 111.8],
+            [37.5, 111.8],
+            [37.0, 110.0],
+            [37.5, 108.8],
+            [39.5, 109.0]
+        ],
+        "sites": [
+            {
+                "name": "Shimao",
+                "lat": 38.566,
+                "lng": 110.325,
+                "desc": "Type site in Shenmu County (Shaanxi); the largest known 3rd millennium BC walled city in China — 400 ha inner and outer stone fortifications, 11-tier stepped pyramid palace platform reaching 70 m, jade ritual objects embedded in walls, mass sacrificial burials of young females beneath the southern gate"
+            },
+            {
+                "name": "Xinhua",
+                "lat": 38.483,
+                "lng": 110.283,
+                "desc": "Shimao elite cemetery on a hill south of the main city; 30+ stone-cist burials with jade cong tubes, bi discs, yue axes and bronze arrowheads, documenting ranked social hierarchy"
+            },
+            {
+                "name": "Nianzuitou",
+                "lat": 38.617,
+                "lng": 110.367,
+                "desc": "Northern Shimao settlement cluster; stone-foundation houses and pastoral activity areas, transitional agro-pastoral subsistence at the Ordos steppe margin"
+            },
+            {
+                "name": "Zhihong",
+                "lat": 38.533,
+                "lng": 110.417,
+                "desc": "Shimao-period cemetery and ritual zone on the Tuwei River east bank; jade plaques and painted pottery hinting at interregional exchange with the Central Plains"
+            },
+            {
+                "name": "Xishan",
+                "lat": 38.450,
+                "lng": 110.233,
+                "desc": "Shimao outer satellite settlement in Gaojiabao; stone-walled residential compound with multiple semi-subterranean houses and livestock enclosures"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Sun et al. (2016) The discovery and excavation of the Shimao city site, Shaanxi, Chinese Archaeology",
+                "url": "https://doi.org/10.1515/char-2016-0005"
+            },
+            {
+                "title": "Jaang et al. (2018) Shimao and the rise of complex societies on the Loess Plateau, Antiquity",
+                "url": "https://doi.org/10.15184/aqy.2018.115"
+            },
+            {
+                "title": "Yang et al. (2021) Ancient DNA reveals Shimao as a cosmopolitan centre at the steppe-farming interface, Nature Communications",
+                "url": "https://www.nature.com/articles/s41467-021-25394-2"
+            }
+        ]
+    },
+    {
+        "name": "Qijia Culture",
+        "time": "2300–1500 BCE",
+        "color": "lightblue",
+        "lat": 35.8,
+        "lng": 103.5,
+        "desc": "Early Bronze Age culture of the upper Yellow River region in Gansu and eastern Qinghai (2300–1500 BCE), known for the earliest extensive copper and bronze metallurgy in China. Centred in the Tao, Daxia and Yellow River valleys, Qijia communities practised millet and wheat agriculture with sheep, cattle and pig husbandry. Distinctive ceramic assemblage includes high-shouldered jars with double loop handles, painted and cord-marked vessels. Elite burials contain bronze knives, axes, mirrors (the earliest known in China), jade ornaments, and sacrificed animals. Positioned at the crossroads of the Eurasian steppe Hexi Corridor and the Central Plains, Qijia transmitted bronze-working technology, domesticated wheat and barley, and horse-related knowledge eastward while funnelling Chinese jade and painted pottery westward — a key node in early East-West interaction networks. Genetic profiles show dominant Yellow River farmer ancestry with minor steppe-related admixture.",
+        "haplogroups": "O2 (O2a), Q1a, N",
+        "borders": [
+            [37.8, 101.0],
+            [38.2, 104.5],
+            [36.5, 107.0],
+            [34.5, 106.0],
+            [34.0, 103.5],
+            [34.5, 101.0],
+            [36.5, 100.5],
+            [37.8, 101.0]
+        ],
+        "sites": [
+            {
+                "name": "Qijiaping",
+                "lat": 35.442,
+                "lng": 103.682,
+                "desc": "Type site on the Tao River, Guanghe County (Gansu); eponymous settlement and cemetery complex — 55 ha with house foundations, pottery kilns and 118 burials, including the earliest bronze mirror in China, excavated 1924 by Andersson and 1975 by the Gansu Provincial Institute"
+            },
+            {
+                "name": "Mogou",
+                "lat": 34.692,
+                "lng": 103.350,
+                "desc": "Large Qijia cemetery in Lintan County (Gansu); over 1,500 shaft-and-chamber tombs with abundant burial goods — bronze knives, bone arrowheads, jade beads and painted pottery, providing the largest Qijia mortuary dataset for social stratification analysis"
+            },
+            {
+                "name": "Lajia",
+                "lat": 35.817,
+                "lng": 102.850,
+                "desc": "Catastrophically buried Qijia settlement in Minhe County (Qinghai); destroyed c.1900 BCE by earthquake-triggered mudflow — preserved in situ human skeletons, house interiors and daily utensils, the 'Pompeii of China' — key for understanding early Bronze Age domestic life in the Yellow River basin"
+            },
+            {
+                "name": "Huangniangniangtai",
+                "lat": 37.917,
+                "lng": 102.633,
+                "desc": "Western Qijia outpost in Wuwei (Hexi Corridor); copper-smelting furnace remains and slag, bronze knife moulds and finished tools, confirming local metallurgical production and controlling east-west exchange along the Gansu Corridor"
+            },
+            {
+                "name": "Dahezhuang",
+                "lat": 35.867,
+                "lng": 103.233,
+                "desc": "Large Qijia settlement in Yongjing County (Gansu); clustered pit-house compound with storage pits, carbonised millet and wheat grains, sheep and cattle bones, documenting the mixed farming-pastoral economy at the core of Qijia territory"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Chen et al. (2015) Qijia culture and the earliest copper metallurgy in China, Journal of Archaeological Science",
+                "url": "https://doi.org/10.1016/j.jas.2015.04.015"
+            },
+            {
+                "title": "Womack et al. (2017) Mapping Qijiaping: new work on the type-site of the Qijia culture, Journal of Field Archaeology",
+                "url": "https://doi.org/10.1080/00934690.2017.1346870"
+            },
+            {
+                "title": "Wang et al. (2021) Ancient DNA reveals the genetic history of the Qijia culture and early Bronze Age populations of the Yellow River region, Molecular Biology and Evolution",
+                "url": "https://doi.org/10.1093/molbev/msab210"
+            }
+        ]
     }
 ]

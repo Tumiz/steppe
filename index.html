@@ -11,16 +11,18 @@
         .leaflet-control-geocoder { width: 280px; }
         .border-toggle {
             background: #fff;
-            border: 2px solid rgba(0,0,0,0.2);
-            padding: 4px 8px;
+            border: none;
+            padding: 6px 10px;
             cursor: pointer;
             font-size: 12px;
-            border-radius: 3px;
             white-space: nowrap;
+            box-shadow: none;
+            outline: none;
+            border-radius: 3%;
         }
-        .border-toggle:hover { background: #f4f4f4; }
+        .border-toggle:hover { background: #e0e0e0; }
         .border-toggle.active { background: #333; color: #fff; }
-        .border-toggle.active:hover { background: #444; }
+        .border-toggle.active:hover { background: #555; }
         .text-marker {
             background: none !important;
             border: none !important;
@@ -41,7 +43,6 @@
         .text-marker .haplo {
             font-size: 14px;
             font-weight: normal;
-            opacity: 0.7;
         }
         .site-marker {
             background: none !important;
@@ -216,7 +217,7 @@
                             siteDotMarkers.push(siteMarker);
                             var siteIcon = L.divIcon({
                                 className: 'site-marker',
-                                html: '<span style="color:#fff">' + site.name + '</span>',
+                                html: '<span style="color:' + color + '">' + site.name + '</span>',
                                 iconSize: null,
                                 iconAnchor: [-10, 18]
                             });
@@ -417,7 +418,7 @@
             options: { position: 'topright' },
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle active');
-                btn.innerHTML = 'Country border';
+                btn.innerHTML = 'Country Border';
                 L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     bordersVisible = !bordersVisible;
@@ -442,7 +443,7 @@
             options: { position: 'topright' },
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Culture border';
+                btn.innerHTML = 'Culture Border';
                 L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     cultureBordersVisible = !cultureBordersVisible;
@@ -465,7 +466,7 @@
             options: { position: 'topright' },
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Key site';
+                btn.innerHTML = 'Key Sites';
                 L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     keySitesVisible = !keySitesVisible;
@@ -490,7 +491,7 @@
             options: { position: 'topright' },
             onAdd: function() {
                 var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Modern cities';
+                btn.innerHTML = 'Modern Cities';
                 L.DomEvent.disableClickPropagation(btn);
                 L.DomEvent.on(btn, 'click', function() {
                     citiesVisible = !citiesVisible;
