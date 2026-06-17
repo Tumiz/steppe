@@ -132,7 +132,7 @@
         var markersGroup = L.layerGroup().addTo(map);
         var siteLabelsLayer = L.layerGroup();
         var sitesDotsLayer = L.layerGroup();
-        var localMarkers = [];
+        var searchableItems = [];
         var cultureItems = [];
         var oldestYear = -Infinity;
         var newestYear = Infinity;
@@ -182,11 +182,11 @@
                     var marker = L.marker([item.lat, item.lng], { icon: icon, pane: 'cultureLabelPane' })
                         .addTo(markersGroup)
                         .bindPopup(buildPopupContent(item));
-                    localMarkers.push({
+                    searchableItems.push({
                         name: item.name,
                         center: L.latLng(item.lat, item.lng),
-                        marker: marker,
-                        desc: item.desc
+                        type: 'culture',
+                        marker: marker
                     });
 
                     var poly = null;
@@ -220,8 +220,15 @@
                                 iconSize: null,
                                 iconAnchor: [-10, 18]
                             });
-                            var labelMarker = L.marker([site.lat, site.lng], { icon: siteIcon, interactive: false }).addTo(siteLabelsLayer);
+                            var labelMarker = L.marker([site.lat, site.lng], { icon: siteIcon }).addTo(siteLabelsLayer);
+                            labelMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
                             siteLabelMarkers.push(labelMarker);
+                            searchableItems.push({
+                                name: site.name,
+                                center: L.latLng(site.lat, site.lng),
+                                type: 'site',
+                                siteMarker: siteMarker
+                            });
                         });
                     }
 
@@ -315,18 +322,19 @@
             })
             .catch(function() {});
 
-        // Custom geocoder: search local markers first, fall back to Nominatim
+        // Custom geocoder: search sites/cities/cultures first, fall back to Nominatim
         var markerGeocoder = {
             geocode: function(query, callback) {
                 var results = [];
                 var q = query.toLowerCase();
-                for (var i = 0; i < localMarkers.length; i++) {
-                    var m = localMarkers[i];
-                    if (m.name.toLowerCase().indexOf(q) !== -1) {
+                for (var i = 0; i < searchableItems.length; i++) {
+                    var item = searchableItems[i];
+                    if (item.name.toLowerCase().indexOf(q) !== -1) {
                         results.push({
-                            name: m.name,
-                            center: m.center,
-                            bbox: null
+                            name: item.name,
+                            center: item.center,
+                            bbox: null,
+                            source: item
                         });
                     }
                 }
@@ -348,11 +356,14 @@
         })
         .on('markgeocode', function(e) {
             var center = e.geocode.center;
+            var source = e.geocode.source;
             map.setView(center, 12);
-            // Open popup if it's a local marker
-            for (var i = 0; i < localMarkers.length; i++) {
-                if (localMarkers[i].center.equals(center)) {
-                    localMarkers[i].marker.openPopup();
+            if (source) {
+                if (source.type === 'culture') {
+                    source.marker.openPopup();
+                    return;
+                } else if (source.type === 'site') {
+                    source.siteMarker.openPopup();
                     return;
                 }
             }
@@ -505,6 +516,11 @@
             .then(function(data) {
                 citiesData = data;
                 data.forEach(function(city) {
+                    searchableItems.push({
+                        name: city.name + (city.country ? ', ' + city.country : ''),
+                        center: L.latLng(city.lat, city.lng),
+                        type: 'city'
+                    });
                     var dot = L.circleMarker([city.lat, city.lng], {
                         radius: 4,
                         color: '#000',
