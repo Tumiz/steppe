@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Steppe history on map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
@@ -106,6 +107,21 @@
             cursor: pointer;
             box-sizing: border-box;
         }
+        @media (max-width: 768px) {
+            .leaflet-control-geocoder { width: 200px; }
+            .border-toggle { padding: 8px 12px; font-size: 13px; }
+            #time-slider-container { width: 92%; padding: 8px 12px 6px; }
+            .tick-label { font-size: 9px; }
+            .text-marker { font-size: 16px; }
+            .text-marker .time { font-size: 14px; }
+            .text-marker .haplo { font-size: 11px; }
+        }
+        @media (max-width: 480px) {
+            .leaflet-control-geocoder { width: 160px; }
+            .border-toggle { padding: 6px 10px; font-size: 11px; }
+            #time-slider-container { width: 96%; padding: 6px 10px 4px; }
+            .leaflet-control-zoom a { width: 28px; height: 28px; line-height: 28px; font-size: 14px; }
+        }
     </style>
 </head>
 <body>
@@ -156,10 +172,19 @@
                     if (item.haplogroups) {
                         html += '<br><b>Main Y-DNA haplogroups:</b> ' + item.haplogroups;
                     }
+                    function fmtPaper(p) {
+                        var t = p.title;
+                        var m = t.match(/^(.+?)\s*\((\d{4})\)\s*(.+)/);
+                        if (!m) return t;
+                        var author = m[1].replace(/\s+et al\.?$/i, '').trim();
+                        var year = m[2];
+                        var name = m[3].trim().replace(/, .+/, '');
+                        return author + ' [' + (p.org || '') + '] (' + year + ') ' + name;
+                    }
                     if (item.papers && item.papers.length > 0) {
                         html += '<br><hr style="margin:4px 0"><b>Related papers:</b><br>';
                         item.papers.forEach(function(p) {
-                            html += '• <a href="' + p.url + '" target="_blank" rel="noopener">' + p.title + '</a><br>';
+                            html += '• <a href="' + p.url + '" target="_blank" rel="noopener">' + fmtPaper(p) + '</a><br>';
                         });
                     }
                     return html;
