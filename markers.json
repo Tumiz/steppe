@@ -1124,81 +1124,9 @@
         ]
     },
     {
-        "name": "Khövsgöl Late Bronze Age",
-        "time": "c.1400–900 BCE",
-        "color": "yellow",
-        "lat": 50.5,
-        "lng": 100,
-        "desc": "Northern Mongolian LBA pastoralists (c.1400–900 BCE) in Khövsgöl region; Deer Stone‑Khirigsuur complex, mixed Baikal/Steppe ancestry.",
-        "haplogroups": "Q1a, C2b, N",
-        "borders": [
-            [
-                52.5,
-                98
-            ],
-            [
-                52,
-                102
-            ],
-            [
-                49,
-                103
-            ],
-            [
-                48,
-                99
-            ],
-            [
-                50,
-                97
-            ],
-            [
-                52.5,
-                98
-            ]
-        ],
-        "sites": [
-            {
-                "name": "Uushig Deer Stones",
-                "lat": 50.2,
-                "lng": 99.4,
-                "desc": "Iconic deer stone site near Murun; 14 standing stones"
-            },
-            {
-                "name": "Ushkin Uver",
-                "lat": 50.5,
-                "lng": 100.1,
-                "desc": "Khovsgol deer stone alignment with 15 monuments"
-            },
-            {
-                "name": "Khirigsuur Cemetery",
-                "lat": 50.8,
-                "lng": 99.7,
-                "desc": "Large rectangular stone‑fenced burial mound"
-            }
-        ],
-        "papers": [
-            {
-                "title": "Jeong et al. (2020) A dynamic 6,000‑year genetic history",
-                "url": "https://doi.org/10.1016/j.cell.2020.10.015",
-                "org": "Seoul National University"
-            },
-            {
-                "title": "William Timothy Treal Taylor (University of Colorado Boulder, 2020) Early Pastoral Economies and Herding Transitions in Eastern Eurasia",
-                "url": "https://www.nature.com/articles/s41598-020-57735-y",
-                "org": "University of Colorado Boulder"
-            },
-            {
-                "title": "Frohlich et al. (2008) Bronze Age burial mounds in Hovsgol",
-                "url": "https://www.researchgate.net/publication/288953699_Bronze_Age_burial_mounds_Khirigsuurs_in_the_Hovsgol_aimag_Mongolia_a_reconstruction_of_biological_and_social_histories",
-                "org": "Smithsonian Institution"
-            }
-        ]
-    },
-    {
         "name": "Deer Stone-Khirigsuur Complex (DSKC)",
         "time": "1200–700 BCE",
-        "color": "#B7F7D1",
+        "color": "red",
         "lat": 49.85,
         "lng": 100.75,
         "desc": "Late Bronze Age pastoralist archaeological complex distributed across northern Mongolia, southern Tuva and western Sayan foothills, evolving from the late Khövsgöl Late Bronze Age formative culture. Fully mobile specialized ruminant pastoral economy centered on cattle, sheep, goat and early horse husbandry with confirmed ancient dairy consumption; defined by two iconic ritual monuments: carved anthropomorphic deer stone stelae and enclosed khirigsuur stone mortuary complexes consisting of central burial cairns plus peripheral sacrificial animal pits. Material culture dominated by arsenic bronze daggers, socketed arrowheads, rare coarse handmade pottery and stone personal ornaments; critical ancestral population source for subsequent Slab Grave Culture and early Xiongnu pastoral groups of the Eastern Eurasian steppe.",
@@ -1853,7 +1781,7 @@
     {
         "name": "Saka Culture",
         "time": "900–200 BCE",
-        "color": "#4A148C",
+        "color": "yellow",
         "lat": 47,
         "lng": 75,
         "desc": "Iron Age eastern nomadic culture of the Kazakh steppe, Semirechye, Tian Shan foothills and Altai (900–200 BCE), known in Persian inscriptions as the Sakā and forming the eastern branch of the broader Scytho-Siberian world. Horse-mounted pastoralists with composite-bow archery and Animal Style art; monumental royal kurgans with timber burial chambers, gold-foil ornamentation on clothing and weaponry (Issyk 'Golden Man'), and large-scale horse sacrifices (Berel, Arzhan). Key node in east-west exchange transmitting Achaemenid silver, Chinese silk and mirrors, and steppe gold across Eurasia. Genetic ancestry dominated by steppe pastoralist (Andronovo-related) sources with increasing East Asian admixture towards the eastern Saka range.",
@@ -1965,7 +1893,7 @@
     {
         "name": "Slab‑Grave Culture",
         "time": "1100–400 BCE",
-        "color": "#1565C0",
+        "color": "orange",
         "lat": 47,
         "lng": 107,
         "desc": "Late Bronze to Early Iron Age culture of Mongolia, Transbaikalia and northern China (1100–400 BCE), defined by rectangular stone-slab-lined burial cists covered with stone mounds. Successor to the Deer Stone-Khirigsuur Complex in eastern and central Mongolia, expanding north to Lake Baikal. Pastoral herders with mixed sheep, goat, cattle and horse economy; material culture includes bronze arrowheads, pipe-shaped and curved animal-style plaques, shell and stone beads, bone implements and coarse handmade pottery. Genetic profiles show predominantly Ancient Northeast Asian (ANA) ancestry derived from Ulaanzuukh-Tevsh and DSKC populations, with continuity into the later Xiongnu period. Slab graves are the most numerous Bronze/Early Iron Age monument type in Mongolia, with thousands of known examples across the eastern and central steppe.",
@@ -2059,6 +1987,519 @@
                 "title": "Lee et al. (2025) Ancient genomes from the Slab Grave culture reveal the formation of Early Iron Age Mongolia, Nature Communications",
                 "url": "https://doi.org/10.1038/s41467-025-63789-1",
                 "org": "Chinese Academy of Sciences"
+            }
+        ]
+    },
+    {
+        "name": "Karasuk Culture",
+        "time": "1500–800 BCE",
+        "color": "pink",
+        "lat": 53.5,
+        "lng": 91.0,
+        "desc": "Late Bronze Age culture of the Minusinsk Basin, Khakassia and the Altai-Sayan region (1500–800 BCE), known for its distinctive bronze daggers with curved animal-head hilts, socketed arrowheads, and tin-bronze metallurgy. Pastoral economy with cattle, sheep and horse herding; settled in permanent villages with timber-framed pit-houses. Famous for the Karasuk bronze casting tradition — curved knives, socketed celts and personal ornaments featuring the 'curl' and 'eye' motifs — and the easternmost distribution of Seima-Turbino type metalwork. Genetic profiles show a mix of Andronovo-derived steppe ancestry and local Siberian (Okunev-related) populations, with emerging East Asian admixture. Considered a key ancestral substrate for the subsequent Tagar Culture of the Iron Age Minusinsk Basin.",
+        "haplogroups": "R1a (R1a-Z93), Q1a",
+        "borders": [
+            [55.5, 88.0],
+            [55.5, 94.0],
+            [54.0, 96.0],
+            [52.0, 96.0],
+            [51.0, 93.0],
+            [51.5, 89.0],
+            [52.5, 87.0],
+            [54.5, 87.0],
+            [55.5, 88.0]
+        ],
+        "sites": [
+            {
+                "name": "Karasuk",
+                "lat": 53.8,
+                "lng": 91.4,
+                "desc": "Type site on the Karasuk River near Bateni, Minusinsk Basin; eponymous cemetery with classic bronze daggers and socketed arrowheads, defining the Karasuk material culture"
+            },
+            {
+                "name": "Bystrovka",
+                "lat": 54.5,
+                "lng": 89.5,
+                "desc": "Major Karasuk settlement with multiple pit-houses, bronze casting workshop debris and imported Central Asian ornaments"
+            },
+            {
+                "name": "Yarki",
+                "lat": 53.2,
+                "lng": 92.0,
+                "desc": "Rich Karasuk kurgan cemetery in the Upper Yenisei valley, yielding tin-bronze knives, stone scepters and early iron objects"
+            },
+            {
+                "name": "Malinovka",
+                "lat": 54.0,
+                "lng": 90.5,
+                "desc": "Large settlement complex with Karasuk and late Andronovo cultural layers; key for radiocarbon chronology of the transition"
+            },
+            {
+                "name": "Sukhanikha",
+                "lat": 53.5,
+                "lng": 93.0,
+                "desc": "Well-preserved Karasuk burial ground with intact grave assemblages, classic animal-head bronze daggers and pottery"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Legrand (2006) The Karasuk culture and the evolution of bronze metallurgy in the Minusinsk Basin, Archaeology, Ethnology and Anthropology of Eurasia",
+                "url": "https://doi.org/10.1134/S1563011006010045",
+                "org": "CNRS, Paris"
+            },
+            {
+                "title": "Childebayeva et al. (2024) Bronze Age Northern Eurasian genetics in the context of development of metallurgy and Siberian ancestry",
+                "url": "https://www.nature.com/articles/s42003-024-06343-x",
+                "org": "Max Planck Institute for Evolutionary Anthropology"
+            }
+        ]
+    },
+    {
+        "name": "Sarmatian Culture",
+        "time": "600 BCE–400 CE",
+        "color": "#C44D34",
+        "lat": 48.0,
+        "lng": 43.0,
+        "desc": "Iron Age nomadic confederation of the Pontic-Caspian steppe (600 BCE–400 CE), expanding from the Don–Volga region westward into the Pontic steppe, north Caucasus and eastern Europe. Horse-riding pastoral economy with seasonally mobile herding; famous for richly furnished elite burials with gold, silver and bronze ornaments, iron long swords (spatha), composite bows, lamellar armour and cloisonné-decorated metalwork. Sarmatian women are archaeologically attested as armed warriors — likely the source of Greek Amazon traditions. Successors to the Scythians in the Pontic steppe, eventually forming a Sarmatian-dominated zone from the Danube to the Urals. Genetic profiles show a mix of Srubnaya-derived steppe ancestry with increasing Central Asian and East Asian admixture, mediated by contact with Sauromatian and Saka populations.",
+        "haplogroups": "R1a (R1a-Z93), R1b, Q1a, N",
+        "borders": [
+            [49.5, 40.0],
+            [50.5, 44.0],
+            [50.0, 48.0],
+            [48.5, 50.0],
+            [47.0, 50.0],
+            [45.5, 48.0],
+            [45.5, 44.0],
+            [44.5, 41.0],
+            [44.0, 37.0],
+            [44.5, 33.0],
+            [45.5, 31.0],
+            [47.0, 31.0],
+            [48.5, 32.0],
+            [49.5, 36.0],
+            [49.5, 40.0]
+        ],
+        "sites": [
+            {
+                "name": "Kobyakovo",
+                "lat": 47.25,
+                "lng": 39.87,
+                "desc": "Major Sarmatian fortified settlement and burial ground at the mouth of the Don River (Rostov, Russia); rich 1st–2nd c. CE graves with gold torcs, Roman imports and cloisonné eagle brooches, key site for Sarmatian chronology"
+            },
+            {
+                "name": "Khokhlach",
+                "lat": 47.55,
+                "lng": 41.1,
+                "desc": "Elite Sarmatian kurgan near Novocherkassk (1st c. CE); famous for the 'Novocherkassk Treasure' — gold bracelets, torque, diadem with inlay, silver vessels, and ceremonial iron swords with gold scabbard fittings"
+            },
+            {
+                "name": "Poroghi",
+                "lat": 47.2,
+                "lng": 29.0,
+                "desc": "Sarmatian kurgan group in Moldova (2nd–1st c. BCE); female warrior burial with iron sword, arrowheads, bronze cauldron and Greek black-glaze pottery, supporting the warrior-woman archaeological profile"
+            },
+            {
+                "name": "Filipovka",
+                "lat": 52.2,
+                "lng": 55.3,
+                "desc": "Elite Sauromato-Sarmatian kurgan necropolis in the southern Urals (4th–3rd c. BCE); massive 80 m diameter kurgans with multiple chambers, deer-antler ceremonial headdresses overlaid with gold foil, gold vessel hoards, and hundreds of arrowheads"
+            },
+            {
+                "name": "Sokolova Mogila",
+                "lat": 47.55,
+                "lng": 34.2,
+                "desc": "Sarmatian royal kurgan on the lower Dnieper (1st c. CE); spectacular female elite burial with gold crown, Roman glass, bronze incense burners and a ceremonial silver rhyton, demonstrating Sarmatian control of Greek–Roman trade"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Davis-Kimball (1997) Warrior Women of the Eurasian Steppe, Archaeology",
+                "url": "https://www.jstor.org/stable/41780641",
+                "org": "University of California, Berkeley"
+            },
+            {
+                "title": "Abramova (2017) Sarmatians of the North Caucasus: Chronology and Cultural Links, Russian Academy of Sciences",
+                "url": "https://www.worldcat.org/title/1041427912",
+                "org": "Institute of Archaeology RAS"
+            },
+            {
+                "title": "Lazaridis et al. (2024) The genetic origin of the Indo-Europeans, bioRxiv",
+                "url": "https://doi.org/10.1101/2024.04.17.589479",
+                "org": "Harvard Medical School"
+            }
+        ]
+    },
+    {
+        "name": "Timber-Grave Culture",
+        "time": "1900–1200 BCE",
+        "color": "skyblue",
+        "lat": 49.5,
+        "lng": 47.0,
+        "desc": "Late Bronze Age culture of the Pontic-Caspian steppe and forest-steppe (1900–1200 BCE), also known as Srubnaya culture from Russian сруб ('timber frame') referring to its characteristic timber-lined burial chambers. Pastoral agricultural economy with cattle, sheep, horse and some pig husbandry; settled and semi-settled communities in river valleys with wattle-and-daub houses. Bronze metallurgy producing socketed axes, spears, daggers and sickles; bone arrowheads and cheek-pieces for chariot/horse control. Srubnaya pottery is flat-based with geometric incised and cord-impressed decoration. Represents a westward extension of the Andronovo-related Late Bronze Age steppe cultural horizon, considered ancestral to the Cimmerian and early Scythian populations. Genetic profiles are dominated by R1a-Z93 steppe ancestry.",
+        "haplogroups": "R1a (R1a-Z93)",
+        "borders": [
+            [55.0, 44.0],
+            [55.0, 52.0],
+            [54.0, 56.0],
+            [52.0, 54.0],
+            [50.0, 52.0],
+            [48.0, 50.0],
+            [46.5, 48.0],
+            [46.0, 42.0],
+            [46.5, 37.0],
+            [47.5, 33.0],
+            [48.5, 32.0],
+            [49.5, 35.0],
+            [52.0, 40.0],
+            [53.5, 42.0],
+            [55.0, 44.0]
+        ],
+        "sites": [
+            {
+                "name": "Srubnaya",
+                "lat": 51.0,
+                "lng": 49.0,
+                "desc": "Type site of the Srubnaya culture in the Volga–Ural interfluve (Saratov region, Russia); timber-lined burial pits under kurgans defining the eponymous grave construction tradition"
+            },
+            {
+                "name": "Il'inka",
+                "lat": 49.8,
+                "lng": 37.5,
+                "desc": "Large Srubnaya settlement on the Seversky Donets River (Kharkiv region, Ukraine); multiple semi-subterranean houses with stone hearths, bronze casting workshops, and grain storage pits"
+            },
+            {
+                "name": "Berezhnovka",
+                "lat": 50.2,
+                "lng": 45.5,
+                "desc": "Srubnaya settlement complex on the Volga River (Volgograd region); excavated pit-houses with quern stones, bronze sickle fragments, and extensive faunal remains documenting mixed farming"
+            },
+            {
+                "name": "Pokrovka",
+                "lat": 51.5,
+                "lng": 50.5,
+                "desc": "Key Srubnaya burial ground in the Samara–Volga region; multiple kurgans with timber chambers, horse gear and bronze socketed axes, pivotal for Srubnaya–Andronovo interaction studies"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Otroshchenko (2003) The Srubnaya culture: chronology and periodisation, Eurasia Antiqua",
+                "url": "https://www.worldcat.org/title/60594835",
+                "org": "National Academy of Sciences of Ukraine"
+            },
+            {
+                "title": "Juras et al. (2024) Ancient DNA and the population history of the Pontic-Caspian steppe Bronze Age, Nature Communications",
+                "url": "https://doi.org/10.1038/s41467-024-48572-7",
+                "org": "Adam Mickiewicz University"
+            }
+        ]
+    },
+    {
+        "name": "Abashevo Culture",
+        "time": "2300–1800 BCE",
+        "color": "#D2691E",
+        "lat": 54.5,
+        "lng": 47.0,
+        "desc": "Middle Bronze Age culture of the Middle Volga and Kama River forest-steppe zone (2300–1800 BCE), known for rich kurgan burials with ochre, elaborate bronze weaponry (spears, socketed axes, knives), and the earliest eastward spread of Seima-Turbino type metalwork west of the Urals. Economy combined cattle and horse pastoralism with some agriculture in river valleys. Distinctive pottery with cord-impressed and comb-stamped geometric decoration. Abashevo is ancestral to the Sintashta culture and closely related to early Andronovo; its fortified settlements and metallurgical sophistication represent a key formative stage for the subsequent chariot-using Sintashta-Petrovka horizon. Genetic profiles are dominated by R1a-Z93 steppe ancestry with limited European farmer admixture.",
+        "haplogroups": "R1a (R1a-Z93)",
+        "borders": [
+            [56.5, 43.0],
+            [57.0, 47.5],
+            [56.5, 51.0],
+            [55.0, 52.0],
+            [53.5, 51.0],
+            [52.5, 49.0],
+            [52.0, 46.5],
+            [52.5, 43.5],
+            [54.0, 42.0],
+            [55.5, 42.0],
+            [56.5, 43.0]
+        ],
+        "sites": [
+            {
+                "name": "Abashevo",
+                "lat": 54.7,
+                "lng": 47.8,
+                "desc": "Type cemetery in Chuvashia (Middle Volga); eponymous burial ground with rich ochre-sprinkled inhumations, bronze socketed axes and spears, defining the Abashevo material culture"
+            },
+            {
+                "name": "Pepkino",
+                "lat": 55.3,
+                "lng": 46.5,
+                "desc": "Abashevo kurgan group on the Sura River (Chuvashia); large elite mound with multiple chambers, copper-bronze tools, and abundant cord-impressed pottery"
+            },
+            {
+                "name": "Ufa II",
+                "lat": 54.7,
+                "lng": 55.9,
+                "desc": "Multi-layer settlement at the confluence of the Ufa and Belaya Rivers; Abashevo through Srubnaya occupation layers documenting continuous Bronze Age habitation in the Ural foothills"
+            },
+            {
+                "name": "Balanbash",
+                "lat": 55.5,
+                "lng": 51.0,
+                "desc": "Abashevo kurgan and settlement complex in Tatarstan; key site linking Abashevo metalwork with the Seima-Turbino bronze casting tradition"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Chernykh (1992) Ancient Metallurgy in the USSR: The Early Metal Age, Cambridge University Press",
+                "url": "https://www.worldcat.org/title/26304276",
+                "org": "Institute of Archaeology RAS"
+            },
+            {
+                "title": "Anthony (2007) The Horse, the Wheel, and Language",
+                "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language",
+                "org": "Hartwick College"
+            }
+        ]
+    },
+    {
+        "name": "Lower Xiajiadian Culture",
+        "time": "2200–1600 BCE",
+        "color": "#CD853F",
+        "lat": 41.5,
+        "lng": 119.5,
+        "desc": "Early Bronze Age culture of the West Liao River basin in southeastern Inner Mongolia and western Liaoning (2200–1600 BCE), succeeding the Hongshan Culture. Characterized by stone-fortified hilltop settlements with stone-paved foundations, defensive walls and bastions — among the earliest fortifications in East Asia. Economy based on millet agriculture, pig and sheep husbandry; sophisticated bronze metallurgy producing knives, rings, earrings and small tools, though large ritual vessels remained absent. Painted pottery with spiral and cloud-pattern designs continuing Hongshan artistic traditions. Jade working persisted but diminished in scale. Lower Xiajiadian is ancestral to the Upper Xiajiadian culture and represents the initial Bronze Age transition in Northeast China. Ancient genomes show predominantly Ancient Northeast Asian (ANA) ancestry with continued Yellow River millet farmer influence.",
+        "haplogroups": "N, O2 (O2a)",
+        "borders": [
+            [43.5, 118.0],
+            [43.5, 121.0],
+            [42.0, 123.0],
+            [40.5, 121.5],
+            [40.0, 119.0],
+            [41.0, 117.0],
+            [42.5, 117.0],
+            [43.5, 118.0]
+        ],
+        "sites": [
+            {
+                "name": "Xiajiadian",
+                "lat": 42.0,
+                "lng": 120.5,
+                "desc": "Type site near Chifeng (Inner Mongolia); eponymous lower-layer settlement defining the Lower Xiajiadian culture, with stone house foundations, ash pits, and early bronze artefacts"
+            },
+            {
+                "name": "Dadianzi",
+                "lat": 41.7,
+                "lng": 120.0,
+                "desc": "Large Lower Xiajiadian cemetery and settlement in Aohan Banner (Inner Mongolia); over 800 burials excavated, rich grave goods including painted pottery, bronze ornaments, oracle bones and cowrie shells, providing a high-resolution cultural chronology"
+            },
+            {
+                "name": "Sanguan Dianzi",
+                "lat": 41.4,
+                "lng": 120.2,
+                "desc": "Fortified Lower Xiajiadian hilltop settlement in Kazuo County (Liaoning); double stone walls, gate towers, stone-paved house platforms, and bronze casting moulds"
+            },
+            {
+                "name": "Erdaojing",
+                "lat": 42.2,
+                "lng": 119.8,
+                "desc": "Lower Xiajiadian stone fortress complex on the upper Laoha River; interconnected walled enclosures with reservoir features, showing advanced defensive planning"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Shelach (1999) Leadership Strategies, Economic Activity, and Interregional Interaction: Social Complexity in Northeast China, Kluwer Academic/Plenum",
+                "url": "https://www.worldcat.org/title/40943448",
+                "org": "Bar-Ilan University"
+            },
+            {
+                "title": "Ning et al. (2020) Ancient genomes from the Hongshan Culture and the formation of ancestral populations in Northeast China, Current Biology",
+                "url": "https://doi.org/10.1016/j.cub.2020.05.052",
+                "org": "Jilin University"
+            }
+        ]
+    },
+    {
+        "name": "Tagar Culture",
+        "time": "800–200 BCE",
+        "color": "#A0522D",
+        "lat": 53.8,
+        "lng": 91.5,
+        "desc": "Iron Age culture of the Minusinsk Basin, Khakassia and the upper Yenisei River (800–200 BCE), direct successor of the Karasuk Culture in southern Siberia. Famous for massive stone slab kurgans (up to 20 m diameter), richly furnished elite burials with bronze and iron daggers, battle-axes, bronze mirrors, belt plaques and massive bronze cauldrons in the Scytho-Siberian Animal Style. Economy based on semi-nomadic pastoralism — cattle, sheep, goats and horses — with seasonal movements between winter and summer pastures. Tagar metallurgists produced high-quality iron tools, socketed arrowheads (three-bladed trilobate type), and distinctive bronze 'Tagar cauldrons' with mushroom-shaped handles. Considered the Siberian Iron Age predecessor to the subsequent Tashtyk culture. Genetic profiles show continuity from Karasuk with additional influx of steppe pastoralist ancestry from the Saka world.",
+        "haplogroups": "R1a (R1a-Z93), Q1a",
+        "borders": [
+            [55.5, 88.5],
+            [55.5, 94.0],
+            [54.5, 96.0],
+            [52.5, 96.0],
+            [51.5, 93.5],
+            [51.5, 89.5],
+            [52.5, 87.5],
+            [54.5, 87.5],
+            [55.5, 88.5]
+        ],
+        "sites": [
+            {
+                "name": "Salbyk",
+                "lat": 54.0,
+                "lng": 91.0,
+                "desc": "The largest Tagar kurgan in the Minusinsk Basin ('Salbyk Palace'); 11 m high, 500 m circumference enclosure of standing stone slabs, weighing up to 50 tons each, 5th c. BCE — the monumental royal tomb of the Tagar elite"
+            },
+            {
+                "name": "Barsuchikha",
+                "lat": 53.7,
+                "lng": 91.8,
+                "desc": "Tagar kurgan group on the Yenisei River near Abakan; rich elite burials with bronze cauldrons, animal-style gold plaques, iron swords and Chinese-style bronzes documenting trans-Eurasian exchange"
+            },
+            {
+                "name": "Podgornoye",
+                "lat": 54.2,
+                "lng": 90.8,
+                "desc": "Type site of the Podgornoye variant phase of early Tagar (8th–6th c. BCE); timber and stone burial chambers, bronze arrowheads, and early iron knives"
+            },
+            {
+                "name": "Arzhan",
+                "lat": 52.0,
+                "lng": 93.0,
+                "desc": "Early nomadic royal kurgan in Tuva (9th–8th c. BCE), transitional Karasuk/Tagar period; Arzhan-1 and Arzhan-2 contain the richest Scythian-era gold assemblage in Siberia, with thousands of gold panther, deer and boar plaques"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Chlenova (1992) The Tagar Culture, in The Archaeology of the Steppes, BAR International Series",
+                "url": "https://www.worldcat.org/title/29353838",
+                "org": "Russian Academy of Sciences"
+            },
+            {
+                "title": "Murphy et al. (2023) Ancient genomes trace the origin and decline of the Scythians, Science Advances",
+                "url": "https://doi.org/10.1126/sciadv.adf6060",
+                "org": "Trinity College Dublin"
+            }
+        ]
+    },
+    {
+        "name": "Upper Xiajiadian Culture",
+        "time": "1200–600 BCE",
+        "color": "#B8860B",
+        "lat": 42.0,
+        "lng": 120.0,
+        "desc": "Late Bronze to Early Iron Age culture of the West Liao River basin in southeastern Inner Mongolia and western Liaoning (1200–600 BCE), succeeding the Lower Xiajiadian Culture. Known for distinctive bronze dagger-axes (ge), socketed arrowheads, horse bridles with antler cheek-pieces, and bronze animal-style plaques reflecting increasing interaction with the Eurasian steppe — including Scytho-Siberian motifs. Economy based on mixed pastoralism (sheep, goat, cattle, horse) and millet agriculture, with a shift toward greater mobility compared to the settled Lower Xiajiadian. Elite burials in stone-lined pits with bronze weapons, chariot gear and imported steppe bronzes. Upper Xiajiadian is considered the archaeological correlate of the proto-Donghu confederation, ancestral to later historical groups in eastern Mongolia and Manchuria. Genetic profiles show Ancient Northeast Asian (ANA) ancestry with notable influx of steppe pastoralist (R1a-Z93) and Siberian (Q1a) lineages.",
+        "haplogroups": "N, O2 (O2a), Q1a, R1a",
+        "borders": [
+            [44.0, 117.5],
+            [44.0, 122.0],
+            [42.5, 124.0],
+            [41.0, 123.0],
+            [40.0, 121.0],
+            [40.5, 118.5],
+            [41.5, 116.5],
+            [43.0, 116.5],
+            [44.0, 117.5]
+        ],
+        "sites": [
+            {
+                "name": "Xiajiadian Upper Layer",
+                "lat": 42.0,
+                "lng": 120.5,
+                "desc": "Type site; upper layer of the eponymous mound near Chifeng (Inner Mongolia), defining the Upper Xiajiadian culture with bronze daggers, horse gear, and stone-built tombs"
+            },
+            {
+                "name": "Dafu",
+                "lat": 41.8,
+                "lng": 121.0,
+                "desc": "Upper Xiajiadian cemetery in Fuxin County (Liaoning); over 200 burials with bronze dagger-axes, socketed arrowheads, and steppe-style animal plaques, a key assemblage for the Late Bronze Age transition in Northeast China"
+            },
+            {
+                "name": "Qianyang",
+                "lat": 41.5,
+                "lng": 119.8,
+                "desc": "Upper Xiajiadian settlement and bronze-casting workshop site near Chifeng; crucible fragments, stone moulds for dagger-axes and buttons, documenting local metallurgical production"
+            },
+            {
+                "name": "Zhongjiajie",
+                "lat": 42.3,
+                "lng": 120.8,
+                "desc": "Upper Xiajiadian stone fortress and burial complex in the Laohe River valley; well-preserved horse-gear assemblages with antler cheek-pieces and bronze bit fittings"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Shelach (1999) Leadership Strategies, Economic Activity, and Interregional Interaction: Social Complexity in Northeast China, Kluwer Academic/Plenum",
+                "url": "https://www.worldcat.org/title/40943448",
+                "org": "Bar-Ilan University"
+            },
+            {
+                "title": "Li et al. (2020) Ancient genomes reveal the complex genetic history of Upper Xiajiadian culture in Northeast China, Current Biology",
+                "url": "https://doi.org/10.1016/j.cub.2020.05.053",
+                "org": "Jilin University"
+            }
+        ]
+    },
+    {
+        "name": "Xiongnu",
+        "time": "300 BCE–200 CE",
+        "color": "#800000",
+        "lat": 45.5,
+        "lng": 108.0,
+        "desc": "The first nomadic empire of the eastern Eurasian steppe (300 BCE–200 CE), centred on the Mongolian Plateau with its heartland in the Orkhon and Tuul River valleys. A multi-ethnic confederation of herder-warrior groups unified under a supreme ruler (chanyu), controlling a vast territory from Lake Baikal to the Ordos and from the Altai to Manchuria. Economy based on mobile pastoralism (horse, sheep, cattle, goat, camel) supplemented by tribute, trade and raids against Han Dynasty China; the Xiongnu extracted silk, grain, metals and luxury goods via the Heqin treaty system and controlled the eastern segments of the early Silk Road. Elite burials in massive timber-chambered kurgans under stone mounds at sites like Noin-Ula and Gol Mod, yielding Chinese lacquerware, silk, bronze mirrors, iron weapons, gold belt plaques with animal-style and geometric designs, and the earliest known steppe pile carpets. The Xiongnu also developed a runic-like script attested on bronze seals and wooden slips. Genetic profiles are highly heterogeneous: predominantly Northeast Asian (C2, N, Q1a) with significant western steppe (R1a, R1b) and southern (O2) admixture, reflecting the confederate nature of the empire. Xiongnu collapsed in the 2nd c. CE under internal fragmentation, Han military campaigns and the rise of the Xianbei.",
+        "haplogroups": "Q1a, R1a, C2, N, O2",
+        "borders": [
+            [53.0, 100.0],
+            [53.5, 112.0],
+            [50.0, 120.0],
+            [48.0, 117.0],
+            [45.5, 115.0],
+            [43.0, 116.0],
+            [41.0, 120.0],
+            [40.0, 114.0],
+            [40.0, 110.0],
+            [41.0, 106.0],
+            [43.0, 104.0],
+            [44.5, 105.0],
+            [46.0, 101.0],
+            [47.5, 96.0],
+            [49.5, 95.0],
+            [51.5, 96.0],
+            [53.0, 100.0]
+        ],
+        "sites": [
+            {
+                "name": "Noin-Ula",
+                "lat": 48.378,
+                "lng": 106.243,
+                "desc": "Royal Xiongnu cemetery in the Selenge River basin (Batsümber, northern Mongolia); 200+ kurgans, excavated 1924–1925 by Kozlov and again in the 2000s — permafrost-preserved organic artefacts including Chinese lacquerware (dated by inscription to 13 BCE), silk embroideries, a felt Hunnic carpet with griffin motifs, wooden chariot parts, and Han bronze mirrors"
+            },
+            {
+                "name": "Gol Mod",
+                "lat": 44.833,
+                "lng": 104.75,
+                "desc": "Xiongnu imperial cemetery in the Khogno Khan range (Bulgan, central Mongolia); massive elite kurgan with a timber burial chamber, gold belt plaques, silver horse trappings, Chinese bronze vessels, iron swords and a bronze seal of a Xiongnu official dated to the 1st c. BCE–1st c. CE"
+            },
+            {
+                "name": "Tsaraam",
+                "lat": 47.72,
+                "lng": 107.7,
+                "desc": "Xiongnu elite kurgan complex 20 km north of Noin-Ula (Tuul River valley); multi-chambered timber tombs with Chinese silk, lacquer ear cups, iron lamellar armour, gold foil ornaments and sacrificed horses, 1st c. BCE–1st c. CE"
+            },
+            {
+                "name": "Naimaa Tolgoi",
+                "lat": 44.4,
+                "lng": 106.2,
+                "desc": "Xiongnu kurgan cluster in the Gobi steppe (Ömnögovi, southern Mongolia); elite burials with silk, bronze mirrors, iron daggers, wooden combs, and horse gear"
+            },
+            {
+                "name": "Ivolga",
+                "lat": 51.68,
+                "lng": 107.0,
+                "desc": "Xiongnu fortified settlement and necropolis on the Selenge River (Buryatia, Russia); one of the few permanent Xiongnu settlements — defensive ramparts, pit-houses, iron smelting furnaces, imported Han pottery and coins"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Brosseder & Miller (2011) Xiongnu Archaeology: Multidisciplinary Perspectives of the First Steppe Empire in Inner Asia, Bonn Contributions to Asian Archaeology",
+                "url": "https://www.worldcat.org/title/773211845",
+                "org": "University of Bonn"
+            },
+            {
+                "title": "Jeong et al. (2020) A dynamic 6,000-year genetic history of Eurasia's eastern steppe, Cell",
+                "url": "https://doi.org/10.1016/j.cell.2020.10.015",
+                "org": "Harvard Medical School"
+            },
+            {
+                "title": "Polosmak et al. (2008) The Noin-Ula Mounds: New Discoveries, Archaeology, Ethnology and Anthropology of Eurasia",
+                "url": "https://doi.org/10.1016/j.aeae.2008.11.001",
+                "org": "Institute of Archaeology RAS"
             }
         ]
     }
