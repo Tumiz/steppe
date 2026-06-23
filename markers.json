@@ -2,7 +2,7 @@
     {
         "name": "Botai Culture",
         "time": "3700–3100 BCE",
-        "color": "#9B59B6",
+        "color": "#ED2A2A",
         "lat": 53.3,
         "lng": 69.5,
         "desc": "Late Neolithic/Eneolithic culture of northern Kazakhstan (3700–3100 BCE), renowned for pioneering the earliest known horse domestication based on dental bit wear, pottery lipid residues and mass horse culling patterns. Specialised horse-focused economy with semi-sedentary large pit-house settlements of up to 150+ houses; incised geometric pottery, microlithic industry. Ancient genomes confirm indigenous north-central steppe ancestry with long-term local continuity, genetically distinct from both Eastern hunter-gatherers and later Yamnaya steppe pastoralists.",
@@ -86,7 +86,7 @@
     {
         "name": "Yamnaya Culture",
         "time": "3300–2600 BCE",
-        "color": "#e74c3c",
+        "color": "#2A63ED",
         "lat": 48.2,
         "lng": 40.5,
         "desc": "Late Eneolithic to Early Bronze Age pastoral culture of the Pontic-Caspian Steppe (3300–2600 BCE). Famous for kurgan burials, mobile pastoralism, and being a major genetic source for Indo-European expansions across Europe and Asia.",
@@ -196,7 +196,7 @@
     {
         "name": "Afonasiev Culture",
         "time": "3300–2500 BCE",
-        "color": "#EBF1FC",
+        "color": "#9CED2A",
         "lat": 51,
         "lng": 89,
         "desc": "Early Bronze Age pastoral and metallurgical culture in southern Siberia, Altai, western Mongolia and northern Xinjiang (3300–2500 BCE); regarded as the easternmost extension of the Yamnaya horizon, with strong genetic links to early Indo-European speakers.",
@@ -334,7 +334,7 @@
     {
         "name": "Sintashta Culture",
         "time": "2200–1900 BCE",
-        "color": "#2ecc71",
+        "color": "#DD2AED",
         "lat": 52.8,
         "lng": 59.8,
         "desc": "Middle Bronze Age culture of the Southern Urals and northern Kazakhstan (2200–1900 BCE). Famous for fortified circular settlements, the earliest known spoked-wheel chariots, large-scale metallurgy and elite kurgan burials; closely linked to early Indo-Iranian peoples.",
@@ -431,7 +431,7 @@
     {
         "name": "Seima-Turbino Phenomenon",
         "time": "2200–1900 BCE",
-        "color": "#f39c12",
+        "color": "#2AEDCD",
         "lat": 56.5,
         "lng": 52,
         "desc": "Transcultural bronze-working network across northern Eurasia (2200–1900 BCE), famous for advanced metalwork and wide geographic spread.",
@@ -625,7 +625,7 @@
     {
         "name": "Andronovo Culture",
         "time": "2000–1450 BCE",
-        "color": "#B9F20F",
+        "color": "#ED942A",
         "lat": 51.6,
         "lng": 68.2,
         "desc": "Bronze Age pastoral and metallurgical culture (2000–1450 BCE) distributed across Southern Urals, Western Siberia and Central Asia. Closely associated with early Indo-Iranian groups, featuring kurgan burials, mobile herding and advanced bronze production.",
@@ -746,7 +746,7 @@
     {
         "name": "Chemurchek Culture",
         "time": "2750–1900 BCE",
-        "color": "lightgreen",
+        "color": "#5B2AED",
         "lat": 48,
         "lng": 90,
         "desc": "Early Bronze Age culture of Western Mongolia and Altai (2750–1900 BCE), known for rectangular stone enclosures, stelae, and mixed pastoral farming; post-Afanasievo cultural complex.",
@@ -830,7 +830,7 @@
     {
         "name": "Okunev Culture",
         "time": "2600–1750 BCE",
-        "color": "#27F5E4",
+        "color": "#33ED2A",
         "lat": 53,
         "lng": 91,
         "desc": "Middle Bronze Age culture of Minusinsk Basin, Tuva and Northern Mongolia (2600–1750 BCE), famous for stone stelae, kurgan burials and local Siberian pastoral traditions.",
@@ -918,7 +918,7 @@
     {
         "name": "Ulaanzuukh‑Tevsh Culture",
         "time": "c.1450–1000 BCE",
-        "color": "#2EC5EF",
+        "color": "#ED2A6B",
         "lat": 47.5,
         "lng": 112,
         "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
@@ -997,7 +997,7 @@
     {
         "name": "Glazkovo Culture",
         "time": "c.2200–1300 BCE",
-        "color": "brown",
+        "color": "#2AA4ED",
         "lat": 53.5,
         "lng": 107,
         "desc": "Bronze Age hunter‑gatherer/fisher culture around Lake Baikal (c.2200–1300 BCE). Known for pottery, copper artifacts, and burials with stone cairns; likely proto‑Tungusic.",
@@ -1070,7 +1070,7 @@
     {
         "name": "Serovo Culture",
         "time": "c.3300–2200 BCE",
-        "color": "pink",
+        "color": "#DDED2A",
         "lat": 54,
         "lng": 106,
         "desc": "Late Neolithic hunter‑gatherer culture (c.3300–2200 BCE) preceding Glazkovo; distinctive pottery, bone tools, and extended burials.",
@@ -1126,7 +1126,7 @@
     {
         "name": "Deer Stone-Khirigsuur Complex (DSKC)",
         "time": "1200–700 BCE",
-        "color": "red",
+        "color": "#C42AED",
         "lat": 49.85,
         "lng": 100.75,
         "desc": "Late Bronze Age pastoralist archaeological complex distributed across northern Mongolia, southern Tuva and western Sayan foothills, evolving from the late Khövsgöl Late Bronze Age formative culture. Fully mobile specialized ruminant pastoral economy centered on cattle, sheep, goat and early horse husbandry with confirmed ancient dairy consumption; defined by two iconic ritual monuments: carved anthropomorphic deer stone stelae and enclosed khirigsuur stone mortuary complexes consisting of central burial cairns plus peripheral sacrificial animal pits. Material culture dominated by arsenic bronze daggers, socketed arrowheads, rare coarse handmade pottery and stone personal ornaments; critical ancestral population source for subsequent Slab Grave Culture and early Xiongnu pastoral groups of the Eastern Eurasian steppe.",
@@ -1224,7 +1224,7 @@
     {
         "name": "Yumin Culture",
         "time": "6600–5000 BCE",
-        "color": "lightgrey",
+        "color": "#2AED8B",
         "lat": 42.07,
         "lng": 114.32,
         "desc": "Early Neolithic culture on the northern piedmont of eastern Yin Mountains and southeastern Inner Mongolian Plateau, dated 6600–5000 BCE (8600–7000 BP). The earliest confirmed Neolithic archaeological culture in Inner Mongolia. Economy dominated by hunting-foraging supplemented with primitive millet dry-farming; semi-sedentary seasonal camp settlements of semi-subterranean round/oval pit houses. Defined by sophisticated microlithic industry, unique pointed/round-bottom & flake-shaped low-fired pottery with pit-impressed decoration, abundant bone tools; lays foundational precedent for later mixed farming-pastoral traditions of North China steppe-ecotone. Named after the type-site Yumin, Huade County, Ulanqab, excavated from 2010 and formally defined as independent culture in 2015.",
@@ -1332,7 +1332,7 @@
     {
         "name": "Hongshan Culture",
         "time": "4700–2900 BCE",
-        "color": "#D4545E",
+        "color": "#ED532A",
         "lat": 41.5,
         "lng": 119.5,
         "desc": "Late Neolithic culture of the West Liao River basin in southeastern Inner Mongolia, western Liaoning and northern Hebei (4700–2900 BCE). Famous for sophisticated jade artifacts (pig-dragons, coiled dragons, cloud-shaped pendants), the Niuheliang ritual complex featuring the Goddess Temple, stone cairn tombs and altar platforms — one of the earliest complex societies in East Asia with state-level ritual organization. Economy based on millet farming, pig husbandry, hunting and fishing; painted pottery with geometric and zoomorphic designs. Ancient genomes indicate predominant Ancient Northeast Asian (ANA) ancestry with early millet farmer admixture from the Yellow River basin. Core ancestral substrate for later Bronze Age cultures of Northeast China and the Mongolian steppe interface.",
@@ -1420,7 +1420,7 @@
     {
         "name": "Taosi Culture",
         "time": "2300–1900 BCE",
-        "color": "red",
+        "color": "#2A4BED",
         "lat": 35.9,
         "lng": 111.5,
         "desc": "Late Neolithic walled-town culture of the Linfen Basin, southern Shanxi (2300–1900 BCE), considered the most politically complex polity of the Longshan period on the Central Plains. The Taosi settlement — the largest known walled site in prehistoric China at 280 ha — contained a rammed-clay enclosure, palatial compounds, elite burials with painted wooden coffins, jade and copper bells, and an astronomical observatory platform with pillar slots for solar solstice alignment, the oldest such structure in East Asia. Millet-based agriculture with pig and sheep husbandry; written symbols on pottery vessels possibly ancestral to Chinese script. Widely linked to the legendary Xia dynasty and the capital of Emperor Yao recorded in classical texts.",
@@ -1505,7 +1505,7 @@
     {
         "name": "Shimao Culture",
         "time": "2300–1800 BCE",
-        "color": "orange",
+        "color": "#74ED2A",
         "lat": 38.57,
         "lng": 110.33,
         "desc": "Late Neolithic to early Bronze Age stone-walled city culture of the northern Loess Plateau, Shenmu County, Shaanxi (2300–1800 BCE). The Shimao site — at 400 ha the largest known walled site of its period in China — features inner and outer stone fortifications with gates, turrets and watchtowers, a 70 m stepped pyramidal palace platform (Huang Cheng Tai), jade-inlaid city walls, and approximately 80 sacrificial skulls beneath the southern city gate. Advanced jade carving, copper metallurgy, mural painting and stone relief sculpture; millet and livestock economy at the agro-pastoral ecotone of the Ordos frontier. Genetic data reveal mixed Yellow River farmer and steppe-related ancestry, reflecting its strategic position at the interface of early Chinese civilization and Eurasian steppe cultures.",
@@ -1587,9 +1587,101 @@
         ]
     },
     {
+        "name": "Zhukaigou Culture",
+        "time": "2000–1400 BCE",
+        "color": "#ED2A8C",
+        "lat": 39.5,
+        "lng": 109.8,
+        "desc": "Early Bronze Age culture of the Ordos Plateau in south-central Inner Mongolia (2000–1400 BCE), known from the type site at Zhukaigou in Ejin Horo Banner. Represents a transitional agro-pastoral society at the steppe-farming interface, initially reliant on millet agriculture and pig husbandry in earlier phases, shifting progressively toward sheep, goat and cattle pastoralism and greater mobility over time — a trajectory that mirrors the broader Bronze Age pastoralisation of the northern Chinese frontier. Distinctive ceramic assemblage includes li tripods, liyan steamers, guan jars and basins, predominantly hand-made with cord-marked, basket-impressed and polished surface finishes, continuing the local Longshanoid ceramic tradition. Bronze artefacts appear by the Middle Zhukaigou phase (c. 1700 BCE): small tools, knives, awls, earrings and arrowheads, reflecting early local bronze-working knowledge transmitted through the Hexi Corridor from the Qijia Culture and further west. Burials are predominantly shaft pit tombs with flexed supine inhumations, occasionally with stone or timber chamber linings. Genetic profiles from Zhukaigou remains indicate predominant Yellow River millet farmer ancestry (O2, N) with detectable steppe-related (Q1a, R1a) admixture, consistent with its position as a conduit between the Central Plains Bronze Age and the Eurasian steppe. The culture declines after 1400 BCE as increasing aridity and the expansion of pastoral nomads transform the Ordos steppe.",
+        "haplogroups": "O2 (O2a), N, Q1a, R1a",
+        "borders": [
+            [
+                40.5,
+                107.0
+            ],
+            [
+                40.8,
+                109.5
+            ],
+            [
+                40.5,
+                111.5
+            ],
+            [
+                38.8,
+                111.5
+            ],
+            [
+                38.0,
+                110.5
+            ],
+            [
+                38.0,
+                108.0
+            ],
+            [
+                38.5,
+                106.5
+            ],
+            [
+                40.5,
+                107.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Zhukaigou",
+                "lat": 39.5,
+                "lng": 109.8,
+                "desc": "Type site in Ejin Horo Banner (Ordos, Inner Mongolia); excavated 1977–1984, 83 shaft pit tombs and 10 house foundations spanning three phases (Early c.2000–1700, Middle c.1700–1500, Late c.1500–1400 BCE), documenting the gradual transition from settled agriculture to mobile pastoralism, with earliest local bronze tools appearing in Middle phase deposits"
+            },
+            {
+                "name": "Xinhai",
+                "lat": 39.92,
+                "lng": 110.08,
+                "desc": "Zhukaigou cemetery in Jungar Banner (Ordos); 30+ shaft pit tombs with cord-marked pottery, sheep-goat bones and bronze earrings, transitional agro-pastoral assemblage from the Middle Zhukaigou phase"
+            },
+            {
+                "name": "Zhaimao",
+                "lat": 39.22,
+                "lng": 110.05,
+                "desc": "Zhukaigou period settlement and cemetery in Fugu County (Shaanxi), on the south bank of the Yellow River opposite Ordos; stone-lined pit burials with ceramic li tripods and bronzes, marking the southern extent of Zhukaigou influence"
+            },
+            {
+                "name": "Nanshan",
+                "lat": 39.8,
+                "lng": 109.0,
+                "desc": "Zhukaigou settlement site in Dongsheng District (Ordos); clustered semi-subterranean houses, ash pits with carbonised millet, sheep and cattle bones, and stone harvesting knives, representing the agricultural base of early Zhukaigou economy"
+            },
+            {
+                "name": "Xishan",
+                "lat": 39.68,
+                "lng": 110.5,
+                "desc": "Late Zhukaigou cemetery in Jungar Banner (Ordos); predominance of sheep-goat remains in burials, reduced pig frequency and increased bronze ornament frequency, marking the late-phase pastoral shift c.1500–1400 BCE"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Shelach (2009) Prehistoric societies on the northern frontiers of China: archaeological perspectives on identity formation and change during the first millennium BCE, Equinox",
+                "url": "https://www.worldcat.org/title/318100250",
+                "org": "Bar-Ilan University"
+            },
+            {
+                "title": "Li (2018) The Zhukaigou Culture and the formation of the northern Chinese Bronze Age frontier, Antiquity",
+                "url": "https://doi.org/10.15184/aqy.2018.138",
+                "org": "Chinese Academy of Social Sciences"
+            },
+            {
+                "title": "Ning et al. (2020) Ancient genomes from northern China suggest links between subsistence changes and human migration, Nature Communications",
+                "url": "https://www.nature.com/articles/s41467-020-16557-2",
+                "org": "Jilin University"
+            }
+        ]
+    },
+    {
         "name": "Qijia Culture",
         "time": "2300–1500 BCE",
-        "color": "lightblue",
+        "color": "#2AE6ED",
         "lat": 35.8,
         "lng": 103.5,
         "desc": "Early Bronze Age culture of the upper Yellow River region in Gansu and eastern Qinghai (2300–1500 BCE), known for the earliest extensive copper and bronze metallurgy in China. Centred in the Tao, Daxia and Yellow River valleys, Qijia communities practised millet and wheat agriculture with sheep, cattle and pig husbandry. Distinctive ceramic assemblage includes high-shouldered jars with double loop handles, painted and cord-marked vessels. Elite burials contain bronze knives, axes, mirrors (the earliest known in China), jade ornaments, and sacrificed animals. Positioned at the crossroads of the Eurasian steppe Hexi Corridor and the Central Plains, Qijia transmitted bronze-working technology, domesticated wheat and barley, and horse-related knowledge eastward while funnelling Chinese jade and painted pottery westward — a key node in early East-West interaction networks. Genetic profiles show dominant Yellow River farmer ancestry with minor steppe-related admixture.",
@@ -1679,9 +1771,457 @@
         ]
     },
     {
+        "name": "Xia Dynasty",
+        "time": "2070–1600 BCE",
+        "color": "#EDBC2A",
+        "lat": 34.5,
+        "lng": 112.5,
+        "desc": "First Chinese dynasty (2070–1600 BCE) in traditional historiography, widely equated with the Erlitou culture of the Yiluo River valley in western Henan. The Erlitou site (c.1900–1500 BCE) was a planned urban centre of 300+ ha with a palatial compound, rammed-earth foundations, bronze workshops producing ritual vessels (jue, jia, ding) and weapons, elite burials with turquoise-inlaid bronze plaques and cowrie shells, and the earliest known bronze foundry in East Asia. Millet and rice agriculture with pig, sheep and cattle husbandry; advanced ceramic industry with distinctive dark grey burnished wares. The Xia dynasty is recorded in Sima Qian's Shiji and the Bamboo Annals as the founding dynasty of Chinese civilization, credited with controlling the Yellow River flood and establishing hereditary succession. The Erlitou polity abruptly declined c.1500 BCE, coinciding with the rise of the Shang. Ancient genomes from Erlitou show dominant Yellow River farmer ancestry (O2, N) with limited peripheral admixture.",
+        "haplogroups": "O2 (O2a), N",
+        "borders": [
+            [
+                35.0,
+                111.0
+            ],
+            [
+                35.2,
+                113.0
+            ],
+            [
+                34.5,
+                114.0
+            ],
+            [
+                33.8,
+                113.5
+            ],
+            [
+                33.5,
+                112.2
+            ],
+            [
+                33.8,
+                111.0
+            ],
+            [
+                34.5,
+                110.5
+            ],
+            [
+                35.0,
+                111.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Erlitou",
+                "lat": 34.683,
+                "lng": 112.693,
+                "desc": "Type site and capital of the Xia dynasty / Erlitou culture in Yanshi (Luoyang, Henan); 300+ ha urban centre with a palace complex of rammed-earth foundations, elite bronze foundry producing the earliest ritual bronze vessels in China (jue, jia, ding), and turquoise-inlaid bronze plaques — widely regarded as the archaeological correlate of the Xia dynasty capital"
+            },
+            {
+                "name": "Xinzhai",
+                "lat": 34.433,
+                "lng": 113.333,
+                "desc": "Fortified Xia-period settlement in Xinmi (Henan); double moat and rammed-earth enclosure, transitional Longshan-to-Erlitou cultural layers, key for understanding the formation of early Xia political power"
+            },
+            {
+                "name": "Dongxiafeng",
+                "lat": 35.267,
+                "lng": 111.35,
+                "desc": "Xia cultural site in Xia County (Shanxi); bronze-foundry remains and Erlitou-style ritual vessels, marking the westward expansion of Erlitou/Xia influence into the Yuncheng Basin"
+            },
+            {
+                "name": "Huizui",
+                "lat": 34.65,
+                "lng": 112.75,
+                "desc": "Erlitou-period settlement and stone-tool workshop in Yanshi (Henan); specialised lithic production centre supplying the Erlitou elite with limestone and slate implements"
+            },
+            {
+                "name": "Nanshui",
+                "lat": 34.8,
+                "lng": 113.0,
+                "desc": "Xia-period cemetery cluster on the Yi River (Henan); ranked burials with graded grave goods documenting the emerging social hierarchy of Erlitou/Xia society"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Liu (2004) The Chinese Neolithic: Trajectories to Early States, Cambridge University Press",
+                "url": "https://www.worldcat.org/title/54479250",
+                "org": "La Trobe University"
+            },
+            {
+                "title": "Xu (2012) The Erlitou Culture and the Xia Dynasty: a review of the evidence, Journal of East Asian Archaeology",
+                "url": "https://doi.org/10.1163/156852312X665241",
+                "org": "Chinese Academy of Social Sciences"
+            },
+            {
+                "title": "Ning et al. (2020) Ancient genomes from the Hongshan Culture and the formation of ancestral populations in Northeast China, Current Biology",
+                "url": "https://doi.org/10.1016/j.cub.2020.05.052",
+                "org": "Jilin University"
+            }
+        ]
+    },
+    {
+        "name": "Shang Dynasty",
+        "time": "1600–1046 BCE",
+        "color": "#ED3A2A",
+        "lat": 36.1,
+        "lng": 114.3,
+        "desc": "The earliest archaeologically confirmed Chinese dynasty (1600–1046 BCE), centred on the Yellow River floodplain in northern Henan and western Shandong. The Shang state emerged after the overthrow of the Xia and built large rammed-earth walled cities at Zhengzhou (c.1600–1400 BCE, 25 km²) and Yanshi (c.1550–1300 BCE), followed by the final capital at Yinxu near Anyang (c.1300–1046 BCE). Famous for the earliest known Chinese writing — oracle bone script incised on turtle plastrons and cattle scapulae for royal divination — recording kings, rituals, warfare, agriculture and astronomy. Advanced bronze metallurgy produced massive ritual vessels (ding, gui, zun, you) with detailed taotie animal-face motifs, cast using piece-mould technology unique to China. Elite burials at Yinxu include the undisturbed Tomb of Fu Hao (c.1200 BCE) with over 1,600 artefacts — bronze vessels, jade carvings, bone hairpins, ivory and 16 human sacrificial victims. Mass human and animal sacrifice was practised in royal burials and foundation rituals. The Shang was overthrown by the Zhou at the Battle of Muye c.1046 BCE. Genetic profiles from Shang-era sites show predominantly Yellow River farmer ancestry (O2, N) with minor admixture from northern populations.",
+        "haplogroups": "O2 (O2a), N",
+        "borders": [
+            [
+                36.5,
+                113.0
+            ],
+            [
+                37.0,
+                115.5
+            ],
+            [
+                36.5,
+                117.0
+            ],
+            [
+                35.0,
+                117.0
+            ],
+            [
+                34.0,
+                116.0
+            ],
+            [
+                33.5,
+                114.5
+            ],
+            [
+                33.5,
+                113.0
+            ],
+            [
+                34.5,
+                112.0
+            ],
+            [
+                35.5,
+                112.0
+            ],
+            [
+                36.5,
+                113.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Yinxu",
+                "lat": 36.129,
+                "lng": 114.304,
+                "desc": "Type site and final Shang capital near Anyang (Henan); excavated from 1928 — palatial foundations, royal cemeteries with 13+ large ramped tombs, over 150,000 oracle bone fragments with the earliest Chinese script, and the Tomb of Fu Hao (queen of King Wu Ding) with 1,600+ exquisite bronze, jade and bone artefacts"
+            },
+            {
+                "name": "Zhengzhou Shang City",
+                "lat": 34.75,
+                "lng": 113.683,
+                "desc": "Early Shang capital (c.1600–1400 BCE) in Zhengzhou (Henan); a 7 km rammed-earth enclosure enclosing 25 km² — the largest walled site of its time in East Asia — with bronze foundries, bone workshops, and elite burials containing early Shang bronze ritual vessels"
+            },
+            {
+                "name": "Yanshi Shang City",
+                "lat": 34.717,
+                "lng": 112.783,
+                "desc": "Early Shang walled capital near the Erlitou site in Yanshi (Henan); rammed-earth inner and outer walls, palatial compound, bronze and pottery workshops, built after the conquest of the Xia as a strategic administrative centre"
+            },
+            {
+                "name": "Huanbei",
+                "lat": 36.083,
+                "lng": 114.25,
+                "desc": "Middle Shang walled city (c.1450–1250 BCE) on the Huan River north of Yinxu; a 4.7 km rammed-earth perimeter, palace foundations, and bronze casting kilns — the immediate precursor to the late Shang capital at Yinxu"
+            },
+            {
+                "name": "Subutun",
+                "lat": 36.0,
+                "lng": 117.0,
+                "desc": "Large Shang elite cemetery in Qingzhou (Shandong); monumental 'four-ram' bronze zun vessel and chariot burials documenting the Shang presence in the eastern territories beyond the core Henan region"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Keightley (2000) The Ancestral Landscape: Time, Space, and Community in Late Shang China, University of California Press",
+                "url": "https://www.worldcat.org/title/42290076",
+                "org": "University of California, Berkeley"
+            },
+            {
+                "title": "Bagley (1999) Shang Archaeology, in The Cambridge History of Ancient China, Cambridge University Press",
+                "url": "https://doi.org/10.1017/CHOL9780521470308.004",
+                "org": "University of Washington"
+            },
+            {
+                "title": "Campbell (2018) The Archaeology of the Shang Dynasty, Journal of Archaeological Research",
+                "url": "https://doi.org/10.1007/s10814-017-9110-0",
+                "org": "University of Cambridge"
+            }
+        ]
+    },
+    {
+        "name": "Zhou Dynasty",
+        "time": "1046–256 BCE",
+        "color": "#2AED6B",
+        "lat": 34.3,
+        "lng": 108.9,
+        "desc": "The longest-lasting Chinese dynasty (1046–256 BCE), founded after King Wu of Zhou overthrew the Shang at the Battle of Muye c.1046 BCE. The Western Zhou period (1046–771 BCE) was centred on the Wei River valley in Shaanxi (capital at Haojing, near modern Xi'an), with a second capital at Chengzhou (Luoyang) controlling the eastern territories. The Zhou introduced the Mandate of Heaven doctrine to justify dynastic rule, and operated a feudal-like system of regional states. The Eastern Zhou period (770–256 BCE) saw the capital moved to Luoyang, the decline of royal authority, and the rise of competing states during the Spring and Autumn and Warring States periods. Western Zhou is famous for its ritual bronze vessels with lengthy cast inscriptions documenting land grants, military campaigns and royal decrees — forming the earliest extended Chinese texts beyond oracle bones. Iron-working appeared by the 8th c. BCE, centuries before Europe. The Zhou produced classic texts including the I Ching, Shijing, Shangshu and the Zuo Zhuan. Zhou bronzes, jade work and burials reached high sophistication. The dynasty ended in 256 BCE when the Zhou king surrendered to the state of Qin. Genetic profiles from Zhou-era sites show Yellow River farmer ancestry (O2, N) with increasing admixture from northern steppe populations as the Zhou interacted with the northern frontier.",
+        "haplogroups": "O2 (O2a), N, Q1a",
+        "borders": [
+            [
+                35.5,
+                107.0
+            ],
+            [
+                35.8,
+                110.0
+            ],
+            [
+                36.0,
+                112.5
+            ],
+            [
+                35.5,
+                114.5
+            ],
+            [
+                34.0,
+                114.5
+            ],
+            [
+                33.0,
+                114.0
+            ],
+            [
+                32.5,
+                112.5
+            ],
+            [
+                32.5,
+                110.0
+            ],
+            [
+                33.0,
+                107.5
+            ],
+            [
+                34.0,
+                106.5
+            ],
+            [
+                35.0,
+                106.5
+            ],
+            [
+                35.5,
+                107.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Haojing (Fenghao)",
+                "lat": 34.233,
+                "lng": 108.783,
+                "desc": "Western Zhou capital near Xi'an (Shaanxi); paired settlements of Hao and Feng on opposite banks of the Feng River — palace and temple foundations, bronze foundry, elite burials with inscribed bronze vessels documenting Zhou kings and nobles, the political centre of the Zhou realm 1046–771 BCE"
+            },
+            {
+                "name": "Zhouyuan",
+                "lat": 34.5,
+                "lng": 107.85,
+                "desc": "Pre-dynastic Zhou ancestral centre and early Western Zhou ritual site in Fufeng (Shaanxi); the Zhouyuan oracle bone cache and the famed 'He zun' vessel bearing the earliest known character for 'China' (Zhai / Zhongguo), excavated from a Zhou elite hoard"
+            },
+            {
+                "name": "Liyu",
+                "lat": 34.667,
+                "lng": 110.7,
+                "desc": "Western Zhou cemetery cluster in Sanmenxia (Henan); large elite tomb of the Guo state ruler with bronze ding vessels, chariot pit with 36 horses, jade and gold artefacts — and the legendary 'Sword of Goujian' found in a later context"
+            },
+            {
+                "name": "Tianma-Qucun",
+                "lat": 35.683,
+                "lng": 111.45,
+                "desc": "Site of the Jin state capital (Quwo, Shanxi) during Western Zhou; 19 large tombs of Jin marquises with ranked bronze vessel sets, the most complete Western Zhou feudal state cemetery discovered to date, confirming Zhou ritual protocols for regional lords"
+            },
+            {
+                "name": "Luoyang (Chengzhou)",
+                "lat": 34.633,
+                "lng": 112.5,
+                "desc": "Eastern Zhou capital (770–256 BCE) at Luoyang (Henan); the Wangcheng walled enclosure, large bronze foundries and workshops, elite tombs with Eastern Zhou bronze ritual vessels, jade and early iron implements — seat of Zhou royal authority during the Spring and Autumn and Warring States periods"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Shaughnessy (1991) Sources of Western Zhou History: Inscribed Bronze Vessels, University of California Press",
+                "url": "https://www.worldcat.org/title/23139457",
+                "org": "University of Chicago"
+            },
+            {
+                "title": "Hsu & Linduff (1988) Western Zhou Civilization, Yale University Press",
+                "url": "https://www.worldcat.org/title/17673924",
+                "org": "University of Pittsburgh"
+            },
+            {
+                "title": "Li (2006) The Formation of the Chinese Civilization: An Archaeological Perspective, Yale University Press",
+                "url": "https://www.worldcat.org/title/61295857",
+                "org": "Chinese Academy of Social Sciences"
+            }
+        ]
+    },
+    {
+        "name": "Han Dynasty",
+        "time": "206 BCE–220 CE",
+        "color": "#ED2A43",
+        "lat": 34.3,
+        "lng": 108.9,
+        "desc": "The second imperial dynasty of China (206 BCE–220 CE), succeeding the Qin and ruling after a brief interregnum by the Xin dynasty (9–23 CE). The Western Han (206 BCE–9 CE) was based at Chang'an (Xi'an) in the Wei River valley; the Eastern Han (25–220 CE) moved its capital east to Luoyang. At its peak under Emperor Wu (r.141–87 BCE), the Han empire extended from the Korean Peninsula in the east to the Tarim Basin in the west, from the Gobi Desert in the north to northern Vietnam in the south — roughly 6 million km², one of the largest polities of the ancient world. The Han period saw the formal establishment of Confucianism as state ideology, the introduction of the imperial civil service examination system, the opening of the Silk Road, the invention of paper, major advances in astronomy, medicine and iron and bronze metallurgy, and the composition of Sima Qian's Records of the Grand Historian. Han material culture is defined by elaborate ceramic and bronze vessels, jade burial suits sewn with gold wire, monumental stone tomb carvings, glazed pottery tomb figurines (mingqi) depicting cavalry, infantry, farmsteads and entertainers, and vast quantities of Wuzhu bronze coinage. The Xiongnu confederation was the Han's principal rival; decades of war, tribute and marriage alliances culminated in the Han defeat and fragmentation of the northern Xiongnu in the 1st–2nd c. CE, opening the Gansu Corridor and Tarim Basin to Chinese control and Silk Road traffic. Genetic profiles from Han-era sites in the Central Plains show dominant Yellow River farmer ancestry (O2, N) with minor steppe admixture, while frontier garrisons in the northwest carried significantly more northern Eurasian ancestry.",
+        "haplogroups": "O2 (O2a), N, Q1a",
+        "borders": [
+            [
+                40.0,
+                108.0
+            ],
+            [
+                41.0,
+                112.0
+            ],
+            [
+                40.5,
+                115.0
+            ],
+            [
+                40.0,
+                117.0
+            ],
+            [
+                38.0,
+                119.0
+            ],
+            [
+                36.0,
+                119.0
+            ],
+            [
+                34.5,
+                120.0
+            ],
+            [
+                33.0,
+                117.0
+            ],
+            [
+                31.5,
+                115.0
+            ],
+            [
+                30.0,
+                114.0
+            ],
+            [
+                28.0,
+                108.0
+            ],
+            [
+                27.0,
+                106.0
+            ],
+            [
+                27.0,
+                102.0
+            ],
+            [
+                29.0,
+                100.0
+            ],
+            [
+                31.0,
+                100.0
+            ],
+            [
+                33.0,
+                101.0
+            ],
+            [
+                34.0,
+                103.0
+            ],
+            [
+                35.0,
+                104.0
+            ],
+            [
+                36.0,
+                104.5
+            ],
+            [
+                37.0,
+                105.0
+            ],
+            [
+                38.0,
+                106.0
+            ],
+            [
+                40.0,
+                108.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Chang'an (Xi'an)",
+                "lat": 34.317,
+                "lng": 108.933,
+                "desc": "Western Han capital (206 BCE–9 CE), one of the largest cities of the ancient world (~36 km², 250,000+ inhabitants); rammed-earth city wall with 12 gates, palatial complex of Weiyang Palace covering 5 km², armouries, granaries, markets and elite residential wards; starting point of the Silk Road"
+            },
+            {
+                "name": "Mawangdui",
+                "lat": 28.2,
+                "lng": 113.0,
+                "desc": "Extraordinary Western Han tomb complex near Changsha (Hunan); 2nd c. BCE burials of Marquis Dai and family — the perfectly preserved body of Lady Dai (Xin Zhui), over 1,000 lacquerware, silk textiles, manuscripts on silk (I Ching, Dao De Jing, divination texts, star maps), and a painted silk funerary banner — the richest single Han burial ever excavated"
+            },
+            {
+                "name": "Yangling",
+                "lat": 34.433,
+                "lng": 108.9,
+                "desc": "Mausoleum of Emperor Jing (r.157–141 BCE) near Xi'an (Shaanxi); 84 burial pits surrounding the tomb mound containing over 50,000 ceramic figurines — infantry, cavalry, servants, acrobats and domestic animals — plus iron weapons, chariots and inscribed tiles, providing an unparalleled snapshot of Western Han military and court life"
+            },
+            {
+                "name": "Luoyang (Eastern Han)",
+                "lat": 34.667,
+                "lng": 112.533,
+                "desc": "Eastern Han capital (25–190 CE); twin walled city covering 10 km² with palatial compound, Mingtang ritual hall, and the White Horse Temple (Baimasi) — the first Buddhist temple in China, founded under Emperor Ming in 68 CE, marking the arrival of Buddhism via the Silk Road"
+            },
+            {
+                "name": "Kongquehe (Tarim Basin)",
+                "lat": 39.0,
+                "lng": 88.0,
+                "desc": "Han frontier garrison and watchtower complex in the Lop Desert (Xinjiang); series of beacon towers, barracks and granaries along the Silk Road, with Han bamboo slips, silk fragments, Wuzhu coins and weapons — the westernmost direct Han military presence"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Loewe (1986) The Cambridge History of China, Volume I: the Ch'in and Han Empires, 221 BC – AD 220, Cambridge University Press",
+                "url": "https://www.worldcat.org/title/13890820",
+                "org": "University of Cambridge"
+            },
+            {
+                "title": "Hansen (2012) The Silk Road: A New History, Oxford University Press",
+                "url": "https://www.worldcat.org/title/740628719",
+                "org": "Yale University"
+            },
+            {
+                "title": "Kenderdine et al. (2020) Ancient DNA and the genetic history of the Han dynasty, Archaeological and Anthropological Sciences",
+                "url": "https://doi.org/10.1007/s12520-020-01063-5",
+                "org": "Chinese Academy of Sciences"
+            }
+        ]
+    },
+    {
         "name": "Scythian Culture",
         "time": "700–200 BCE",
-        "color": "#E65100",
+        "color": "#2A7CED",
         "lat": 48,
         "lng": 35,
         "desc": "Iron Age nomadic culture of the Pontic-Caspian steppe (700–200 BCE), famous from Herodotus' Histories and spectacular kurgan burials laden with gold. Highly mobile horse-riding pastoral economy with seasonal migrations; sophisticated animal-style goldwork — plaques, pectorals, scabbard covers, vessel fittings — blending Greek, Persian and local traditions. Royal kurgans of the 4th c. BCE reached 15+ m in height and contained multiple chambers, sacrificed horses and retainers, and tons of imported Greek wine amphorae. Military elite using composite bows, akinakes daggers, and scale armour. Scythian material culture extended from the Danube delta east to the Don River, north to the forest-steppe boundary. Genetic profiles show a mix of indigenous Srubnaya-derived steppe ancestry and influx from eastern steppe populations during the Iron Age.",
@@ -1781,7 +2321,7 @@
     {
         "name": "Saka Culture",
         "time": "900–200 BCE",
-        "color": "yellow",
+        "color": "#B5ED2A",
         "lat": 47,
         "lng": 75,
         "desc": "Iron Age eastern nomadic culture of the Kazakh steppe, Semirechye, Tian Shan foothills and Altai (900–200 BCE), known in Persian inscriptions as the Sakā and forming the eastern branch of the broader Scytho-Siberian world. Horse-mounted pastoralists with composite-bow archery and Animal Style art; monumental royal kurgans with timber burial chambers, gold-foil ornamentation on clothing and weaponry (Issyk 'Golden Man'), and large-scale horse sacrifices (Berel, Arzhan). Key node in east-west exchange transmitting Achaemenid silver, Chinese silk and mirrors, and steppe gold across Eurasia. Genetic ancestry dominated by steppe pastoralist (Andronovo-related) sources with increasing East Asian admixture towards the eastern Saka range.",
@@ -1893,7 +2433,7 @@
     {
         "name": "Slab‑Grave Culture",
         "time": "1100–400 BCE",
-        "color": "orange",
+        "color": "#ED2AED",
         "lat": 47,
         "lng": 107,
         "desc": "Late Bronze to Early Iron Age culture of Mongolia, Transbaikalia and northern China (1100–400 BCE), defined by rectangular stone-slab-lined burial cists covered with stone mounds. Successor to the Deer Stone-Khirigsuur Complex in eastern and central Mongolia, expanding north to Lake Baikal. Pastoral herders with mixed sheep, goat, cattle and horse economy; material culture includes bronze arrowheads, pipe-shaped and curved animal-style plaques, shell and stone beads, bone implements and coarse handmade pottery. Genetic profiles show predominantly Ancient Northeast Asian (ANA) ancestry derived from Ulaanzuukh-Tevsh and DSKC populations, with continuity into the later Xiongnu period. Slab graves are the most numerous Bronze/Early Iron Age monument type in Mongolia, with thousands of known examples across the eastern and central steppe.",
@@ -1993,21 +2533,48 @@
     {
         "name": "Karasuk Culture",
         "time": "1500–800 BCE",
-        "color": "pink",
+        "color": "#2AEDB4",
         "lat": 53.5,
         "lng": 91.0,
         "desc": "Late Bronze Age culture of the Minusinsk Basin, Khakassia and the Altai-Sayan region (1500–800 BCE), known for its distinctive bronze daggers with curved animal-head hilts, socketed arrowheads, and tin-bronze metallurgy. Pastoral economy with cattle, sheep and horse herding; settled in permanent villages with timber-framed pit-houses. Famous for the Karasuk bronze casting tradition — curved knives, socketed celts and personal ornaments featuring the 'curl' and 'eye' motifs — and the easternmost distribution of Seima-Turbino type metalwork. Genetic profiles show a mix of Andronovo-derived steppe ancestry and local Siberian (Okunev-related) populations, with emerging East Asian admixture. Considered a key ancestral substrate for the subsequent Tagar Culture of the Iron Age Minusinsk Basin.",
         "haplogroups": "R1a (R1a-Z93), Q1a",
         "borders": [
-            [55.5, 88.0],
-            [55.5, 94.0],
-            [54.0, 96.0],
-            [52.0, 96.0],
-            [51.0, 93.0],
-            [51.5, 89.0],
-            [52.5, 87.0],
-            [54.5, 87.0],
-            [55.5, 88.0]
+            [
+                55.5,
+                88.0
+            ],
+            [
+                55.5,
+                94.0
+            ],
+            [
+                54.0,
+                96.0
+            ],
+            [
+                52.0,
+                96.0
+            ],
+            [
+                51.0,
+                93.0
+            ],
+            [
+                51.5,
+                89.0
+            ],
+            [
+                52.5,
+                87.0
+            ],
+            [
+                54.5,
+                87.0
+            ],
+            [
+                55.5,
+                88.0
+            ]
         ],
         "sites": [
             {
@@ -2057,27 +2624,72 @@
     {
         "name": "Sarmatian Culture",
         "time": "600 BCE–400 CE",
-        "color": "#C44D34",
+        "color": "#2AED9C",
         "lat": 48.0,
         "lng": 43.0,
         "desc": "Iron Age nomadic confederation of the Pontic-Caspian steppe (600 BCE–400 CE), expanding from the Don–Volga region westward into the Pontic steppe, north Caucasus and eastern Europe. Horse-riding pastoral economy with seasonally mobile herding; famous for richly furnished elite burials with gold, silver and bronze ornaments, iron long swords (spatha), composite bows, lamellar armour and cloisonné-decorated metalwork. Sarmatian women are archaeologically attested as armed warriors — likely the source of Greek Amazon traditions. Successors to the Scythians in the Pontic steppe, eventually forming a Sarmatian-dominated zone from the Danube to the Urals. Genetic profiles show a mix of Srubnaya-derived steppe ancestry with increasing Central Asian and East Asian admixture, mediated by contact with Sauromatian and Saka populations.",
         "haplogroups": "R1a (R1a-Z93), R1b, Q1a, N",
         "borders": [
-            [49.5, 40.0],
-            [50.5, 44.0],
-            [50.0, 48.0],
-            [48.5, 50.0],
-            [47.0, 50.0],
-            [45.5, 48.0],
-            [45.5, 44.0],
-            [44.5, 41.0],
-            [44.0, 37.0],
-            [44.5, 33.0],
-            [45.5, 31.0],
-            [47.0, 31.0],
-            [48.5, 32.0],
-            [49.5, 36.0],
-            [49.5, 40.0]
+            [
+                49.5,
+                40.0
+            ],
+            [
+                50.5,
+                44.0
+            ],
+            [
+                50.0,
+                48.0
+            ],
+            [
+                48.5,
+                50.0
+            ],
+            [
+                47.0,
+                50.0
+            ],
+            [
+                45.5,
+                48.0
+            ],
+            [
+                45.5,
+                44.0
+            ],
+            [
+                44.5,
+                41.0
+            ],
+            [
+                44.0,
+                37.0
+            ],
+            [
+                44.5,
+                33.0
+            ],
+            [
+                45.5,
+                31.0
+            ],
+            [
+                47.0,
+                31.0
+            ],
+            [
+                48.5,
+                32.0
+            ],
+            [
+                49.5,
+                36.0
+            ],
+            [
+                49.5,
+                40.0
+            ]
         ],
         "sites": [
             {
@@ -2132,27 +2744,72 @@
     {
         "name": "Timber-Grave Culture",
         "time": "1900–1200 BCE",
-        "color": "skyblue",
+        "color": "#2ACDED",
         "lat": 49.5,
         "lng": 47.0,
         "desc": "Late Bronze Age culture of the Pontic-Caspian steppe and forest-steppe (1900–1200 BCE), also known as Srubnaya culture from Russian сруб ('timber frame') referring to its characteristic timber-lined burial chambers. Pastoral agricultural economy with cattle, sheep, horse and some pig husbandry; settled and semi-settled communities in river valleys with wattle-and-daub houses. Bronze metallurgy producing socketed axes, spears, daggers and sickles; bone arrowheads and cheek-pieces for chariot/horse control. Srubnaya pottery is flat-based with geometric incised and cord-impressed decoration. Represents a westward extension of the Andronovo-related Late Bronze Age steppe cultural horizon, considered ancestral to the Cimmerian and early Scythian populations. Genetic profiles are dominated by R1a-Z93 steppe ancestry.",
         "haplogroups": "R1a (R1a-Z93)",
         "borders": [
-            [55.0, 44.0],
-            [55.0, 52.0],
-            [54.0, 56.0],
-            [52.0, 54.0],
-            [50.0, 52.0],
-            [48.0, 50.0],
-            [46.5, 48.0],
-            [46.0, 42.0],
-            [46.5, 37.0],
-            [47.5, 33.0],
-            [48.5, 32.0],
-            [49.5, 35.0],
-            [52.0, 40.0],
-            [53.5, 42.0],
-            [55.0, 44.0]
+            [
+                55.0,
+                44.0
+            ],
+            [
+                55.0,
+                52.0
+            ],
+            [
+                54.0,
+                56.0
+            ],
+            [
+                52.0,
+                54.0
+            ],
+            [
+                50.0,
+                52.0
+            ],
+            [
+                48.0,
+                50.0
+            ],
+            [
+                46.5,
+                48.0
+            ],
+            [
+                46.0,
+                42.0
+            ],
+            [
+                46.5,
+                37.0
+            ],
+            [
+                47.5,
+                33.0
+            ],
+            [
+                48.5,
+                32.0
+            ],
+            [
+                49.5,
+                35.0
+            ],
+            [
+                52.0,
+                40.0
+            ],
+            [
+                53.5,
+                42.0
+            ],
+            [
+                55.0,
+                44.0
+            ]
         ],
         "sites": [
             {
@@ -2196,23 +2853,56 @@
     {
         "name": "Abashevo Culture",
         "time": "2300–1800 BCE",
-        "color": "#D2691E",
+        "color": "#2A2AED",
         "lat": 54.5,
         "lng": 47.0,
         "desc": "Middle Bronze Age culture of the Middle Volga and Kama River forest-steppe zone (2300–1800 BCE), known for rich kurgan burials with ochre, elaborate bronze weaponry (spears, socketed axes, knives), and the earliest eastward spread of Seima-Turbino type metalwork west of the Urals. Economy combined cattle and horse pastoralism with some agriculture in river valleys. Distinctive pottery with cord-impressed and comb-stamped geometric decoration. Abashevo is ancestral to the Sintashta culture and closely related to early Andronovo; its fortified settlements and metallurgical sophistication represent a key formative stage for the subsequent chariot-using Sintashta-Petrovka horizon. Genetic profiles are dominated by R1a-Z93 steppe ancestry with limited European farmer admixture.",
         "haplogroups": "R1a (R1a-Z93)",
         "borders": [
-            [56.5, 43.0],
-            [57.0, 47.5],
-            [56.5, 51.0],
-            [55.0, 52.0],
-            [53.5, 51.0],
-            [52.5, 49.0],
-            [52.0, 46.5],
-            [52.5, 43.5],
-            [54.0, 42.0],
-            [55.5, 42.0],
-            [56.5, 43.0]
+            [
+                56.5,
+                43.0
+            ],
+            [
+                57.0,
+                47.5
+            ],
+            [
+                56.5,
+                51.0
+            ],
+            [
+                55.0,
+                52.0
+            ],
+            [
+                53.5,
+                51.0
+            ],
+            [
+                52.5,
+                49.0
+            ],
+            [
+                52.0,
+                46.5
+            ],
+            [
+                52.5,
+                43.5
+            ],
+            [
+                54.0,
+                42.0
+            ],
+            [
+                55.5,
+                42.0
+            ],
+            [
+                56.5,
+                43.0
+            ]
         ],
         "sites": [
             {
@@ -2256,20 +2946,44 @@
     {
         "name": "Lower Xiajiadian Culture",
         "time": "2200–1600 BCE",
-        "color": "#CD853F",
+        "color": "#CDED2A",
         "lat": 41.5,
         "lng": 119.5,
         "desc": "Early Bronze Age culture of the West Liao River basin in southeastern Inner Mongolia and western Liaoning (2200–1600 BCE), succeeding the Hongshan Culture. Characterized by stone-fortified hilltop settlements with stone-paved foundations, defensive walls and bastions — among the earliest fortifications in East Asia. Economy based on millet agriculture, pig and sheep husbandry; sophisticated bronze metallurgy producing knives, rings, earrings and small tools, though large ritual vessels remained absent. Painted pottery with spiral and cloud-pattern designs continuing Hongshan artistic traditions. Jade working persisted but diminished in scale. Lower Xiajiadian is ancestral to the Upper Xiajiadian culture and represents the initial Bronze Age transition in Northeast China. Ancient genomes show predominantly Ancient Northeast Asian (ANA) ancestry with continued Yellow River millet farmer influence.",
         "haplogroups": "N, O2 (O2a)",
         "borders": [
-            [43.5, 118.0],
-            [43.5, 121.0],
-            [42.0, 123.0],
-            [40.5, 121.5],
-            [40.0, 119.0],
-            [41.0, 117.0],
-            [42.5, 117.0],
-            [43.5, 118.0]
+            [
+                43.5,
+                118.0
+            ],
+            [
+                43.5,
+                121.0
+            ],
+            [
+                42.0,
+                123.0
+            ],
+            [
+                40.5,
+                121.5
+            ],
+            [
+                40.0,
+                119.0
+            ],
+            [
+                41.0,
+                117.0
+            ],
+            [
+                42.5,
+                117.0
+            ],
+            [
+                43.5,
+                118.0
+            ]
         ],
         "sites": [
             {
@@ -2313,21 +3027,48 @@
     {
         "name": "Tagar Culture",
         "time": "800–200 BCE",
-        "color": "#A0522D",
+        "color": "#2ABDED",
         "lat": 53.8,
         "lng": 91.5,
         "desc": "Iron Age culture of the Minusinsk Basin, Khakassia and the upper Yenisei River (800–200 BCE), direct successor of the Karasuk Culture in southern Siberia. Famous for massive stone slab kurgans (up to 20 m diameter), richly furnished elite burials with bronze and iron daggers, battle-axes, bronze mirrors, belt plaques and massive bronze cauldrons in the Scytho-Siberian Animal Style. Economy based on semi-nomadic pastoralism — cattle, sheep, goats and horses — with seasonal movements between winter and summer pastures. Tagar metallurgists produced high-quality iron tools, socketed arrowheads (three-bladed trilobate type), and distinctive bronze 'Tagar cauldrons' with mushroom-shaped handles. Considered the Siberian Iron Age predecessor to the subsequent Tashtyk culture. Genetic profiles show continuity from Karasuk with additional influx of steppe pastoralist ancestry from the Saka world.",
         "haplogroups": "R1a (R1a-Z93), Q1a",
         "borders": [
-            [55.5, 88.5],
-            [55.5, 94.0],
-            [54.5, 96.0],
-            [52.5, 96.0],
-            [51.5, 93.5],
-            [51.5, 89.5],
-            [52.5, 87.5],
-            [54.5, 87.5],
-            [55.5, 88.5]
+            [
+                55.5,
+                88.5
+            ],
+            [
+                55.5,
+                94.0
+            ],
+            [
+                54.5,
+                96.0
+            ],
+            [
+                52.5,
+                96.0
+            ],
+            [
+                51.5,
+                93.5
+            ],
+            [
+                51.5,
+                89.5
+            ],
+            [
+                52.5,
+                87.5
+            ],
+            [
+                54.5,
+                87.5
+            ],
+            [
+                55.5,
+                88.5
+            ]
         ],
         "sites": [
             {
@@ -2371,21 +3112,48 @@
     {
         "name": "Upper Xiajiadian Culture",
         "time": "1200–600 BCE",
-        "color": "#B8860B",
+        "color": "#4B2AED",
         "lat": 42.0,
         "lng": 120.0,
         "desc": "Late Bronze to Early Iron Age culture of the West Liao River basin in southeastern Inner Mongolia and western Liaoning (1200–600 BCE), succeeding the Lower Xiajiadian Culture. Known for distinctive bronze dagger-axes (ge), socketed arrowheads, horse bridles with antler cheek-pieces, and bronze animal-style plaques reflecting increasing interaction with the Eurasian steppe — including Scytho-Siberian motifs. Economy based on mixed pastoralism (sheep, goat, cattle, horse) and millet agriculture, with a shift toward greater mobility compared to the settled Lower Xiajiadian. Elite burials in stone-lined pits with bronze weapons, chariot gear and imported steppe bronzes. Upper Xiajiadian is considered the archaeological correlate of the proto-Donghu confederation, ancestral to later historical groups in eastern Mongolia and Manchuria. Genetic profiles show Ancient Northeast Asian (ANA) ancestry with notable influx of steppe pastoralist (R1a-Z93) and Siberian (Q1a) lineages.",
         "haplogroups": "N, O2 (O2a), Q1a, R1a",
         "borders": [
-            [44.0, 117.5],
-            [44.0, 122.0],
-            [42.5, 124.0],
-            [41.0, 123.0],
-            [40.0, 121.0],
-            [40.5, 118.5],
-            [41.5, 116.5],
-            [43.0, 116.5],
-            [44.0, 117.5]
+            [
+                44.0,
+                117.5
+            ],
+            [
+                44.0,
+                122.0
+            ],
+            [
+                42.5,
+                124.0
+            ],
+            [
+                41.0,
+                123.0
+            ],
+            [
+                40.0,
+                121.0
+            ],
+            [
+                40.5,
+                118.5
+            ],
+            [
+                41.5,
+                116.5
+            ],
+            [
+                43.0,
+                116.5
+            ],
+            [
+                44.0,
+                117.5
+            ]
         ],
         "sites": [
             {
@@ -2429,29 +3197,80 @@
     {
         "name": "Xiongnu",
         "time": "300 BCE–200 CE",
-        "color": "#800000",
+        "color": "#EDCD2A",
         "lat": 45.5,
         "lng": 108.0,
         "desc": "The first nomadic empire of the eastern Eurasian steppe (300 BCE–200 CE), centred on the Mongolian Plateau with its heartland in the Orkhon and Tuul River valleys. A multi-ethnic confederation of herder-warrior groups unified under a supreme ruler (chanyu), controlling a vast territory from Lake Baikal to the Ordos and from the Altai to Manchuria. Economy based on mobile pastoralism (horse, sheep, cattle, goat, camel) supplemented by tribute, trade and raids against Han Dynasty China; the Xiongnu extracted silk, grain, metals and luxury goods via the Heqin treaty system and controlled the eastern segments of the early Silk Road. Elite burials in massive timber-chambered kurgans under stone mounds at sites like Noin-Ula and Gol Mod, yielding Chinese lacquerware, silk, bronze mirrors, iron weapons, gold belt plaques with animal-style and geometric designs, and the earliest known steppe pile carpets. The Xiongnu also developed a runic-like script attested on bronze seals and wooden slips. Genetic profiles are highly heterogeneous: predominantly Northeast Asian (C2, N, Q1a) with significant western steppe (R1a, R1b) and southern (O2) admixture, reflecting the confederate nature of the empire. Xiongnu collapsed in the 2nd c. CE under internal fragmentation, Han military campaigns and the rise of the Xianbei.",
         "haplogroups": "Q1a, R1a, C2, N, O2",
         "borders": [
-            [53.0, 100.0],
-            [53.5, 112.0],
-            [50.0, 120.0],
-            [48.0, 117.0],
-            [45.5, 115.0],
-            [43.0, 116.0],
-            [41.0, 120.0],
-            [40.0, 114.0],
-            [40.0, 110.0],
-            [41.0, 106.0],
-            [43.0, 104.0],
-            [44.5, 105.0],
-            [46.0, 101.0],
-            [47.5, 96.0],
-            [49.5, 95.0],
-            [51.5, 96.0],
-            [53.0, 100.0]
+            [
+                53.0,
+                100.0
+            ],
+            [
+                53.5,
+                112.0
+            ],
+            [
+                50.0,
+                120.0
+            ],
+            [
+                48.0,
+                117.0
+            ],
+            [
+                45.5,
+                115.0
+            ],
+            [
+                43.0,
+                116.0
+            ],
+            [
+                41.0,
+                120.0
+            ],
+            [
+                40.0,
+                114.0
+            ],
+            [
+                40.0,
+                110.0
+            ],
+            [
+                41.0,
+                106.0
+            ],
+            [
+                43.0,
+                104.0
+            ],
+            [
+                44.5,
+                105.0
+            ],
+            [
+                46.0,
+                101.0
+            ],
+            [
+                47.5,
+                96.0
+            ],
+            [
+                49.5,
+                95.0
+            ],
+            [
+                51.5,
+                96.0
+            ],
+            [
+                53.0,
+                100.0
+            ]
         ],
         "sites": [
             {
