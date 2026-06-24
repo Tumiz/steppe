@@ -744,9 +744,113 @@
         ]
     },
     {
+        "name": "BMAC (Oxus Civilization)",
+        "time": "2300–1700 BCE",
+        "color": "#5B2AED",
+        "lat": 38.0,
+        "lng": 62.0,
+        "desc": "The Bactria-Margiana Archaeological Complex (BMAC), also known as the Oxus Civilization, was a Bronze Age urban culture of southern Central Asia (2300–1700 BCE), centred on the Murghab River delta (Margiana, Turkmenistan) and the Amu Darya plain (Bactria, Uzbekistan / Tajikistan / northern Afghanistan). The largest site, Gonur Tepe (c.30 ha), featured a fortified palatial complex with monumental gateways, a temple with fire altars, a royal necropolis with four-wheeled ox-drawn carts, elaborate irrigation canals, and workshops for bronze, gold, silver, turquoise and lapis lazuli. BMAC society was highly stratified, controlling long-distance trade networks linking the Indus Valley, the Iranian Plateau, Mesopotamia and the Eurasian steppe. Material culture includes distinctive geometrically decorated pottery, compartmented bronze and copper seals with intricate animal and geometric motifs, steatite vessels carved in chlorite, and sophisticated arsenical bronze weapons, vessels and tools. The BMAC also produced the earliest known artefact of tin bronze in Central Asia at Gonur. BMAC agriculture relied on advanced canal irrigation growing wheat, barley, grapes and dates with sheep, goat, cattle, horse, camel and donkey husbandry. Ancient genomes from BMAC sites show a mixed ancestry of Iranian Neolithic farmer (BMAC basal), Anatolian farmer-related and steppe pastoralist (Yamnaya / Afanasievo-related) components, with haplogroups R1a, R1b, J and L — reflecting the crossroads position of the Oxus Civilization between the farming south and the pastoralist steppe. The BMAC declined c.1700 BCE as the region dried and Andronovo-related steppe groups migrated southward.",
+        "haplogroups": "R1a (R1a-Z93), R1b, J, L",
+        "borders": [
+            [
+                40.5,
+                58.0
+            ],
+            [
+                41.0,
+                65.0
+            ],
+            [
+                40.0,
+                69.0
+            ],
+            [
+                38.0,
+                69.0
+            ],
+            [
+                36.0,
+                68.0
+            ],
+            [
+                35.5,
+                66.0
+            ],
+            [
+                35.5,
+                63.0
+            ],
+            [
+                36.0,
+                60.5
+            ],
+            [
+                37.0,
+                59.0
+            ],
+            [
+                38.5,
+                57.5
+            ],
+            [
+                40.5,
+                58.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Gonur Tepe",
+                "lat": 38.217,
+                "lng": 62.033,
+                "desc": "Type site and largest BMAC settlement in the Murghab delta (Mary Province, Turkmenistan); fortified 30 ha palace-temple complex with monumental gateways, columned halls with fire altars, a royal necropolis with ox-cart burials, canal systems, bronze and gold workshops, and the earliest tin bronze in Central Asia — the ceremonial and administrative heart of the Oxus Civilization, excavated by Sarianidi 1972–2000"
+            },
+            {
+                "name": "Togolok 1 & 21",
+                "lat": 38.117,
+                "lng": 62.017,
+                "desc": "Major BMAC fortified settlement and ritual complex near Gonur (Margiana, Turkmenistan); Togolok 21 features a circular fortified structure with a central hearth, mud-brick corridors and evidence of ephedra-based soma/haoma ritual beverage preparation — a temple dedicated to the Indo-Iranian sacred drink cult"
+            },
+            {
+                "name": "Djarkutan",
+                "lat": 37.567,
+                "lng": 66.733,
+                "desc": "Large BMAC settlement and elite cemetery in Surxondaryo (southern Uzbekistan); fortified citadel with columned halls, over 300 burials with gold, silver and bronze ornaments, compartmented seals, steatite vessels and imported lapis lazuli — the easternmost major BMAC centre in Bactria"
+            },
+            {
+                "name": "Sapalli",
+                "lat": 37.45,
+                "lng": 66.8,
+                "desc": "BMAC settlement and cemetery in Surxondaryo (Uzbekistan); fortified residential compound with workshop areas, 200+ burials with bronze weapons, compartmented seals, ceramic vessels and imported carnelian beads — key site for BMAC chronology in northern Bactria"
+            },
+            {
+                "name": "Dashly (Dashly-3 & Dashly-10)",
+                "lat": 36.75,
+                "lng": 66.25,
+                "desc": "Fortified BMAC settlements in northern Afghanistan (Jowzjan Province); Dashly-3 is a circular fortress (c.120 m diameter) with rectangular bastions and a central palace, Dashly-10 is a rectangular fortified estate with monumental gateways — marking the BMAC's southern frontier in Bactria"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Sarianidi (2005) Gonur-depe: City of Kings and Gods, Miras Publishing (Ashgabat)",
+                "url": "https://www.worldcat.org/title/70932560",
+                "org": "Institute of Archaeology, Turkmenistan"
+            },
+            {
+                "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia, Science",
+                "url": "https://www.science.org/doi/10.1126/science.aat7487",
+                "org": "Harvard Medical School"
+            },
+            {
+                "title": "Kaniuth (2016) The Bactria-Margiana Archaeological Complex (BMAC): a review of recent research, Journal of Asian Civilizations",
+                "url": "https://www.worldcat.org/title/1000405412",
+                "org": "Ludwig Maximilian University of Munich"
+            }
+        ]
+    },
+    {
         "name": "Chemurchek Culture",
         "time": "2750–1900 BCE",
-        "color": "#5B2AED",
+        "color": "#33ED2A",
         "lat": 48,
         "lng": 90,
         "desc": "Early Bronze Age culture of Western Mongolia and Altai (2750–1900 BCE), known for rectangular stone enclosures, stelae, and mixed pastoral farming; post-Afanasievo cultural complex.",
@@ -830,7 +934,7 @@
     {
         "name": "Okunev Culture",
         "time": "2600–1750 BCE",
-        "color": "#33ED2A",
+        "color": "#ED2A6B",
         "lat": 53,
         "lng": 91,
         "desc": "Middle Bronze Age culture of Minusinsk Basin, Tuva and Northern Mongolia (2600–1750 BCE), famous for stone stelae, kurgan burials and local Siberian pastoral traditions.",
@@ -918,7 +1022,7 @@
     {
         "name": "Ulaanzuukh‑Tevsh Culture",
         "time": "c.1450–1000 BCE",
-        "color": "#ED2A6B",
+        "color": "#2AA4ED",
         "lat": 47.5,
         "lng": 112,
         "desc": "Late Early to Middle Bronze Age culture of eastern Mongolia (c.1450–1000 BCE). Ancient Northeast Asian (ANA) pastoralists with slab‑built burial monuments, antecedent to Slab Grave culture.",
@@ -997,7 +1101,7 @@
     {
         "name": "Glazkovo Culture",
         "time": "c.2200–1300 BCE",
-        "color": "#2AA4ED",
+        "color": "#DDED2A",
         "lat": 53.5,
         "lng": 107,
         "desc": "Bronze Age hunter‑gatherer/fisher culture around Lake Baikal (c.2200–1300 BCE). Known for pottery, copper artifacts, and burials with stone cairns; likely proto‑Tungusic.",
@@ -1070,7 +1174,7 @@
     {
         "name": "Serovo Culture",
         "time": "c.3300–2200 BCE",
-        "color": "#DDED2A",
+        "color": "#C42AED",
         "lat": 54,
         "lng": 106,
         "desc": "Late Neolithic hunter‑gatherer culture (c.3300–2200 BCE) preceding Glazkovo; distinctive pottery, bone tools, and extended burials.",
@@ -1126,7 +1230,7 @@
     {
         "name": "Deer Stone-Khirigsuur Complex (DSKC)",
         "time": "1200–700 BCE",
-        "color": "#C42AED",
+        "color": "#2AED8B",
         "lat": 49.85,
         "lng": 100.75,
         "desc": "Late Bronze Age pastoralist archaeological complex distributed across northern Mongolia, southern Tuva and western Sayan foothills, evolving from the late Khövsgöl Late Bronze Age formative culture. Fully mobile specialized ruminant pastoral economy centered on cattle, sheep, goat and early horse husbandry with confirmed ancient dairy consumption; defined by two iconic ritual monuments: carved anthropomorphic deer stone stelae and enclosed khirigsuur stone mortuary complexes consisting of central burial cairns plus peripheral sacrificial animal pits. Material culture dominated by arsenic bronze daggers, socketed arrowheads, rare coarse handmade pottery and stone personal ornaments; critical ancestral population source for subsequent Slab Grave Culture and early Xiongnu pastoral groups of the Eastern Eurasian steppe.",
@@ -1224,7 +1328,7 @@
     {
         "name": "Yumin Culture",
         "time": "6600–5000 BCE",
-        "color": "#2AED8B",
+        "color": "#ED532A",
         "lat": 42.07,
         "lng": 114.32,
         "desc": "Early Neolithic culture on the northern piedmont of eastern Yin Mountains and southeastern Inner Mongolian Plateau, dated 6600–5000 BCE (8600–7000 BP). The earliest confirmed Neolithic archaeological culture in Inner Mongolia. Economy dominated by hunting-foraging supplemented with primitive millet dry-farming; semi-sedentary seasonal camp settlements of semi-subterranean round/oval pit houses. Defined by sophisticated microlithic industry, unique pointed/round-bottom & flake-shaped low-fired pottery with pit-impressed decoration, abundant bone tools; lays foundational precedent for later mixed farming-pastoral traditions of North China steppe-ecotone. Named after the type-site Yumin, Huade County, Ulanqab, excavated from 2010 and formally defined as independent culture in 2015.",
@@ -1332,7 +1436,7 @@
     {
         "name": "Hongshan Culture",
         "time": "4700–2900 BCE",
-        "color": "#ED532A",
+        "color": "#AC2AED",
         "lat": 41.5,
         "lng": 119.5,
         "desc": "Late Neolithic culture of the West Liao River basin in southeastern Inner Mongolia, western Liaoning and northern Hebei (4700–2900 BCE). Famous for sophisticated jade artifacts (pig-dragons, coiled dragons, cloud-shaped pendants), the Niuheliang ritual complex featuring the Goddess Temple, stone cairn tombs and altar platforms — one of the earliest complex societies in East Asia with state-level ritual organization. Economy based on millet farming, pig husbandry, hunting and fishing; painted pottery with geometric and zoomorphic designs. Ancient genomes indicate predominant Ancient Northeast Asian (ANA) ancestry with early millet farmer admixture from the Yellow River basin. Core ancestral substrate for later Bronze Age cultures of Northeast China and the Mongolian steppe interface.",
@@ -1505,7 +1609,7 @@
     {
         "name": "Shimao Culture",
         "time": "2300–1800 BCE",
-        "color": "#74ED2A",
+        "color": "#ED2AAD",
         "lat": 38.57,
         "lng": 110.33,
         "desc": "Late Neolithic to early Bronze Age stone-walled city culture of the northern Loess Plateau, Shenmu County, Shaanxi (2300–1800 BCE). The Shimao site — at 400 ha the largest known walled site of its period in China — features inner and outer stone fortifications with gates, turrets and watchtowers, a 70 m stepped pyramidal palace platform (Huang Cheng Tai), jade-inlaid city walls, and approximately 80 sacrificial skulls beneath the southern city gate. Advanced jade carving, copper metallurgy, mural painting and stone relief sculpture; millet and livestock economy at the agro-pastoral ecotone of the Ordos frontier. Genetic data reveal mixed Yellow River farmer and steppe-related ancestry, reflecting its strategic position at the interface of early Chinese civilization and Eurasian steppe cultures.",
@@ -1681,7 +1785,7 @@
     {
         "name": "Qijia Culture",
         "time": "2300–1500 BCE",
-        "color": "#2AE6ED",
+        "color": "#EDBC2A",
         "lat": 35.8,
         "lng": 103.5,
         "desc": "Early Bronze Age culture of the upper Yellow River region in Gansu and eastern Qinghai (2300–1500 BCE), known for the earliest extensive copper and bronze metallurgy in China. Centred in the Tao, Daxia and Yellow River valleys, Qijia communities practised millet and wheat agriculture with sheep, cattle and pig husbandry. Distinctive ceramic assemblage includes high-shouldered jars with double loop handles, painted and cord-marked vessels. Elite burials contain bronze knives, axes, mirrors (the earliest known in China), jade ornaments, and sacrificed animals. Positioned at the crossroads of the Eurasian steppe Hexi Corridor and the Central Plains, Qijia transmitted bronze-working technology, domesticated wheat and barley, and horse-related knowledge eastward while funnelling Chinese jade and painted pottery westward — a key node in early East-West interaction networks. Genetic profiles show dominant Yellow River farmer ancestry with minor steppe-related admixture.",
@@ -1773,7 +1877,7 @@
     {
         "name": "Xia Dynasty",
         "time": "2070–1600 BCE",
-        "color": "#EDBC2A",
+        "color": "#832AED",
         "lat": 34.5,
         "lng": 112.5,
         "desc": "First Chinese dynasty (2070–1600 BCE) in traditional historiography, widely equated with the Erlitou culture of the Yiluo River valley in western Henan. The Erlitou site (c.1900–1500 BCE) was a planned urban centre of 300+ ha with a palatial compound, rammed-earth foundations, bronze workshops producing ritual vessels (jue, jia, ding) and weapons, elite burials with turquoise-inlaid bronze plaques and cowrie shells, and the earliest known bronze foundry in East Asia. Millet and rice agriculture with pig, sheep and cattle husbandry; advanced ceramic industry with distinctive dark grey burnished wares. The Xia dynasty is recorded in Sima Qian's Shiji and the Bamboo Annals as the founding dynasty of Chinese civilization, credited with controlling the Yellow River flood and establishing hereditary succession. The Erlitou polity abruptly declined c.1500 BCE, coinciding with the rise of the Shang. Ancient genomes from Erlitou show dominant Yellow River farmer ancestry (O2, N) with limited peripheral admixture.",
@@ -2073,7 +2177,7 @@
     {
         "name": "Han Dynasty",
         "time": "206 BCE–220 CE",
-        "color": "#ED2A43",
+        "color": "#2A7CED",
         "lat": 34.3,
         "lng": 108.9,
         "desc": "The second imperial dynasty of China (206 BCE–220 CE), succeeding the Qin and ruling after a brief interregnum by the Xin dynasty (9–23 CE). The Western Han (206 BCE–9 CE) was based at Chang'an (Xi'an) in the Wei River valley; the Eastern Han (25–220 CE) moved its capital east to Luoyang. At its peak under Emperor Wu (r.141–87 BCE), the Han empire extended from the Korean Peninsula in the east to the Tarim Basin in the west, from the Gobi Desert in the north to northern Vietnam in the south — roughly 6 million km², one of the largest polities of the ancient world. The Han period saw the formal establishment of Confucianism as state ideology, the introduction of the imperial civil service examination system, the opening of the Silk Road, the invention of paper, major advances in astronomy, medicine and iron and bronze metallurgy, and the composition of Sima Qian's Records of the Grand Historian. Han material culture is defined by elaborate ceramic and bronze vessels, jade burial suits sewn with gold wire, monumental stone tomb carvings, glazed pottery tomb figurines (mingqi) depicting cavalry, infantry, farmsteads and entertainers, and vast quantities of Wuzhu bronze coinage. The Xiongnu confederation was the Han's principal rival; decades of war, tribute and marriage alliances culminated in the Han defeat and fragmentation of the northern Xiongnu in the 1st–2nd c. CE, opening the Gansu Corridor and Tarim Basin to Chinese control and Silk Road traffic. Genetic profiles from Han-era sites in the Central Plains show dominant Yellow River farmer ancestry (O2, N) with minor steppe admixture, while frontier garrisons in the northwest carried significantly more northern Eurasian ancestry.",
@@ -2221,7 +2325,7 @@
     {
         "name": "Scythian Culture",
         "time": "700–200 BCE",
-        "color": "#2A7CED",
+        "color": "#B5ED2A",
         "lat": 48,
         "lng": 35,
         "desc": "Iron Age nomadic culture of the Pontic-Caspian steppe (700–200 BCE), famous from Herodotus' Histories and spectacular kurgan burials laden with gold. Highly mobile horse-riding pastoral economy with seasonal migrations; sophisticated animal-style goldwork — plaques, pectorals, scabbard covers, vessel fittings — blending Greek, Persian and local traditions. Royal kurgans of the 4th c. BCE reached 15+ m in height and contained multiple chambers, sacrificed horses and retainers, and tons of imported Greek wine amphorae. Military elite using composite bows, akinakes daggers, and scale armour. Scythian material culture extended from the Danube delta east to the Don River, north to the forest-steppe boundary. Genetic profiles show a mix of indigenous Srubnaya-derived steppe ancestry and influx from eastern steppe populations during the Iron Age.",
@@ -2321,7 +2425,7 @@
     {
         "name": "Saka Culture",
         "time": "900–200 BCE",
-        "color": "#B5ED2A",
+        "color": "#ED2AED",
         "lat": 47,
         "lng": 75,
         "desc": "Iron Age eastern nomadic culture of the Kazakh steppe, Semirechye, Tian Shan foothills and Altai (900–200 BCE), known in Persian inscriptions as the Sakā and forming the eastern branch of the broader Scytho-Siberian world. Horse-mounted pastoralists with composite-bow archery and Animal Style art; monumental royal kurgans with timber burial chambers, gold-foil ornamentation on clothing and weaponry (Issyk 'Golden Man'), and large-scale horse sacrifices (Berel, Arzhan). Key node in east-west exchange transmitting Achaemenid silver, Chinese silk and mirrors, and steppe gold across Eurasia. Genetic ancestry dominated by steppe pastoralist (Andronovo-related) sources with increasing East Asian admixture towards the eastern Saka range.",
@@ -2433,7 +2537,7 @@
     {
         "name": "Slab‑Grave Culture",
         "time": "1100–400 BCE",
-        "color": "#ED2AED",
+        "color": "#2AEDB4",
         "lat": 47,
         "lng": 107,
         "desc": "Late Bronze to Early Iron Age culture of Mongolia, Transbaikalia and northern China (1100–400 BCE), defined by rectangular stone-slab-lined burial cists covered with stone mounds. Successor to the Deer Stone-Khirigsuur Complex in eastern and central Mongolia, expanding north to Lake Baikal. Pastoral herders with mixed sheep, goat, cattle and horse economy; material culture includes bronze arrowheads, pipe-shaped and curved animal-style plaques, shell and stone beads, bone implements and coarse handmade pottery. Genetic profiles show predominantly Ancient Northeast Asian (ANA) ancestry derived from Ulaanzuukh-Tevsh and DSKC populations, with continuity into the later Xiongnu period. Slab graves are the most numerous Bronze/Early Iron Age monument type in Mongolia, with thousands of known examples across the eastern and central steppe.",
@@ -2533,7 +2637,7 @@
     {
         "name": "Karasuk Culture",
         "time": "1500–800 BCE",
-        "color": "#2AEDB4",
+        "color": "#ED7B2A",
         "lat": 53.5,
         "lng": 91.0,
         "desc": "Late Bronze Age culture of the Minusinsk Basin, Khakassia and the Altai-Sayan region (1500–800 BCE), known for its distinctive bronze daggers with curved animal-head hilts, socketed arrowheads, and tin-bronze metallurgy. Pastoral economy with cattle, sheep and horse herding; settled in permanent villages with timber-framed pit-houses. Famous for the Karasuk bronze casting tradition — curved knives, socketed celts and personal ornaments featuring the 'curl' and 'eye' motifs — and the easternmost distribution of Seima-Turbino type metalwork. Genetic profiles show a mix of Andronovo-derived steppe ancestry and local Siberian (Okunev-related) populations, with emerging East Asian admixture. Considered a key ancestral substrate for the subsequent Tagar Culture of the Iron Age Minusinsk Basin.",
@@ -3027,7 +3131,7 @@
     {
         "name": "Tagar Culture",
         "time": "800–200 BCE",
-        "color": "#2ABDED",
+        "color": "#EDE42A",
         "lat": 53.8,
         "lng": 91.5,
         "desc": "Iron Age culture of the Minusinsk Basin, Khakassia and the upper Yenisei River (800–200 BCE), direct successor of the Karasuk Culture in southern Siberia. Famous for massive stone slab kurgans (up to 20 m diameter), richly furnished elite burials with bronze and iron daggers, battle-axes, bronze mirrors, belt plaques and massive bronze cauldrons in the Scytho-Siberian Animal Style. Economy based on semi-nomadic pastoralism — cattle, sheep, goats and horses — with seasonal movements between winter and summer pastures. Tagar metallurgists produced high-quality iron tools, socketed arrowheads (three-bladed trilobate type), and distinctive bronze 'Tagar cauldrons' with mushroom-shaped handles. Considered the Siberian Iron Age predecessor to the subsequent Tashtyk culture. Genetic profiles show continuity from Karasuk with additional influx of steppe pastoralist ancestry from the Saka world.",
@@ -3106,6 +3210,94 @@
                 "title": "Murphy et al. (2023) Ancient genomes trace the origin and decline of the Scythians, Science Advances",
                 "url": "https://doi.org/10.1126/sciadv.adf6060",
                 "org": "Trinity College Dublin"
+            }
+        ]
+    },
+    {
+        "name": "Sagly/Uyuk Culture",
+        "time": "500–200 BCE",
+        "color": "#ED7B2A",
+        "lat": 51.5,
+        "lng": 94.0,
+        "desc": "Late Scytho-Siberian Iron Age culture of the Tuva Republic and the upper Yenisei basin in southern Siberia (500–200 BCE), representing the final phase of the Scythian period in the Sayan-Altai region after the earlier Arzhan and Aldy-Bel phases. The culture is centred on the Uyuk River valley in the Turan-Uyuk basin (the 'Royal Valley of Tuva'), famous for its massive stone kurgans with square and rectangular stone enclosures, stone stelae at the corners, and deep timber burial chambers permafrost-preserving organic materials. The economy was based on mobile horse pastoralism with sheep, goats and cattle, supplemented by hunting and metalworking. Sagly/Uyuk material culture includes bronze and iron tri-lobed socketed arrowheads, iron akinakes daggers, bronze belt plaques and mirrors in the Scytho-Siberian animal style (feline predators, deer, mountain goats, boars), bone and antler bridle fittings, and coarse handmade pottery with incised geometric decoration. Elite kurgans such as the Arsaan Tolgoi and Sagly-Bazhy yielded gold foil animal appliqués, iron swords, bronze cauldrons and imported Chinese mirrors and silk, documenting trade along the northern Silk Road. The Sagly/Uyuk population is ancestral to the subsequent Xiongnu-period and Tashtyk populations of the Sayan region. Genetic profiles show predominantly Eastern Eurasian ancestry (Q1a) with significant Western Steppe pastoralist (R1a) admixture, consistent with the broader Scytho-Siberian genetic cline.",
+        "haplogroups": "R1a (R1a-Z93), Q1a",
+        "borders": [
+            [
+                53.5,
+                90.0
+            ],
+            [
+                53.5,
+                97.0
+            ],
+            [
+                51.0,
+                98.0
+            ],
+            [
+                49.5,
+                96.0
+            ],
+            [
+                49.5,
+                92.0
+            ],
+            [
+                50.5,
+                89.5
+            ],
+            [
+                53.5,
+                90.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Sagly-Bazhy",
+                "lat": 51.6,
+                "lng": 94.0,
+                "desc": "Type site on the Sagly River (Ovyur district, Tuva); stone kurgan cemetery with square stone enclosures and corner stelae, defining the classic Sagly/Uyuk funerary architecture — excavated 1950s by V.P. Dikov and S.I. Vainshtein, yielding iron weapons, bronze animal-style plaques and imported goods"
+            },
+            {
+                "name": "Arsaan Tolgoi",
+                "lat": 51.8,
+                "lng": 94.3,
+                "desc": "Royal Sagly/Uyuk kurgan in the Uyuk Valley (Piy-Khem district, Tuva); massive stone mound with permafrost-preserved timber burial chamber, gold foil deer and feline appliqués, an iron sword with gold pommel, a bronze mirror, and Chinese silk fragments — one of the richest Scythian-period elite tombs in Tuva"
+            },
+            {
+                "name": "Uyuk Valley (Royal Valley)",
+                "lat": 51.7,
+                "lng": 94.2,
+                "desc": "Concentration of elite Sagly/Uyuk kurgans in the Turan-Uyuk basin, the 'Valley of the Kings' of Tuva; dozens of large stone enclosures with permafrost-preserved burials, including the Arsaan Tolgoi, Kopto, and Dus-Dag mounds — the ceremonial and mortuary heartland of the Sagly/Uyuk elite"
+            },
+            {
+                "name": "Dus-Dag",
+                "lat": 51.75,
+                "lng": 94.15,
+                "desc": "Large Sagly/Uyuk kurgan on Mount Dus-Dag in the Uyuk Valley (Tuva); intact burial chamber with a male warrior, iron akinakes, bronze cauldron, quiver with tri-lobed bronze arrowheads, and ornate gold belt plaque — dated to the 3rd c. BCE"
+            },
+            {
+                "name": "Kopto",
+                "lat": 51.65,
+                "lng": 94.35,
+                "desc": "Sagly/Uyuk elite kurgan cluster in the eastern Uyuk Valley (Tuva); multiple stone enclosures with timber chambers, horse gear, bronze and iron weapons, and a bronze mirror of Chinese Han type, documenting trade contacts with Xiongnu and Han China"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Chugunov (2007) The Burial Rites of the Sagly/Uyuk Culture of Tuva, Archaeology, Ethnology and Anthropology of Eurasia",
+                "url": "https://doi.org/10.1134/S1563011007020023",
+                "org": "Russian Academy of Sciences"
+            },
+            {
+                "title": "Savinov (2010) The Scythian Period in Southern Siberia: Tuva and the Sayan-Altai, in The Cambridge History of Inner Asia, Cambridge University Press",
+                "url": "https://www.worldcat.org/title/1000426335",
+                "org": "St Petersburg State University"
+            },
+            {
+                "title": "Damgaard et al. (2018) 137 ancient genomes across the Eurasian steppe reveal the formation of Xiongnu and the Scytho-Siberian world, Nature Communications",
+                "url": "https://www.nature.com/articles/s41467-018-05992-1",
+                "org": "University of Copenhagen"
             }
         ]
     },
