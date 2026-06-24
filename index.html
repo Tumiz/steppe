@@ -10,6 +10,22 @@
         body { margin: 0; }
         #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; cursor: crosshair; }
         .leaflet-control-geocoder { width: 280px; }
+        .speak-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 4px;
+            padding: 2px 8px;
+            font-size: 12px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background: #f5f5f5;
+            cursor: pointer;
+            color: #333;
+            line-height: 1.4;
+        }
+        .speak-btn:hover { background: #e0e0e0; }
+        .speak-btn.playing { background: #ffcdd2; border-color: #e57373; color: #c62828; }
         .border-toggle {
             background: #fff;
             border: none;
@@ -163,12 +179,31 @@
             return { start: start, end: end };
         }
 
+        window.speakText = function(text, btn) {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                if (btn) btn.classList.remove('playing');
+            }
+            if (text) {
+                var utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.85;
+                utterance.pitch = 1.0;
+                utterance.onend = function() { if (btn) btn.classList.remove('playing'); };
+                utterance.onerror = function() { if (btn) btn.classList.remove('playing'); };
+                window.speechSynthesis.speak(utterance);
+                if (btn) btn.classList.add('playing');
+            }
+        };
+
         // Load local JSON markers
         fetch('markers.json')
             .then(function(res) { return res.json(); })
             .then(function(data) {
                 function buildPopupContent(item) {
-                    var html = '<b>' + item.name + '</b><br>' + (item.desc || '');
+                    var desc = item.desc || '';
+                    var speakBtn = '<button class="speak-btn" onclick="speakText(this.nextElementSibling.textContent, this)">\u25B6 Read aloud</button>';
+                    var html = speakBtn + '<div style="display:none">' + desc.replace(/"/g, '&quot;') + '</div>';
+                    html += '<b>' + item.name + '</b><br>' + desc;
                     if (item.haplogroups) {
                         html += '<br><b>Main Y-DNA haplogroups:</b> ' + item.haplogroups;
                     }
@@ -238,7 +273,9 @@
                                 fillColor: color,
                                 fillOpacity: 0.85
                             }).addTo(sitesDotsLayer);
-                            siteMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
+                            var siteDesc = site.desc || '';
+                            var sitePopupHtml = '<button class="speak-btn" onclick="speakText(this.nextElementSibling.textContent, this)">\u25B6 Read aloud</button><div style="display:none">' + siteDesc.replace(/"/g, '&quot;') + '</div><b>' + site.name + '</b><br>' + siteDesc;
+                            siteMarker.bindPopup(sitePopupHtml);
                             siteDotMarkers.push(siteMarker);
                             var siteIcon = L.divIcon({
                                 className: 'site-marker',
@@ -247,7 +284,7 @@
                                 iconAnchor: [-10, 18]
                             });
                             var labelMarker = L.marker([site.lat, site.lng], { icon: siteIcon }).addTo(siteLabelsLayer);
-                            labelMarker.bindPopup('<b>' + site.name + '</b><br>' + (site.desc || ''));
+                            labelMarker.bindPopup(sitePopupHtml);
                             siteLabelMarkers.push(labelMarker);
                             searchableItems.push({
                                 name: site.name,
