@@ -84,6 +84,141 @@
         ]
     },
     {
+        "name": "Samara Culture",
+        "time": "5200–4500 BCE",
+        "color": "#C0552D",
+        "lat": 53.1,
+        "lng": 50.2,
+        "desc": "Eneolithic culture of the Samara Bend region, middle Volga (c.5200–4500 BCE), the earliest documented pastoral culture of the Eurasian steppe. Type cemetery at Syezzheye with burials containing horse remains, copper adornments, boar tusk plaques, and stone mace heads. Genetically represented by Eastern hunter-gatherer (EHG) ancestry carrying Y-haplogroup R1b1a1a (R1b-V1636). Forms the deepest known ancestral horizon of the Eastern steppe pastoralist lineage, directly ancestral to the Khvalynsk and later Yamnaya cultures.",
+        "haplogroups": "R1b (R1b-V1636, R1b1a1a)",
+        "borders": [
+            [53.5, 49],
+            [53.5, 53],
+            [52, 52.5],
+            [52, 50],
+            [52.5, 49],
+            [53.5, 49]
+        ],
+        "sites": [
+            {
+                "name": "Syezzheye",
+                "lat": 53.1,
+                "lng": 50.2,
+                "desc": "Type cemetery near Bogatoye, Samara Oblast; excavated 1973, contains earliest copper and horse remains in the Volga steppe, defining Samara culture burial rites."
+            },
+            {
+                "name": "Lebyazhinka",
+                "lat": 52.8,
+                "lng": 50.5,
+                "desc": "Mesolithic-Eneolithic site in Samara region; source of the earliest Samara hunter-gatherer genome (5640–5555 BCE) with Y-haplogroup R1b1a1a."
+            },
+            {
+                "name": "Varfolomeyevka",
+                "lat": 51.5,
+                "lng": 53.5,
+                "desc": "Related site on the Russian-Kazakh border (c.5500 BCE); parallels in pottery and lithics with Dzhangar (Kalmykia) and Mykol'ske (Dnieper)."
+            }
+        ],
+        "papers": [
+            {
+                "title": "Anthony (2007) The Horse, the Wheel, and Language",
+                "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language",
+                "org": "Hartwick College"
+            },
+            {
+                "title": "Lazaridis et al. (2022) The genetic history of the Southern Arc: a bridge between West Asia and Europe",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
+                "org": "Harvard Medical School"
+            }
+        ]
+    },
+    {
+        "name": "Khvalynsk Culture",
+        "time": "4700–3800 BCE",
+        "color": "#D4A017",
+        "lat": 52.5,
+        "lng": 48.1,
+        "desc": "Middle Copper Age Eneolithic culture of the middle Volga region (c.4700–3800 BCE), direct precursor to the Yamnaya horizon. The eponymous Khvalynsk cemetery (201 graves) is the largest excavated Eneolithic cemetery in the Don-Volga-Ural steppes, yielding 373 copper objects and the largest assemblage of sacrificed domestic animals (sheep-goat, cattle, horse) of the 5th millennium BCE. Characterized by kurgan burial rites, polished stone maces, and sheep/goat/cattle/horse pastoralism. Genetically defined by mixed EHG-CHG ancestry that later characterized Yamnaya, carrying Y-haplogroups R1b-V1636 and R1b-Z2103.",
+        "haplogroups": "R1b (R1b-V1636, R1b-Z2103)",
+        "borders": [
+            [54, 46],
+            [54, 52],
+            [52, 52],
+            [50, 50],
+            [50, 47],
+            [51, 46],
+            [54, 46]
+        ],
+        "sites": [
+            {
+                "name": "Khvalynsk Cemetery",
+                "lat": 52.5,
+                "lng": 48.1,
+                "desc": "Type site near Khvalynsk, Saratov Oblast; 201 recorded graves in two plots (Khvalynsk I and II), dated 4500–4300 BCE. Largest Eneolithic cemetery in the steppes with copper assemblage, animal sacrifices, and polished stone maces. Extensively sampled for ancient DNA."
+            },
+            {
+                "name": "Nalchik",
+                "lat": 43.5,
+                "lng": 43.6,
+                "desc": "North Caucasus cemetery synchronous with early Khvalynsk; southern expansion marker of Khvalynsk-related populations into the Caucasus piedmont."
+            }
+        ],
+        "papers": [
+            {
+                "title": "Haak et al. (2015) Massive migration from the steppe was a source for Indo-European languages in Europe",
+                "url": "https://www.nature.com/articles/nature14317",
+                "org": "University of Adelaide"
+            },
+            {
+                "title": "Anthony (2007) The Horse, the Wheel, and Language",
+                "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language",
+                "org": "Hartwick College"
+            },
+            {
+                "title": "Lazaridis et al. (2022) The genetic history of the Southern Arc: a bridge between West Asia and Europe",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
+                "org": "Harvard Medical School"
+            }
+        ]
+    },
+    {
+        "name": "Repin Culture",
+        "time": "3900–3300 BCE",
+        "color": "#3B82F6",
+        "lat": 49.2,
+        "lng": 43.8,
+        "desc": "Late Eneolithic culture of the Middle Don region (c.3900–3300 BCE), transitional between the Khvalynsk horizon and the classic Yamnaya culture. Type site at Repin Khutor near the confluence of the Don and Ilovlya rivers. Characterized by distinctive cord-impressed pottery, developed kurgan burial rites, and an economy heavily reliant on horse pastoralism (horses ~80% of faunal remains). Many archaeologists regard Repin as the earliest phase of the Yamnaya culture, representing the direct formative stage of the Pit-Grave cultural horizon.",
+        "haplogroups": "R1b (R1b-Z2103)",
+        "borders": [
+            [51, 38],
+            [51, 44],
+            [48.5, 44],
+            [48, 42],
+            [48.5, 38],
+            [51, 38]
+        ],
+        "sites": [
+            {
+                "name": "Repin Khutor",
+                "lat": 49.2,
+                "lng": 43.8,
+                "desc": "Type site on right bank of Middle Don River, upstream from its confluence with the Ilovlya. Radiocarbon dates 3900–3300 BCE. Defined the distinctive Repin cord-impressed pottery style; horses comprised ~80% of faunal remains."
+            }
+        ],
+        "papers": [
+            {
+                "title": "Anthony (2007) The Horse, the Wheel, and Language",
+                "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language",
+                "org": "Hartwick College"
+            },
+            {
+                "title": "Anthony (2021) Early Yamnaya chronology & origins from archaeology",
+                "url": "https://www.academia.edu/89339312/Anthony_2021_Early_Yamnaya_chronology_and_origins_from_archaeology",
+                "org": "Hartwick College"
+            }
+        ]
+    },
+    {
         "name": "Yamnaya Culture",
         "time": "3300–2600 BCE",
         "color": "#2A63ED",
@@ -190,6 +325,11 @@
                 "title": "Damgaard et al. (2018) The first horse herders and the impact of early Bronze Age steppe expansions into Asia",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6748862/",
                 "org": "University of Copenhagen"
+            },
+            {
+                "title": "Lazaridis et al. (2022) The genetic history of the Southern Arc: a bridge between West Asia and Europe",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
+                "org": "Harvard Medical School"
             }
         ]
     },
@@ -328,6 +468,11 @@
                 "title": "Damgaard et al. (2018) The first horse herders and the impact of early Bronze Age steppe expansions into Asia",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6748862/",
                 "org": "University of Copenhagen"
+            },
+            {
+                "title": "Lazaridis et al. (2022) The genetic history of the Southern Arc: a bridge between West Asia and Europe",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
+                "org": "Harvard Medical School"
             }
         ]
     },
