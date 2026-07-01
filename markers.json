@@ -1685,6 +1685,75 @@
         ]
     },
     {
+        "name": "Laohushan Culture",
+        "time": "2500–2200 BCE",
+        "language": "Unclassified",
+        "color": "#8B5E3C",
+        "lat": 40.5,
+        "lng": 112.8,
+        "desc": "Late Neolithic culture of the Daihai Lake region in southern Inner Mongolia (2500–2200 BCE), known for stone-walled hilltop settlements, millet agriculture, and pig/sheep husbandry. Part of the Longshanoid cultural complex of the northern Chinese frontier, representing the agro-pastoral transition zone. The type site at Laohushan (Liangcheng County) contains a stone enclosure wall, semi-subterranean houses, and ceramic assemblages with basket-impressed and cord-marked decoration. The culture declines after 2200 BCE as the region becomes increasingly arid.",
+        "haplogroups": "N, O2, Q1a",
+        "borders": [
+            [40.9, 112.3],
+            [41.0, 113.0],
+            [40.5, 113.5],
+            [39.9, 113.2],
+            [39.7, 112.8],
+            [39.9, 112.3],
+            [40.4, 112.0],
+            [40.9, 112.3]
+        ],
+        "sites": [
+            {
+                "name": "Laohushan",
+                "lat": 40.5,
+                "lng": 112.8,
+                "desc": "Type site in Liangcheng County (Inner Mongolia); stone-walled hilltop settlement with defensive enclosure, semi-subterranean houses, and typical Longshanoid ceramic assemblage dated 2500–2200 BCE"
+            },
+            {
+                "name": "Yuanshedian",
+                "lat": 40.4,
+                "lng": 112.7,
+                "desc": "Laohushan settlement cluster near Daihai Lake; multiple habitation terraces with stone foundations, millet storage pits and pig burials"
+            },
+            {
+                "name": "Xibaiyu",
+                "lat": 40.6,
+                "lng": 112.5,
+                "desc": "Laohushan period site on the western Daihai shore; stone enclosure remnants and cord-marked pottery"
+            },
+            {
+                "name": "Yangshang",
+                "lat": 40.7,
+                "lng": 113.0,
+                "desc": "Fortified Laohushan settlement on the eastern hills above Daihai; double stone wall circuit and evidence of early sheep herding"
+            },
+            {
+                "name": "Daihai",
+                "lat": 40.55,
+                "lng": 112.67,
+                "desc": "Lakeside settlement cluster with multiple Laohushan occupation layers; key site for environmental reconstruction of Late Neolithic steppe-ecotone adaptation"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Tian (2003) The Laohushan Culture and the formation of the northern frontier Longshan complex, Acta Archaeologica Sinica",
+                "url": "https://www.worldcat.org/title/60594835",
+                "org": "Inner Mongolia Institute of Cultural Relics and Archaeology"
+            },
+            {
+                "title": "Shelach (2009) Prehistoric societies on the northern frontiers of China, Equinox",
+                "url": "https://www.worldcat.org/title/318100250",
+                "org": "Bar-Ilan University"
+            },
+            {
+                "title": "Ning et al. (2020) Ancient genomes from northern China suggest links between subsistence changes and human migration, Nature Communications",
+                "url": "https://www.nature.com/articles/s41467-020-16557-2",
+                "org": "Jilin University"
+            }
+        ]
+    },
+    {
         "name": "Taosi Culture",
         "time": "2300–1900 BCE",
         "language": "Pre-Sinitic (Sino-Tibetan)",
