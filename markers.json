@@ -3770,5 +3770,229 @@
                 "org": "Institute of Archaeology RAS"
             }
         ]
+    },
+    {
+        "name": "Dnieper River",
+        "color": "#3B9BD6",
+        "lat": 47.5,
+        "lng": 34.5,
+        "desc": "Major river of the Pontic steppe, flowing from the Valdai Hills through Ukraine to the Black Sea. Vital water source for Yamnaya, Scythian and Sarmatian cultures."
+    },
+    {
+        "name": "Dniester River",
+        "color": "#3B9BD6",
+        "lat": 48.0,
+        "lng": 28.0,
+        "desc": "River of the western Pontic steppe, forming part of modern Moldova's border. Key route for western steppe pastoralists."
+    },
+    {
+        "name": "Southern Bug River",
+        "color": "#3B9BD6",
+        "lat": 47.0,
+        "lng": 31.5,
+        "desc": "River through the Pontic steppe of western Ukraine, between the Dnieper and Dniester."
+    },
+    {
+        "name": "Don River",
+        "color": "#3B9BD6",
+        "lat": 49.0,
+        "lng": 41.0,
+        "desc": "Major river of the Pontic-Caspian steppe, flowing through Russia to the Sea of Azov. Heartland of Yamnaya, Srubnaya and Sarmatian cultures."
+    },
+    {
+        "name": "Seversky Donets",
+        "color": "#3B9BD6",
+        "lat": 49.0,
+        "lng": 38.0,
+        "desc": "Key tributary of the Don River, flowing through the forest-steppe of eastern Ukraine."
+    },
+    {
+        "name": "Volga River",
+        "color": "#3B9BD6",
+        "lat": 53.0,
+        "lng": 49.0,
+        "desc": "The longest river in Europe, flowing through the Pontic-Caspian steppe to the Caspian Sea. Lifeline of Samara, Khvalynsk, Yamnaya, Srubnaya and Sarmatian cultures."
+    },
+    {
+        "name": "Ural River",
+        "color": "#3B9BD6",
+        "lat": 51.5,
+        "lng": 54.0,
+        "desc": "River flowing from the Ural Mountains through the Caspian steppe. Boundary between Europe and Asia; homeland of Sintashta and Andronovo cultures."
+    },
+    {
+        "name": "Emba River",
+        "color": "#3B9BD6",
+        "lat": 48.0,
+        "lng": 55.0,
+        "desc": "River of the Caspian Depression in western Kazakhstan, traditional boundary between Europe and Asia."
+    },
+    {
+        "name": "Kuban River",
+        "color": "#3B9BD6",
+        "lat": 45.0,
+        "lng": 38.0,
+        "desc": "River of the north Caucasus piedmont steppe, flowing through Krasnodar to the Sea of Azov."
+    },
+    {
+        "name": "Terek River",
+        "color": "#3B9BD6",
+        "lat": 43.5,
+        "lng": 45.0,
+        "desc": "River of the north Caucasus, flowing through Chechnya and Dagestan to the Caspian Sea."
+    },
+    {
+        "name": "Kuma River",
+        "color": "#3B9BD6",
+        "lat": 44.5,
+        "lng": 45.0,
+        "desc": "River of the Caspian lowland steppe, flowing east through Stavropol and Dagestan."
+    },
+    {
+        "name": "Tobol River",
+        "color": "#3B9BD6",
+        "lat": 54.5,
+        "lng": 65.0,
+        "desc": "River of northern Kazakhstan and the Urals, tributary of the Irtysh. Core area of Botai and Andronovo cultures."
+    },
+    {
+        "name": "Ishim River",
+        "color": "#3B9BD6",
+        "lat": 54.0,
+        "lng": 69.0,
+        "desc": "River flowing through northern Kazakhstan, tributary of the Irtysh. The Botai type settlement lies on its tributary, the Imanburlyq."
+    },
+    {
+        "name": "Irtysh River",
+        "color": "#3B9BD6",
+        "lat": 54.0,
+        "lng": 74.0,
+        "desc": "Major Siberian river flowing through Kazakhstan to join the Ob. Heartland of Seima-Turbino and Andronovo cultures; Rostovka site on its banks."
+    },
+    {
+        "name": "Ob River",
+        "color": "#3B9BD6",
+        "lat": 55.0,
+        "lng": 83.0,
+        "desc": "Great Siberian river, formed by the confluence of the Biya and Katun in the Altai. Key region for Seima-Turbino bronze casting sites."
+    },
+    {
+        "name": "Tom River",
+        "color": "#3B9BD6",
+        "lat": 56.0,
+        "lng": 85.0,
+        "desc": "Tributary of the Ob, flowing through the Kuznetsk Basin. Samus-4 Seima-Turbino workshop site located on its banks."
+    },
+    {
+        "name": "Yenisei River",
+        "color": "#3B9BD6",
+        "lat": 56.0,
+        "lng": 93.0,
+        "desc": "One of the largest Siberian rivers, flowing through the Minusinsk Basin. Lifeline of Afonasiev, Okunev, Karasuk and Tagar cultures."
+    },
+    {
+        "name": "Angara River",
+        "color": "#3B9BD6",
+        "lat": 55.0,
+        "lng": 102.0,
+        "desc": "River flowing from Lake Baikal through Siberia, joining the Yenisei. Central to Glazkovo and Serovo cultures."
+    },
+    {
+        "name": "Selenga River",
+        "color": "#3B9BD6",
+        "lat": 51.0,
+        "lng": 106.5,
+        "desc": "Major river flowing through Mongolia and Buryatia into Lake Baikal. Heartland of the Xiongnu empire and DSKC."
+    },
+    {
+        "name": "Orkhon River",
+        "color": "#3B9BD6",
+        "lat": 47.5,
+        "lng": 102.0,
+        "desc": "River of central Mongolia, flowing through the Orkhon Valley — a UNESCO World Heritage site. Core of Xiongnu and later steppe empires."
+    },
+    {
+        "name": "Tuul River",
+        "color": "#3B9BD6",
+        "lat": 47.5,
+        "lng": 108.0,
+        "desc": "River of central Mongolia, flowing past Ulaanbaatar through the Khustai steppe. Noin-Ula Xiongnu royal cemetery lies in its basin."
+    },
+    {
+        "name": "Kerulen River",
+        "color": "#3B9BD6",
+        "lat": 48.5,
+        "lng": 112.0,
+        "desc": "River of eastern Mongolia, flowing into Khökh Nuur. Eastern steppe corridor for Slab Grave and Xiongnu cultures."
+    },
+    {
+        "name": "Lake Baikal",
+        "color": "#3B9BD6",
+        "lat": 53.5,
+        "lng": 108.0,
+        "desc": "The world's deepest and oldest lake, in southern Siberia. Major ritual and settlement focus for Serovo, Glazkovo and Slab Grave cultures."
+    },
+    {
+        "name": "Syr Darya River",
+        "color": "#3B9BD6",
+        "lat": 45.0,
+        "lng": 66.0,
+        "desc": "One of the two great rivers of Central Asia, flowing through the Kazakh steppe to the Aral Sea. Northern boundary of the BMAC cultural sphere."
+    },
+    {
+        "name": "Amu Darya River",
+        "color": "#3B9BD6",
+        "lat": 41.0,
+        "lng": 62.0,
+        "desc": "The longest river of Central Asia, flowing from the Pamirs to the Aral Sea. Lifeline of the BMAC / Oxus Civilization."
+    },
+    {
+        "name": "Ili River",
+        "color": "#3B9BD6",
+        "lat": 44.0,
+        "lng": 77.0,
+        "desc": "River flowing from the Tian Shan into Lake Balkhash. Core area of the Saka culture and later Wusun."
+    },
+    {
+        "name": "Chu River",
+        "color": "#3B9BD6",
+        "lat": 43.0,
+        "lng": 73.0,
+        "desc": "River of Kyrgyzstan and southern Kazakhstan, flowing through the Semirechye region. Saka cultural zone."
+    },
+    {
+        "name": "Zeravshan River",
+        "color": "#3B9BD6",
+        "lat": 39.5,
+        "lng": 67.0,
+        "desc": "River of Tajikistan and Uzbekistan, flowing through Samarkand and Bukhara. Key water source for the BMAC and Silk Road cities."
+    },
+    {
+        "name": "Tarim River",
+        "color": "#3B9BD6",
+        "lat": 40.0,
+        "lng": 86.0,
+        "desc": "The longest inland river in China, flowing through the Tarim Basin in Xinjiang. Route of the Bronze Age mummies and Silk Road."
+    },
+    {
+        "name": "Yellow River (Huang He)",
+        "color": "#3B9BD6",
+        "lat": 38.0,
+        "lng": 107.0,
+        "desc": "The cradle of Chinese civilization, flowing through the Ordos steppe. Northern frontier of Chinese dynasties; Qijia, Zhukaigou and Shimao cultures."
+    },
+    {
+        "name": "Wei River",
+        "color": "#3B9BD6",
+        "lat": 34.5,
+        "lng": 108.0,
+        "desc": "Principal tributary of the Yellow River, flowing through the Wei River valley. Heartland of Zhou, Qin and Han dynasties."
+    },
+    {
+        "name": "Liao River",
+        "color": "#3B9BD6",
+        "lat": 42.0,
+        "lng": 122.0,
+        "desc": "River of Northeast China (Manchuria), flowing through the West Liao River basin. Core area of Hongshan, Lower and Upper Xiajiadian cultures."
     }
 ]

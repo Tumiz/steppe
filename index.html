@@ -177,9 +177,13 @@
         var sitesDotsLayer = L.layerGroup();
         var searchableItems = [];
         var cultureItems = [];
+        var riversLayer = L.layerGroup();
+        var riversVisible = false;
+        var riverDescs = {};
         var oldestYear = -Infinity;
         var newestYear = Infinity;
         function parseTimeRange(str) {
+            if (!str) return null;
             var s = str.replace(/^c\.?\s*/i, '').trim();
             var parts = s.split(/[–\-]/);
             if (parts.length !== 2) return null;
@@ -240,6 +244,12 @@
 
                 data.forEach(function(item, idx) {
                     var color = item.color;
+                    var isRiver = /\b(river|Bug)\b/i.test(item.name) || item.name === 'Yellow River (Huang He)' || item.name === 'Liao River' || item.name === 'Wei River';
+
+                    if (isRiver) {
+                        riverDescs[item.name] = item.desc || '';
+                        return;
+                    }
 
                     var parsed = parseTimeRange(item.time);
                     if (parsed) {
@@ -308,14 +318,16 @@
                         });
                     }
 
-                    cultureItems.push({
-                        startYear: parsed ? parsed.start : null,
-                        endYear: parsed ? parsed.end : null,
-                        marker: marker,
-                        polygon: poly,
-                        siteDots: siteDotMarkers,
-                        siteLabels: siteLabelMarkers
-                    });
+                    if (!isRiver) {
+                        cultureItems.push({
+                            startYear: parsed ? parsed.start : null,
+                            endYear: parsed ? parsed.end : null,
+                            marker: marker,
+                            polygon: poly,
+                            siteDots: siteDotMarkers,
+                            siteLabels: siteLabelMarkers
+                        });
+                    }
                 });
 
                 // Set up time slider
@@ -441,6 +453,15 @@
                 } else if (source.type === 'site') {
                     source.siteMarker.openPopup();
                     return;
+                } else if (source.type === 'river-line') {
+                    if (!riversVisible) {
+                        riversVisible = true;
+                        riversLayer.addTo(map);
+                        var toggleBtns = document.querySelectorAll('.border-toggle');
+                        toggleBtns.forEach(function(b) { if (b.innerHTML === 'Rivers') b.classList.add('active'); });
+                    }
+                    source.line.openPopup();
+                    return;
                 }
             }
             L.popup()
@@ -486,6 +507,35 @@
                 }).addTo(map);
                 countryFeatures = topojson.feature(data, data.objects.countries).features;
             });
+
+        // Load river polylines
+        fetch('rivers.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                data.features.forEach(function(feature) {
+                    var coords = feature.geometry.coordinates;
+                    var latlngs = coords.map(function(c) { return [c[1], c[0]]; });
+                    var name = feature.properties.name;
+                    var color = feature.properties.color || '#3B9BD6';
+                    var desc = riverDescs[name] || '';
+                    var popupHtml = '<b>' + name + '</b>';
+                    if (desc) popupHtml += '<br>' + desc;
+                    var line = L.polyline(latlngs, {
+                        color: color,
+                        weight: 3,
+                        opacity: 0.8,
+                        interactive: true
+                    }).bindPopup(popupHtml);
+                    riversLayer.addLayer(line);
+                    searchableItems.push({
+                        name: name,
+                        center: line.getBounds().getCenter(),
+                        type: 'river-line',
+                        line: line
+                    });
+                });
+            })
+            .catch(function() {});
 
         // Toggle country borders button
         var bordersVisible = true;
@@ -582,6 +632,28 @@
             }
         });
         map.addControl(new ToggleCities());
+
+        // Toggle rivers button
+        var ToggleRivers = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var btn = L.DomUtil.create('button', 'border-toggle');
+                btn.innerHTML = 'Rivers';
+                L.DomEvent.disableClickPropagation(btn);
+                L.DomEvent.on(btn, 'click', function() {
+                    riversVisible = !riversVisible;
+                    if (riversVisible) {
+                        riversLayer.addTo(map);
+                        btn.classList.add('active');
+                    } else {
+                        map.removeLayer(riversLayer);
+                        btn.classList.remove('active');
+                    }
+                });
+                return btn;
+            }
+        });
+        map.addControl(new ToggleRivers());
 
         // Load city dataset for client-side reverse geocoding
         var citiesData = [];
