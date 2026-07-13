@@ -87,6 +87,20 @@
                 "url": "https://www.nature.com/articles/s41598-021-86832-9",
                 "org": "University of Colorado-Boulder Museum of Natural History"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    53.3,
+                    69.5
+                ],
+                "to": [
+                    54.8,
+                    65.5
+                ],
+                "time": "3700–3100 BCE",
+                "desc": "Expansion northward across northern Kazakhstan steppe"
+            }
         ]
     },
     {
@@ -99,12 +113,30 @@
         "desc": "Eneolithic culture of the Samara Bend region, middle Volga (c.5200–4500 BCE), the earliest documented pastoral culture of the Eurasian steppe. Type cemetery at Syezzheye with burials containing horse remains, copper adornments, boar tusk plaques, and stone mace heads. Genetically represented by Eastern hunter-gatherer (EHG) ancestry carrying Y-haplogroup R1b1a1a (R1b-V1636). Forms the deepest known ancestral horizon of the Eastern steppe pastoralist lineage, directly ancestral to the Khvalynsk and later Yamnaya cultures.",
         "haplogroups": "R1b (R1b-V1636, R1b1a1a)",
         "borders": [
-            [53.5, 49],
-            [53.5, 53],
-            [52, 52.5],
-            [52, 50],
-            [52.5, 49],
-            [53.5, 49]
+            [
+                53.5,
+                49
+            ],
+            [
+                53.5,
+                53
+            ],
+            [
+                52,
+                52.5
+            ],
+            [
+                52,
+                50
+            ],
+            [
+                52.5,
+                49
+            ],
+            [
+                53.5,
+                49
+            ]
         ],
         "sites": [
             {
@@ -137,6 +169,20 @@
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
                 "org": "Harvard Medical School"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    53.2,
+                    50.1
+                ],
+                "to": [
+                    52.5,
+                    49.0
+                ],
+                "time": "5200–4500 BCE",
+                "desc": "Expansion along the middle Volga River"
+            }
         ]
     },
     {
@@ -149,13 +195,34 @@
         "desc": "Middle Copper Age Eneolithic culture of the middle Volga region (c.4700–3800 BCE), direct precursor to the Yamnaya horizon. The eponymous Khvalynsk cemetery (201 graves) is the largest excavated Eneolithic cemetery in the Don-Volga-Ural steppes, yielding 373 copper objects and the largest assemblage of sacrificed domestic animals (sheep-goat, cattle, horse) of the 5th millennium BCE. Characterized by kurgan burial rites, polished stone maces, and sheep/goat/cattle/horse pastoralism. Genetically defined by mixed EHG-CHG ancestry that later characterized Yamnaya, carrying Y-haplogroups R1b-V1636 and R1b-Z2103.",
         "haplogroups": "R1b (R1b-V1636, R1b-Z2103)",
         "borders": [
-            [54, 46],
-            [54, 52],
-            [52, 52],
-            [50, 50],
-            [50, 47],
-            [51, 46],
-            [54, 46]
+            [
+                54,
+                46
+            ],
+            [
+                54,
+                52
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                50,
+                50
+            ],
+            [
+                50,
+                47
+            ],
+            [
+                51,
+                46
+            ],
+            [
+                54,
+                46
+            ]
         ],
         "sites": [
             {
@@ -187,6 +254,20 @@
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
                 "org": "Harvard Medical School"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    52.5,
+                    49.0
+                ],
+                "to": [
+                    51.5,
+                    46.0
+                ],
+                "time": "4700–3800 BCE",
+                "desc": "Southward expansion along the Volga to the Caspian steppe"
+            }
         ]
     },
     {
@@ -199,12 +280,30 @@
         "desc": "Late Eneolithic culture of the Middle Don region (c.3900–3300 BCE), transitional between the Khvalynsk horizon and the classic Yamnaya culture. Type site at Repin Khutor near the confluence of the Don and Ilovlya rivers. Characterized by distinctive cord-impressed pottery, developed kurgan burial rites, and an economy heavily reliant on horse pastoralism (horses ~80% of faunal remains). Many archaeologists regard Repin as the earliest phase of the Yamnaya culture, representing the direct formative stage of the Pit-Grave cultural horizon.",
         "haplogroups": "R1b (R1b-Z2103)",
         "borders": [
-            [51, 38],
-            [51, 44],
-            [48.5, 44],
-            [48, 42],
-            [48.5, 38],
-            [51, 38]
+            [
+                51,
+                38
+            ],
+            [
+                51,
+                44
+            ],
+            [
+                48.5,
+                44
+            ],
+            [
+                48,
+                42
+            ],
+            [
+                48.5,
+                38
+            ],
+            [
+                51,
+                38
+            ]
         ],
         "sites": [
             {
@@ -224,6 +323,20 @@
                 "title": "Anthony (2021) Early Yamnaya chronology & origins from archaeology",
                 "url": "https://www.academia.edu/89339312/Anthony_2021_Early_Yamnaya_chronology_and_origins_from_archaeology",
                 "org": "Hartwick College"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    50.0,
+                    43.0
+                ],
+                "to": [
+                    48.0,
+                    40.5
+                ],
+                "time": "3900–3300 BCE",
+                "desc": "Spread across the Don-Volga interfluve"
             }
         ]
     },
@@ -340,6 +453,44 @@
                 "title": "Lazaridis et al. (2022) The genetic history of the Southern Arc: a bridge between West Asia and Europe",
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
                 "org": "Harvard Medical School"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    52.0,
+                    28.0
+                ],
+                "time": "3300–2800 BCE",
+                "desc": "Massive westward migration into the Danube corridor and Balkans"
+            },
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    50.0,
+                    55.0
+                ],
+                "time": "3300–2600 BCE",
+                "desc": "Eastward expansion toward the Ural Mountains"
+            },
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    45.0,
+                    30.0
+                ],
+                "time": "3300–2800 BCE",
+                "desc": "Southward movement into the Pontic-Caspian steppe"
             }
         ]
     },
@@ -485,6 +636,20 @@
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064553/",
                 "org": "Harvard Medical School"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    50.0,
+                    55.0
+                ],
+                "to": [
+                    51.0,
+                    88.0
+                ],
+                "time": "3300–2500 BCE",
+                "desc": "Eastward migration from the Urals to the Altai-Sayan region"
+            }
         ]
     },
     {
@@ -582,6 +747,32 @@
                 "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
                 "url": "https://www.science.org/doi/10.1126/science.aat7487",
                 "org": "Harvard Medical School"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    52.5,
+                    59.5
+                ],
+                "to": [
+                    50.5,
+                    63.0
+                ],
+                "time": "2200–1900 BCE",
+                "desc": "Southward expansion from the northern to southern Urals"
+            },
+            {
+                "from": [
+                    50.5,
+                    63.0
+                ],
+                "to": [
+                    47.0,
+                    65.0
+                ],
+                "time": "2100–1900 BCE",
+                "desc": "Further southward spread into the Kazakh steppe"
             }
         ]
     },
@@ -778,6 +969,32 @@
                 "url": "https://www.nature.com/articles/s42003-024-06343-x",
                 "org": "Max Planck Institute for Evolutionary Anthropology"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    55.0,
+                    73.0
+                ],
+                "to": [
+                    56.0,
+                    93.0
+                ],
+                "time": "2200–1900 BCE",
+                "desc": "Rapid eastward migration from the Urals through Siberia to the Yenisei"
+            },
+            {
+                "from": [
+                    56.0,
+                    93.0
+                ],
+                "to": [
+                    50.0,
+                    106.0
+                ],
+                "time": "2100–1900 BCE",
+                "desc": "Continued movement into Mongolia and northern China"
+            }
         ]
     },
     {
@@ -900,6 +1117,32 @@
                 "url": "https://www.nature.com/articles/nature14507",
                 "org": "University of Copenhagen"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    50.5,
+                    63.0
+                ],
+                "to": [
+                    45.0,
+                    68.0
+                ],
+                "time": "2000–1600 BCE",
+                "desc": "Southward expansion across the Central Asian steppe"
+            },
+            {
+                "from": [
+                    50.5,
+                    63.0
+                ],
+                "to": [
+                    55.0,
+                    82.0
+                ],
+                "time": "2000–1450 BCE",
+                "desc": "Eastward spread into the Minusinsk Basin and Altai region"
+            }
         ]
     },
     {
@@ -1005,6 +1248,20 @@
                 "url": "https://www.worldcat.org/title/1000405412",
                 "org": "Ludwig Maximilian University of Munich"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    38.5,
+                    66.0
+                ],
+                "to": [
+                    37.5,
+                    69.0
+                ],
+                "time": "2300–1700 BCE",
+                "desc": "Expansion along the Amu Darya and Zeravshan river valleys"
+            }
         ]
     },
     {
@@ -1089,6 +1346,20 @@
                 "title": "Narasimhan et al. (2019) The formation of human populations in South and Central Asia",
                 "url": "https://www.science.org/doi/10.1126/science.aat7487",
                 "org": "Harvard Medical School"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    46.0,
+                    88.0
+                ],
+                "to": [
+                    47.5,
+                    90.0
+                ],
+                "time": "2750–1900 BCE",
+                "desc": "Northward movement from Dzungaria into the Altai region"
             }
         ]
     },
@@ -1179,6 +1450,20 @@
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6748862/",
                 "org": "University of Copenhagen"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    54.0,
+                    93.0
+                ],
+                "to": [
+                    53.5,
+                    91.5
+                ],
+                "time": "2600–1750 BCE",
+                "desc": "Settlement of the Minusinsk Basin, possibly from the forest-steppe zone"
+            }
         ]
     },
     {
@@ -1259,6 +1544,20 @@
                 "url": "https://doi.org/10.1016/j.cell.2020.10.015",
                 "org": "Seoul National University"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    48.0,
+                    100.0
+                ],
+                "to": [
+                    47.0,
+                    103.0
+                ],
+                "time": "1450–1000 BCE",
+                "desc": "Southward movement within central Mongolia"
+            }
         ]
     },
     {
@@ -1333,6 +1632,20 @@
                 "url": "https://www.nature.com/articles/nature25738",
                 "org": "University of Copenhagen"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    52.5,
+                    108.0
+                ],
+                "to": [
+                    51.5,
+                    104.5
+                ],
+                "time": "2200–1300 BCE",
+                "desc": "Expansion around the Lake Baikal shoreline"
+            }
         ]
     },
     {
@@ -1389,6 +1702,20 @@
                 "title": "Goriunova et al. (2020) Middle Holocene hunter‑gatherer mortuary practices",
                 "url": "https://baikalproject.artsrn.ualberta.ca/2020/12/01/middle-holocene-hunter-gatherer-mortuary-practices-in-the-little-sea-microregion-on-lake-baikal-part-ii-late-neolithic/",
                 "org": "Irkutsk State University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    53.0,
+                    109.0
+                ],
+                "to": [
+                    52.0,
+                    107.0
+                ],
+                "time": "3300–2200 BCE",
+                "desc": "Movement southward along the eastern Lake Baikal coast"
             }
         ]
     },
@@ -1488,6 +1815,32 @@
                 "title": "Damgaard et al. (2018) Genome-wide data from Bronze Age Mongolia links DSKC ancestry to later Xiongnu populations, Nature Communications",
                 "url": "https://www.nature.com/articles/s41467-018-05992-1",
                 "org": "University of Copenhagen"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    48.0,
+                    100.0
+                ],
+                "to": [
+                    47.0,
+                    106.0
+                ],
+                "time": "1200–700 BCE",
+                "desc": "Spread across the Mongolian steppe from the Altai to eastern Mongolia"
+            },
+            {
+                "from": [
+                    47.0,
+                    106.0
+                ],
+                "to": [
+                    50.0,
+                    115.0
+                ],
+                "time": "1000–700 BCE",
+                "desc": "Eastward expansion toward the Transbaikal region"
             }
         ]
     },
@@ -1598,6 +1951,20 @@
                 "url": "https://www.anthropol.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=2321",
                 "org": "Chinese Academy of Social Sciences"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    43.0,
+                    119.0
+                ],
+                "to": [
+                    44.0,
+                    121.0
+                ],
+                "time": "6600–5000 BCE",
+                "desc": "Early Holocene movement within the Liao River basin"
+            }
         ]
     },
     {
@@ -1687,6 +2054,20 @@
                 "url": "https://www.jstor.org/stable/23333356",
                 "org": "Bar-Ilan University"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    41.5,
+                    119.0
+                ],
+                "to": [
+                    42.5,
+                    121.0
+                ],
+                "time": "4700–2900 BCE",
+                "desc": "Expansion across the Liao River region and into southern Manchuria"
+            }
         ]
     },
     {
@@ -1699,14 +2080,38 @@
         "desc": "Late Neolithic culture of the Daihai Lake region in southern Inner Mongolia (2500–2200 BCE), known for stone-walled hilltop settlements, millet agriculture, and pig/sheep husbandry. Part of the Longshanoid cultural complex of the northern Chinese frontier, representing the agro-pastoral transition zone. The type site at Laohushan (Liangcheng County) contains a stone enclosure wall, semi-subterranean houses, and ceramic assemblages with basket-impressed and cord-marked decoration. The culture declines after 2200 BCE as the region becomes increasingly arid.",
         "haplogroups": "N, O2, Q1a",
         "borders": [
-            [40.9, 112.3],
-            [41.0, 113.0],
-            [40.5, 113.5],
-            [39.9, 113.2],
-            [39.7, 112.8],
-            [39.9, 112.3],
-            [40.4, 112.0],
-            [40.9, 112.3]
+            [
+                40.9,
+                112.3
+            ],
+            [
+                41.0,
+                113.0
+            ],
+            [
+                40.5,
+                113.5
+            ],
+            [
+                39.9,
+                113.2
+            ],
+            [
+                39.7,
+                112.8
+            ],
+            [
+                39.9,
+                112.3
+            ],
+            [
+                40.4,
+                112.0
+            ],
+            [
+                40.9,
+                112.3
+            ]
         ],
         "sites": [
             {
@@ -1755,6 +2160,20 @@
                 "title": "Ning et al. (2020) Ancient genomes from northern China suggest links between subsistence changes and human migration, Nature Communications",
                 "url": "https://www.nature.com/articles/s41467-020-16557-2",
                 "org": "Jilin University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    42.5,
+                    121.0
+                ],
+                "to": [
+                    41.5,
+                    120.0
+                ],
+                "time": "2500–2200 BCE",
+                "desc": "Southward movement within the Liao River drainage"
             }
         ]
     },
@@ -1842,6 +2261,20 @@
                 "url": "https://doi.org/10.1016/j.scib.2020.06.027",
                 "org": "Chinese Academy of Sciences"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    35.8,
+                    111.5
+                ],
+                "to": [
+                    36.0,
+                    112.5
+                ],
+                "time": "2300–1900 BCE",
+                "desc": "Expansion along the middle Fen River valley in Shanxi"
+            }
         ]
     },
     {
@@ -1926,6 +2359,20 @@
                 "title": "Yang et al. (2021) Ancient DNA reveals Shimao as a cosmopolitan centre at the steppe-farming interface, Nature Communications",
                 "url": "https://www.nature.com/articles/s41467-021-25394-2",
                 "org": "Chinese Academy of Sciences"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    38.5,
+                    110.0
+                ],
+                "to": [
+                    37.5,
+                    110.5
+                ],
+                "time": "2300–1800 BCE",
+                "desc": "Spread across the northern Loess Plateau"
             }
         ]
     },
@@ -2020,6 +2467,20 @@
                 "url": "https://www.nature.com/articles/s41467-020-16557-2",
                 "org": "Jilin University"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    39.5,
+                    110.0
+                ],
+                "to": [
+                    40.5,
+                    111.0
+                ],
+                "time": "2000–1400 BCE",
+                "desc": "Northward expansion into the Ordos Loop region"
+            }
         ]
     },
     {
@@ -2113,6 +2574,20 @@
                 "url": "https://doi.org/10.1093/molbev/msab210",
                 "org": "Chinese Academy of Sciences"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    35.5,
+                    102.5
+                ],
+                "to": [
+                    36.5,
+                    101.0
+                ],
+                "time": "2300–1500 BCE",
+                "desc": "Spread across the upper Yellow River and Tao River valleys"
+            }
         ]
     },
     {
@@ -2205,6 +2680,20 @@
                 "title": "Ning et al. (2020) Ancient genomes from the Hongshan Culture and the formation of ancestral populations in Northeast China, Current Biology",
                 "url": "https://doi.org/10.1016/j.cub.2020.05.052",
                 "org": "Jilin University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    34.8,
+                    110.5
+                ],
+                "to": [
+                    34.5,
+                    112.5
+                ],
+                "time": "2070–1600 BCE",
+                "desc": "Expansion from the western Wei River region into the Central Plain"
             }
         ]
     },
@@ -2306,6 +2795,20 @@
                 "title": "Campbell (2018) The Archaeology of the Shang Dynasty, Journal of Archaeological Research",
                 "url": "https://doi.org/10.1007/s10814-017-9110-0",
                 "org": "University of Cambridge"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    36.0,
+                    114.5
+                ],
+                "to": [
+                    34.5,
+                    112.5
+                ],
+                "time": "1600–1046 BCE",
+                "desc": "Political center shifted eastward along the Yellow River"
             }
         ]
     },
@@ -2415,6 +2918,32 @@
                 "title": "Li (2006) The Formation of the Chinese Civilization: An Archaeological Perspective, Yale University Press",
                 "url": "https://www.worldcat.org/title/61295857",
                 "org": "Chinese Academy of Social Sciences"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    34.3,
+                    108.0
+                ],
+                "to": [
+                    34.5,
+                    112.5
+                ],
+                "time": "1046–771 BCE",
+                "desc": "Western Zhou heartland in the Wei River valley"
+            },
+            {
+                "from": [
+                    34.5,
+                    112.5
+                ],
+                "to": [
+                    34.8,
+                    117.0
+                ],
+                "time": "770–256 BCE",
+                "desc": "Eastern Zhou eastward shift to the Central Plain"
             }
         ]
     },
@@ -2565,6 +3094,32 @@
                 "url": "https://doi.org/10.1007/s12520-020-01063-5",
                 "org": "Chinese Academy of Sciences"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    34.3,
+                    108.9
+                ],
+                "to": [
+                    34.5,
+                    112.5
+                ],
+                "time": "206 BCE–9 CE",
+                "desc": "Consolidation from the Guanzhong basin into the Central Plain"
+            },
+            {
+                "from": [
+                    34.5,
+                    112.5
+                ],
+                "to": [
+                    23.1,
+                    113.3
+                ],
+                "time": "206 BCE–220 CE",
+                "desc": "Southward expansion into the Yangtze region and beyond"
+            }
         ]
     },
     {
@@ -2665,6 +3220,32 @@
                 "title": "Parzinger (2021) The Scythians: Nomad Warriors of the Steppe, Antiquity",
                 "url": "https://doi.org/10.15184/aqy.2021.27",
                 "org": "German Archaeological Institute"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    49.0,
+                    32.0
+                ],
+                "time": "700–500 BCE",
+                "desc": "Westward expansion from the Pontic steppe into the Carpathian basin"
+            },
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    42.0,
+                    43.0
+                ],
+                "time": "700–300 BCE",
+                "desc": "Southward movement into the Caucasus and Anatolia"
             }
         ]
     },
@@ -2779,6 +3360,32 @@
                 "url": "https://doi.org/10.1038/ncomms14615",
                 "org": "University of Zurich"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    42.0,
+                    69.0
+                ],
+                "to": [
+                    38.0,
+                    68.0
+                ],
+                "time": "900–500 BCE",
+                "desc": "Southward expansion from the Tian Shan into Bactria and Gandhara"
+            },
+            {
+                "from": [
+                    42.0,
+                    69.0
+                ],
+                "to": [
+                    40.0,
+                    75.0
+                ],
+                "time": "700–200 BCE",
+                "desc": "Eastward movement along the Silk Road corridors"
+            }
         ]
     },
     {
@@ -2880,6 +3487,20 @@
                 "url": "https://doi.org/10.1038/s41467-025-63789-1",
                 "org": "Chinese Academy of Sciences"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    47.5,
+                    107.0
+                ],
+                "to": [
+                    46.5,
+                    110.0
+                ],
+                "time": "1100–400 BCE",
+                "desc": "Expansion across the eastern Mongolian steppe"
+            }
         ]
     },
     {
@@ -2971,6 +3592,20 @@
                 "title": "Childebayeva et al. (2024) Bronze Age Northern Eurasian genetics in the context of development of metallurgy and Siberian ancestry",
                 "url": "https://www.nature.com/articles/s42003-024-06343-x",
                 "org": "Max Planck Institute for Evolutionary Anthropology"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    53.5,
+                    91.5
+                ],
+                "to": [
+                    52.0,
+                    93.0
+                ],
+                "time": "1500–800 BCE",
+                "desc": "Southward movement into the Minusinsk Basin from the Yenisei region"
             }
         ]
     },
@@ -3093,6 +3728,32 @@
                 "url": "https://doi.org/10.1101/2024.04.17.589479",
                 "org": "Harvard Medical School"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    47.0,
+                    45.0
+                ],
+                "to": [
+                    49.0,
+                    35.0
+                ],
+                "time": "600 BCE–200 CE",
+                "desc": "Westward migration from the Ural-Caspian steppe into the Pontic region"
+            },
+            {
+                "from": [
+                    47.0,
+                    45.0
+                ],
+                "to": [
+                    51.0,
+                    55.0
+                ],
+                "time": "300 BCE–200 CE",
+                "desc": "Northern expansion along the Ural River"
+            }
         ]
     },
     {
@@ -3203,6 +3864,20 @@
                 "url": "https://doi.org/10.1038/s41467-024-48572-7",
                 "org": "Adam Mickiewicz University"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    47.0,
+                    40.0
+                ],
+                "to": [
+                    48.0,
+                    44.0
+                ],
+                "time": "1900–1200 BCE",
+                "desc": "Eastward expansion along the Pontic steppe from the Dnieper to the Don"
+            }
         ]
     },
     {
@@ -3297,6 +3972,20 @@
                 "url": "https://press.princeton.edu/books/paperback/9780691148182/the-horse-the-wheel-and-language",
                 "org": "Hartwick College"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    54.0,
+                    56.0
+                ],
+                "to": [
+                    52.5,
+                    58.5
+                ],
+                "time": "2300–1800 BCE",
+                "desc": "Southward expansion from the Middle Volga to the Southern Urals"
+            }
         ]
     },
     {
@@ -3378,6 +4067,20 @@
                 "title": "Ning et al. (2020) Ancient genomes from the Hongshan Culture and the formation of ancestral populations in Northeast China, Current Biology",
                 "url": "https://doi.org/10.1016/j.cub.2020.05.052",
                 "org": "Jilin University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    41.5,
+                    119.0
+                ],
+                "to": [
+                    40.5,
+                    119.5
+                ],
+                "time": "2200–1600 BCE",
+                "desc": "Spread across the Liao River and western Liaodong Peninsula"
             }
         ]
     },
@@ -3464,6 +4167,20 @@
                 "title": "Murphy et al. (2023) Ancient genomes trace the origin and decline of the Scythians, Science Advances",
                 "url": "https://doi.org/10.1126/sciadv.adf6060",
                 "org": "Trinity College Dublin"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    53.5,
+                    91.5
+                ],
+                "to": [
+                    53.0,
+                    92.5
+                ],
+                "time": "800–200 BCE",
+                "desc": "Consolidation within the Minusinsk Basin"
             }
         ]
     },
@@ -3554,6 +4271,20 @@
                 "url": "https://www.nature.com/articles/s41467-018-05992-1",
                 "org": "University of Copenhagen"
             }
+        ],
+        "movements": [
+            {
+                "from": [
+                    51.5,
+                    93.0
+                ],
+                "to": [
+                    50.5,
+                    94.0
+                ],
+                "time": "500–200 BCE",
+                "desc": "Movement within the Tuva Basin and Yenisei headwaters"
+            }
         ]
     },
     {
@@ -3639,6 +4370,20 @@
                 "title": "Chao Ning (2020) Ancient genomes from northern China suggest links between subsistence changes and human migration",
                 "url": "https://www.nature.com/articles/s41467-020-16557-2",
                 "org": "Jilin University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    41.0,
+                    119.0
+                ],
+                "to": [
+                    42.0,
+                    120.5
+                ],
+                "time": "1200–600 BCE",
+                "desc": "Northward expansion into the inner Mongolian steppe"
             }
         ]
     },
@@ -3768,6 +4513,32 @@
                 "title": "Polosmak et al. (2008) The Noin-Ula Mounds: New Discoveries, Archaeology, Ethnology and Anthropology of Eurasia",
                 "url": "https://doi.org/10.1016/j.aeae.2008.11.001",
                 "org": "Institute of Archaeology RAS"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    47.0,
+                    106.0
+                ],
+                "to": [
+                    44.0,
+                    102.0
+                ],
+                "time": "300–200 BCE",
+                "desc": "Unification and consolidation across the Mongolian steppe"
+            },
+            {
+                "from": [
+                    44.0,
+                    102.0
+                ],
+                "to": [
+                    50.0,
+                    115.0
+                ],
+                "time": "200 BCE–100 CE",
+                "desc": "Eastward expansion toward Manchuria"
             }
         ]
     },

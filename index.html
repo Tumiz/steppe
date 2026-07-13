@@ -177,8 +177,11 @@
         var sitesDotsLayer = L.layerGroup();
         var searchableItems = [];
         var cultureItems = [];
+        var movementItems = [];
         var riversLayer = L.layerGroup();
         var riversVisible = false;
+        var movementsLayer = L.layerGroup().addTo(map);
+        var movementsVisible = true;
         var riverDescs = {};
         var oldestYear = -Infinity;
         var newestYear = Infinity;
@@ -210,7 +213,7 @@
         };
 
         // Load local JSON markers
-        fetch('markers.json')
+        fetch('cultures.json')
             .then(function(res) { return res.json(); })
             .then(function(data) {
                 function buildPopupContent(item) {
@@ -330,6 +333,61 @@
                     }
                 });
 
+                // Render population movements as arrow polylines
+                data.forEach(function(item) {
+                    if (!item.movements || item.movements.length === 0) return;
+                    var color = item.color || '#ff4444';
+                    item.movements.forEach(function(mov) {
+                        var from = mov.from;
+                        var to = mov.to;
+                        var midLat = (from[0] + to[0]) / 2;
+                        var midLng = (from[1] + to[1]) / 2;
+                        var dLat = to[0] - from[0];
+                        var dLng = to[1] - from[1];
+                        var dist = Math.sqrt(dLat * dLat + dLng * dLng);
+                        var offset = dist * 0.1;
+                        var curveLat = midLat - dLng / dist * offset;
+                        var curveLng = midLng + dLat / dist * offset;
+
+                        var line = L.polyline(
+                            [[from[0], from[1]], [curveLat, curveLng], [to[0], to[1]]],
+                            { color: color, weight: 3, opacity: 0.8 }
+                        );
+                        var popupHtml = '<b>' + item.name + '</b><br><i>' + mov.desc + '</i><br><small>' + mov.time + '</small>';
+                        line.bindPopup(popupHtml);
+
+                        var angle = Math.atan2(to[1] - curveLng, to[0] - curveLat) * 180 / Math.PI;
+                        var arrowSize = 50;
+                        var arrow1Lat = to[0] - arrowSize * 0.01 * Math.cos((angle - 30) * Math.PI / 180);
+                        var arrow1Lng = to[1] - arrowSize * 0.01 * Math.sin((angle - 30) * Math.PI / 180);
+                        var arrow2Lat = to[0] - arrowSize * 0.01 * Math.cos((angle + 30) * Math.PI / 180);
+                        var arrow2Lng = to[1] - arrowSize * 0.01 * Math.sin((angle + 30) * Math.PI / 180);
+                        var arrow = L.polyline(
+                            [[arrow1Lat, arrow1Lng], [to[0], to[1]], [arrow2Lat, arrow2Lng]],
+                            { color: color, weight: 4, opacity: 0.8 }
+                        );
+
+                        var movParsed = parseTimeRange(mov.time);
+                        if (movParsed) {
+                            if (movParsed.start > oldestYear) oldestYear = movParsed.start;
+                            if (movParsed.end < newestYear) newestYear = movParsed.end;
+                        }
+                        movementItems.push({
+                            startYear: movParsed ? movParsed.start : null,
+                            endYear: movParsed ? movParsed.end : null,
+                            line: line,
+                            arrow: arrow
+                        });
+
+                        searchableItems.push({
+                            name: item.name + ' migration',
+                            center: L.latLng(midLat, midLng),
+                            type: 'movement',
+                            line: line
+                        });
+                    });
+                });
+
                 // Set up time slider
                 var slider = document.getElementById('time-slider');
                 var display = document.getElementById('time-display');
@@ -398,6 +456,19 @@
                             }
                         });
                     });
+
+                    movementItems.forEach(function(item) {
+                        var t0 = item.startYear, t1 = item.endYear;
+                        var visible = t0 !== null && t1 !== null && year <= t0 && year >= t1;
+
+                        if (visible) {
+                            if (!movementsLayer.hasLayer(item.line)) movementsLayer.addLayer(item.line);
+                            if (!movementsLayer.hasLayer(item.arrow)) movementsLayer.addLayer(item.arrow);
+                        } else {
+                            if (movementsLayer.hasLayer(item.line)) movementsLayer.removeLayer(item.line);
+                            if (movementsLayer.hasLayer(item.arrow)) movementsLayer.removeLayer(item.arrow);
+                        }
+                    });
                 }
 
                 slider.addEventListener('input', function() {
@@ -459,6 +530,15 @@
                         riversLayer.addTo(map);
                         var toggleBtns = document.querySelectorAll('.border-toggle');
                         toggleBtns.forEach(function(b) { if (b.innerHTML === 'Rivers') b.classList.add('active'); });
+                    }
+                    source.line.openPopup();
+                    return;
+                } else if (source.type === 'movement') {
+                    if (!movementsVisible) {
+                        movementsVisible = true;
+                        movementsLayer.addTo(map);
+                        var toggleBtns = document.querySelectorAll('.border-toggle');
+                        toggleBtns.forEach(function(b) { if (b.innerHTML === 'Culture Border') b.classList.add('active'); });
                     }
                     source.line.openPopup();
                     return;
@@ -574,9 +654,11 @@
                     cultureBordersVisible = !cultureBordersVisible;
                     if (cultureBordersVisible) {
                         cultureBordersLayer.addTo(map);
+                        movementsLayer.addTo(map);
                         btn.classList.add('active');
                     } else {
                         map.removeLayer(cultureBordersLayer);
+                        map.removeLayer(movementsLayer);
                         btn.classList.remove('active');
                     }
                 });
