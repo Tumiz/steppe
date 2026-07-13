@@ -534,12 +534,6 @@
                     source.line.openPopup();
                     return;
                 } else if (source.type === 'movement') {
-                    if (!movementsVisible) {
-                        movementsVisible = true;
-                        movementsLayer.addTo(map);
-                        var toggleBtns = document.querySelectorAll('.border-toggle');
-                        toggleBtns.forEach(function(b) { if (b.innerHTML === 'Culture Border') b.classList.add('active'); });
-                    }
                     source.line.openPopup();
                     return;
                 }
@@ -642,30 +636,9 @@
         });
         map.addControl(new ToggleBorders());
 
-        // Toggle culture borders button
-        var cultureBordersVisible = false;
-        var ToggleCultureBorders = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Culture Border';
-                L.DomEvent.disableClickPropagation(btn);
-                L.DomEvent.on(btn, 'click', function() {
-                    cultureBordersVisible = !cultureBordersVisible;
-                    if (cultureBordersVisible) {
-                        cultureBordersLayer.addTo(map);
-                        movementsLayer.addTo(map);
-                        btn.classList.add('active');
-                    } else {
-                        map.removeLayer(cultureBordersLayer);
-                        map.removeLayer(movementsLayer);
-                        btn.classList.remove('active');
-                    }
-                });
-                return btn;
-            }
-        });
-        map.addControl(new ToggleCultureBorders());
+        // Culture borders shown by default
+        var cultureBordersVisible = true;
+        cultureBordersLayer.addTo(map);
 
         // Toggle key sites (dots + names) button
         var keySitesVisible = false;
