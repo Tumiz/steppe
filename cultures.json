@@ -495,6 +495,142 @@
         ]
     },
     {
+        "name": "Corded Ware Culture",
+        "time": "2900–2350 BCE",
+        "language": "Proto-Balto-Slavic / Proto-Germanic (Indo-European)",
+        "color": "#EDB82A",
+        "lat": 52.0,
+        "lng": 18.0,
+        "desc": "Late Neolithic to Early Bronze Age archaeological horizon across northern and central Europe (2900–2350 BCE), from the Rhine to the Volga. Characterized by cord-impressed pottery, single inhumation burials, and polished stone battle axes. Genetic studies show massive steppe-derived ancestry consistent with Yamnaya-derived migrations, supporting the spread of Indo-European languages into northern Europe.",
+        "haplogroups": "R1a (R1a-M417, Z645)",
+        "borders": [
+            [
+                54.5,
+                10.0
+            ],
+            [
+                56.0,
+                14.0
+            ],
+            [
+                57.5,
+                24.0
+            ],
+            [
+                58.0,
+                32.0
+            ],
+            [
+                57.5,
+                40.0
+            ],
+            [
+                56.0,
+                48.0
+            ],
+            [
+                53.0,
+                50.0
+            ],
+            [
+                50.5,
+                46.0
+            ],
+            [
+                48.5,
+                38.0
+            ],
+            [
+                48.0,
+                30.0
+            ],
+            [
+                49.0,
+                22.0
+            ],
+            [
+                50.0,
+                14.0
+            ],
+            [
+                52.0,
+                10.0
+            ],
+            [
+                54.5,
+                10.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Fritzlar",
+                "lat": 51.13,
+                "lng": 9.28,
+                "desc": "Key Corded Ware site in Hesse, Germany; rich burial assemblage with battle axes and corded pottery, demonstrating early Corded Ware presence in western Europe"
+            },
+            {
+                "name": "Zvejnieki",
+                "lat": 56.93,
+                "lng": 24.58,
+                "desc": "Large burial mound complex in Latvia; multi-period site with extensive Corded Ware layer, providing key aDNA evidence for steppe ancestry in Baltic populations"
+            },
+            {
+                "name": "Bachkovo",
+                "lat": 41.95,
+                "lng": 25.12,
+                "desc": "Southeastern outlier site in Bulgaria revealing Corded Ware horizon expansion into the Balkans"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Haak et al. (2015) Massive migration from the steppe was a source for Indo-European languages in Europe",
+                "url": "https://www.nature.com/articles/nature14317",
+                "org": "University of Adelaide"
+            },
+            {
+                "title": "Allentoft et al. (2015) Population genomics of Bronze Age Eurasia",
+                "url": "https://www.nature.com/articles/nature14507",
+                "org": "University of Copenhagen"
+            },
+            {
+                "title": "Kristiansen et al. (2017) Replacing the fading memories of the past in the 3rd millennium BCE in Europe",
+                "url": "https://onlinelibrary.wiley.com/doi/10.1111/1097-0371.12083",
+                "org": "University of Gothenburg"
+            },
+            {
+                "title": "Linderholm et al. (2020) Corded Ware cultural complexity uncovered using genomic and isotopic analysis from south-eastern Poland",
+                "url": "https://www.nature.com/articles/s41598-020-63138-w",
+                "org": "Texas A&M University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    48.0,
+                    40.5
+                ],
+                "to": [
+                    52.0,
+                    18.0
+                ],
+                "time": "3000–2600 BCE",
+                "desc": "Westward expansion from the Pontic-Caspian steppe into central and northern Europe"
+            },
+            {
+                "from": [
+                    52.0,
+                    18.0
+                ],
+                "to": [
+                    56.0,
+                    24.0
+                ],
+                "time": "2900–2500 BCE",
+                "desc": "Northward spread into the Baltic region and Scandinavia"
+            }
+        ]
+    },
+    {
         "name": "Afonasiev Culture",
         "time": "3300–2500 BCE",
         "language": "Proto-Indo-European",
