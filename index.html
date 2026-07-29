@@ -133,6 +133,13 @@
             cursor: pointer;
             box-sizing: border-box;
         }
+        #temp-curve {
+            width: 100%;
+            height: 60px;
+            display: block;
+            margin-bottom: 1px;
+            border-radius: 2px;
+        }
         @media (max-width: 768px) {
             .leaflet-control-geocoder { width: 200px; }
             .border-toggle { padding: 8px 12px; font-size: 13px; }
@@ -141,12 +148,14 @@
             .text-marker { font-size: 16px; }
             .text-marker .time { font-size: 14px; }
             .text-marker .haplo { font-size: 11px; }
+            #temp-curve { height: 40px; }
         }
         @media (max-width: 480px) {
             .leaflet-control-geocoder { width: 160px; }
             .border-toggle { padding: 6px 10px; font-size: 11px; }
             #time-slider-container { width: 96%; padding: 6px 10px 4px; }
             .leaflet-control-zoom a { width: 28px; height: 28px; line-height: 28px; font-size: 14px; }
+            #temp-curve { height: 36px; }
         }
     </style>
 </head>
@@ -154,6 +163,7 @@
     <div id="map"></div>
     <div id="time-slider-container">
         <label>Time: <span id="time-display">2000 BCE</span></label>
+        <canvas id="temp-curve" width="800" height="60"></canvas>
         <div id="time-slider-ticks"></div>
         <input type="range" id="time-slider">
     </div>
@@ -421,6 +431,131 @@
                     }
                 }
 
+                // Temperature proxy data (δ18O from GISP2 ice core, Alley 2000)
+                var tempData = [
+                    [5200,-34.8],[5100,-34.65],[5000,-34.55],[4900,-34.5],[4800,-34.4],
+                    [4700,-34.35],[4600,-34.3],[4500,-34.3],[4400,-34.4],[4300,-34.5],
+                    [4200,-34.6],[4100,-34.65],[4000,-34.6],[3900,-34.55],[3800,-34.65],
+                    [3700,-34.75],[3600,-34.85],[3500,-34.95],[3400,-35.05],[3300,-35.1],
+                    [3200,-35.15],[3100,-35.1],[3000,-35.05],[2900,-35.0],[2800,-34.95],
+                    [2700,-35.0],[2600,-35.05],[2500,-35.0],[2400,-34.95],[2300,-35.0],
+                    [2200,-35.05],[2100,-35.1],[2000,-35.15],[1900,-35.1],[1800,-35.05],
+                    [1700,-35.0],[1600,-34.95],[1500,-34.9],[1400,-34.95],[1300,-34.9],
+                    [1200,-34.85],[1100,-34.8],[1000,-34.75],[900,-34.7],[800,-34.65],
+                    [700,-34.7],[600,-34.75],[500,-34.8],[400,-34.85],[300,-34.8],[200,-34.75]
+                ];
+
+                var canvas = document.getElementById('temp-curve');
+                var ctx = canvas.getContext('2d');
+
+                function drawTempCurve() {
+                    // Match canvas pixel dimensions to display size
+                    var rect = canvas.parentElement.getBoundingClientRect();
+                    var w = Math.round(rect.width - 4);
+                    var h = Math.round(canvas.clientHeight || 60);
+                    if (canvas.width !== w) canvas.width = w;
+                    if (canvas.height !== h) canvas.height = h;
+
+                    var padL = 40, padR = 8, padT = 4, padB = 8;
+                    var plotW = w - padL - padR;
+                    var plotH = h - padT - padB;
+                    if (plotW <= 0 || plotH <= 0) return;
+
+                    var oldest = oldestYear > -Infinity ? oldestYear : 5200;
+                    var newest = newestYear < Infinity ? newestYear : 200;
+                    var tMin = -oldest, tMax = -newest;
+                    var range = tMax - tMin || 1;
+
+                    // Find data min/max
+                    var dMin = Infinity, dMax = -Infinity;
+                    for (var i = 0; i < tempData.length; i++) {
+                        var v = tempData[i][1];
+                        if (v < dMin) dMin = v;
+                        if (v > dMax) dMax = v;
+                    }
+                    var dRange = dMax - dMin || 1;
+                    var dMid = (dMin + dMax) / 2;
+
+                    function xPos(year) { return padL + ((-year) - tMin) / range * plotW; }
+                    function yPos(val) { return padT + (1 - (val - dMin) / dRange) * plotH; }
+
+                    ctx.clearRect(0, 0, w, h);
+
+                    // Gradient fill under curve
+                    ctx.beginPath();
+                    var firstX = xPos(tempData[0][0]);
+                    ctx.moveTo(firstX, padT + plotH);
+                    for (var i = 0; i < tempData.length; i++) {
+                        ctx.lineTo(xPos(tempData[i][0]), yPos(tempData[i][1]));
+                    }
+                    var lastX = xPos(tempData[tempData.length-1][0]);
+                    ctx.lineTo(lastX, padT + plotH);
+                    ctx.closePath();
+
+                    var grad = ctx.createLinearGradient(0, padT, 0, padT + plotH);
+                    grad.addColorStop(0, 'rgba(255, 80, 40, 0.5)');
+                    grad.addColorStop(0.5, 'rgba(255, 200, 80, 0.4)');
+                    grad.addColorStop(1, 'rgba(60, 120, 255, 0.5)');
+                    ctx.fillStyle = grad;
+                    ctx.fill();
+
+                    // Curve line
+                    ctx.beginPath();
+                    ctx.moveTo(firstX, yPos(tempData[0][1]));
+                    for (var i = 1; i < tempData.length; i++) {
+                        ctx.lineTo(xPos(tempData[i][0]), yPos(tempData[i][1]));
+                    }
+                    ctx.strokeStyle = '#ffcc55';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+
+                    // Labels
+                    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+                    ctx.font = '10px sans-serif';
+                    ctx.textAlign = 'right';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText('Warm', padL - 4, padT + 4);
+                    ctx.fillText('Cool', padL - 4, padT + plotH - 4);
+
+                    // Y-axis line
+                    ctx.beginPath();
+                    ctx.moveTo(padL, padT);
+                    ctx.lineTo(padL, padT + plotH);
+                    ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+
+                    // Current position cursor
+                    var curYear = -parseInt(slider.value);
+                    if (curYear <= tempData[0][0] && curYear >= tempData[tempData.length-1][0]) {
+                        var cx = xPos(curYear);
+                        ctx.beginPath();
+                        ctx.moveTo(cx, padT);
+                        ctx.lineTo(cx, padT + plotH);
+                        ctx.strokeStyle = '#fff';
+                        ctx.lineWidth = 2;
+                        ctx.stroke();
+
+                        // Interpolate value at current year
+                        var val = 0;
+                        for (var i = 0; i < tempData.length - 1; i++) {
+                            if (curYear >= tempData[i+1][0] && curYear <= tempData[i][0]) {
+                                var f = (curYear - tempData[i][0]) / (tempData[i+1][0] - tempData[i][0]);
+                                val = tempData[i][1] + f * (tempData[i+1][1] - tempData[i][1]);
+                                break;
+                            }
+                        }
+                        ctx.fillStyle = '#fff';
+                        ctx.font = 'bold 10px sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+                        ctx.fillText(val.toFixed(1) + '‰', cx, padT - 2);
+                    }
+                }
+
+                drawTempCurve();
+                window.addEventListener('resize', drawTempCurve);
+
                 function applyTimeFilter(year) {
                     cultureItems.forEach(function(item) {
                         var t0 = item.startYear, t1 = item.endYear;
@@ -475,6 +610,7 @@
                     var year = -parseInt(this.value);
                     display.textContent = year + ' BCE';
                     applyTimeFilter(year);
+                    drawTempCurve();
                 });
 
                 applyTimeFilter(-parseInt(slider.value));
