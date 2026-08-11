@@ -2839,6 +2839,118 @@
         ]
     },
     {
+        "name": "Lijiaya Culture",
+        "time": "c.1300–800 BCE",
+        "language": "Unclassified",
+        "color": "#17A2B8",
+        "lat": 37.09,
+        "lng": 110.43,
+        "desc": "Late Shang to early Western Zhou Bronze Age culture of the loess highlands on both banks of the middle Yellow River, centred in northern Shaanxi (Qingjian and Suide counties) and extending into western Shanxi (Shilou, Liulin) c.1300–800 BCE. Named after the type site of Lijiaya, a fortified town in Qingjian County defended by sheer cliffs on the Wuding River, its people are widely identified with the Guifang — the 'Ghost People' of Shang oracle-bone inscriptions and Zhou bronze inscriptions, a powerful northern enemy kingdom on the Shang frontier. The culture is defined by a distinctive ceramic assemblage (cord-marked li tripods, gui, dou, jars and the iconic large three-legged guan), local piece-mould bronze casting, and richly furnished elite burials with gold earrings, turquoise-inlaid ornaments, chariot-and-horse pits and snake-pattern bronzes. Excavation of the Zhaigou centre since 2022 has revealed a c.300 ha 'multi-ridge' polity built around a monumental sunken rammed-earth courtyard structure, the largest and most numerous 'jia-shaped' princely tombs found outside the Shang cultural sphere — with openings rivaling the royal tombs at Yinxu — and the earliest known double-shaft (tandem) vehicle, pushing the appearance of the double-shaft cart in China back by about a millennium. Settlements show a mixed agro-pastoral economy at the intersection of the Shang world and the Eurasian steppe, marked by many small dispersed villages and a few large centres, suggesting a cluster of small, mutually independent polities rather than a single unified state.",
+        "borders": [
+            [
+                37.9,
+                109.7
+            ],
+            [
+                38.0,
+                110.9
+            ],
+            [
+                37.6,
+                111.3
+            ],
+            [
+                36.9,
+                111.3
+            ],
+            [
+                36.6,
+                110.6
+            ],
+            [
+                36.6,
+                110.0
+            ],
+            [
+                37.0,
+                109.6
+            ],
+            [
+                37.9,
+                109.7
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Lijiaya",
+                "lat": 37.09,
+                "lng": 110.43,
+                "desc": "Type site (Gaojie village town, Qingjian County, Shaanxi): a c.6.7 ha stone-and-rammed-earth fortified town on the east bank of the Wuding River with walls of alternating stone courses and pounded earth, excavated 1983–1991; yielded the earliest known carved stone human-skull sculpture in China, oracle bones and pottery bearing 'gui', 'qie' and 'wu' characters often cited in the identification of the culture with the Guifang"
+            },
+            {
+                "name": "Zhaigou",
+                "lat": 37.18,
+                "lng": 110.47,
+                "desc": "Largest late Shang centre of the loess highlands (Jiejiagou town, Qingjian County): a c.300 ha 'multi-ridge' settlement with a sunken hui-shaped rammed-earth courtyard complex at Zhaijuangai, a piece-mould bronze-casting workshop, small cemeteries and 11 jia-shaped princely tombs; named a 2023 Top Ten National Archaeological Discovery and a major field discovery of the 2025 World Archaeology Forum"
+            },
+            {
+                "name": "Wayao Valley Cemetery",
+                "lat": 37.05,
+                "lng": 110.4,
+                "desc": "Elite Lijiaya cemetery (Gaojie town, Qingjian) spread over three loess ridges c.6 km southwest of Lijiaya; nine 'jia-shaped' tombs up to 62 m long with in situ chariot burials, including the earliest known double-shaft vehicle in China and richly ornamented turquoise- and gold-adorned grave goods"
+            },
+            {
+                "name": "Xinzhuang",
+                "lat": 37.13,
+                "lng": 110.18,
+                "desc": "Major Lijiaya settlement and cemetery in Li Jiata town, Qingjian County (excavated 2012–2014): rammed-earth building foundations, sacrificial pits and bronze assemblage documenting the culture's mixed agro-pastoral economy and local bronze industry"
+            },
+            {
+                "name": "Xuejiaqu",
+                "lat": 37.44,
+                "lng": 110.3,
+                "desc": "Lijiaya culture settlement on the Wuding River in Suide County, excavated in the 1980s; stratified deposits and typical ceramic assemblage defining the northern extent of the culture in Shaanxi"
+            },
+            {
+                "name": "Gaohong",
+                "lat": 37.44,
+                "lng": 110.7,
+                "desc": "Fortified hilltop settlement of the Lijiaya culture above the Yellow River at Mengmen town, Liulin County (Shanxi); rammed-earth and stone enclosure with bronze remains marking the eastern extent of the culture across the Yellow River"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Zhang Tian'en (2017) Shang Dynasty Archaeological Cultures on the Northern Shaanxi Plateau, Acta Archaeologica Sinica",
+                "url": "http://www.kaogu.net.cn/uploads/soft/2017/20170912zhangtianen.pdf",
+                "org": "Shaanxi Provincial Institute of Archaeology"
+            },
+            {
+                "title": "Cao Dazhi (2023) A Survey of Lijiaya Culture Sites and Some Related Issues, Journal of National Museum of China",
+                "url": "https://archaeology.pku.edu.cn/lijiayawenhuayizhidediaochajixiangguanwenti_caodazhi.pdf",
+                "org": "Peking University"
+            },
+            {
+                "title": "Shaanxi Provincial Institute of Archaeology (2024) Excavation of the Zhaigou site in Qingjian County, Shaanxi — Top Ten National Archaeological Discoveries 2023",
+                "url": "https://www.news.cn/culture/20230531/f7663f2f026449d68121a514de391486/c.html",
+                "org": "State Administration of Cultural Heritage"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    37.3,
+                    110.3
+                ],
+                "to": [
+                    37.2,
+                    111.0
+                ],
+                "time": "1300–800 BCE",
+                "desc": "Spread of Lijiaya culture settlements and bronze assemblages across the Yellow River into the western Shanxi loess highlands"
+            }
+        ]
+    },
+    {
         "name": "Shang Dynasty",
         "time": "1600–1046 BCE",
         "language": "Old Chinese (Sino-Tibetan)",
