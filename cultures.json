@@ -2109,6 +2109,216 @@
         ]
     },
     {
+        "name": "Xinglongwa Culture",
+        "time": "6200–5400 BCE",
+        "language": "Unclassified",
+        "color": "#2AADED",
+        "lat": 42.35,
+        "lng": 120.70,
+        "desc": "Early Neolithic culture of southeastern Inner Mongolia and western Liaoning (6200–5400 BCE), centered on the upper West Liao River and Daling River regions. Known for the earliest large permanent village settlements in Northeast China, with orderly rows of semi-subterranean rectangular houses, paired burials, polished stone tools, bone implements and cord-marked pottery. Subsistence combined hunting, fishing, gathering and the early cultivation of millet, while domesticated pigs became increasingly important. Xinglongwa communities developed long-distance exchange networks for jade and other stone materials and provided an important foundation for later cultures of the West Liao River basin.",
+        "haplogroups": "N, C, O2",
+        "borders": [
+            [
+                43.8,
+                118.0
+            ],
+            [
+                43.8,
+                122.0
+            ],
+            [
+                41.0,
+                122.5
+            ],
+            [
+                40.5,
+                119.0
+            ],
+            [
+                41.5,
+                117.5
+            ],
+            [
+                43.8,
+                118.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Xinglongwa",
+                "lat": 42.35,
+                "lng": 120.70,
+                "desc": "Type site in Aohan Banner (Inner Mongolia); large planned settlement with more than 140 semi-subterranean houses, paired burials, jade ornaments, stone tools and cord-marked pottery"
+            },
+            {
+                "name": "Xiaohexi",
+                "lat": 42.05,
+                "lng": 120.55,
+                "desc": "Early Neolithic settlement in western Liaoning with Xinglongwa-related houses, storage pits, domesticated pig remains and millet cultivation evidence"
+            },
+            {
+                "name": "Chahai",
+                "lat": 42.63,
+                "lng": 122.05,
+                "desc": "Large Xinglongwa-period settlement in Fuxin County (Liaoning); houses, burials, jade objects and a stone-paved dragon-shaped feature"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    42.3,
+                    120.7
+                ],
+                "to": [
+                    41.8,
+                    122.0
+                ],
+                "time": "6000–5400 BCE",
+                "desc": "Expansion through the West Liao and Daling River basins"
+            }
+        ]
+    },
+    {
+        "name": "Zhaobaogou Culture",
+        "time": "5200–4400 BCE",
+        "language": "Unclassified",
+        "color": "#2AED8B",
+        "lat": 42.55,
+        "lng": 119.75,
+        "desc": "Middle Neolithic culture of southeastern Inner Mongolia and northern Hebei (5200–4400 BCE), succeeding Xinglongwa traditions in the West Liao River basin. Settlements featured semi-subterranean houses and storage pits, while the economy combined millet cultivation, pig husbandry, hunting and gathering. Zhaobaogou pottery is often decorated with geometric and zoomorphic motifs, and its carved stone and jade objects show growing ritual and symbolic expression. The culture forms an important link between the early village societies of Xinglongwa and the later Hongshan complex.",
+        "haplogroups": "N, C, O2",
+        "borders": [
+            [
+                44.2,
+                118.0
+            ],
+            [
+                44.2,
+                121.5
+            ],
+            [
+                41.2,
+                122.5
+            ],
+            [
+                40.8,
+                118.0
+            ],
+            [
+                42.0,
+                117.0
+            ],
+            [
+                44.2,
+                118.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Zhaobaogou",
+                "lat": 42.55,
+                "lng": 119.75,
+                "desc": "Type site in Aohan Banner (Inner Mongolia); settlement with semi-subterranean houses, storage pits, geometric pottery, stone tools and distinctive zoomorphic ritual objects"
+            },
+            {
+                "name": "Xiaoshan",
+                "lat": 42.25,
+                "lng": 119.65,
+                "desc": "Zhaobaogou-period settlement in the Chifeng region with house foundations, decorated pottery and evidence for millet-based mixed subsistence"
+            },
+            {
+                "name": "Baiyinchanghan",
+                "lat": 42.85,
+                "lng": 119.45,
+                "desc": "Northern Zhaobaogou settlement cluster in Inner Mongolia; important for documenting the culture's distribution toward the upper Laoha River"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    42.4,
+                    120.0
+                ],
+                "to": [
+                    41.8,
+                    121.5
+                ],
+                "time": "5200–4400 BCE",
+                "desc": "Spread across the West Liao River basin and northern Hebei"
+            }
+        ]
+    },
+    {
+        "name": "Miaozigou Culture",
+        "time": "3500–2800 BCE",
+        "language": "Unclassified",
+        "color": "#8B2AED",
+        "lat": 41.35,
+        "lng": 112.75,
+        "desc": "Early to Middle Neolithic culture of central Inner Mongolia and the northern Ordos–Daihai region (3500–2800 BCE). Miaozigou communities lived in semi-subterranean settlements and practiced a mixed economy of millet cultivation, hunting, gathering and animal keeping. The culture is distinguished by polished stone tools, bone implements and decorated pottery, and reflects interaction between the farming communities of the Yellow River zone and the hunter-gatherer populations of the northern steppe. Miaozigou forms part of the cultural development that linked early Inner Mongolian traditions with later societies around the West Liao River and the northern Chinese frontier.",
+        "haplogroups": "N, C, O2",
+        "borders": [
+            [
+                42.8,
+                110.5
+            ],
+            [
+                42.8,
+                114.8
+            ],
+            [
+                40.0,
+                114.5
+            ],
+            [
+                39.5,
+                111.0
+            ],
+            [
+                40.5,
+                109.5
+            ],
+            [
+                42.8,
+                110.5
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Miaozigou",
+                "lat": 41.35,
+                "lng": 112.75,
+                "desc": "Type site in central Inner Mongolia; semi-subterranean houses, storage pits, polished stone tools, bone implements and decorated pottery defining the Miaozigou cultural assemblage"
+            },
+            {
+                "name": "Daihai",
+                "lat": 40.55,
+                "lng": 112.68,
+                "desc": "Lake-basin settlement cluster with Miaozigou-period occupation layers, documenting millet cultivation and mixed hunting-fishing subsistence in the Inner Mongolian steppe-ecotone"
+            },
+            {
+                "name": "Shizitan",
+                "lat": 40.95,
+                "lng": 111.85,
+                "desc": "Central Inner Mongolian Neolithic site with Miaozigou-related pottery and stone-tool assemblages, marking interaction between the Yellow River valley and northern frontier communities"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    40.8,
+                    111.8
+                ],
+                "to": [
+                    42.0,
+                    114.0
+                ],
+                "time": "3500–2800 BCE",
+                "desc": "Northward and eastward spread across the central Inner Mongolian steppe-ecotone"
+            }
+        ]
+    },
+    {
         "name": "Hongshan Culture",
         "time": "4700–2900 BCE",
         "language": "Unclassified",
@@ -2208,6 +2418,76 @@
                 ],
                 "time": "4700–2900 BCE",
                 "desc": "Expansion across the Liao River region and into southern Manchuria"
+            }
+        ]
+    },
+    {
+        "name": "Xiaoheyan Culture",
+        "time": "3000–2000 BCE",
+        "language": "Unclassified",
+        "color": "#ED8B2A",
+        "lat": 41.9,
+        "lng": 119.4,
+        "desc": "Late Neolithic culture of western Liaoning, southeastern Inner Mongolia and northern Hebei (3000–2000 BCE), developing after the Hongshan tradition in the West Liao River region. Settlements combined millet agriculture, pig husbandry, hunting and gathering, with semi-subterranean houses and distinctive fine, often red-slipped pottery. Xiaoheyan communities maintained local jade and stone-working traditions while participating in broader exchanges across the northern Chinese frontier. The culture represents an important transitional stage between Hongshan and the early Bronze Age societies of Northeast China.",
+        "haplogroups": "N, C, O2",
+        "borders": [
+            [
+                43.5,
+                117.5
+            ],
+            [
+                43.8,
+                121.5
+            ],
+            [
+                40.5,
+                122.5
+            ],
+            [
+                39.8,
+                119.0
+            ],
+            [
+                41.0,
+                117.0
+            ],
+            [
+                43.5,
+                117.5
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Xiaoheyan",
+                "lat": 41.92,
+                "lng": 119.38,
+                "desc": "Type site in western Liaoning; settlement deposits with late Neolithic houses, red-slipped pottery, stone tools and evidence for mixed farming and foraging"
+            },
+            {
+                "name": "Dashanqian",
+                "lat": 42.28,
+                "lng": 119.62,
+                "desc": "Late Neolithic settlement near Chifeng associated with Xiaoheyan material; houses, storage pits and decorated pottery document continuity from Hongshan traditions"
+            },
+            {
+                "name": "Nanshan'gen",
+                "lat": 41.55,
+                "lng": 119.85,
+                "desc": "Western Liaoning cemetery and settlement complex with late Neolithic pottery and stone artefacts, illustrating Xiaoheyan-era communities on the southern edge of the West Liao River basin"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    42.2,
+                    119.3
+                ],
+                "to": [
+                    41.0,
+                    120.5
+                ],
+                "time": "3000–2200 BCE",
+                "desc": "Southward spread from the West Liao River basin into western Liaoning and northern Hebei"
             }
         ]
     },
