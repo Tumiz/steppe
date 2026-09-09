@@ -107,7 +107,7 @@
         "name": "Samara Culture",
         "time": "5200–4500 BCE",
         "language": "Pre-Proto-Indo-European",
-        "color": "#C0552D",
+        "color": "#FF4500",
         "lat": 53.1,
         "lng": 50.2,
         "desc": "Eneolithic culture of the Samara Bend region, middle Volga (c.5200–4500 BCE), the earliest documented pastoral culture of the Eurasian steppe. Type cemetery at Syezzheye with burials containing horse remains, copper adornments, boar tusk plaques, and stone mace heads. Genetically represented by Eastern hunter-gatherer (EHG) ancestry carrying Y-haplogroup R1b1a1a (R1b-V1636). Forms the deepest known ancestral horizon of the Eastern steppe pastoralist lineage, directly ancestral to the Khvalynsk and later Yamnaya cultures.",
@@ -189,7 +189,7 @@
         "name": "Khvalynsk Culture",
         "time": "4700–3800 BCE",
         "language": "Pre-Proto-Indo-European",
-        "color": "#D4A017",
+        "color": "#FFD700",
         "lat": 52.5,
         "lng": 48.1,
         "desc": "Middle Copper Age Eneolithic culture of the middle Volga region (c.4700–3800 BCE), direct precursor to the Yamnaya horizon. The eponymous Khvalynsk cemetery (201 graves) is the largest excavated Eneolithic cemetery in the Don-Volga-Ural steppes, yielding 373 copper objects and the largest assemblage of sacrificed domestic animals (sheep-goat, cattle, horse) of the 5th millennium BCE. Characterized by kurgan burial rites, polished stone maces, and sheep/goat/cattle/horse pastoralism. Genetically defined by mixed EHG-CHG ancestry that later characterized Yamnaya, carrying Y-haplogroups R1b-V1636 and R1b-Z2103.",
@@ -2495,7 +2495,7 @@
         "name": "Laohushan Culture",
         "time": "2500–2200 BCE",
         "language": "Unclassified",
-        "color": "#8B5E3C",
+        "color": "#DAA520",
         "lat": 40.5,
         "lng": 112.8,
         "desc": "Late Neolithic culture of the Daihai Lake region in southern Inner Mongolia (2500–2200 BCE), known for stone-walled hilltop settlements, millet agriculture, and pig/sheep husbandry. Part of the Longshanoid cultural complex of the northern Chinese frontier, representing the agro-pastoral transition zone. The type site at Laohushan (Liangcheng County) contains a stone enclosure wall, semi-subterranean houses, and ceramic assemblages with basket-impressed and cord-marked decoration. The culture declines after 2200 BCE as the region becomes increasingly arid.",
@@ -3015,7 +3015,7 @@
         "name": "Xia Dynasty",
         "time": "2070–1600 BCE",
         "language": "Archaic Chinese (Sino-Tibetan)",
-        "color": "#832AED",
+        "color": "#D45FFF",
         "lat": 34.5,
         "lng": 112.5,
         "desc": "First Chinese dynasty (2070–1600 BCE) in traditional historiography, widely equated with the Erlitou culture of the Yiluo River valley in western Henan. The Erlitou site (c.1900–1500 BCE) was a planned urban centre of 300+ ha with a palatial compound, rammed-earth foundations, bronze workshops producing ritual vessels (jue, jia, ding) and weapons, elite burials with turquoise-inlaid bronze plaques and cowrie shells, and the earliest known bronze foundry in East Asia. Millet and rice agriculture with pig, sheep and cattle husbandry; advanced ceramic industry with distinctive dark grey burnished wares. The Xia dynasty is recorded in Sima Qian's Shiji and the Bamboo Annals as the founding dynasty of Chinese civilization, credited with controlling the Yellow River flood and establishing hereditary succession. The Erlitou polity abruptly declined c.1500 BCE, coinciding with the rise of the Shang. Ancient genomes from Erlitou show dominant Yellow River farmer ancestry (O2, N) with limited peripheral admixture.",
@@ -3122,7 +3122,7 @@
         "name": "Lijiaya Culture",
         "time": "c.1300–800 BCE",
         "language": "Unclassified",
-        "color": "#17A2B8",
+        "color": "#00CED1",
         "lat": 37.09,
         "lng": 110.43,
         "desc": "Late Shang to early Western Zhou Bronze Age culture of the loess highlands on both banks of the middle Yellow River, centred in northern Shaanxi (Qingjian and Suide counties) and extending into western Shanxi (Shilou, Liulin) c.1300–800 BCE. Named after the type site of Lijiaya, a fortified town in Qingjian County defended by sheer cliffs on the Wuding River, its people are widely identified with the Guifang — the 'Ghost People' of Shang oracle-bone inscriptions and Zhou bronze inscriptions, a powerful northern enemy kingdom on the Shang frontier. The culture is defined by a distinctive ceramic assemblage (cord-marked li tripods, gui, dou, jars and the iconic large three-legged guan), local piece-mould bronze casting, and richly furnished elite burials with gold earrings, turquoise-inlaid ornaments, chariot-and-horse pits and snake-pattern bronzes. Excavation of the Zhaigou centre since 2022 has revealed a c.300 ha 'multi-ridge' polity built around a monumental sunken rammed-earth courtyard structure, the largest and most numerous 'jia-shaped' princely tombs found outside the Shang cultural sphere — with openings rivaling the royal tombs at Yinxu — and the earliest known double-shaft (tandem) vehicle, pushing the appearance of the double-shaft cart in China back by about a millennium. Settlements show a mixed agro-pastoral economy at the intersection of the Shang world and the Eurasian steppe, marked by many small dispersed villages and a few large centres, suggesting a cluster of small, mutually independent polities rather than a single unified state.",
@@ -5298,5 +5298,238 @@
         "lat": 42.0,
         "lng": 122.0,
         "desc": "River of Northeast China (Manchuria), flowing through the West Liao River basin. Core area of Hongshan, Lower and Upper Xiajiadian cultures."
+    },
+    {
+        "name": "Siwa Oasis Culture",
+        "time": "664–30 BCE",
+        "language": "Siwi Berber (Berber/Amazigh family)",
+        "color": "#F4A460",
+        "lat": 29.35,
+        "lng": 25.35,
+        "desc": "Bronze/Iron Age oasis culture of the Siwa Depression in Egypt's Western Desert, centered on the Oracle Temple of Amun which drew visitors from across the Mediterranean including Alexander the Great in 331 BCE. Inhabited by Berber-speaking Amazigh peoples with strong links to both the Libyan world and Pharaonic Egypt; the oasis served as a major religious, trade, and pilgrimage hub connecting the Maghreb to the Nile Valley. Characterized by mud-brick fortified ksour settlements, date palm agriculture, and distinctive silverwork and textile traditions that survived into the modern era.",
+        "haplogroups": "Unclassified (modern Siwi Berbers carry E1b1b, J2 lineages)",
+        "haploShort": "E1b1b, J2",
+        "borders": [
+            [29.5, 25.1],
+            [29.5, 25.9],
+            [28.9, 25.9],
+            [28.9, 25.1],
+            [29.5, 25.1]
+        ],
+        "sites": [
+            {
+                "name": "Temple of the Oracle of Amun (Aghurmi)",
+                "lat": 29.204,
+                "lng": 25.517,
+                "desc": "Rock-cut oracle temple on the Aghurmi acropolis, dating to the 26th Dynasty (664 BCE); the most famous oracle in the ancient world after Delphi, where Alexander the Great was proclaimed divine pharaoh"
+            },
+            {
+                "name": "Gebel al-Mawta (Mountain of the Dead)",
+                "lat": 29.206,
+                "lng": 25.483,
+                "desc": "Roman-era necropolis with dozens of rock-cut tombs spanning Ptolemaic to Roman periods; contains painted tomb chambers with Egyptian, Greek, and Roman artistic influences"
+            },
+            {
+                "name": "Temple of Umm Ubayda",
+                "lat": 29.200,
+                "lng": 25.517,
+                "desc": "Second Amun temple in Siwa, built by Wenamun in the 30th Dynasty; originally connected to the Oracle Temple by a processional causeway (dromos)"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Fakhry (1944) The Oracle of Ammon at Siwa Oasis",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/202020",
+                "org": "University of Chicago Press"
+            },
+            {
+                "title": "Moussa (2023) Archaeological Sites Management: A Proposed Framework for the Acropolis of Aghurmi, Siwa",
+                "url": "https://doi.org/10.21608/sis.2023.194259.1133",
+                "org": "Suez Canal University"
+            }
+        ]
+    },
+    {
+        "name": "Xindian Culture",
+        "time": "1500–600 BCE",
+        "language": "Sino-Tibetan (Early Qiang/Pre-Tibeto-Burman)",
+        "color": "#9ACD32",
+        "lat": 35.55,
+        "lng": 103.8,
+        "desc": "Bronze Age painted pottery culture of the upper Yellow River in Gansu and Qinghai provinces, China, succeeding the Qijia culture. Named after the type site at Xindian in Lintao County discovered by J.G. Andersson in 1924, characterized by distinctive black-and-red painted double-handled high-necked jars on thick reddish-brown coarse ware. Communities practiced agro-pastoralism with millet cultivation and sheep/goat herding, occupying defensive hilltop settlements in river valleys between 1700–2100m elevation.",
+        "haplogroups": "Unclassified (associated with proto-Tibeto-Burman Qiang populations; likely O-M175, D-M174 lineages)",
+        "haploShort": "O-M175, D-M174",
+        "borders": [
+            [36.5, 103.0],
+            [36.5, 105.5],
+            [34.5, 105.5],
+            [34.2, 102.5],
+            [36.5, 103.0]
+        ],
+        "sites": [
+            {
+                "name": "Xindian (type site)",
+                "lat": 35.38,
+                "lng": 103.85,
+                "desc": "Eponymous cemetery and settlement site in Lintao County, Gansu; Andersson excavated 25 burials in the 1920s, revealing characteristic painted pottery with black and red geometric patterns; now a national-level protected site"
+            },
+            {
+                "name": "Huizuiwa",
+                "lat": 35.35,
+                "lng": 103.88,
+                "desc": "Contemporary settlement site in the Tao River valley excavated by the TRAP project (Harvard/Gansu/Peking University); provides first evidence of Xindian domestic architecture, with semi-subterranean houses and evidence of sheep/goat herding alongside wheat/barley cultivation"
+            },
+            {
+                "name": "Zhangjiazui",
+                "lat": 35.15,
+                "lng": 102.85,
+                "desc": "Key stratigraphic site in Lintao County where Xindian material was found overlying Qijia culture deposits, establishing that Xindian post-dates Qijia; critical for the cultural chronology of the region"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Jaffe et al. (2022) Complex Pathways Towards Emergent Pastoral Settlements: New Research on the Bronze Age Xindian Culture of Northwest China",
+                "url": "https://doi.org/10.1007/s10963-021-09160-w",
+                "org": "Harvard University / Journal of World Prehistory"
+            }
+        ]
+    },
+    {
+        "name": "Shajing Culture",
+        "time": "1000–400 BCE",
+        "language": "Unclassified (possibly Qiangic/Sino-Tibetan)",
+        "color": "#7B68EE",
+        "lat": 38.4,
+        "lng": 103.2,
+        "desc": "Late Bronze Age/Early Iron Age culture of the eastern Hexi Corridor in Gansu, China, centered on the Shajing River area near Minqin County. Named after the type site discovered by Sino-Swedish Expedition in 1927, characterized by distinctive painted pottery with geometric and animal motifs, bronze ornaments in animal style, and evidence of a mixed agro-pastoral economy. The culture represents the westernmost extension of Chinese Bronze Age traditions and shows contacts with both Central Asian steppe cultures and the preceding Siba culture of the Hexi Corridor.",
+        "haplogroups": "Unclassified",
+        "borders": [
+            [39.0, 102.0],
+            [39.0, 104.5],
+            [37.5, 104.5],
+            [37.5, 102.0],
+            [39.0, 102.0]
+        ],
+        "sites": [
+            {
+                "name": "Shajing (type site)",
+                "lat": 38.38,
+                "lng": 103.18,
+                "desc": "Eponymous site near Minqin County, Gansu; excavated by Sino-Swedish Expedition 1927 and later Chinese teams; yielded characteristic painted pottery, bronze daggers, arrowheads, and animal-style ornaments"
+            },
+            {
+                "name": "Yushugou",
+                "lat": 38.45,
+                "lng": 103.05,
+                "desc": "Settlement site in the Shajing River valley with multiple occupation layers; pottery assemblages show continuity from Siba culture with new Shajing elements emerging in upper levels"
+            },
+            {
+                "name": "Tuoqiao",
+                "lat": 38.28,
+                "lng": 103.35,
+                "desc": "Fortified settlement site with rammed-earth walls; yielded bronze implements, painted ceramics, and evidence of millet agriculture in an arid oasis environment"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Mei (2003) Cultural interaction between China and Central Asia during the Bronze Age",
+                "url": "https://doi.org/10.1111/j.1075-1297.2003.00042.x",
+                "org": "Proceedings of the British Academy"
+            }
+        ]
+    },
+    {
+        "name": "Kayue Culture",
+        "time": "1600–700 BCE",
+        "language": "Sino-Tibetan (Qiang/Proto-Tibeto-Burman)",
+        "color": "#FF69B4",
+        "lat": 36.85,
+        "lng": 101.6,
+        "desc": "Bronze Age culture of the northeastern Tibetan Plateau in Qinghai Province, distributed across the upper Yellow River, Huangshui River, and surrounding highland areas at 2500–3000m elevation. Discovered in 1923 by J.G. Andersson, with approximately 1,700 known sites. The Kayue people practiced agro-pastoralism with barley as the dominant crop (reflecting high-altitude adaptation) alongside sheep and cattle herding. They produced distinctive red grit-tempered painted pottery and early faience beads, and are associated with the ancient Qiang people of Chinese historical records.",
+        "haplogroups": "Unclassified (mtDNA from Shangsunjiazhai Kayue burials shows affinity to modern Tibetan-Burman populations)",
+        "haploShort": "Unclassified (mtDNA)",
+        "borders": [
+            [38.0, 100.0],
+            [38.0, 103.5],
+            [35.5, 103.5],
+            [35.5, 100.0],
+            [38.0, 100.0]
+        ],
+        "sites": [
+            {
+                "name": "Shangsunjiazhai",
+                "lat": 36.95,
+                "lng": 101.6,
+                "desc": "Largest excavated Kayue cemetery with 1,112 burials spanning Neolithic to Bronze Age near Datong, Qinghai; Kayue-period tombs yielded sheep/goat/cattle bones, bronze ornaments, and the earliest faience beads in the region"
+            },
+            {
+                "name": "Fengtai",
+                "lat": 36.85,
+                "lng": 101.65,
+                "desc": "Kayue settlement site 46 km north of Xining excavated 2001 by Qinghai/Germany joint team; revealed mud-brick domestic architecture, radiocarbon dated to 930–820 BCE, with evidence of multi-period occupation"
+            },
+            {
+                "name": "Xiangranggounan",
+                "lat": 35.69,
+                "lng": 100.24,
+                "desc": "Large Kayue settlement in the Gonghe Basin (~49,000 m²) excavated 2022–2023; revealed five house types with clear stratigraphic sequence showing transition from semi-subterranean to surface-level stone structures; first evidence of permanent Kayue settlements at 2678m elevation"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Xu et al. (2003) Results of the First Archaeological Excavation and Environmental Survey at Fengtai, Qinghai Province, PR China, in 2001",
+                "url": "https://www.dainst.blog/bridging-eurasia/wp-content/uploads/sites/2/2020/05/Eurasia_Antiqua_9_2003_85-111_XuXG_et_al_-FENGTAI.pdf",
+                "org": "German Archaeological Institute / Eurasia Antiqua"
+            },
+            {
+                "title": "Lin et al. (2019) The beginning of faience in China: A review and new evidence",
+                "url": "https://doi.org/10.1016/j.jas.2019.03.007",
+                "org": "Journal of Archaeological Science"
+            }
+        ]
+    },
+    {
+        "name": "Tianshanbeilu Culture",
+        "time": "2000–1000 BCE",
+        "language": "Unclassified (Di-Qiang branch of Sino-Tibetan)",
+        "color": "#40E0D0",
+        "lat": 43.05,
+        "lng": 93.3,
+        "desc": "Bronze Age culture of the Hami Oasis in eastern Xinjiang, China, known from the eponymous Tianshanbeilu cemetery — the earliest and largest Bronze Age burial site in eastern Xinjiang with over 700 excavated tombs and 3,000+ bronze objects. The culture shows strong connections to the Machang and Siba cultures of the Hexi Corridor to the east, suggesting population migration from Gansu. Characterized by elaborate painted ceramics, diverse copper-alloy metallurgy (tin bronze, arsenic copper, pure copper), and evidence of millet agriculture alongside pastoralism.",
+        "haplogroups": "C* (C-M217), N1 (xN1a, N1c) — Y-DNA from aDNA study of 40 individuals (Gao et al. 2015)",
+        "haploShort": "C* (C-M217), N1",
+        "borders": [
+            [43.5, 92.5],
+            [43.5, 94.5],
+            [42.2, 94.5],
+            [42.2, 92.5],
+            [43.5, 92.5]
+        ],
+        "sites": [
+            {
+                "name": "Tianshanbeilu Cemetery",
+                "lat": 42.887,
+                "lng": 93.511,
+                "desc": "Eponymous Bronze Age cemetery in Hami city with 706 excavated tombs (1988–1997), yielding 10,000+ artifacts including 3,000+ bronzes, painted pottery, gold, turquoise and carnelian beads; radiocarbon dated 2022–707 BCE in four phases"
+            },
+            {
+                "name": "Liushugou",
+                "lat": 42.85,
+                "lng": 93.45,
+                "desc": "Bronze Age cemetery associated with Tianshanbeilu phase 2; considered the cultural inheritor of the Tianshanbeilu tradition based on burial practices, bronze typology, and alloy technology"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Gao et al. (2015) Ancient DNA reveals a migration of the ancient Di-qiang populations into Xinjiang as early as the early Bronze Age",
+                "url": "https://doi.org/10.1002/ajpa.22690",
+                "org": "American Journal of Physical Anthropology / PMC"
+            },
+            {
+                "title": "Tong et al. (2020) Chronology of the Tianshanbeilu Cemetery in Xinjiang, Northwestern China",
+                "url": "https://doi.org/10.1017/rdc.2020.96",
+                "org": "Radiocarbon / Cambridge University Press"
+            }
+        ]
     }
 ]
