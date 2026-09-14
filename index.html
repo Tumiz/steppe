@@ -56,16 +56,6 @@
             line-height: 1.3;
             transform: translate(-50%, -50%);
         }
-        .text-marker .time {
-            font-size: 18px;
-            font-weight: normal;
-            opacity: 0.95;
-        }
-        .text-marker .lang {
-            font-size: 15px;
-            font-weight: normal;
-            opacity: 0.95;
-        }
         .text-marker .haplo {
             font-size: 14px;
             opacity: 0.95;
@@ -235,6 +225,9 @@
             if (isNaN(start) || isNaN(end)) return null;
             return { start: start, end: end };
         }
+        function cleanName(n) {
+            return String(n || '').replace(/\bCulture\b\s*/gi, '').trim();
+        }
 
         window.speakText = function(text, btn) {
             if (window.speechSynthesis.speaking) {
@@ -285,13 +278,17 @@
                     var desc = item.desc || '';
                     var speakBtn = '<button class="speak-btn" onclick="speakText(this.nextElementSibling.textContent, this)">\u25B6 Read aloud</button>';
                     var html = speakBtn + '<div style="display:none">' + desc.replace(/"/g, '&quot;') + '</div>';
-                    html += '<b>' + item.name + '</b><br>' + desc;
-                    if (item.language) {
-                        html += '<br><b>Language:</b> ' + item.language;
+                    html += '<b>' + cleanName(item.name) + '</b>';
+                    if (item.time) {
+                        html += '<br><b>Time:</b> ' + item.time;
                     }
                     if (item.haplogroups) {
                         html += '<br><b>Main Y-DNA haplogroups:</b> ' + item.haplogroups;
                     }
+                    if (item.language) {
+                        html += '<br><b>Language:</b> ' + item.language;
+                    }
+                    html += '<br><br>' + desc;
                     function fmtPaper(p) {
                         var t = p.title;
                         var m = t.match(/^(.+?)\s*\((\d{4})\)\s*(.+)/);
@@ -327,7 +324,7 @@
 
                     var icon = L.divIcon({
                         className: 'text-marker',
-                        html: '<span style="color:' + color + '">' + item.name + '</span><br><span class="time" style="color:' + color + '">' + (item.time || '') + '</span>' + (item.language ? '<br><span class="lang" style="color:' + color + '">' + item.language + '</span>' : '') + (item.haplogroups ? '<br><span class="haplo" style="color:' + color + '">' + (item.haploShort || item.haplogroups) + '</span>' : ''),
+                        html: '<span style="color:' + color + '">' + cleanName(item.name) + '</span>' + (item.haplogroups ? '<br><span class="haplo" style="color:' + color + '">' + (item.haploShort || item.haplogroups) + '</span>' : ''),
                         iconSize: null,
                         iconAnchor: [0, 0]
                     });
@@ -338,7 +335,8 @@
                             document.getElementById('culture-popup').style.display = 'block';
                         });
                     searchableItems.push({
-                        name: item.name,
+                        name: cleanName(item.name),
+                        aliases: [item.name],
                         center: L.latLng(item.lat, item.lng),
                         type: 'culture',
                         marker: marker
@@ -421,7 +419,7 @@
                             [[from[0], from[1]], [curveLat, curveLng], [to[0], to[1]]],
                             { color: color, weight: 3, opacity: 0.8 }
                         );
-                        var popupHtml = '<b>' + item.name + '</b><br><i>' + mov.desc + '</i><br><small>' + mov.time + '</small>';
+                        var popupHtml = '<b>' + cleanName(item.name) + '</b><br><i>' + mov.desc + '</i><br><small>' + mov.time + '</small>';
                         line.bindPopup(popupHtml);
 
                         var angle = Math.atan2(to[1] - curveLng, to[0] - curveLat) * 180 / Math.PI;
@@ -448,7 +446,8 @@
                         });
 
                         searchableItems.push({
-                            name: item.name + ' migration',
+                            name: cleanName(item.name) + ' migration',
+                            aliases: [item.name + ' migration'],
                             center: L.latLng(midLat, midLng),
                             type: 'movement',
                             line: line
@@ -682,7 +681,9 @@
                 var q = query.toLowerCase();
                 for (var i = 0; i < searchableItems.length; i++) {
                     var item = searchableItems[i];
-                    if (item.name.toLowerCase().indexOf(q) !== -1) {
+                    var hay = item.name;
+                    if (item.aliases) hay += ' ' + item.aliases.join(' ');
+                    if (hay.toLowerCase().indexOf(q) !== -1) {
                         results.push({
                             name: item.name,
                             center: item.center,
