@@ -1,6 +1,9 @@
 [
     {
         "name": "Botai Culture",
+        "subsistence": "Pastoral (horse), hunting, fishing, gathering",
+        "techniques": "Incised pottery, microlithic tools, large pit-house settlements",
+        "population": 15000,
         "time": "3700–3100 BCE",
         "language": "Unclassified",
         "color": "#ED2A2A",
@@ -105,6 +108,9 @@
     },
     {
         "name": "Samara Culture",
+        "subsistence": "Pastoralism (cattle, sheep), fishing, foraging",
+        "techniques": "Corded pottery, polished stone tools, bone implements",
+        "population": 10000,
         "time": "5200–4500 BCE",
         "language": "Pre-Proto-Indo-European",
         "color": "#FF4500",
@@ -187,6 +193,9 @@
     },
     {
         "name": "Khvalynsk Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), fishing",
+        "techniques": "Copper metallurgy, pottery, stone ornamentation, anthropomorphic stelae",
+        "population": 10000,
         "time": "4700–3800 BCE",
         "language": "Pre-Proto-Indo-European",
         "color": "#FFD700",
@@ -272,6 +281,9 @@
     },
     {
         "name": "Repin Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), fishing, foraging",
+        "techniques": "Copper tools, corded ware pottery, deep pit graves",
+        "population": 8000,
         "time": "3900–3300 BCE",
         "language": "Early Proto-Indo-European",
         "color": "#3B82F6",
@@ -342,6 +354,9 @@
     },
     {
         "name": "Yamnaya Culture",
+        "subsistence": "Mobile pastoralism (cattle, sheep, horse), limited agriculture",
+        "techniques": "Copper metallurgy, corded ware, pit graves with ochre, wheeled carts",
+        "population": 250000,
         "time": "3300–2600 BCE",
         "language": "Proto-Indo-European",
         "color": "#2A63ED",
@@ -496,6 +511,9 @@
     },
     {
         "name": "Corded Ware Culture",
+        "subsistence": "Pastoralism, agriculture (wheat, barley)",
+        "techniques": "Cord-decorated pottery, polished stone axes, copper ornaments",
+        "population": 200000,
         "time": "2900–2350 BCE",
         "language": "Proto-Balto-Slavic / Proto-Germanic (Indo-European)",
         "color": "#EDB82A",
@@ -632,6 +650,9 @@
     },
     {
         "name": "Afonasiev Culture",
+        "subsistence": "Pastoralism (cattle, sheep), hunting, limited agriculture",
+        "techniques": "Ceramic pottery, bronze tools, bone implements, pit graves",
+        "population": 15000,
         "time": "3300–2500 BCE",
         "language": "Proto-Indo-European",
         "color": "#9CED2A",
@@ -790,6 +811,9 @@
     },
     {
         "name": "Sintashta Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), cereal agriculture",
+        "techniques": "Bronze smelting, spoke-wheeled chariots, fortified settlements, metallurgy",
+        "population": 15000,
         "time": "2200–1900 BCE",
         "language": "Proto-Indo-Iranian",
         "color": "#DD2AED",
@@ -914,6 +938,9 @@
     },
     {
         "name": "Seima-Turbino Phenomenon",
+        "subsistence": "Pastoralism, long-distance metal trade, hunting",
+        "techniques": "Advanced bronze casting (daggers, spearheads), tin bronze metallurgy",
+        "population": 20000,
         "time": "2200–1900 BCE",
         "language": "Unclassified",
         "color": "#2AEDCD",
@@ -1140,6 +1167,9 @@
     },
     {
         "name": "Andronovo Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), cereal agriculture in river valleys",
+        "techniques": "Bronze smelting and casting, pottery with geometric patterns, corded ware",
+        "population": 200000,
         "time": "2000–1450 BCE",
         "language": "Indo-Iranian",
         "color": "#ED942A",
@@ -1288,6 +1318,9 @@
     },
     {
         "name": "BMAC (Oxus Civilization)",
+        "subsistence": "Irrigated agriculture (wheat, barley, cotton), pastoralism",
+        "techniques": "Mudbrick architecture, bronze casting, seal carving, lapidary work",
+        "population": 150000,
         "time": "2300–1700 BCE",
         "language": "Unclassified",
         "color": "#5B2AED",
@@ -1407,6 +1440,9 @@
     },
     {
         "name": "Chemurchek Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), hunting",
+        "techniques": "Anthropomorphic stone stelae, pottery, bronze daggers",
+        "population": 20000,
         "time": "2750–1900 BCE",
         "language": "Unclassified",
         "color": "#33ED2A",
@@ -1506,6 +1542,9 @@
     },
     {
         "name": "Okunev Culture",
+        "subsistence": "Pastoralism, hunting, fishing",
+        "techniques": "Painted pottery, bronze tools, stone sculpture, ritual enclosures",
+        "population": 25000,
         "time": "2600–1750 BCE",
         "language": "Unclassified",
         "color": "#ED2A6B",
@@ -1609,6 +1648,9 @@
     },
     {
         "name": "Ulaanzuukh‑Tevsh Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), hunting",
+        "techniques": "Deer stone carving, bronze socketed tools, horse gear",
+        "population": 10000,
         "time": "c.1450–1000 BCE",
         "language": "Unclassified",
         "color": "#2AA4ED",
@@ -1703,6 +1745,9 @@
     },
     {
         "name": "Glazkovo Culture",
+        "subsistence": "Fishing (sturgeon), hunting (elk, deer), gathering",
+        "techniques": "Polished stone axes, bone fishhooks, nephrite working, pottery",
+        "population": 15000,
         "time": "c.2200–1300 BCE",
         "language": "Proto-Tungusic",
         "color": "#DDED2A",
@@ -1791,6 +1836,9 @@
     },
     {
         "name": "Serovo Culture",
+        "subsistence": "Fishing, hunting (seal, elk), gathering",
+        "techniques": "Bone tools, pottery, stone projectile points",
+        "population": 10000,
         "time": "c.3300–2200 BCE",
         "language": "Unclassified",
         "color": "#C42AED",
@@ -1862,6 +1910,9 @@
     },
     {
         "name": "Deer Stone-Khirigsuur Complex (DSKC)",
+        "subsistence": "Nomadic pastoralism (horse, sheep, cattle), hunting",
+        "techniques": "Deer stone megaliths, petroglyphs, bronze horse gear, stone khirigsuurs",
+        "population": 25000,
         "time": "1200–700 BCE",
         "language": "Unclassified",
         "color": "#2AED8B",
@@ -1987,6 +2038,9 @@
     },
     {
         "name": "Yumin Culture",
+        "subsistence": "Early farming (millet), hunting, gathering",
+        "techniques": "Microlithic tools, pottery, polished stone implements",
+        "population": 5000,
         "time": "6600–5000 BCE",
         "language": "Unclassified",
         "color": "#ED532A",
@@ -2110,6 +2164,9 @@
     },
     {
         "name": "Xinglongwa Culture",
+        "subsistence": "Farming (millet), hunting, gathering",
+        "techniques": "Pottery, polished stone tools, jade ornaments, longhouses",
+        "population": 8000,
         "time": "6200–5400 BCE",
         "language": "Unclassified",
         "color": "#2AADED",
@@ -2180,6 +2237,9 @@
     },
     {
         "name": "Zhaobaogou Culture",
+        "subsistence": "Farming (millet), animal husbandry, hunting",
+        "techniques": "Painted pottery, stone tools, bone implements",
+        "population": 6000,
         "time": "5200–4400 BCE",
         "language": "Unclassified",
         "color": "#2AED8B",
@@ -2250,6 +2310,9 @@
     },
     {
         "name": "Miaozigou Culture",
+        "subsistence": "Agriculture, animal husbandry, hunting",
+        "techniques": "Painted pottery, stone tools, jade working",
+        "population": 5000,
         "time": "3500–2800 BCE",
         "language": "Unclassified",
         "color": "#8B2AED",
@@ -2320,6 +2383,9 @@
     },
     {
         "name": "Hongshan Culture",
+        "subsistence": "Agriculture (millet), pig and cattle domestication, hunting",
+        "techniques": "Jade carving (dragons, turtles), pottery, temple and altar architecture",
+        "population": 100000,
         "time": "4700–2900 BCE",
         "language": "Unclassified",
         "color": "#AC2AED",
@@ -2423,6 +2489,9 @@
     },
     {
         "name": "Xiaoheyan Culture",
+        "subsistence": "Agriculture (millet), pig domestication, hunting",
+        "techniques": "Painted pottery, stone tools, early copper items",
+        "population": 20000,
         "time": "3000–2000 BCE",
         "language": "Unclassified",
         "color": "#ED8B2A",
@@ -2493,6 +2562,9 @@
     },
     {
         "name": "Laohushan Culture",
+        "subsistence": "Agriculture (millet, wheat), pastoralism (sheep, cattle)",
+        "techniques": "Pottery, stone tools, copper metallurgy",
+        "population": 30000,
         "time": "2500–2200 BCE",
         "language": "Unclassified",
         "color": "#DAA520",
@@ -2600,6 +2672,9 @@
     },
     {
         "name": "Taosi Culture",
+        "subsistence": "Irrigated agriculture (millet, rice), pig and cattle raising",
+        "techniques": "Pottery (painted), rammed earth walls, jade working, proto-writing",
+        "population": 50000,
         "time": "2300–1900 BCE",
         "language": "Pre-Sinitic (Sino-Tibetan)",
         "color": "#2A4BED",
@@ -2700,6 +2775,9 @@
     },
     {
         "name": "Shimao Culture",
+        "subsistence": "Agriculture, pastoralism, hunting",
+        "techniques": "Massive stone architecture, jade carving, pottery, ritual monuments",
+        "population": 50000,
         "time": "2300–1800 BCE",
         "language": "Pre-Sinitic (Sino-Tibetan)",
         "color": "#ED2AAD",
@@ -2799,6 +2877,9 @@
     },
     {
         "name": "Zhukaigou Culture",
+        "subsistence": "Agriculture (millet), pastoralism (cattle, sheep)",
+        "techniques": "Bronze casting, pottery, stone tools, copper ornaments",
+        "population": 15000,
         "time": "2000–1400 BCE",
         "language": "Unclassified",
         "color": "#ED2A8C",
@@ -2906,6 +2987,9 @@
     },
     {
         "name": "Qijia Culture",
+        "subsistence": "Agriculture (millet, wheat), pastoralism (sheep, cattle, horse)",
+        "techniques": "Bronze tools and ornaments, pottery, stone axes, copper smelting",
+        "population": 100000,
         "time": "2300–1500 BCE",
         "language": "Unclassified",
         "color": "#EDBC2A",
@@ -3013,6 +3097,9 @@
     },
     {
         "name": "Xia Dynasty",
+        "subsistence": "Rice and millet agriculture, sericulture, cattle and pig raising",
+        "techniques": "Bronze casting (ritual vessels), rammed earth architecture, pottery, jade working",
+        "population": 500000,
         "time": "2070–1600 BCE",
         "language": "Archaic Chinese (Sino-Tibetan)",
         "color": "#D45FFF",
@@ -3120,6 +3207,9 @@
     },
     {
         "name": "Lijiaya Culture",
+        "subsistence": "Agriculture (millet, wheat), pastoralism, hunting",
+        "techniques": "Bronze metallurgy, pottery, stone tools, jade working",
+        "population": 20000,
         "time": "c.1300–800 BCE",
         "language": "Unclassified",
         "color": "#00CED1",
@@ -3232,6 +3322,9 @@
     },
     {
         "name": "Shang Dynasty",
+        "subsistence": "Agriculture (rice, millet, wheat), sericulture, cattle and pig raising",
+        "techniques": "Advanced bronze casting (ritual vessels, weapons), oracle bones, chariots",
+        "population": 1500000,
         "time": "1600–1046 BCE",
         "language": "Old Chinese (Sino-Tibetan)",
         "color": "#ED3A2A",
@@ -3347,6 +3440,9 @@
     },
     {
         "name": "Zhou Dynasty",
+        "subsistence": "Agriculture (rice, millet, wheat, barley), sericulture, livestock",
+        "techniques": "Bronze casting (ding vessels), iron smelting (late), jade, lacquer, silk weaving",
+        "population": 3000000,
         "time": "1046–256 BCE",
         "language": "Old Chinese (Sino-Tibetan)",
         "color": "#2AED6B",
@@ -3482,6 +3578,9 @@
     },
     {
         "name": "Han Dynasty",
+        "subsistence": "Intensive rice and millet agriculture, sericulture, poultry and livestock",
+        "techniques": "Iron and steel tools, paper-making, advanced bronze casting, canal engineering",
+        "population": 60000000,
         "time": "206 BCE–220 CE",
         "language": "Han Chinese (Sino-Tibetan)",
         "color": "#2A7CED",
@@ -3657,6 +3756,9 @@
     },
     {
         "name": "Scythian Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), hunting, kumiss production",
+        "techniques": "Gold animal-style art, iron weapons, horse gear, leather armor, felt textiles",
+        "population": 800000,
         "time": "700–200 BCE",
         "language": "Scythian (Eastern Iranian)",
         "color": "#B5ED2A",
@@ -3784,6 +3886,9 @@
     },
     {
         "name": "Saka Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), oasis agriculture",
+        "techniques": "Gold animal-style work, iron weapons, horse gear, felt textiles",
+        "population": 500000,
         "time": "900–200 BCE",
         "language": "Saka (Eastern Iranian)",
         "color": "#ED2AED",
@@ -3923,6 +4028,9 @@
     },
     {
         "name": "Slab‑Grave Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), hunting",
+        "techniques": "Stone slab burials, bronze mirrors, pottery, minimal metalwork",
+        "population": 50000,
         "time": "1100–400 BCE",
         "language": "Unclassified",
         "color": "#2AEDB4",
@@ -4038,6 +4146,9 @@
     },
     {
         "name": "Karasuk Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), riverine agriculture, hunting",
+        "techniques": "Bronze casting (daggers, knives, mirrors), pottery, stone sculpture",
+        "population": 100000,
         "time": "1500–800 BCE",
         "language": "Unclassified",
         "color": "#ED7B2A",
@@ -4144,6 +4255,9 @@
     },
     {
         "name": "Sarmatian Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), hunting",
+        "techniques": "Gold animal-style art, iron and bronze weapons, scale armor, horse gear",
+        "population": 800000,
         "time": "600 BCE–400 CE",
         "language": "Sarmatian (Eastern Iranian)",
         "color": "#2AED9C",
@@ -4291,6 +4405,9 @@
     },
     {
         "name": "Timber-Grave Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), cereal agriculture",
+        "techniques": "Bronze tools and weapons, pottery, timber-lined pit graves",
+        "population": 250000,
         "time": "1900–1200 BCE",
         "language": "Late Proto-Indo-Iranian",
         "color": "#2ACDED",
@@ -4415,6 +4532,9 @@
     },
     {
         "name": "Abashevo Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), agriculture",
+        "techniques": "Bronze smelting and casting, pottery with comb stamps, pit graves",
+        "population": 30000,
         "time": "2300–1800 BCE",
         "language": "Early Proto-Indo-Iranian",
         "color": "#2A2AED",
@@ -4523,6 +4643,9 @@
     },
     {
         "name": "Lower Xiajiadian Culture",
+        "subsistence": "Agriculture (millet), pig and cattle raising, hunting",
+        "techniques": "Stone fortress architecture, pottery, bronze ornaments, jade",
+        "population": 100000,
         "time": "2200–1600 BCE",
         "language": "Unclassified",
         "color": "#CDED2A",
@@ -4619,6 +4742,9 @@
     },
     {
         "name": "Tagar Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), river valley agriculture",
+        "techniques": "Bronze casting (cauldrons, mirrors), iron tools, petroglyphs, stone stelae",
+        "population": 100000,
         "time": "800–200 BCE",
         "language": "Unclassified",
         "color": "#EDE42A",
@@ -4719,6 +4845,9 @@
     },
     {
         "name": "Sagly/Uyuk Culture",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep), hunting",
+        "techniques": "Gold and bronze animal-style ornaments, iron weapons, horse gear",
+        "population": 20000,
         "time": "500–200 BCE",
         "language": "Unclassified",
         "color": "#ED7B2A",
@@ -4822,6 +4951,9 @@
     },
     {
         "name": "Upper Xiajiadian Culture",
+        "subsistence": "Agriculture (millet), pastoralism, hunting",
+        "techniques": "Bronze weapons and tools, pottery, stone architecture, cattle burial",
+        "population": 150000,
         "time": "1200–600 BCE",
         "language": "Unclassified",
         "color": "#4B2AED",
@@ -4922,6 +5054,9 @@
     },
     {
         "name": "Xiongnu",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep, goats), hunting, limited agriculture",
+        "techniques": "Iron weapons and tools, gold and bronze animal-style art, felt and leather working",
+        "population": 1500000,
         "time": "300 BCE–200 CE",
         "language": "Unclassified",
         "color": "#EDCD2A",
@@ -5301,6 +5436,9 @@
     },
     {
         "name": "Siwa Oasis Culture",
+        "subsistence": "Pastoralism (sheep, cattle), oasis agriculture",
+        "techniques": "Fingerprint-decorated pottery, bronze tools, bone implements, jade",
+        "population": 30000,
         "time": "664–30 BCE",
         "language": "Siwi Berber (Berber/Amazigh family)",
         "color": "#F4A460",
@@ -5351,6 +5489,9 @@
     },
     {
         "name": "Xindian Culture",
+        "subsistence": "Agriculture (wheat, barley), pastoralism (sheep, cattle, horse)",
+        "techniques": "Painted pottery, bronze tools, stone axes, bone implements",
+        "population": 100000,
         "time": "1500–600 BCE",
         "language": "Sino-Tibetan (Early Qiang/Pre-Tibeto-Burman)",
         "color": "#9ACD32",
@@ -5396,6 +5537,9 @@
     },
     {
         "name": "Shajing Culture",
+        "subsistence": "Pastoralism (cattle, sheep, horse), oasis agriculture",
+        "techniques": "Pottery, bronze mirrors and knives, stone tools, jade ornaments",
+        "population": 20000,
         "time": "1000–400 BCE",
         "language": "Unclassified (possibly Qiangic/Sino-Tibetan)",
         "color": "#7B68EE",
@@ -5440,6 +5584,9 @@
     },
     {
         "name": "Kayue Culture",
+        "subsistence": "Agriculture (wheat, barley), pastoralism (sheep, cattle)",
+        "techniques": "Pottery, bronze tools (daggers, knives), stone axes, bone implements",
+        "population": 50000,
         "time": "1600–700 BCE",
         "language": "Sino-Tibetan (Qiang/Proto-Tibeto-Burman)",
         "color": "#FF69B4",
@@ -5490,6 +5637,9 @@
     },
     {
         "name": "Tianshanbeilu Culture",
+        "subsistence": "Pastoralism (sheep, cattle, horse), agriculture",
+        "techniques": "Bronze tools and ornaments, pottery, stone tools, jade",
+        "population": 50000,
         "time": "2000–1000 BCE",
         "language": "Unclassified (Di-Qiang branch of Sino-Tibetan)",
         "color": "#40E0D0",

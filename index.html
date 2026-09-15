@@ -40,26 +40,45 @@
         .border-toggle:hover { background: #e0e0e0; }
         .border-toggle.active { background: #333; color: #fff; }
         .border-toggle.active:hover { background: #555; }
+        .label-info-control {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 4px 6px;
+            font-size: 12px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            line-height: 1.4;
+            white-space: nowrap;
+        }
+        .label-info-control select {
+            font-size: 12px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            padding: 2px;
+            background: #fff;
+            max-width: 140px;
+        }
+        .label-info-control span { color: #333; }
         .text-marker {
             background: none !important;
             border: none !important;
             box-shadow: none !important;
-            font-weight: bold;
-            font-size: 20px;
+            font-weight: normal;
+            font-size: 16px;
             text-shadow:
                 -0.5px -0.5px 0 #000,
                  0.5px -0.5px 0 #000,
                 -0.5px  0.5px 0 #000,
                  0.5px  0.5px 0 #000;
-            white-space: nowrap;
+            white-space: normal;
+            max-width: 200px;
             text-align: center;
             line-height: 1.3;
             transform: translate(-50%, -50%);
         }
-        .text-marker .haplo {
-            font-size: 14px;
-            opacity: 0.95;
-            font-weight: normal;
+        .text-marker .sub-line {
+            font-size: inherit;
+            font-weight: inherit;
         }
         .site-marker {
             background: none !important;
@@ -162,8 +181,6 @@
             #time-slider-container { width: 92%; padding: 8px 12px 6px; }
             .tick-label { font-size: 9px; }
             .text-marker { font-size: 16px; }
-            .text-marker .time { font-size: 14px; }
-            .text-marker .haplo { font-size: 11px; }
             #temp-curve { height: 40px; }
         }
         @media (max-width: 480px) {
@@ -228,6 +245,39 @@
         function cleanName(n) {
             return String(n || '').replace(/\bCulture\b\s*/gi, '').trim();
         }
+        var labelInfoField = 'none';
+        var cultureMarkers = [];
+        function labelValue(item, field) {
+            switch (field) {
+                case 'haplo': return item.haploShort || item.haplogroups || '';
+                case 'language': return item.language || '';
+                case 'population': return item.population ? '~' + item.population.toLocaleString('en-US') : '';
+                case 'subsistence': return item.subsistence || '';
+                case 'techniques': return item.techniques || '';
+                default: return '';
+            }
+        }
+        function makeCultureIcon(item, field) {
+            var color = item.color;
+            var sub = labelValue(item, field);
+            var html;
+            if (field === 'none' || !sub) {
+                html = '<span style="color:' + color + '">' + cleanName(item.name) + '</span>';
+            } else {
+                html = '<span class="sub-line" style="color:' + color + '">' + sub + '</span>';
+            }
+            return L.divIcon({
+                className: 'text-marker',
+                html: html,
+                iconSize: null,
+                iconAnchor: [0, 0]
+            });
+        }
+        function updateCultureLabels() {
+            cultureMarkers.forEach(function(cm) {
+                cm.marker.setIcon(makeCultureIcon(cm.item, labelInfoField));
+            });
+        }
 
         window.speakText = function(text, btn) {
             if (window.speechSynthesis.speaking) {
@@ -288,6 +338,15 @@
                     if (item.language) {
                         html += '<br><b>Language:</b> ' + item.language;
                     }
+                    if (item.population) {
+                        html += '<br><b>Population:</b> ~' + item.population.toLocaleString('en-US');
+                    }
+                    if (item.subsistence) {
+                        html += '<br><b>Subsistence:</b> ' + item.subsistence;
+                    }
+                    if (item.techniques) {
+                        html += '<br><b>Material techniques:</b> ' + item.techniques;
+                    }
                     html += '<br><br>' + desc;
                     function fmtPaper(p) {
                         var t = p.title;
@@ -322,18 +381,14 @@
                         if (parsed.end < newestYear) newestYear = parsed.end;
                     }
 
-                    var icon = L.divIcon({
-                        className: 'text-marker',
-                        html: '<span style="color:' + color + '">' + cleanName(item.name) + '</span>' + (item.haplogroups ? '<br><span class="haplo" style="color:' + color + '">' + (item.haploShort || item.haplogroups) + '</span>' : ''),
-                        iconSize: null,
-                        iconAnchor: [0, 0]
-                    });
+                    var icon = makeCultureIcon(item, labelInfoField);
                     var marker = L.marker([item.lat, item.lng], { icon: icon, pane: 'cultureLabelPane' })
                         .addTo(markersGroup)
                         .on('click', function() {
                             document.getElementById('culture-popup-content').innerHTML = buildPopupContent(item);
                             document.getElementById('culture-popup').style.display = 'block';
                         });
+                    cultureMarkers.push({ item: item, marker: marker });
                     searchableItems.push({
                         name: cleanName(item.name),
                         aliases: [item.name],
@@ -830,6 +885,39 @@
             }
         });
         map.addControl(new ToggleBorders());
+
+        // Culture label info selector (what appears under culture names)
+        var LabelInfoControl = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var wrap = L.DomUtil.create('div', 'label-info-control');
+                var lbl = L.DomUtil.create('span', '', wrap);
+                lbl.textContent = 'Label: ';
+                var sel = L.DomUtil.create('select', '', wrap);
+                var opts = [
+                    ['none', 'Name only'],
+                    ['haplo', 'Y-DNA haplogroups'],
+                    ['language', 'Language'],
+                    ['population', 'Population'],
+                    ['subsistence', 'Subsistence'],
+                    ['techniques', 'Material techniques']
+                ];
+                opts.forEach(function(o) {
+                    var opt = document.createElement('option');
+                    opt.value = o[0];
+                    opt.textContent = o[1];
+                    sel.appendChild(opt);
+                });
+                sel.value = labelInfoField;
+                L.DomEvent.on(sel, 'change', function() {
+                    labelInfoField = sel.value;
+                    updateCultureLabels();
+                });
+                L.DomEvent.disableClickPropagation(wrap);
+                return wrap;
+            }
+        });
+        map.addControl(new LabelInfoControl());
 
         // Culture borders shown by default
         var cultureBordersVisible = true;
