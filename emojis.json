@@ -6,8 +6,18 @@
         "rice": "🌾",
         "sheep": "🐑",
         "cattle": "🐂",
+        "goat": "🐐",
         "pig": "🐖",
         "horse": "🐎",
-        "fishing": "🐟"
+        "fishing": "🐟",
+        "hunting": "🏹"
+    },
+    "techniques": {
+        "pottery": "🏺",
+        "bronze": "🏆",
+        "stone": "🪨",
+        "copper": "🟠",
+        "iron": "⚙️",
+        "bone": "🦴"
     }
 }

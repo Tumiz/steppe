@@ -511,7 +511,7 @@
     },
     {
         "name": "Corded Ware Culture",
-        "subsistence": "Pastoralism, agriculture (wheat, barley)",
+        "subsistence": "Pastoralism (cattle, sheep), agriculture (wheat, barley)",
         "techniques": "Cord-decorated pottery, polished stone axes, copper ornaments",
         "population": 200000,
         "time": "2900–2350 BCE",
@@ -1318,7 +1318,7 @@
     },
     {
         "name": "BMAC (Oxus Civilization)",
-        "subsistence": "Irrigated agriculture (wheat, barley, cotton), pastoralism",
+        "subsistence": "Irrigated agriculture (wheat, barley, cotton), pastoralism (sheep, cattle)",
         "techniques": "Mudbrick architecture, bronze casting, seal carving, lapidary work",
         "population": 150000,
         "time": "2300–1700 BCE",
@@ -1542,7 +1542,7 @@
     },
     {
         "name": "Okunev Culture",
-        "subsistence": "Pastoralism, hunting, fishing",
+        "subsistence": "Pastoralism (cattle, sheep, goat, horse), hunting, fishing",
         "techniques": "Painted pottery, bronze tools, stone sculpture, ritual enclosures",
         "population": 25000,
         "time": "2600–1750 BCE",
@@ -3207,7 +3207,7 @@
     },
     {
         "name": "Lijiaya Culture",
-        "subsistence": "Agriculture (millet, wheat), pastoralism, hunting",
+        "subsistence": "Agriculture (millet, wheat), pastoralism (cattle, sheep), hunting",
         "techniques": "Bronze metallurgy, pottery, stone tools, jade working",
         "population": 20000,
         "time": "c.1300–800 BCE",
@@ -4951,7 +4951,7 @@
     },
     {
         "name": "Upper Xiajiadian Culture",
-        "subsistence": "Agriculture (millet), pastoralism, hunting",
+        "subsistence": "Agriculture (millet), pastoralism (sheep, goat, cattle, horse), hunting",
         "techniques": "Bronze weapons and tools, pottery, stone architecture, cattle burial",
         "population": 150000,
         "time": "1200–600 BCE",
