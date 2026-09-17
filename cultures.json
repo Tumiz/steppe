@@ -938,7 +938,7 @@
     },
     {
         "name": "Seima-Turbino Phenomenon",
-        "subsistence": "Pastoralism, long-distance metal trade, hunting",
+        "subsistence": "Pastoralism (cattle, sheep, horse), long-distance metal trade, hunting",
         "techniques": "Advanced bronze casting (daggers, spearheads), tin bronze metallurgy",
         "population": 20000,
         "time": "2200–1900 BCE",
@@ -2310,7 +2310,7 @@
     },
     {
         "name": "Miaozigou Culture",
-        "subsistence": "Agriculture, animal husbandry, hunting",
+        "subsistence": "Agriculture (millet), animal husbandry (pig, cattle), hunting",
         "techniques": "Painted pottery, stone tools, jade working",
         "population": 5000,
         "time": "3500–2800 BCE",
@@ -2775,7 +2775,7 @@
     },
     {
         "name": "Shimao Culture",
-        "subsistence": "Agriculture, pastoralism, hunting",
+        "subsistence": "Agriculture (millet), pastoralism (cattle, sheep), hunting",
         "techniques": "Massive stone architecture, jade carving, pottery, ritual monuments",
         "population": 50000,
         "time": "2300–1800 BCE",

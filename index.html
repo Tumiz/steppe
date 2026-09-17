@@ -79,6 +79,7 @@
         .text-marker .sub-line {
             font-size: inherit;
             font-weight: inherit;
+            white-space: nowrap;
         }
         .site-marker {
             background: none !important;
@@ -247,13 +248,26 @@
         }
         var labelInfoField = 'none';
         var cultureMarkers = [];
+        var emojiMap = { subsistence: {}, techniques: {} };
+        function emojiOnly(text, category) {
+            if (!text || !emojiMap[category]) return '';
+            var lower = text.toLowerCase();
+            var found = [];
+            var entries = Object.keys(emojiMap[category]).sort(function(a, b) { return b.length - a.length; });
+            entries.forEach(function(key) {
+                if (lower.indexOf(key) !== -1 && found.indexOf(emojiMap[category][key]) === -1) {
+                    found.push(emojiMap[category][key]);
+                }
+            });
+            return found.join('');
+        }
         function labelValue(item, field) {
             switch (field) {
                 case 'haplo': return item.haploShort || item.haplogroups || '';
                 case 'language': return item.language || '';
                 case 'population': return item.population ? '~' + item.population.toLocaleString('en-US') : '';
-                case 'subsistence': return item.subsistence || '';
-                case 'techniques': return item.techniques || '';
+                case 'subsistence': return emojiOnly(item.subsistence || '', 'subsistence');
+                case 'techniques': return emojiOnly(item.techniques || '', 'techniques');
                 default: return '';
             }
         }
@@ -726,6 +740,15 @@
                 });
 
                 applyTimeFilter(-parseInt(slider.value));
+            })
+            .catch(function() {});
+
+        fetch('emojis.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                if (data.subsistence) emojiMap.subsistence = data.subsistence;
+                if (data.techniques) emojiMap.techniques = data.techniques;
+                if (cultureMarkers.length > 0) updateCultureLabels();
             })
             .catch(function() {});
 
