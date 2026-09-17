@@ -5053,6 +5053,270 @@
         ]
     },
     {
+        "name": "Xinle Culture",
+        "subsistence": "Farming (millet), fishing, hunting (deer), gathering",
+        "techniques": "Carved pottery, polished stone tools, bone implements, wood-carved bird sculpture",
+        "population": 20000,
+        "time": "7200–5000 BCE",
+        "language": "Unclassified (pre-Tungusic)",
+        "color": "#2AD9A4",
+        "lat": 41.8,
+        "lng": 123.45,
+        "desc": "Early Neolithic culture of the middle Liao River basin around Shenyang and the central Liaodong (northeastern Liaoning) region (c.7200–5000 BCE), named after the eponymous type site in Shenyang city. Settlements of large semi-subterranean round-rectangular houses; distinctive pottery with impressed and carved geometric decoration, fine polished stone axes and adzes, jade and turquoise ornaments, and abundant hunting and fishing gear. The early-layer assemblage at Xinle includes one of the oldest known wooden carvings in China — a Y-shaped bird effigy of Ligustrum wood from a house floor. Economy mixed: millet cultivation, hunting of wild deer and other game, fishing and gathering in the Liao floodplain and forest-steppe. Xinle participates in the southern Liaodong and Bohai coastal sphere and forms a key ancestral component of the subsequent Xiaozhushan-Phase II and Xiaoheyan sequences.",
+        "borders": [
+            [
+                42.5,
+                122.0
+            ],
+            [
+                42.5,
+                124.5
+            ],
+            [
+                41.2,
+                125.0
+            ],
+            [
+                40.7,
+                123.5
+            ],
+            [
+                41.3,
+                122.0
+            ],
+            [
+                42.5,
+                122.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Xinle",
+                "lat": 41.805,
+                "lng": 123.44,
+                "desc": "Type site in the northern part of Shenyang city; large early-phase semi-subterranean houses with the carved wooden bird effigy, pottery and stone industries dating to c.7200–6000 BCE"
+            }
+        ]
+    },
+    {
+        "name": "Xiaozhushan Culture",
+        "subsistence": "Fishing (molluscs), hunting (deer), gathering, farming (millet) in later phase",
+        "techniques": "Shell-impressed pottery, polished stone tools, ground stone adzes, bone fishhooks",
+        "population": 15000,
+        "time": "6000–2500 BCE",
+        "language": "Unclassified (pre-Tungusic)",
+        "color": "#75C2A0",
+        "lat": 39.3,
+        "lng": 122.55,
+        "desc": "Early to Middle Neolithic culture of the southern Liaodong Peninsula and its coastal islands (Dalian region) (c.6000–2500 BCE), named after the type site of Xiaozhushan on Guanglu Island (Changhai County). A lengthy five-phase sequence documenting the Neolithic of the Liaodong coast: early phases characterised by shell-midden settlements, cord- and shell-impressed pottery, hunting, fishing and intensive shellfish gathering; later phases show growing millet cultivation, ground-stone agriculture tools, finer painted pottery and increasing links with the Hongshan and Xiaoheyan traditions to the north and with coastal Shandong (Dawenkou culture). Bone fishhooks, net-sinkers and marine-mammal remains attest a strong maritime economy. Xiaozhushan is the principal prehistoric sequence of the southern Liaodong Peninsula and a key link between the Yellow River and Korean-peninsula Neolithic spheres.",
+        "borders": [
+            [
+                40.3,
+                121.0
+            ],
+            [
+                40.6,
+                122.6
+            ],
+            [
+                40.4,
+                123.3
+            ],
+            [
+                39.6,
+                123.5
+            ],
+            [
+                38.7,
+                123.2
+            ],
+            [
+                39.0,
+                121.3
+            ],
+            [
+                39.9,
+                120.8
+            ],
+            [
+                40.3,
+                121.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Xiaozhushan",
+                "lat": 39.3,
+                "lng": 122.55,
+                "desc": "Type site on Guanglu Island (Changhai County, Dalian); stratified shell-midden deposit with five cultural phases of cord- and shell-impressed pottery, stone tools and bone fishhooks spanning the 6th–3rd millennium BCE"
+            },
+            {
+                "name": "Guomen",
+                "lat": 39.7,
+                "lng": 123.1,
+                "desc": "Hinterland settlement of the Xiaozhushan sphere in Zhuanghe county; semi-subterranean houses and shell middens with millet remains and shell-decorated pottery"
+            }
+        ]
+    },
+    {
+        "name": "Shuangtuozi Culture",
+        "subsistence": "Agriculture (millet), animal husbandry (pig), hunting, fishing",
+        "techniques": "Two-handled jars, grooved pottery, polished stone tools, bronze ornaments",
+        "population": 20000,
+        "time": "2200–1000 BCE",
+        "language": "Unclassified (pre-Tungusic)",
+        "color": "#B07A4B",
+        "lat": 39.4,
+        "lng": 122.6,
+        "desc": "Middle Bronze Age culture of the southern Liaodong Peninsula and its coastal islands (Dalian region), (c.2200–1000 BCE), named after the type site of Shuangtuozi on Changshan Island in Changhai County and continuing the local Xiaozhushan sequence. Characterised by a distinctive pottery tradition — the often stated 'two-handled jars' and grooved (gaogai) decorated wares — together with spindle whorls, polished stone axes and jade ornaments; hilltop and island cemeteries with stone cist burials. Subsistence based on millet agriculture, pig raising, hunting and rich coastal fishing and shellfish harvesting. The culture shows clear contacts with the Lower Xiajiadian and late Hongshan traditions of the West Liao region, and downstream connections along the Liaodong coast towards the Korean peninsula (Mumun-related pottery). It provides the regional background out of which the historic coastal populations of Liaodong, later absorbed into the Yan, Han and Buyeo spheres, developed.",
+        "borders": [
+            [
+                39.9,
+                121.0
+            ],
+            [
+                40.2,
+                122.4
+            ],
+            [
+                40.1,
+                123.5
+            ],
+            [
+                39.2,
+                123.8
+            ],
+            [
+                38.6,
+                123.3
+            ],
+            [
+                38.9,
+                121.5
+            ],
+            [
+                39.9,
+                121.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Shuangtuozi",
+                "lat": 39.24,
+                "lng": 122.5,
+                "desc": "Type site on Changshan Island (Changhai County, Dalian); stratified mound with bronze-age layers of two-handled jars, grooved pottery and stone cist burials"
+            },
+            {
+                "name": "Dadianzi-style Yuanbaoshan",
+                "lat": 39.5,
+                "lng": 122.8,
+                "desc": "Coastal settlement of the Shuangtuozi sphere in the Dalian hinterland; grooved pottery and millet remains documenting the agro-maritime economy of southern Liaodong"
+            }
+        ]
+    },
+    {
+        "name": "Xituanshan Culture",
+        "subsistence": "Agriculture (millet), animal husbandry (pig, cattle), hunting",
+        "techniques": "Bronze knives and tools, incised pottery, stone-slab tombs, jade ornaments",
+        "population": 30000,
+        "time": "1000–400 BCE",
+        "language": "Unclassified (proto-Yemaek)",
+        "color": "#14D9A0",
+        "lat": 43.8,
+        "lng": 126.5,
+        "desc": "Late Bronze Age culture of the Second Songhua River valley in central Jilin Province, centred on the Jilin and Changchun area (c.1000–400 BCE). Characterised by cemeteries of above-ground stone-slab cists and large river-terrace settlements with semi-subterranean houses. Economy based on millet (foxtail and broomcorn) agriculture, pig and cattle husbandry, supplemented by hunting and fishing. Material culture dominated by incised and comb-decorated pottery, polished stone tools, jade and nephrite ornaments, and distinctive bronze curved knives and socketed implements of northern steppe type. Xituanshan is widely regarded as the direct material ancestor of the later Tuanjie culture and of the historic Buyeo (Fuyu) kingdom of the same region, whose early population belonged to the Yemaek sphere ancestral to early Koreanic speakers.",
+        "borders": [
+            [
+                45.0,
+                125.0
+            ],
+            [
+                44.5,
+                127.5
+            ],
+            [
+                43.5,
+                127.5
+            ],
+            [
+                42.5,
+                126.5
+            ],
+            [
+                42.3,
+                125.0
+            ],
+            [
+                43.5,
+                124.0
+            ],
+            [
+                45.0,
+                125.0
+            ]
+        ]
+    },
+    {
+        "name": "Tuanjie Culture",
+        "subsistence": "Agriculture (millet), animal husbandry (pig, cattle), hunting, fishing",
+        "techniques": "Iron and bronze tools, coarse grey pottery, pit-houses, ash-pit (jar) burials",
+        "population": 60000,
+        "time": "400 BCE–200 CE",
+        "language": "Unclassified (Yemaek–Proto-Koreanic)",
+        "color": "#6A3EED",
+        "lat": 43.0,
+        "lng": 127.5,
+        "desc": "Early Iron Age culture of central and southern Jilin Province, along the Second Songhua River and the Tumen River headwaters (c.400 BCE–200 CE). The dominant archaeological culture of the Jilin region during the late Warring States to Eastern Han period and the direct material correlate of the early Buyeo (Fuyu) polity, which Chinese sources first record in the 2nd–1st centuries BCE. Tuanjie sites include fortified mountain settlements and settlements of semi-subterranean houses, with ash-pit and jar burials. Economy mixed: millet agriculture, pig and cattle raising, with hunting and fishing; iron farming tools, spades and knives appear from the late 1st millennium BCE alongside continued bronze casting. Coarse grey sand-tempered pottery, spindle whorls, and Han-style bronze mirrors and Chinese coins (wuzhu) in later phases document growing contact with Han Dynasty frontier markets of Liaodong and Lelang. Tuanjie ancestry contributed significantly to the gene pool of historic Buyeo and of the later proto-Koreanic (Yemaek) populations of the peninsula.",
+        "borders": [
+            [
+                44.5,
+                126.0
+            ],
+            [
+                44.3,
+                128.5
+            ],
+            [
+                43.0,
+                130.0
+            ],
+            [
+                42.2,
+                129.5
+            ],
+            [
+                42.0,
+                127.5
+            ],
+            [
+                42.5,
+                126.0
+            ],
+            [
+                43.8,
+                125.5
+            ],
+            [
+                44.5,
+                126.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Tuanjie",
+                "lat": 42.8,
+                "lng": 127.9,
+                "desc": "Type site in Dunhua county (Yanbian, Jilin); lakeside settlement with semi-subterranean houses, stone-walled pits and ash-pit burials defining the Tuanjie culture of early Buyeo"
+            },
+            {
+                "name": "Xituanshan",
+                "lat": 43.85,
+                "lng": 126.55,
+                "desc": "Eponymous type site and cemetery of the Xituanshan culture on the Second Songhua River near Jilin City; stone-slab cist tombs with bronze knives, jade ornaments and incised pottery of the direct predecessor of Buyeo"
+            }
+        ]
+    },
+    {
         "name": "Xiongnu",
         "subsistence": "Nomadic pastoralism (horse, cattle, sheep, goats), hunting, limited agriculture",
         "techniques": "Iron weapons and tools, gold and bronze animal-style art, felt and leather working",
