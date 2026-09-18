@@ -5475,6 +5475,302 @@
         ]
     },
     {
+        "name": "Yuezhi",
+        "subsistence": "Nomadic pastoralism (horse, cattle, sheep, goat), oasis agriculture, jade and Silk Road trade",
+        "techniques": "Animal-style bronze and gold ornaments, iron weapons, composite bows, felt textiles, stone-enclosure tombs",
+        "population": 300000,
+        "time": "400 BCE–50 CE",
+        "language": "Unclassified (Tocharian affiliation proposed)",
+        "color": "#ED8A2A",
+        "lat": 40.0,
+        "lng": 97.0,
+        "desc": "The Yuezhi (月氏) were a powerful nomadic confederation of the eastern Tianshan foothills and Hexi Corridor (c. 400 BCE–50 CE), first recorded in Chinese sources of the Warring States period as dwelling northwest of China, traditionally placed between the Qilian Mountains and Dunhuang. Mounted archers and horse breeders, they combined mobile pastoralism with oasis agriculture, controlled the jade route linking the Tarim Basin with the Yellow River world, and reportedly fielded 100,000–200,000 horsemen at their height. Their identification with archaeological cultures is debated; the Yuegongtai-Xiheigou complex of the eastern Tianshan-Barkol grasslands (c. 500–200 BCE), with distinctive stone-enclosure and stone-slab burials and livestock sacrifice, has been proposed on the basis of cultural-factor analysis as Yuezhi remains, distinct from the Tocharian-related cultures of the Tarim. Defeated and expelled from their homeland by the Xiongnu in 176–165 BCE, the majority (Da Yuezhi) migrated west into the Ili valley and, driven onward by the Wusun, reached Sogdia and northern Bactria by c. 128 BCE, overthrowing the weakened Greco-Bactrian kingdom and dividing the land among five yabgu-led tribes, chief among which was the Guishuang (Kushan). From that tribe would arise the Kushan Empire. The Yuezhi language remains unsettled, commonly proposed as Tocharian (East Indo-European) or as an Iranian language, and ancient DNA from Iron Age eastern Tianshan sites shows admixed East–West Eurasian ancestry consistent with a people forming at the eastern edge of the steppe world.",
+        "haplogroups": "Unclassified (East Eurasian-dominant paternal lineages in proposed Yuezhi sites of the eastern Tianshan-Barkol region)",
+        "borders": [
+            [
+                43.0,
+                92.5
+            ],
+            [
+                43.0,
+                95.5
+            ],
+            [
+                41.5,
+                96.5
+            ],
+            [
+                40.5,
+                97.5
+            ],
+            [
+                39.5,
+                99.0
+            ],
+            [
+                39.5,
+                102.5
+            ],
+            [
+                38.5,
+                103.5
+            ],
+            [
+                38.0,
+                102.0
+            ],
+            [
+                38.0,
+                99.5
+            ],
+            [
+                38.6,
+                96.5
+            ],
+            [
+                38.9,
+                95.0
+            ],
+            [
+                39.6,
+                94.0
+            ],
+            [
+                40.6,
+                93.2
+            ],
+            [
+                41.8,
+                92.6
+            ],
+            [
+                43.0,
+                92.5
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Dunhuang",
+                "lat": 40.14,
+                "lng": 94.66,
+                "desc": "Oasis town at the western end of the Hexi Corridor; according to Zhang Qian's 2nd c. BCE report preserved in the Shiji, the Yuezhi prospered in the lands between Dunhuang and the Qilian Mountains before being driven out by the Xiongnu — a key junction of the corridor routes into the Tarim Basin"
+            },
+            {
+                "name": "Yuegongtai-Xiheigou",
+                "lat": 43.6,
+                "lng": 92.9,
+                "desc": "Site group on the eastern Tianshan-Barkol grasslands (c. 500–200 BCE); proposed on the basis of cultural-factor analysis and early Chinese texts as the archaeological remains of a Yuezhi group — stone-enclosure tombs, livestock and horse sacrifice and pastoral camp traces showing an origin distinct from contemporary Tocharian-related cultures of the Tarim Basin"
+            },
+            {
+                "name": "Heigouliang",
+                "lat": 43.57,
+                "lng": 92.95,
+                "desc": "Iron Age cemetery on the Barkol grasslands; stone-tomb forms show continuity with the proposed-Yuezhi Yuegongtai-Xiheigou group, while closely associated burials with sacrificed retainers and horses prefigure Xiongnu-period practice in the eastern Tianshan"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Benjamin (2007) The Yuezhi: Origin, Migration and the Conquest of Northern Bactria, Silk Road Studies 14, Brepols",
+                "url": "https://doi.org/10.1484/M.SRS-EB.5.112520",
+                "org": "Grand Valley State University"
+            },
+            {
+                "title": "Enoki, Koshelenko & Haidary (1994) The Yüeh-chih and their migrations, in History of Civilizations of Central Asia Vol. II, UNESCO",
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000105703",
+                "org": "UNESCO"
+            },
+            {
+                "title": "Ning et al. (2019) Ancient genomes reveal Yamnaya-related ancestry and a potential source of Indo-European speakers in Iron Age Tianshan, Current Biology",
+                "url": "https://doi.org/10.1016/j.cub.2019.06.044",
+                "org": "Max Planck Institute / Jilin University"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    40.0,
+                    95.0
+                ],
+                "to": [
+                    44.0,
+                    79.0
+                ],
+                "time": "176–130 BCE",
+                "desc": "Expulsion from the Hexi Corridor and eastern Tianshan by the Xiongnu; migration through the Ili valley into Semirechye, displacing the Sakas"
+            },
+            {
+                "from": [
+                    44.0,
+                    79.0
+                ],
+                "to": [
+                    37.0,
+                    67.0
+                ],
+                "time": "130–128 BCE",
+                "desc": "Driven from the Ili valley by the Wusun; the Da Yuezhi crossed the Syr Darya into Sogdia and conquered northern Bactria (Daxia), where Zhang Qian visited them in 128 BCE"
+            }
+        ]
+    },
+    {
+        "name": "Kushan Empire",
+        "subsistence": "Irrigated agriculture (wheat, barley, rice, cotton), pastoralism, urban crafts, Silk Road trade",
+        "techniques": "Bactrian-Greek coinage, Gandharan Buddhist sculpture, monumental mud-brick architecture, stupas and dynastic sanctuaries",
+        "population": 3000000,
+        "time": "30 CE–375 CE",
+        "language": "Bactrian (Eastern Iranian), Greek, Gandhari Prakrit, Sanskrit",
+        "color": "#AE2AED",
+        "lat": 34.0,
+        "lng": 71.5,
+        "desc": "The Kushan Empire (c. 30–375 CE) was the imperial state founded by the Yuezhi when Kujula Kadphises, chief of the Guishuang (Kushan) branch, united the five Yuezhi tribes and extended their rule from northern Bactria across the Hindu Kush into Gandhara and the Punjab. At its zenith under Kanishka I (whose era began in 127/8 CE) the empire stretched from Merv and eastern Iran in the west across Bactria, the Kabul valley, Gandhara and Kashmir to the Ganges basin and Mathura in the east, dominating the central arteries of the Silk Road linking Rome, Parthia, India and Han China. Bactrian, an Eastern Iranian language written in Greek script, replaced Greek on the coinage during Kanishka's reign; the Rabatak inscription and the dynastic sanctuary of Surkh Kotal record the imperial cult and the royal genealogy of Kujula, Vima Taktu, Vima Kadphises and Kanishka. Great patrons of Buddhism, the Kushans raised colossal stupas such as the great tower of Peshawar and fostered the Gandharan school of sculpture, which fused Greek, Persian, Indian and steppe traditions in some of the earliest anthropomorphic images of the Buddha, while royal portraiture at Mathura depicted the rulers in long Central Asian coats and boots. The economy combined irrigated oasis agriculture, pastoralism and urban craftsmanship, and the long-distance exchange evidenced by the Begram treasure (Roman glass and bronzes, Chinese lacquers, Indian ivories) made the Kushans principal organisers of trans-Eurasian commerce. The empire declined in the 3rd–4th c. CE under Sasanian pressure in the west, the expansion of South Asian powers and internal fragmentation, its later territories ruled by Kushanshahs and the Kidarite successors of the Yuezhi line.",
+        "haplogroups": "Unclassified (R1a, Q1a, J2, R2 reported in Kushan-period Central and South Asia)",
+        "borders": [
+            [
+                38.0,
+                61.0
+            ],
+            [
+                39.0,
+                63.0
+            ],
+            [
+                38.0,
+                70.0
+            ],
+            [
+                37.0,
+                72.0
+            ],
+            [
+                36.0,
+                74.5
+            ],
+            [
+                34.0,
+                77.0
+            ],
+            [
+                31.5,
+                79.0
+            ],
+            [
+                28.5,
+                79.5
+            ],
+            [
+                26.5,
+                80.0
+            ],
+            [
+                25.5,
+                77.0
+            ],
+            [
+                24.0,
+                72.5
+            ],
+            [
+                24.0,
+                69.0
+            ],
+            [
+                27.0,
+                67.0
+            ],
+            [
+                30.0,
+                66.0
+            ],
+            [
+                34.0,
+                62.5
+            ],
+            [
+                36.5,
+                60.5
+            ],
+            [
+                38.0,
+                61.0
+            ]
+        ],
+        "sites": [
+            {
+                "name": "Surkh Kotal",
+                "lat": 36.06,
+                "lng": 68.72,
+                "desc": "Monumental dynastic sanctuary of Kanishka I in northern Bactria (Baghlan, Afghanistan), excavated 1952–1966 by the French Archaeological Delegation in Afghanistan (DAFA); a terraced acropolis with a great temple, monumental stairway and well that yielded the Surkh Kotal inscription (SK4), one of the earliest substantial documents in the Bactrian language written in Greek script, and the damaged statue of Kanishka"
+            },
+            {
+                "name": "Begram",
+                "lat": 34.62,
+                "lng": 69.57,
+                "desc": "Ancient Kapisa, Kushan summer capital (Parwan, Afghanistan); excavations in 1937–1946 revealed the 'Begram treasure' — Roman glass and bronzes, Chinese lacquer bowls, Indian ivories and plaster medallions — attesting to Silk Road exchange at the height of Kushan power"
+            },
+            {
+                "name": "Takht-i-Bahi",
+                "lat": 34.32,
+                "lng": 71.95,
+                "desc": "Gandharan Buddhist monastery founded in the 1st c. CE and expanded under Kushan patronage (Mardan, Pakistan); a UNESCO World Heritage site of clustered stupas, courtyard cells and finely stuccoed sculptures surviving from the Kushan era"
+            },
+            {
+                "name": "Shah-ji-ki-Dheri",
+                "lat": 34.0,
+                "lng": 71.55,
+                "desc": "Site at Peshawar of the great stupa erected by Kanishka I, counted among the tallest structures of antiquity; excavated by D.B. Spooner in 1908–1909, it produced the famous Kanishka relic casket dedicating a Buddhist reliquary in era year 2 of Kanishka"
+            },
+            {
+                "name": "Mathura",
+                "lat": 27.49,
+                "lng": 77.68,
+                "desc": "Southern capital of the Kushan realm on the Yamuna (Uttar Pradesh, India); seat of the 'Mathura school' of sculpture in red-spotted sandstone, with royal statues of Kanishka and Vima Kadphises, Buddhist rail figures and a Kapardin Buddha type"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Sims-Williams (2012) Bactrian historical inscriptions of the Kushan period, The Silk Road 10",
+                "url": "https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/SilkRoad_10_2012_simswilliams.pdf",
+                "org": "SOAS, University of London"
+            },
+            {
+                "title": "Harmatta (ed.) (1996) History of Civilizations of Central Asia, Vol. II: The Development of Sedentary and Nomadic Civilizations, 700 B.C. to A.D. 250, UNESCO",
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000105703",
+                "org": "UNESCO"
+            },
+            {
+                "title": "Kumar et al. (2022) Bronze and Iron Age population movements underlie Xinjiang population history, Science 376:62-69",
+                "url": "https://doi.org/10.1126/science.abk1534",
+                "org": "Chinese Academy of Sciences"
+            }
+        ],
+        "movements": [
+            {
+                "from": [
+                    37.0,
+                    67.0
+                ],
+                "to": [
+                    34.0,
+                    71.6
+                ],
+                "time": "30–150 CE",
+                "desc": "Southward expansion of the Guishuang under Kujula Kadphises from Bactria through the Kabul valley into Gandhara and the Punjab, consolidated by Vima Kadphises"
+            },
+            {
+                "from": [
+                    34.0,
+                    71.6
+                ],
+                "to": [
+                    27.5,
+                    77.7
+                ],
+                "time": "100–200 CE",
+                "desc": "Kanishka I extended Kushan control into the Ganges basin as far as Saketa, Kausambi and Pataliputra, with Mathura becoming a principal southern capital"
+            }
+        ]
+    },
+    {
         "name": "Dnieper River",
         "color": "#3B9BD6",
         "lat": 47.5,
@@ -5699,55 +5995,63 @@
         "desc": "River of Northeast China (Manchuria), flowing through the West Liao River basin. Core area of Hongshan, Lower and Upper Xiajiadian cultures."
     },
     {
-        "name": "Siwa Oasis Culture",
-        "subsistence": "Pastoralism (sheep, cattle), oasis agriculture",
-        "techniques": "Fingerprint-decorated pottery, bronze tools, bone implements, jade",
-        "population": 30000,
-        "time": "664–30 BCE",
-        "language": "Siwi Berber (Berber/Amazigh family)",
-        "color": "#F4A460",
-        "lat": 29.35,
-        "lng": 25.35,
-        "desc": "Bronze/Iron Age oasis culture of the Siwa Depression in Egypt's Western Desert, centered on the Oracle Temple of Amun which drew visitors from across the Mediterranean including Alexander the Great in 331 BCE. Inhabited by Berber-speaking Amazigh peoples with strong links to both the Libyan world and Pharaonic Egypt; the oasis served as a major religious, trade, and pilgrimage hub connecting the Maghreb to the Nile Valley. Characterized by mud-brick fortified ksour settlements, date palm agriculture, and distinctive silverwork and textile traditions that survived into the modern era.",
-        "haplogroups": "Unclassified (modern Siwi Berbers carry E1b1b, J2 lineages)",
-        "haploShort": "E1b1b, J2",
+        "name": "Siwa Culture",
+        "subsistence": "Agriculture (millet, wheat, barley), pastoralism (sheep, cattle, horse)",
+        "techniques": "Saddle-mouthed plain pottery, bronze knives and daggers, stone tools, horse gear",
+        "population": 50000,
+        "time": "1300–600 BCE",
+        "language": "Sino-Tibetan (Early Qiang/Pre-Tibeto-Burman)",
+        "color": "#EDAE2A",
+        "lat": 35.4,
+        "lng": 103.9,
+        "desc": "Bronze Age culture of southeast Gansu Province in northwest China (c. 1300–600 BCE), named for Mount Siwa (寺洼山) in Lintao County, where Swedish geologist Johan Gunnar Andersson identified its distinctive wares in 1924 and assigned them to the 'Ssu Wa Shan' phase of his pioneering six-period Gansu sequence. Centred on the Tao (Taohe) and Daxia river valleys, with a later red-and-grey 'Anguo' variant along the upper Wei River, Siwa succeeded the Qijia culture and developed in step with the neighbouring Xindian and Kayue cultures — all agro-pastoral proto-Qiang/pre-Tibeto-Burman communities of the northwest Chinese frontier. The material culture is defined by plain, sand-tempered double-handled jars with saddle-shaped mouths (马鞍口陶罐), rarely painted but sometimes bearing applied or inlaid decoration, together with a modest bronze inventory of knives, daggers, arrowheads and ornaments. The excavated record comes almost entirely from cemeteries such as Siwashan, Xujianian and Lanqiao, whose earth-pit shaft graves hold pottery, bronzes and occasionally horses; these burial rites and horse equipment have long supported connecting the Siwa people with the Di-Qiang of the Shang and Zhou annals. Subsistence combined millet cultivation with herding of sheep, cattle and horses — Siwa ranking among the western centres of early horse use in China — and its population contributed to the ancestry of the Tibeto-Burman-speaking peoples of the Tibetan-Yi Corridor before the region was absorbed into the steppe world and the Han empire.",
+        "haplogroups": "Unclassified (Early Qiang/proto-Tibeto-Burman populations; O-M122/M117, D-M174 lineages reported in the Ganqing region)",
+        "haploShort": "O-M122, D-M174",
         "borders": [
-            [29.5, 25.1],
-            [29.5, 25.9],
-            [28.9, 25.9],
-            [28.9, 25.1],
-            [29.5, 25.1]
+            [35.9, 102.8],
+            [35.9, 105.0],
+            [34.9, 107.0],
+            [34.0, 106.5],
+            [33.8, 105.0],
+            [34.0, 103.0],
+            [35.0, 102.3],
+            [35.9, 102.8]
         ],
         "sites": [
             {
-                "name": "Temple of the Oracle of Amun (Aghurmi)",
-                "lat": 29.204,
-                "lng": 25.517,
-                "desc": "Rock-cut oracle temple on the Aghurmi acropolis, dating to the 26th Dynasty (664 BCE); the most famous oracle in the ancient world after Delphi, where Alexander the Great was proclaimed divine pharaoh"
+                "name": "Siwashan (type site)",
+                "lat": 35.35,
+                "lng": 103.85,
+                "desc": "Eponymous cemetery and settlement site on Mount Siwa, Lintao County, Gansu; first identified by Andersson in 1924 and re-excavated by Xia Nai, who showed from grave fill that Majiayao pottery predates the Siwa culture; the saddle-shaped jars found here became the culture's diagnostic marker"
             },
             {
-                "name": "Gebel al-Mawta (Mountain of the Dead)",
-                "lat": 29.206,
-                "lng": 25.483,
-                "desc": "Roman-era necropolis with dozens of rock-cut tombs spanning Ptolemaic to Roman periods; contains painted tomb chambers with Egyptian, Greek, and Roman artistic influences"
+                "name": "Xujianian",
+                "lat": 34.6,
+                "lng": 103.5,
+                "desc": "Rich Siwa cemetery in the upper Tao River valley (Zhuoni County), excavated by the Chinese Academy of Social Sciences and published as a major tomb report; yielded typical saddle-mouthed jars together with bronze weapons and ornaments"
             },
             {
-                "name": "Temple of Umm Ubayda",
-                "lat": 29.200,
-                "lng": 25.517,
-                "desc": "Second Amun temple in Siwa, built by Wenamun in the 30th Dynasty; originally connected to the Oracle Temple by a processional causeway (dromos)"
+                "name": "Lanqiao",
+                "lat": 34.0,
+                "lng": 105.3,
+                "desc": "Siwa cemetery in Xihe County excavated in the 1980s and published in Kaogu (1987); produced characteristic saddle-mouthed pottery and bronzes in the southern Siwa distribution where the Anguo variant zone begins"
             }
         ],
         "papers": [
             {
-                "title": "Fakhry (1944) The Oracle of Ammon at Siwa Oasis",
-                "url": "https://www.journals.uchicago.edu/doi/10.1086/202020",
-                "org": "University of Chicago Press"
+                "title": "Jaffe & Hein (2021) Reevaluating Local Variation in the Role of the ~4.2k BP Event in Northwest China: New Perspectives on the Xindian and Siwa Cultural Phenomena, The Holocene",
+                "url": "https://journals.sagepub.com/doi/10.1177/0959683620970254",
+                "org": "Harvard University / Oxford"
             },
             {
-                "title": "Moussa (2023) Archaeological Sites Management: A Proposed Framework for the Acropolis of Aghurmi, Siwa",
-                "url": "https://doi.org/10.21608/sis.2023.194259.1133",
-                "org": "Suez Canal University"
+                "title": "Hein et al. (2021) Investigating Prehistoric Pottery from the Gansu-Qinghai Region (Northwest China): From Andersson's First Excavations to Contemporary Research, BMFEA 82",
+                "url": "https://www.diva-portal.org/smash/get/diva2:1707279/FULLTEXT08.pdf",
+                "org": "Stockholm University (BMFEA)"
+            },
+            {
+                "title": "Li et al. (2017) Ancient DNA reveals genetic connections between early Di-Qiang and Han Chinese, BMC Evolutionary Biology",
+                "url": "https://doi.org/10.1186/s12862-017-1082-0",
+                "org": "Jilin University"
             }
         ]
     },
@@ -5843,6 +6147,75 @@
                 "title": "Mei (2003) Cultural interaction between China and Central Asia during the Bronze Age",
                 "url": "https://doi.org/10.1111/j.1075-1297.2003.00042.x",
                 "org": "Proceedings of the British Academy"
+            }
+        ]
+    },
+    {
+        "name": "Shanma Culture",
+        "subsistence": "Agro-pastoralism (millet, barley, wheat), mobile pastoralism (horse, cattle, sheep, goat, camel), jade mining",
+        "techniques": "Grey-brown sand-tempered pottery, small bronze assemblage (knives, arrowheads, ornaments), jade and turquoise mining",
+        "population": 25000,
+        "time": "1000–200 BCE",
+        "language": "Unclassified (possibly Qiangic/Sino-Tibetan; Yuezhi association debated)",
+        "color": "#CD853F",
+        "lat": 40.0,
+        "lng": 96.2,
+        "desc": "骟马文化 — Late Bronze Age / Early Iron Age agro-pastoral culture of the western Hexi Corridor in Gansu and the adjacent Alxa margin of Inner Mongolia (c. 1000–200 BCE), named after the site of Shanma (骟马) in the Yumen district. Its territory stretched from Yumen in the east to Yangguan near Dunhuang in the west, with the Qilian Mountains to the south and the Huahai section of the frontier wall to the north — closely overlapping the earlier distribution of the Siba culture, which it succeeded, and filling the archaeological gap in the region between the end of Siba and the Han conquest. The Shanma economy combined oasis crop cultivation (millet, barley, wheat) with strongly mobile pastoralism centred on horse, cattle, sheep, goat, dog and camel herding, with a notable absence of pigs; the transport-oriented livestock profile matches the herding communities described in the Shiji and Hanshu along the routes that preceded the Silk Road. The culture is now most significant as the operator and guardian of the earliest jade mines of northwest China — the Hanxia nephrite deposit near Dunhuang and, above all, the Jingbaoer mine in the Mazongshan massif of Subei County, together with the Heishanling turquoise workings in Hami — supplying the 'jade road' that carried nephrite east to the Yellow River valley and Central Plain during the Warring States and Han periods.",
+        "haplogroups": "Unclassified (East Asian lineages O, N, D, C typical of prehistoric Gansu populations)",
+        "borders": [
+            [41.8, 95.5],
+            [41.8, 98.3],
+            [40.2, 98.5],
+            [39.2, 98.2],
+            [38.5, 97.5],
+            [38.8, 94.8],
+            [39.9, 93.7],
+            [40.8, 95.0],
+            [41.8, 95.5]
+        ],
+        "sites": [
+            {
+                "name": "Shanma (type site)",
+                "lat": 39.83,
+                "lng": 97.57,
+                "desc": "Type locality in the Yumen district of the western Hexi Corridor from which the culture takes its name (骟马); heartland of Shanma settlements and cemeteries, later reoccupied in Han times"
+            },
+            {
+                "name": "Jingbaoer jade mine",
+                "lat": 41.6,
+                "lng": 97.5,
+                "desc": "Massive ancient nephrite mine in the Mazongshan massif of Subei County, the largest jade-mining site of ancient China; Shanma-period workings and camp refuse with characteristic ceramics show organised mineral extraction feeding the eastbound 'jade road'"
+            },
+            {
+                "name": "Hanxia jade mine",
+                "lat": 39.8,
+                "lng": 94.4,
+                "desc": "Early nephrite mining site in the Dunhuang–Yangguan area used by Shanma communities, one of the earliest jade mines of northwest China channelling stone toward the Central Plain"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Liu et al. (2021) Changes in Wood Utilization Due to Iron Age Jade Mining in the Western Hexi Corridor",
+                "url": "https://doi.org/10.3389/feart.2021.636534",
+                "org": "Lanzhou University / Frontiers in Earth Science"
+            },
+            {
+                "title": "Li (2024) The Shanma Crowd — The Creators of the Early 'Jade Road'",
+                "url": "https://doi.org/10.5281/zenodo.11216650",
+                "org": "Zenodo"
+            },
+            {
+                "title": "Linduff et al. (2017) The Rise of States and the Formation of Group Identities in the Western Regions of the Inner Asian Frontier",
+                "url": "https://doi.org/10.1017/9781108290555.005",
+                "org": "Cambridge University Press"
+            }
+        ],
+        "movements": [
+            {
+                "from": [39.8, 97.3],
+                "to": [34.3, 108.9],
+                "time": "500–200 BCE",
+                "desc": "Nephrite from the Mazongshan and Hanxia mines moved east along the 'jade road' to the Yellow River valley and the Central Plain (Chang'an), a precursor of the Silk Road"
             }
         ]
     },
@@ -5943,6 +6316,74 @@
                 "title": "Tong et al. (2020) Chronology of the Tianshanbeilu Cemetery in Xinjiang, Northwestern China",
                 "url": "https://doi.org/10.1017/rdc.2020.96",
                 "org": "Radiocarbon / Cambridge University Press"
+            }
+        ]
+    },
+    {
+        "name": "Subeshi Culture",
+        "subsistence": "Agro-pastoralism (barley, wheat, millet oasis farming, grape cultivation), pastoralism (horse, sheep, goat, cattle)",
+        "techniques": "Textile and leatherwork (wool trousers, knotted carpets, felt hats), bronze weapons and horse harnesses, pottery, wooden vessels, surgery with horsehair sutures",
+        "population": 30000,
+        "time": "1100–100 BCE",
+        "language": "Debated (Saka [Iranian], Tocharian, or local; associated with the Jushi/Gushi kingdom of Chinese records)",
+        "color": "#D2691E",
+        "lat": 42.9,
+        "lng": 89.4,
+        "desc": "苏贝希文化 — Iron Age culture of the Turpan (Turfan) Basin in eastern Xinjiang at the eastern edge of the Tarim Basin (c. 1100–100 BCE), centred on Shanshan County and known from three closely related cemeteries — Subeshi (苏贝希), Yanghai (洋海) and Shengjindian (胜金店) — whose burials in the deep, hyper-arid depression preserve organic materials superbly and contribute some of the latest Tarim mummies. Named after the Subeshi cemetery in the Toyuq gorge east of Turpan, the culture practised a developed agro-pastoral economy in the desert oases: barley, wheat and millet cultivation, herding of horse, sheep, goat and cattle, and vines at Yanghai whose grapes are regarded as an ancestor of Chinese wine culture. Its textile and leather industry was extraordinarily advanced — the world's earliest known trousers and knotted carpets come from Yanghai (c. 700 BCE) — alongside the tall black felt hats of the Subeshi women (4th–3rd c. BCE) that echo 'Saka of the pointed hats' headgear. Superlative finds include the world's oldest saddle (Yanghai, 727–396 BCE), the earliest functional wooden leg prosthesis (Shengjindian, c. 300 BCE), ritual cannabis at Yanghai c. 800 BCE, leather balls and sticks from c. 1200–900 BCE, and a man whose abdomen had been opened and sewn shut with horsehair sutures. Subeshi bronzes, horse harnesses and ornaments spread across the northern steppe from Xinjiang toward the Korean Peninsula within the early Scythian horizon. The culture has been argued as the Iron Age predecessors of the Tocharians and linked to the Jushi (车师/姑师) kingdom of Chinese sources, into whose walled-city polity it evolved after c. 200 BCE.",
+        "haplogroups": "Admixed East–West Eurasian mtDNA: West Eurasian H, U, T lineages with East Asian D, C, F, A (Wang et al. 2021; Kumar et al. 2022)",
+        "haploShort": "D, C, H, U (admixed East-West)",
+        "borders": [
+            [43.3, 88.5],
+            [43.2, 90.2],
+            [42.4, 90.3],
+            [42.2, 89.0],
+            [42.5, 88.0],
+            [43.3, 88.0],
+            [43.3, 88.5]
+        ],
+        "sites": [
+            {
+                "name": "Subeshi Cemetery",
+                "lat": 42.87,
+                "lng": 89.68,
+                "desc": "Eponymous cemetery in the Toyuq (Tuyoq) gorge east of Turpan within Shanshan County; produced the 'witches of Subeshi' — women buried in tall black felt hats (4th–3rd c. BCE) — and a man whose abdomen was operated on and sutured with horsehair"
+            },
+            {
+                "name": "Yanghai Cemetery",
+                "lat": 42.8,
+                "lng": 89.65,
+                "desc": "Vast cemetery (~54,000 m²) in the Turpan depression with tombs spanning c. 1300 BCE to the Han period; yielded the earliest known trousers, the oldest knotted carpets (c. 700 BCE), the world's oldest saddle (727–396 BCE), ritual cannabis, leather balls and abundant perishable organics"
+            },
+            {
+                "name": "Shengjindian Cemetery",
+                "lat": 42.93,
+                "lng": 89.57,
+                "desc": "Subeshi-culture cemetery best known for the earliest functional wooden leg prosthesis (c. 300 BCE), alongside woolen textiles, horse gear and agro-pastoral grave goods"
+            }
+        ],
+        "papers": [
+            {
+                "title": "Kumar et al. (2022) Bronze and Iron Age population movements underlie Xinjiang population history",
+                "url": "https://doi.org/10.1126/science.abk1534",
+                "org": "Science 376 / IVPP, Chinese Academy of Sciences"
+            },
+            {
+                "title": "Beck et al. (2014) The invention of trousers and its likely affiliation with horseback riding and mobility",
+                "url": "https://doi.org/10.1016/j.quaint.2014.04.056",
+                "org": "Quaternary International (Elsevier)"
+            },
+            {
+                "title": "Wang et al. (2021) Ancient Xinjiang mitogenomes reveal intense admixture with high genetic diversity",
+                "url": "https://doi.org/10.1126/sciadv.abd6690",
+                "org": "Science Advances"
+            }
+        ],
+        "movements": [
+            {
+                "from": [42.8, 89.6],
+                "to": [50.7, 92.0],
+                "time": "700–300 BCE",
+                "desc": "Saka-style bronze weapons, horse harnesses and pointed-hat traditions circulated between the Turpan Basin and the Pazyryk-Arzhan worlds of the Altai-Sayan steppe within the early Scythian cultural horizon"
             }
         ]
     }
