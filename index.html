@@ -110,7 +110,7 @@
             display: none;
             position: absolute;
             top: 100%;
-            right: 0;
+            left: 0;
             margin-top: 4px;
             min-width: 150px;
             background: #fff;
@@ -275,15 +275,18 @@
         #culture-popup a { color: #90caf9; }
         @media (max-width: 768px) {
             .controls-bar { width: calc(100vw - 24px); }
+            .controls-bar .leaflet-control-geocoder-icon { width: 22px; height: 22px; }
             #time-slider-container { width: 92%; padding: 8px 12px 6px; }
             .tick-label { font-size: 9px; }
             .text-marker { font-size: 16px; }
             #temp-curve { height: 40px; }
+            .leaflet-bottom .leaflet-control.visitor-counter { margin-bottom: 132px; }
         }
         @media (max-width: 480px) {
             .controls-bar { width: calc(100vw - 24px); }
             #time-slider-container { width: 96%; padding: 6px 10px 4px; }
             #temp-curve { height: 36px; }
+            .leaflet-bottom .leaflet-control.visitor-counter { margin-bottom: 106px; }
         }
     </style>
 </head>
@@ -1175,20 +1178,11 @@
             options: { position: 'bottomleft' },
             onAdd: function() {
                 var div = L.DomUtil.create('div', 'visitor-counter');
-                div.innerHTML = '<span id="fc-46272"></span>';
+                div.innerHTML = '<img src="https://hits.sh/tumiz.github.io/steppe.svg?style=flat&label=visitors" alt="visitor count">';
                 return div;
             }
         });
         map.addControl(new VisitorControl());
-
-        var fcr = Math.floor(Math.random()*99999999999);
-        var _fcc = _fcc || []; _fcc.push(["46272"]); _fcc.push(["mint"]);
-        (function(){
-            var fc = document.createElement("script"); fc.async = true;
-            fc.src = "https://www.imcounter.com/fcount.php?rnd=" + fcr;
-            var sc = document.getElementById("fc-46272");
-            sc.appendChild(fc);
-        })();
     </script>
 </body>
 </html>
