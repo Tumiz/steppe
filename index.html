@@ -26,20 +26,113 @@
         }
         .speak-btn:hover { background: #e0e0e0; }
         .speak-btn.playing { background: #ffcdd2; border-color: #e57373; color: #c62828; }
-        .border-toggle {
+        .controls-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+            width: 520px;
+        }
+        .controls-bar .leaflet-control {
+            margin: 0;
+        }
+        .controls-bar .leaflet-control-geocoder {
+            flex: 1;
+            min-width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border: 1px solid #ccc;
+        }
+        .controls-bar .leaflet-control-geocoder .leaflet-control-geocoder-form {
+            flex: 1;
+            min-width: 0;
+            display: inline-flex;
+        }
+        .controls-bar .leaflet-control-geocoder input {
+            flex: 1;
+            min-width: 0;
+            width: 100%;
+            height: 28px;
+            box-sizing: border-box;
+            font-size: 13px;
+            padding: 0 4px;
+        }
+        .controls-bar .leaflet-control-geocoder .leaflet-control-geocoder-alternatives {
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            right: -1px;
+            z-index: 1200;
+            width: auto;
+            box-sizing: border-box;
             background: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+            font-size: 12px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        .label-info-control,
+        .layers-control {
+            height: 30px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+        .layers-control {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 3px 6px;
+            font-size: 12px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            line-height: 1.4;
+            position: relative;
+        }
+        .layers-btn {
+            background: none;
             border: none;
-            padding: 6px 10px;
+            padding: 2px 8px;
             cursor: pointer;
             font-size: 12px;
             white-space: nowrap;
-            box-shadow: none;
             outline: none;
-            border-radius: 3%;
+            color: #333;
         }
-        .border-toggle:hover { background: #e0e0e0; }
-        .border-toggle.active { background: #333; color: #fff; }
-        .border-toggle.active:hover { background: #555; }
+        .layers-panel {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 4px;
+            min-width: 150px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            padding: 6px 4px;
+            z-index: 1000;
+        }
+        .layers-panel.open { display: block; }
+        .layers-panel label {
+            display: block;
+            padding: 3px 6px;
+            cursor: pointer;
+            white-space: nowrap;
+            color: #333;
+        }
+        .layers-panel input[type="checkbox"] {
+            margin-right: 6px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
         .label-info-control {
             background: #fff;
             border: 1px solid #ccc;
@@ -106,7 +199,7 @@
         }
         #time-slider-container {
             position: absolute;
-            bottom: 20px;
+            bottom: 0;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
@@ -157,14 +250,18 @@
             left: 0;
             width: 100%;
             z-index: 1100;
+        }
+        #culture-popup-panel {
             background: rgba(0, 0, 0, 0.9);
             color: #fff;
             padding: 16px 20px;
+            margin-top: 12px;
             font-size: 14px;
             line-height: 1.5;
             box-sizing: border-box;
             max-height: 40vh;
             overflow-y: auto;
+            border-radius: 6px 6px 0 0;
         }
         #culture-popup .close-btn {
             float: right;
@@ -177,18 +274,15 @@
         }
         #culture-popup a { color: #90caf9; }
         @media (max-width: 768px) {
-            .leaflet-control-geocoder { width: 200px; }
-            .border-toggle { padding: 8px 12px; font-size: 13px; }
+            .controls-bar { width: calc(100vw - 24px); }
             #time-slider-container { width: 92%; padding: 8px 12px 6px; }
             .tick-label { font-size: 9px; }
             .text-marker { font-size: 16px; }
             #temp-curve { height: 40px; }
         }
         @media (max-width: 480px) {
-            .leaflet-control-geocoder { width: 160px; }
-            .border-toggle { padding: 6px 10px; font-size: 11px; }
+            .controls-bar { width: calc(100vw - 24px); }
             #time-slider-container { width: 96%; padding: 6px 10px 4px; }
-            .leaflet-control-zoom a { width: 28px; height: 28px; line-height: 28px; font-size: 14px; }
             #temp-curve { height: 36px; }
         }
     </style>
@@ -202,14 +296,16 @@
         <input type="range" id="time-slider">
     </div>
     <div id="culture-popup">
-        <button class="close-btn" onclick="document.getElementById('culture-popup').style.display='none'">&times;</button>
-        <div id="culture-popup-content"></div>
+        <div id="culture-popup-panel">
+            <button class="close-btn" onclick="document.getElementById('culture-popup').style.display='none'">&times;</button>
+            <div id="culture-popup-content"></div>
+        </div>
     </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
     <script>
-        var map = L.map('map').setView([35, 105], 4);
+        var map = L.map('map', { zoomControl: false }).setView([35, 105], 4);
 
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             attribution: '© Esri'
@@ -754,6 +850,9 @@
 
         // Custom geocoder: search sites/cities/cultures first, fall back to Nominatim
         var markerGeocoder = {
+            suggest: function(query, callback) {
+                this.geocode(query, callback);
+            },
             geocode: function(query, callback) {
                 var results = [];
                 var q = query.toLowerCase();
@@ -778,13 +877,25 @@
             }
         };
 
-        L.Control.geocoder({
+        var ControlsBar = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: function() {
+                var wrap = L.DomUtil.create('div', 'controls-bar');
+                return wrap;
+            }
+        });
+        var bar = new ControlsBar();
+        map.addControl(bar);
+        var controlsBarEl = bar.getContainer();
+
+        var geocoder = L.Control.geocoder({
             geocoder: markerGeocoder,
             placeholder: 'Search',
             errorMessage: 'Not found',
             showResultIcons: true,
             collapsed: false,
-            defaultMarkGeocode: false
+            defaultMarkGeocode: false,
+            suggestMinLength: 1
         })
         .on('markgeocode', function(e) {
             var center = e.geocode.center;
@@ -801,8 +912,8 @@
                     if (!riversVisible) {
                         riversVisible = true;
                         riversLayer.addTo(map);
-                        var toggleBtns = document.querySelectorAll('.border-toggle');
-                        toggleBtns.forEach(function(b) { if (b.innerHTML === 'Rivers') b.classList.add('active'); });
+                        var riversCb = document.getElementById('layers-rivers');
+                        if (riversCb) riversCb.checked = true;
                     }
                     source.line.openPopup();
                     return;
@@ -815,8 +926,9 @@
                 .setLatLng(center)
                 .setContent(e.geocode.name)
                 .openOn(map);
-        })
-        .addTo(map);
+        });
+        geocoder.addTo(map);
+        controlsBarEl.appendChild(geocoder._container);
 
         // Country borders & features for reverse geocoding
         var countryFeatures = [];
@@ -851,7 +963,8 @@
                         opacity: 0.8,
                         fill: false
                     }
-                }).addTo(map);
+                });
+                if (bordersVisible) bordersLayer.addTo(map);
                 countryFeatures = topojson.feature(data, data.objects.countries).features;
             });
 
@@ -884,137 +997,103 @@
             })
             .catch(function() {});
 
-        // Toggle country borders button
-        var bordersVisible = true;
-        var ToggleBorders = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle active');
-                btn.innerHTML = 'Country Border';
-                L.DomEvent.disableClickPropagation(btn);
-                L.DomEvent.on(btn, 'click', function() {
-                    bordersVisible = !bordersVisible;
-                    if (bordersLayer) {
-                        if (bordersVisible) {
-                            bordersLayer.addTo(map);
-                            btn.classList.add('active');
-                        } else {
-                            map.removeLayer(bordersLayer);
-                            btn.classList.remove('active');
-                        }
-                    }
-                });
-                return btn;
-            }
-        });
-        map.addControl(new ToggleBorders());
-
         // Culture label info selector (what appears under culture names)
-        var LabelInfoControl = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var wrap = L.DomUtil.create('div', 'label-info-control');
-                var lbl = L.DomUtil.create('span', '', wrap);
-                lbl.textContent = 'Label: ';
-                var sel = L.DomUtil.create('select', '', wrap);
-                var opts = [
-                    ['none', 'Name'],
-                    ['haplo', 'Y-DNA haplogroups'],
-                    ['language', 'Language'],
-                    ['population', 'Population'],
-                    ['subsistence', 'Subsistence'],
-                    ['techniques', 'Material techniques']
-                ];
-                opts.forEach(function(o) {
-                    var opt = document.createElement('option');
-                    opt.value = o[0];
-                    opt.textContent = o[1];
-                    sel.appendChild(opt);
-                });
-                sel.value = labelInfoField;
-                L.DomEvent.on(sel, 'change', function() {
-                    labelInfoField = sel.value;
-                    updateCultureLabels();
-                });
-                L.DomEvent.disableClickPropagation(wrap);
-                return wrap;
-            }
+        var labelWrap = L.DomUtil.create('div', 'label-info-control', controlsBarEl);
+        var lbl = L.DomUtil.create('span', '', labelWrap);
+        lbl.textContent = 'Label: ';
+        var sel = L.DomUtil.create('select', '', labelWrap);
+        var opts = [
+            ['none', 'Name'],
+            ['haplo', 'Y-DNA haplogroups'],
+            ['language', 'Language'],
+            ['population', 'Population'],
+            ['subsistence', 'Subsistence'],
+            ['techniques', 'Material techniques']
+        ];
+        opts.forEach(function(o) {
+            var opt = document.createElement('option');
+            opt.value = o[0];
+            opt.textContent = o[1];
+            sel.appendChild(opt);
         });
-        map.addControl(new LabelInfoControl());
+        sel.value = labelInfoField;
+        L.DomEvent.on(sel, 'change', function() {
+            labelInfoField = sel.value;
+            updateCultureLabels();
+        });
+        L.DomEvent.disableClickPropagation(labelWrap);
 
         // Culture borders shown by default
         var cultureBordersVisible = true;
         cultureBordersLayer.addTo(map);
 
-        // Toggle key sites (dots + names) button
+        // Layers visibility: country borders, key sites, modern cities, rivers
+        var bordersVisible = true;
         var keySitesVisible = false;
-        var ToggleKeySites = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Key Sites';
-                L.DomEvent.disableClickPropagation(btn);
-                L.DomEvent.on(btn, 'click', function() {
-                    keySitesVisible = !keySitesVisible;
-                    if (keySitesVisible) {
-                        sitesDotsLayer.addTo(map);
-                        siteLabelsLayer.addTo(map);
-                        btn.classList.add('active');
-                    } else {
-                        map.removeLayer(sitesDotsLayer);
-                        map.removeLayer(siteLabelsLayer);
-                        btn.classList.remove('active');
-                    }
-                });
-                return btn;
-            }
-        });
-        map.addControl(new ToggleKeySites());
-
-        // Toggle modern cities button
         var citiesVisible = false;
-        var ToggleCities = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Modern Cities';
-                L.DomEvent.disableClickPropagation(btn);
-                L.DomEvent.on(btn, 'click', function() {
-                    citiesVisible = !citiesVisible;
-                    if (citiesVisible) {
-                        citiesLayer.addTo(map);
-                        btn.classList.add('active');
-                    } else {
-                        map.removeLayer(citiesLayer);
-                        btn.classList.remove('active');
-                    }
-                });
-                return btn;
-            }
-        });
-        map.addControl(new ToggleCities());
 
-        // Toggle rivers button
-        var ToggleRivers = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: function() {
-                var btn = L.DomUtil.create('button', 'border-toggle');
-                btn.innerHTML = 'Rivers';
-                L.DomEvent.disableClickPropagation(btn);
-                L.DomEvent.on(btn, 'click', function() {
-                    riversVisible = !riversVisible;
-                    if (riversVisible) {
-                        riversLayer.addTo(map);
-                        btn.classList.add('active');
-                    } else {
-                        map.removeLayer(riversLayer);
-                        btn.classList.remove('active');
-                    }
-                });
-                return btn;
+        var layersWrap = L.DomUtil.create('div', 'layers-control', controlsBarEl);
+        var btn = L.DomUtil.create('button', 'layers-btn', layersWrap);
+        btn.innerHTML = 'Layers &#9662;';
+        var panel = L.DomUtil.create('div', 'layers-panel', layersWrap);
+
+        var layers = [
+            ['borders', 'Country Border', bordersVisible],
+            ['sites', 'Key Sites', keySitesVisible],
+            ['cities', 'Modern Cities', citiesVisible],
+            ['rivers', 'Rivers', riversVisible]
+        ];
+
+        var checkboxes = {};
+        layers.forEach(function(l) {
+            var label = L.DomUtil.create('label', '', panel);
+            var cb = L.DomUtil.create('input', '', label);
+            cb.type = 'checkbox';
+            cb.checked = l[2];
+            cb.id = 'layers-' + l[0];
+            label.appendChild(document.createTextNode(' ' + l[1]));
+            checkboxes[l[0]] = cb;
+        });
+
+        checkboxes.borders.addEventListener('change', function() {
+            bordersVisible = this.checked;
+            if (bordersLayer) {
+                if (bordersVisible) bordersLayer.addTo(map);
+                else map.removeLayer(bordersLayer);
             }
         });
-        map.addControl(new ToggleRivers());
+        checkboxes.sites.addEventListener('change', function() {
+            keySitesVisible = this.checked;
+            if (keySitesVisible) {
+                sitesDotsLayer.addTo(map);
+                siteLabelsLayer.addTo(map);
+            } else {
+                map.removeLayer(sitesDotsLayer);
+                map.removeLayer(siteLabelsLayer);
+            }
+        });
+        checkboxes.cities.addEventListener('change', function() {
+            citiesVisible = this.checked;
+            if (citiesVisible) citiesLayer.addTo(map);
+            else map.removeLayer(citiesLayer);
+        });
+        checkboxes.rivers.addEventListener('change', function() {
+            riversVisible = this.checked;
+            if (riversVisible) riversLayer.addTo(map);
+            else map.removeLayer(riversLayer);
+        });
+
+        L.DomEvent.disableClickPropagation(layersWrap);
+        L.DomEvent.on(btn, 'click', function() {
+            panel.classList.toggle('open');
+        });
+        map.on('click', function() {
+            panel.classList.remove('open');
+        });
+
+        // Bar order: layers, label, search
+        controlsBarEl.insertBefore(layersWrap, controlsBarEl.firstChild);
+        controlsBarEl.insertBefore(labelWrap, layersWrap.nextSibling);
 
         // Load city dataset for client-side reverse geocoding
         var citiesData = [];
